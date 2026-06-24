@@ -4,7 +4,8 @@ Layers on top of `SHARED.md`.
 
 ## Format
 
-- **Length:** long-form allowed. The master version lives here — up to ~3000 characters. Don't pad; go as long as the idea earns.
+- **Length:** long-form allowed. **Sweet spot: ~1,300–2,000 characters (~200–350 words).** Hard max ~3,000. Don't pad; go as long as the idea earns, but the engagement curve falls off past ~2,000.
+- **The fold:** LinkedIn truncates at ~210 characters (≈3 lines) behind "…see more." The hook *and* a reason to expand must live above that fold.
 - **Structure:** hook line → POV → cited data → judgment → close → hashtags → sources block.
 - **Paragraphs:** short. One to three lines. White space carries long-form on LinkedIn.
 

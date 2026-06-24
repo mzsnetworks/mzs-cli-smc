@@ -27,7 +27,8 @@ You produce the **master version** of a post — usually LinkedIn-length. The Pl
 
 ## Constraints
 
-- Follow `rules/SHARED.md` and `rules/LINKEDIN.md` (the master lives at LinkedIn length).
+- Follow `rules/SHARED.md` and `rules/LINKEDIN.md`. The master lives at LinkedIn length — sweet spot ~1,300–2,000 characters, hook above the ~210-char fold.
+- If `rules/VOICE.md` exists, read it and write in the **author's** voice — pillars, signature openings/landings, word list. Mandatory when present.
 - Every statistic must be sourced. If you can't source it, reframe as experience or cut it.
 - Strong opinions are good. Hype is not — credibility comes from specifics.
 - First person, CTAs, and a closing question are allowed (this is engagement-oriented, not repel-mode).
@@ -49,7 +50,8 @@ Write to that bar.
 ## Usage
 
 ```
-Read rules/SHARED.md, rules/LINKEDIN.md, and the draft at [path].
-Apply the WRITER agent: draft/expand the master post with a strong hook,
-cited data, and a memorable landing. Edit the file directly.
+Read rules/SHARED.md, rules/LINKEDIN.md, rules/VOICE.md (if it exists),
+and the draft at [path]. Apply the WRITER agent: draft/expand the master
+post in the author's voice with a strong hook, cited data, and a memorable
+landing, at LinkedIn length. Edit the file directly.
 ```

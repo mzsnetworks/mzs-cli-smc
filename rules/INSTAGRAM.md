@@ -6,7 +6,8 @@ Layers on top of `SHARED.md`.
 
 - **Caption:** punchy and scannable. Short lines, frequent breaks. Lead with the hook in the first line (the rest is hidden behind "more").
 - **Arrow bullets** for data: `→ AI will write 25% of configs by 2027 (was <3% in 2024)`.
-- **Length:** shorter than LinkedIn. Tighten the master idea to its emotional core.
+- **Length:** **sweet spot ~125–220 characters of caption** for engagement; up to ~2,200 hard max if the idea is carrying a carousel. Tighten the master to its emotional core — shorter than LinkedIn.
+- **The fold:** Instagram truncates the caption at ~125 characters behind "…more." The hook must land in that first line.
 
 ## Emoji
 

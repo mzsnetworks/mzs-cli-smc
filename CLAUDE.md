@@ -15,16 +15,20 @@ This is an editorial system, not a software project. The "code" is markdown agen
 One idea flows through a pipeline and comes out as three platform-native posts:
 
 ```
-Writer --> Factcheck --> Platform Adapter --> Editor (x3) --> Hashtag (x3)
+[ Research --> Ideation --> Hook ] --> Writer --> Factcheck --> Platform Adapter --> Editor (x3) --> Hashtag (x3) --> Scorer (x3)
 ```
 
+- **Research** *(optional)* finds dated, cited niche stories via WebSearch — no scraping
+- **Ideation** *(optional)* crosses content pillars × formats into a 30+ idea matrix
+- **Hook** *(optional)* generates credible (non-clickbait) hook options for an idea
 - **Writer** drafts the master post (LinkedIn-length source)
 - **Factcheck** verifies every stat against a cited source (BLOCKING — never adapt an unverified master)
 - **Platform Adapter** renders LinkedIn / Instagram / X, preserving the "spine"
 - **Editor** tightens each render to its platform length
 - **Hashtag** applies per-platform hashtag policy
+- **Scorer** scores each render and gates publish (SHIP / REVISE / REWORK)
 
-Full mechanics in `agents/PIPELINE.md`.
+The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (Canva carousel/infographic, Gemini fallback for hand-drawn), **Reels** (short-form video script). Full mechanics in `agents/PIPELINE.md`.
 
 ## Repository Structure
 
@@ -34,8 +38,14 @@ rules/
   LINKEDIN.md      # long-form, near-zero emoji, 2-3 hashtags, Sources block
   INSTAGRAM.md     # caption + carousel, purposeful emoji, 10-15 hashtag block
   X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
+  VOICE.md         # author voice profile (created by the Voice agent; optional)
 agents/
-  WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  PIPELINE.md
+  # core pipeline
+  WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  SCORER.md  PIPELINE.md
+  # idea front-end (optional)
+  RESEARCH.md  IDEATION.md  HOOK.md
+  # on-demand
+  VOICE.md  FORMATTER.md  VISUAL.md  REELS.md
 content/           # generated posts (idea-first layout)
 ```
 

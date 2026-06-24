@@ -45,6 +45,8 @@ Never drop a cited statistic during adaptation. If a stat doesn't fit a shorter 
 - Do not invent platform content the master doesn't support
 - Do not add a stat that wasn't in the fact-checked master
 - Do not exceed a platform's emoji or hashtag limits to chase reach
+- Do not exceed a platform's **Length Target** (`rules/SHARED.md`) — render each to its sweet spot with the hook above the fold
+- Do not drop the **author's voice** — if `rules/VOICE.md` exists, every render carries it
 
 ---
 
@@ -73,8 +75,9 @@ Each render is self-contained and ready to publish. Never scatter the three acro
 ## Usage
 
 ```
-Read rules/SHARED.md and all three rules/ platform files, plus the
-master at content/<year>/<date>-<slug>/master.md. Apply the
-PLATFORM_ADAPTER agent: render the master into linkedin.md,
-instagram.md, and x.md in that same folder, preserving the spine.
+Read rules/SHARED.md, all three rules/ platform files, and rules/VOICE.md
+(if it exists), plus the master at content/<year>/<date>-<slug>/master.md.
+Apply the PLATFORM_ADAPTER agent: render the master into linkedin.md,
+instagram.md, and x.md in that same folder, preserving the spine and the
+author's voice, each at its platform Length Target.
 ```

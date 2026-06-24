@@ -7,7 +7,7 @@ Layers on top of `SHARED.md`.
 Provide both when adapting, so the user can choose:
 
 ### Single post
-- Under 280 characters.
+- Hard cap 280 characters. **Aim for ~240–270** so it reads with breathing room and leaves space if quoted.
 - One idea, compressed to its sharpest form. Usually: the reframe + the triad + the closing question.
 
 ### Thread

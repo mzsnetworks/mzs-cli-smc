@@ -17,6 +17,23 @@ These apply to every post regardless of platform. Platform files layer formattin
 - Concrete over abstract. Name real technologies, failure modes, and numbers.
 - Confident, not hype. The credibility comes from specifics, not adjectives.
 
+### Author Voice Layer (`rules/VOICE.md`)
+
+If `rules/VOICE.md` exists, it is the **author's** voice profile and it is **mandatory** — every agent that writes or edits copy (Writer, Adapter, Editor, Formatter, Hook, Ideation, Reels) must read it and apply it: the author's pillars, defended opinions, signature openings/landings, word list, and war stories. It *adds specificity* on top of these shared rules; it never overrides fact discipline or the banned list. If `rules/VOICE.md` is absent, fall back to this shared voice. Build it with the Voice agent.
+
+## Length Targets (recommended, per platform)
+
+Hooks always sit above the platform "fold." Stay near the sweet spot, not the hard cap.
+
+| Platform | Sweet spot | Hard cap | Fold (hook must land before) |
+|----------|-----------|----------|------------------------------|
+| LinkedIn | ~1,300–2,000 chars (~200–350 words) | ~3,000 chars | ~210 chars (~3 lines) |
+| Instagram | ~125–220 chars caption (more if carousel) | ~2,200 chars | ~125 chars (first line) |
+| X — single | ~240–270 chars | 280 chars | whole post visible |
+| X — thread | each tweet ≤280, one idea per tweet | 280/tweet | tweet 1 is the hook |
+
+The Editor tightens to these; the Scorer's "platform fit" dimension checks them.
+
 ## Fact Discipline (Non-Negotiable)
 
 This is the one rule that does not loosen.
