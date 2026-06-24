@@ -30,6 +30,16 @@ One idea flows through a pipeline and comes out as three platform-native posts:
 
 The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (Canva carousel/infographic, Gemini fallback for hand-drawn), **Reels** (short-form video script). Full mechanics in `agents/PIPELINE.md`.
 
+### How the system is invoked
+
+Three layers, same logic underneath:
+
+1. **Plain English** — the user just says what they want ("write a post about X", "give me ideas"). Match the intent to the right agent(s) and run them.
+2. **Skills** (`.claude/skills/`) — auto-trigger the standalone capabilities: `build-voice`, `ideate`, `hook`, `niche-research`, `visual`, `reels`. Each skill is a thin trigger that reads its canonical `agents/*.md` and executes it.
+3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master.
+
+`agents/*.md` files remain the **source of truth** — skills and commands point to them, never fork the logic. The core pipeline agents (Writer, Factcheck, Adapter, Editor, Hashtag, Scorer) are invoked *through* `/post`, not as individual skills.
+
 ## Repository Structure
 
 ```
@@ -39,13 +49,16 @@ rules/
   INSTAGRAM.md     # caption + carousel, purposeful emoji, 10-15 hashtag block
   X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
   VOICE.md         # author voice profile (created by the Voice agent; optional)
-agents/
+agents/            # canonical agent logic (source of truth)
   # core pipeline
   WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  SCORER.md  PIPELINE.md
   # idea front-end (optional)
   RESEARCH.md  IDEATION.md  HOOK.md
   # on-demand
   VOICE.md  FORMATTER.md  VISUAL.md  REELS.md
+.claude/
+  commands/        # /post (full pipeline), /adapt (re-render an existing master)
+  skills/          # auto-triggered: build-voice, ideate, hook, niche-research, visual, reels
 content/           # generated posts (idea-first layout)
 ```
 

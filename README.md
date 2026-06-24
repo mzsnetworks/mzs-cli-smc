@@ -116,7 +116,13 @@ Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then 
 | Re-shape a rambling draft | "Rewrite this as a PAS post: [paste]." |
 | Just one platform | "Write only a LinkedIn post about [topic]." |
 
-You never have to name an agent, edit a rule file, or run a command. Claude picks the right agents from what you ask.
+You never have to name an agent or edit a rule file. Claude picks the right agents from what you ask.
+
+**Prefer typing a command?** Two shortcuts do the same thing:
+- **`/post <topic>`** — runs the full pipeline (the Step 1 flow above) in one shot.
+- **`/adapt <slug>`** — re-renders an existing post's `master.md` into the three platforms.
+
+And the on-demand capabilities are also installed as **skills** that fire automatically on plain-English phrasing — "build my voice", "give me ideas", "make a carousel", "write a reel", "what's trending". You don't need to learn them; they trigger themselves.
 
 ---
 
