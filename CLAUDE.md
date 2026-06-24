@@ -1,0 +1,75 @@
+# CLAUDE.md
+
+Guidance for Claude Code when working in this repository.
+
+## Repository Purpose
+
+A **multi-platform social media content system** for technical posts. The core workflow: write one idea once, then render it natively for **LinkedIn, Instagram, and X**. Same message, platform-correct packaging.
+
+Niche: network engineering, infrastructure, automation, AIOps. Audience: practitioners and technical leaders, but **engagement-oriented** (reach matters here, unlike a repel-mode personal blog).
+
+This is an editorial system, not a software project. The "code" is markdown agents and rule files.
+
+## How It Works
+
+One idea flows through a pipeline and comes out as three platform-native posts:
+
+```
+Writer --> Factcheck --> Platform Adapter --> Editor (x3) --> Hashtag (x3)
+```
+
+- **Writer** drafts the master post (LinkedIn-length source)
+- **Factcheck** verifies every stat against a cited source (BLOCKING — never adapt an unverified master)
+- **Platform Adapter** renders LinkedIn / Instagram / X, preserving the "spine"
+- **Editor** tightens each render to its platform length
+- **Hashtag** applies per-platform hashtag policy
+
+Full mechanics in `agents/PIPELINE.md`.
+
+## Repository Structure
+
+```
+rules/
+  SHARED.md        # niche, voice, fact discipline — applies to every platform
+  LINKEDIN.md      # long-form, near-zero emoji, 2-3 hashtags, Sources block
+  INSTAGRAM.md     # caption + carousel, purposeful emoji, 10-15 hashtag block
+  X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
+agents/
+  WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  PIPELINE.md
+content/           # generated posts (idea-first layout)
+```
+
+## Output Layout (Non-Negotiable)
+
+Posts are **idea-first**. One idea = one dated folder holding all its platform versions:
+
+```
+content/<year>/<YYYY-MM-DD>-<slug>/
+  master.md      # fact-checked source (LinkedIn-length, full Sources block)
+  linkedin.md    # publish-ready LinkedIn render
+  instagram.md   # publish-ready Instagram render
+  x.md           # publish-ready X render
+```
+
+- `<YYYY-MM-DD>` = intended publish/creation date (sorts chronologically)
+- `<slug>` = short kebab-case handle from the idea's landing or thesis
+- Never scatter the three renders across separate trees — they belong to one idea
+- The Adapter writes the three renders as siblings of `master.md`, in the same folder
+
+Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration examples the rules and agents are tuned to.
+
+## Writing Rules
+
+The one rule that never loosens: **every statistic must trace to a real, citable source.** Vendor forecasts name the firm and the year. Uncited stats get cut or reframed as judgment. Factcheck enforces this and blocks the pipeline.
+
+Otherwise this system is engagement-oriented, NOT repel-mode:
+- Emojis allowed per platform (heavy Instagram, sparing X, ~none LinkedIn)
+- CTAs and closing questions allowed
+- First-person and personal-anecdote openings allowed
+- Threads, carousels, and long form where the platform supports them
+
+Every post needs a strong **hook** in line one. The default shape is **hook → POV → cited data → judgment → memorable landing**. Protect the landing (often a triad or a real question).
+
+## Origin
+
+Adapted from the LinkedIn-LPM editorial system (a strict, repel-mode personal blog). This project kept that system's fact discipline and senior-engineer credibility, but loosened the voice for multi-platform reach and added the Platform Adapter as the core agent.
