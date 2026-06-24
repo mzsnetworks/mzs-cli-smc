@@ -51,80 +51,91 @@ Each agent file in `agents/` ends with a **Usage** block — the exact prompt to
 
 ## How to Use
 
-There is no CLI to run. You drive the system by telling Claude Code which agent to apply and which files to read. Copy the prompts below.
+**You don't run commands. You don't memorize agent names. You open Claude Code in this folder and talk to it in plain English.** Claude reads `CLAUDE.md` and the rule files automatically and knows what to do. The examples below are things you literally type into the chat.
 
-### One-time setup — build your voice
+### Step 0 — do this once: teach it your voice
 
-Run this first, once. It interviews you and writes `rules/VOICE.md`, the author voice profile every writing agent then applies automatically.
+Type this:
 
-```
-Apply the VOICE agent: run the interview, then write rules/VOICE.md.
-```
+> **Build my voice profile.**
 
-Answer the six questions (background, defended opinions, war stories, writers you respect, voice fingerprint, content pillars). Re-run or edit `rules/VOICE.md` whenever your style shifts. If the file doesn't exist, agents fall back to the generic voice in `rules/SHARED.md`.
+Claude asks you six questions (your background, your strong opinions, your war stories, etc.). Answer them in plain text — paste a brain-dump, it's fine. Claude writes `rules/VOICE.md`. From now on every post sounds like *you*. You never have to do this again (unless your style changes).
 
-### Quick start — you already have an idea
+### Step 1 — write a post (the main thing you'll do)
 
-Pick a date and a short kebab-case slug, then set `DIR = content/<year>/<YYYY-MM-DD>-<slug>/`. Drop a rough draft or notes into `DIR/master.md` and run the core pipeline:
+You have an idea. Type it like you're telling a colleague:
 
-```
-1. Read rules/SHARED.md, rules/LINKEDIN.md, rules/VOICE.md, and DIR/master.md.
-   Apply the WRITER agent. Edit the file directly.
+> **I want a post about how most network outages are self-inflicted, not hardware failures. Run it through the full pipeline for LinkedIn, Instagram, and X.**
 
-2. Read rules/SHARED.md and DIR/master.md.
-   Apply the FACTCHECK agent. Output PASS/FAIL. Loop with the Writer until PASS.
+Claude then, on its own:
+1. **Writes** the master post in your voice
+2. **Fact-checks** every number (and stops to fix anything it can't source)
+3. **Adapts** it into LinkedIn, Instagram, and X versions
+4. **Tightens** each to the right length
+5. **Adds** the right hashtags per platform
+6. **Scores** each one and tells you if it's good to ship
 
-3. Read rules/SHARED.md, all rules/ platform files, and rules/VOICE.md, plus DIR/master.md.
-   Apply the PLATFORM_ADAPTER agent: write DIR/linkedin.md, DIR/instagram.md, DIR/x.md.
+You get a new folder like `content/2026/2026-07-01-self-inflicted-outages/` with four files: `master.md`, `linkedin.md`, `instagram.md`, `x.md`. Open them, copy, paste, publish.
 
-4. For each render: read rules/[PLATFORM].md, rules/VOICE.md, and DIR/[platform].md.
-   Apply the EDITOR agent: tighten to the platform Length Target. Edit directly.
+> 💡 You can also paste a messy draft or rough notes instead of one sentence — "here are my bullet points, turn them into a post" works the same way.
 
-5. For each render: read rules/[PLATFORM].md and DIR/[platform].md.
-   Apply the HASHTAG agent. Append only.
+### Step 2 — don't have an idea? Ask for some
 
-6. For each render: read rules/SHARED.md, rules/[PLATFORM].md, and DIR/[platform].md.
-   Apply the SCORER agent. Loop back to Editor/Writer until SHIP (>=85).
-```
+> **Give me 30 post ideas.**
 
-When all three renders score **SHIP**, they're publish-ready in `DIR/`.
+You get a table of specific angles (not vague topics) crossing your content pillars with proven post formats, plus a "Top 5 to write now." Pick one and go back to Step 1:
 
-### Full start — you need an idea first
+> **Write idea #3 from that list through the full pipeline.**
 
-```
-A. Apply the RESEARCH agent: WebSearch the niche for the last 14 days.
-   Return dated, linked stories with shareable angles.
+Or hunt for fresh, real stories first:
 
-B. Read rules/SHARED.md and rules/VOICE.md. Apply the IDEATION agent:
-   emit a 30+ row pillar x format matrix plus a Top 5. (Optionally feed it the Research list.)
+> **What's trending in network engineering this week?** → gives dated, linked stories you can post about.
 
-C. Pick an idea. Read rules/SHARED.md and rules/VOICE.md.
-   Apply the HOOK agent to that idea: 6 credible hooks, recommend one.
+### Step 3 — add a graphic, a carousel, or a video script (optional)
 
-D. Run the Quick Start pipeline above with the chosen idea + hook.
-```
+After a post exists, ask for art (uses your Canva):
 
-### On-demand recipes
+> **Make a carousel for the self-inflicted-outages post.**
 
-**Add a visual (carousel or infographic):**
-```
-Read the post at DIR/ and rules/SHARED.md and rules/VOICE.md.
-Apply the VISUAL agent: route to carousel/infographic, build a brief, get approval,
-then design in Canva via the Canva MCP and export into DIR/.
-```
-Canva is the design engine. Gemini is only used for the hand-drawn whiteboard look.
+Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then designs it in Canva and saves the export into the post's folder. For a video:
 
-**Write a short-form video script:**
-```
-Read rules/SHARED.md, rules/INSTAGRAM.md, rules/VOICE.md, and DIR/master.md.
-Apply the REELS agent: write a 30–45s script with caption, comment trigger, and visual notes.
-```
+> **Write me a Reel script from that post.**
 
-**Force a copywriting framework onto a draft:**
-```
-Read rules/SHARED.md, rules/LINKEDIN.md, rules/VOICE.md, and the draft.
-Apply the FORMATTER agent with framework [PAS/AIDA/BAB/STAR/SLAY].
-```
+### That's the whole thing
+
+| What you want | What you type |
+|---------------|---------------|
+| Set up your voice (once) | "Build my voice profile." |
+| Write a post | "Write a post about [topic]. Run the full pipeline." |
+| Turn rough notes into a post | "Here are my notes: [paste]. Make a post out of this." |
+| Get ideas | "Give me 30 post ideas." |
+| Find trending stories | "What's trending in [niche] this week?" |
+| Punch up a weak opener | "Give me 6 hook options for [topic]." |
+| Make a carousel/graphic | "Make a carousel for the [slug] post." |
+| Make a video script | "Write a Reel script from the [slug] post." |
+| Re-shape a rambling draft | "Rewrite this as a PAS post: [paste]." |
+| Just one platform | "Write only a LinkedIn post about [topic]." |
+
+You never have to name an agent, edit a rule file, or run a command. Claude picks the right agents from what you ask.
+
+---
+
+### Worked example (start to finish)
+
+Here's a real run, exactly as it happened, so you can see the shape of it.
+
+**You type:**
+> Write a post about an ISSU upgrade that kept failing even though every health check was green. The real cause was leftover operational state from past install attempts. Run the full pipeline.
+
+**Claude does:**
+- Creates `content/2026/2026-06-24-operational-state/master.md` and drafts it in your voice — opening "The problem wasn't the procedure. It never is.", landing on a config/logs/state triad.
+- Fact-checks it → **PASS** (no stats to source; it's an experience post).
+- Writes `linkedin.md` (1,662 chars), `instagram.md` (caption + 7 carousel slides + 15 hashtags), `x.md` (a 276-char single post **and** a 7-tweet thread).
+- Scores them: LinkedIn **97/100 SHIP**, Instagram **92 SHIP**, X **92 SHIP**.
+
+**You get:** four ready-to-publish files in one folder. Total effort on your side: one sentence.
+
+> This exact post lives in `content/2026/2026-06-24-operational-state/` — open it to see what "done" looks like.
 
 ---
 
