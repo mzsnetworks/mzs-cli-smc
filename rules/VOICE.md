@@ -17,7 +17,7 @@ The Visual agent **must** use these — Canva's API does not expose the brand ki
   - **Accent ~10%:** red `#eb2027`, used sparingly — one key word, one number, a thin rule, a small block. Never more.
   - **Never:** red full-bleed backgrounds, color-on-color (red text on navy headline blocks), or flooding a slide in a single saturated brand color. Saturated brand color is an accent, never the field.
   - Cover + CTA slides may invert for punch (a red block or red headline), but body slides stay navy/cream with minimal red.
-- **Fonts:** **Nulshock Bold** — carousel/graphic titles (~32pt) · **Garet** — body text (~18pt)
+- **Fonts:** **Cormorant Garamond** Medium (500) — headers/titles (~32pt) · **Lato** Regular (400) — body text (~18pt). Both are widely available (Google Fonts), so they render reliably in Canva and elsewhere.
 - Canva brand kit id: `kAFgplDByUM` (apply when generating, but treat the hex/fonts/identity above as authoritative).
 - **Never fabricate brand marks, names, URLs, handles, or event details on a slide.** Use only the real identity above and the post's real content. The CTA slide uses the real handle/URL; if a value is missing, leave it blank — do not invent one.
 

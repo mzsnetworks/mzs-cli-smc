@@ -11,10 +11,10 @@
 **Identity**
 - MZS Networks · mzsnetworks.com · @mzsnetworks
 - Slide mark: no logo image — small **`@mzsnetworks`** text in cream, bottom-left on every slide (add `mzsnetworks.com` on the CTA)
-- Fonts: **Nulshock Bold** (titles ~32) · **Garet** (body ~18)
+- Fonts: **Cormorant Garamond** Medium/500 (titles ~32) · **Lato** Regular/400 (body ~18)
 - No fabricated brands/URLs/events. Slide 4 stats are real (Gartner, cited in master.md).
 
-| # | Type | Title (Nulshock, cream) | Body (Garet, cream) | Red accent (only this) |
+| # | Type | Title (Cormorant Garamond, cream) | Body (Lato, cream) | Red accent (only this) |
 |---|------|--------------------------|----------------------|------------------------|
 | 1 | Cover | NetOps vs NetDevOps is the wrong question | What is a network engineer when the CLI isn't the job? | "wrong question" in red · two-doors motif |
 | 2 | Body | Same destination, different doors | NetOps automates operations. NetDevOps learns the network. One room, two suitcases. | thin red rule under title |
@@ -25,8 +25,8 @@
 | 7 | Triad | Operators → Engineers → Judges | The CLI made us operators. Code made us engineers. AI makes us judges. | "Judges" in red (the only colored word) |
 | 8 | CTA | When the machine writes the config — can you tell if it's right? | Follow @mzsnetworks for more on network automation + AI · mzsnetworks.com | red block behind the question OR red headline; @mzsnetworks + mzsnetworks.com prominent |
 
-**Layout system (body slides 2,3,5,6):** navy `#161a45` field · Nulshock Bold title top in cream · thin red rule · Garet body mid in cream · `@mzsnetworks` text bottom-left in muted cream · slide number bottom-right in muted cream.
+**Layout system (body slides 2,3,5,6):** navy `#161a45` field · Cormorant Garamond title top in cream · thin red rule · Lato body mid in cream · `@mzsnetworks` text bottom-left in muted cream · slide number bottom-right in muted cream.
 
 **Cover (1) + CTA (8):** distinct from body — larger title, a red headline or red block for emphasis. Keep red ≤10% of the slide even here.
 
-**Build:** start a blank 1080×1350 carousel in Canva on brand kit `kAFgplDByUM`, apply Nulshock/Garet, set the `@mzsnetworks` text mark, follow the table. Keep red minimal — navy + cream + whitespace carry it.
+**Build:** start a blank 1080×1350 carousel in Canva on brand kit `kAFgplDByUM`, apply Cormorant Garamond (titles) + Lato (body), set the `@mzsnetworks` text mark, follow the table. Keep red minimal — navy + cream + whitespace carry it.
