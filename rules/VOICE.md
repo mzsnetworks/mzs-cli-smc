@@ -10,7 +10,13 @@ The Visual agent **must** use these — Canva's API does not expose the brand ki
 
 - **Company:** MZS Networks · **URL:** mzsnetworks.com · **Handle:** @mzsnetworks
 - **Logo:** Canva brand asset `MZS Networks_Colored.png` (upload/select it for graphics; never recreate it).
-- **Colors:** navy `#161a45` (primary/background) · red `#eb2027` (accent) · white `#ffffff` (text)
+- **Colors:** navy `#161a45` (base/background) · cream `#F4EFE3` (primary text) · red `#eb2027` (accent) · white `#ffffff` (only where pure white is needed)
+- **Palette system (premium, on-brand):** rich dark base + soft light text + one restrained accent.
+  - **Base ~60%:** navy `#161a45` fills the canvas (dark theme).
+  - **Text ~30%:** cream `#F4EFE3` for headlines and body — *not* stark white; cream reads more premium.
+  - **Accent ~10%:** red `#eb2027`, used sparingly — one key word, one number, a thin rule, a small block. Never more.
+  - **Never:** red full-bleed backgrounds, color-on-color (red text on navy headline blocks), or flooding a slide in a single saturated brand color. Saturated brand color is an accent, never the field.
+  - Cover + CTA slides may invert for punch (a red block or red headline), but body slides stay navy/cream with minimal red.
 - **Fonts:** **Nulshock Bold** — carousel/graphic titles (~32pt) · **Garet** — body text (~18pt)
 - Canva brand kit id: `kAFgplDByUM` (apply when generating, but treat the hex/fonts/identity above as authoritative).
 - **Never fabricate brand marks, names, URLs, handles, or event details on a slide.** Use only the real identity above and the post's real content. The CTA slide uses the real handle/URL; if a value is missing, leave it blank — do not invent one.
