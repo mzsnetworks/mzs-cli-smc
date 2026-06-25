@@ -30,7 +30,7 @@ Carousel spec: **1080×1350** (4:5), one idea per slide, ≤15 words body per sl
 
 ## Flow
 
-1. **Brief.** Slide-by-slide (carousel) or section layout (infographic): headline (≤8 words), body (≤15 words), visual element. Pull brand colors/fonts from the user's Canva brand kit (or `rules/VOICE.md` if it names brand colors).
+1. **Brief.** Slide-by-slide (carousel) or section layout (infographic): headline (≤8 words), body (≤15 words), visual element. Pull brand colors/fonts from the **Brand section of `rules/VOICE.md`** — that is the source of truth. (Canva's API does **not** expose a brand kit's colors or fonts, and passing only the kit ID lets the AI generator pick its own — so never rely on the kit ID alone for brand fidelity.)
 2. **Approve.** Show the brief. Wait for explicit "generate." Never skip this gate.
 3. **Build.**
    - **Canva:** search the brand templates, create the design from the closest brand template, apply the per-slide copy, then export to `DIR/[carousel|infographic].[png|pdf]`. Keep style identical across slides so the set reads as one piece.

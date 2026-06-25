@@ -4,6 +4,19 @@ The author's personal voice profile. Mandatory for every agent that writes or ed
 
 ---
 
+## Brand (visual identity)
+
+The Visual agent **must** use these — Canva's API does not expose the brand kit's colors or fonts, so this is the source of truth for any graphic, carousel, or infographic.
+
+- **Company:** MZS Networks · **URL:** mzsnetworks.com · **Handle:** @mzsnetworks
+- **Logo:** Canva brand asset `MZS Networks_Colored.png` (upload/select it for graphics; never recreate it).
+- **Colors:** navy `#161a45` (primary/background) · red `#eb2027` (accent) · white `#ffffff` (text)
+- **Fonts:** **Nulshock Bold** — carousel/graphic titles (~32pt) · **Garet** — body text (~18pt)
+- Canva brand kit id: `kAFgplDByUM` (apply when generating, but treat the hex/fonts/identity above as authoritative).
+- **Never fabricate brand marks, names, URLs, handles, or event details on a slide.** Use only the real identity above and the post's real content. The CTA slide uses the real handle/URL; if a value is missing, leave it blank — do not invent one.
+
+---
+
 ## Background
 
 Network & Automation Engineer — designs, operates, and troubleshoots enterprise infrastructure. Core credibility is **brownfield**: keeping ten-year-old production environments running while modernizing them, where uptime outweighs shiny tech.
