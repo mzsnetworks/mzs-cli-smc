@@ -2,6 +2,10 @@
 
 8 slides · 1080×1350 (4:5). Brand + palette system from `rules/VOICE.md`.
 
+## How to generate (read first — paste this whole file)
+
+Generate these as **individual images — one separate image per slide**, each **portrait 1080×1350 (4:5)**. Do **NOT** combine them into a grid, collage, or contact sheet. Generate **one slide at a time**, then wait for "next" before the following slide. Keep identical style, palette, and fonts across all slides. **Proof every slide's text against this spec — especially the numbers on the data slide — before using.**
+
 **Palette system — premium, on-brand (60-30-10)**
 - **Base (~60%):** navy `#161a45` fills every slide (dark theme).
 - **Text (~30%):** cream `#F4EFE3` — headlines + body. Not stark white.

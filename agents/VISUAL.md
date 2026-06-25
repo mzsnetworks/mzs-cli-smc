@@ -36,7 +36,11 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
 
 1. **Brief.** Slide-by-slide (carousel) or section layout (infographic): headline (≤8 words), body (≤15 words), visual element per slide. Apply the brand from `rules/VOICE.md`.
 2. **Approve.** Show the brief. Wait for explicit "generate the spec." Never skip this gate.
-3. **Write the spec.** Save `carousel-spec.md` (or `infographic-spec.md`) into the idea folder. Include: format/dimensions, a brand block (colors + palette system, fonts, identity, slide mark), a per-slide table (type · title · body · notes), and a layout system note (what's consistent across body slides; how cover/CTA differ).
+3. **Write the spec.** Save `carousel-spec.md` (or `infographic-spec.md`) into the idea folder. Include, in order: format/dimensions; a **"How to generate" block** (see below); a brand block (colors + palette system, fonts, identity, slide mark); a per-slide table (type · title · body · notes); and a layout system note (what's consistent across body slides; how cover/CTA differ).
+
+   The spec must be **paste-anywhere self-instructing** — someone should be able to drop the whole file into ChatGPT/Gemini/an image tool and get usable output. So always include this near the top, verbatim-style:
+
+   > **How to generate:** Generate these as individual images — one separate image per slide, each portrait 1080×1350 (4:5). Do NOT combine them into a grid, collage, or contact sheet. Generate one slide at a time; wait for "next" between slides. Keep identical style, palette, and fonts across all slides. Proof every slide's text against this spec — especially numbers — before using.
 4. **Hand off.** Tell the user to build it in Canva on their brand kit, applying the real fonts and the `@handle` text mark (the things only the editor places reliably).
 
 ---
@@ -47,6 +51,10 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
 # Carousel build spec — <slug>
 
 8 slides · 1080×1350 (4:5). Brand from rules/VOICE.md.
+
+## How to generate (read first — paste this whole file)
+Generate as individual images, one per slide, 1080×1350 (4:5). No grid/collage.
+One slide at a time; wait for "next". Identical style across slides. Proof all text.
 
 **Brand**
 - Colors + palette system / Fonts / Identity / Slide mark (@handle text) (copied from VOICE.md)
