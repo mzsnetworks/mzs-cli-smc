@@ -31,7 +31,7 @@ If Factcheck fails, send back to the Writer — fix or source the claim before a
 
 - **Voice** — run once at setup to build `rules/VOICE.md` (the author profile that feeds Writer/Ideation/Hook). Update when style shifts.
 - **Formatter** — impose a named framework (PAS/AIDA/BAB/STAR/SLAY) on a draft when it needs a skeleton.
-- **Visual** — design a carousel or infographic in Canva for a finished post; export into the idea folder.
+- **Visual** — write a carousel/infographic build spec (exact copy + brand) into the idea folder; you build it by hand in Canva. No image generation.
 - **Reels** — write a 30–45s video script from a finished idea.
 
 ### Where files go
@@ -62,7 +62,7 @@ content/<year>/<YYYY-MM-DD>-<slug>/
 | Scorer | no | Score + publish gate (SHIP/REVISE/REWORK) |
 | Voice | yes (`rules/VOICE.md`) | Build author voice profile (on-demand, setup) |
 | Formatter | yes | Impose a named framework (on-demand) |
-| Visual | yes (exports asset) | Canva carousel/infographic (on-demand) |
+| Visual | yes (spec file) | Carousel/infographic build spec (on-demand) |
 | Reels | yes (writes script) | Short-form video script (on-demand) |
 
 ---

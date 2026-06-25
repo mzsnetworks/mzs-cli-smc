@@ -20,7 +20,7 @@ One idea flows through a pipeline and comes out as three platform-native posts.
                                           |  (on FAIL) |
                                           +-----<------+
 
-On-demand (not gates):  Voice (setup)   Formatter   Visual (Canva)   Reels
+On-demand (not gates):  Voice (setup)   Formatter   Visual (build spec)   Reels
 ```
 
 The **front-end** (Research → Ideation → Hook) runs only when you don't already have an idea. The **core** (Writer → Scorer) takes one idea to three publish-ready posts. **On-demand** agents are run when a post calls for them.
@@ -42,7 +42,7 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Scorer** | core | no | Score each render 0–100 and gate publish (SHIP/REVISE/REWORK) |
 | **Voice** | on-demand | yes (`rules/VOICE.md`) | Build the author voice profile (run once at setup) |
 | **Formatter** | on-demand | yes | Impose a named framework (PAS/AIDA/BAB/STAR/SLAY) on a draft |
-| **Visual** | on-demand | yes (exports) | Design a carousel/infographic in Canva (Gemini fallback) |
+| **Visual** | on-demand | yes (spec file) | Write a carousel/infographic build spec (copy + brand) to build by hand in Canva |
 | **Reels** | on-demand | yes (script) | Write a 30–45s short-form video script from an idea |
 
 Each agent file in `agents/` ends with a **Usage** block — the exact prompt to run it. The how-to below stitches them into workflows.
@@ -91,13 +91,13 @@ Or hunt for fresh, real stories first:
 
 > **What's trending in network engineering this week?** → gives dated, linked stories you can post about.
 
-### Step 3 — add a graphic, a carousel, or a video script (optional)
+### Step 3 — add a carousel spec or a video script (optional)
 
-After a post exists, ask for art (uses your Canva):
+After a post exists, ask for a carousel:
 
 > **Make a carousel for the self-inflicted-outages post.**
 
-Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then designs it in Canva and saves the export into the post's folder. For a video:
+Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then writes a **build spec** (`carousel-spec.md`) into the post folder — exact copy, your brand colors, fonts, and logo placement. You build the actual slides in Canva from that spec (image generation proved too unreliable for exact text + real fonts, so the system hands you a precise blueprint instead). For a video:
 
 > **Write me a Reel script from that post.**
 

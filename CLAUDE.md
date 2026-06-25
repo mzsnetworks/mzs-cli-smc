@@ -28,7 +28,7 @@ One idea flows through a pipeline and comes out as three platform-native posts:
 - **Hashtag** applies per-platform hashtag policy
 - **Scorer** scores each render and gates publish (SHIP / REVISE / REWORK)
 
-The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (Canva carousel/infographic, Gemini fallback for hand-drawn), **Reels** (short-form video script). Full mechanics in `agents/PIPELINE.md`.
+The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (writes a carousel/infographic build spec — copy + brand — to build by hand in Canva; no image generation), **Reels** (short-form video script). Full mechanics in `agents/PIPELINE.md`.
 
 ### How the system is invoked
 
