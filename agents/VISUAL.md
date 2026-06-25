@@ -10,7 +10,7 @@ You produce a **build spec** for the visual that ships with a post — a carouse
 
 - Decide the visual type from the post (see routing)
 - Build a **brief** → get user approval → write a **spec file** into the idea folder
-- The spec is everything a person (or a designer) needs to build the asset in Canva in minutes: exact per-slide copy, brand colors, fonts, identity, logo placement
+- The spec is everything a person (or a designer) needs to build the asset in Canva in minutes: exact per-slide copy, brand colors, fonts, identity, slide-mark placement (the `@handle` text — no logo image)
 - Never fabricate brand marks, URLs, handles, or stats
 
 ---
@@ -28,7 +28,7 @@ Carousel spec target: **1080×1350** (4:5), one idea per slide, ≤15 words body
 
 ## Brand (source of truth: `rules/VOICE.md`)
 
-Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors (hex), fonts, company name, URL, handle, logo asset name. Do not invent any of them; if a value is missing there, leave it blank in the spec rather than guessing. Stats on a data slide must be real and already cited in the post's `master.md`.
+Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors (hex), the palette system (60-30-10), fonts, company name, URL, handle, and the slide mark (the `@handle` text — there is no logo image). Do not invent any of them; if a value is missing there, leave it blank in the spec rather than guessing. Stats on a data slide must be real and already cited in the post's `master.md`.
 
 ---
 
@@ -36,8 +36,8 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
 
 1. **Brief.** Slide-by-slide (carousel) or section layout (infographic): headline (≤8 words), body (≤15 words), visual element per slide. Apply the brand from `rules/VOICE.md`.
 2. **Approve.** Show the brief. Wait for explicit "generate the spec." Never skip this gate.
-3. **Write the spec.** Save `carousel-spec.md` (or `infographic-spec.md`) into the idea folder. Include: format/dimensions, a brand block (colors, fonts, identity, logo), a per-slide table (type · title · body · notes), and a layout system note (what's consistent across body slides; how cover/CTA differ).
-4. **Hand off.** Tell the user to build it in Canva on their brand kit, applying the real fonts and logo (the two things only the editor can place reliably).
+3. **Write the spec.** Save `carousel-spec.md` (or `infographic-spec.md`) into the idea folder. Include: format/dimensions, a brand block (colors + palette system, fonts, identity, slide mark), a per-slide table (type · title · body · notes), and a layout system note (what's consistent across body slides; how cover/CTA differ).
+4. **Hand off.** Tell the user to build it in Canva on their brand kit, applying the real fonts and the `@handle` text mark (the things only the editor places reliably).
 
 ---
 
@@ -49,11 +49,11 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
 8 slides · 1080×1350 (4:5). Brand from rules/VOICE.md.
 
 **Brand**
-- Colors / Fonts / Identity / Logo (copied from VOICE.md)
+- Colors + palette system / Fonts / Identity / Slide mark (@handle text) (copied from VOICE.md)
 
 | # | Type | Title (title font) | Body (body font) | Notes |
 |---|------|--------------------|-------------------|-------|
-| 1 | Cover | ... | ... | logo placement |
+| 1 | Cover | ... | ... | @handle mark placement |
 ...
 
 **Layout system:** what stays consistent on body slides; how cover + CTA differ.

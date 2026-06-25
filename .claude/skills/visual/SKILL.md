@@ -9,7 +9,7 @@ Run the **VISUAL agent**. Read `agents/VISUAL.md`, `rules/SHARED.md`, `rules/VOI
 
 1. Route the post to a **carousel** or an **infographic**.
 2. Build a slide-by-slide (or section) brief and **show it for approval — wait for explicit "generate the spec."**
-3. Write the spec file (`carousel-spec.md` or `infographic-spec.md`) into the post's idea folder: exact per-slide copy, brand colors/fonts, identity, logo placement, layout system.
-4. Hand off — the user builds it in Canva on their brand kit, applying the real fonts and logo.
+3. Write the spec file (`carousel-spec.md` or `infographic-spec.md`) into the post's idea folder: exact per-slide copy, brand colors + palette system, fonts, identity, `@handle` slide mark, layout system.
+4. Hand off — the user builds it in Canva on their brand kit, applying the real fonts and the `@handle` text mark.
 
-**This skill does not generate images.** Canva's AI generator and image models proved unreliable for exact text, real fonts, and the real logo, so the agent outputs a precise build spec instead. Pull all brand values from `rules/VOICE.md` — never fabricate brand marks, URLs, handles, or stats. On-demand only.
+**This skill does not generate images.** Canva's AI generator and image models proved unreliable for exact text and real fonts, so the agent outputs a precise build spec instead. Pull all brand values from `rules/VOICE.md` (colors, palette system, fonts, identity, slide mark) — never fabricate brand marks, URLs, handles, or stats. There is no logo image; the `@mzsnetworks` text is the mark. On-demand only.

@@ -9,7 +9,7 @@ The author's personal voice profile. Mandatory for every agent that writes or ed
 The Visual agent **must** use these — Canva's API does not expose the brand kit's colors or fonts, so this is the source of truth for any graphic, carousel, or infographic.
 
 - **Company:** MZS Networks · **URL:** mzsnetworks.com · **Handle:** @mzsnetworks
-- **Logo:** Canva brand asset `MZS Networks_Colored.png` (upload/select it for graphics; never recreate it).
+- **Slide mark:** no logo image — use the **`@mzsnetworks`** text (and `mzsnetworks.com` on CTA slides) as the brand mark, small and in cream. Set in the brand fonts; never draw or recreate a logo graphic.
 - **Colors:** navy `#161a45` (base/background) · cream `#F4EFE3` (primary text) · red `#eb2027` (accent) · white `#ffffff` (only where pure white is needed)
 - **Palette system (premium, on-brand):** rich dark base + soft light text + one restrained accent.
   - **Base ~60%:** navy `#161a45` fills the canvas (dark theme).

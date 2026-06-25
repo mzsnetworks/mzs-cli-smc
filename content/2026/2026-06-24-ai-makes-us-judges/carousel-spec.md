@@ -10,7 +10,7 @@
 
 **Identity**
 - MZS Networks · mzsnetworks.com · @mzsnetworks
-- Logo: Canva brand asset `MZS Networks_Colored.png` — small, bottom-left on every slide
+- Slide mark: no logo image — small **`@mzsnetworks`** text in cream, bottom-left on every slide (add `mzsnetworks.com` on the CTA)
 - Fonts: **Nulshock Bold** (titles ~32) · **Garet** (body ~18)
 - No fabricated brands/URLs/events. Slide 4 stats are real (Gartner, cited in master.md).
 
@@ -23,10 +23,10 @@
 | 5 | Body | Value moves up the stack | From typing commands to designing the system that types them. | "up the stack" in red · subtle upward rule |
 | 6 | Body | Judgment beats generation | The rare skill: knowing when the AI is confidently wrong. | "Judgment" in red |
 | 7 | Triad | Operators → Engineers → Judges | The CLI made us operators. Code made us engineers. AI makes us judges. | "Judges" in red (the only colored word) |
-| 8 | CTA | When the machine writes the config — can you tell if it's right? | Follow @mzsnetworks for more on network automation + AI · mzsnetworks.com | red block behind the question OR red headline; logo larger |
+| 8 | CTA | When the machine writes the config — can you tell if it's right? | Follow @mzsnetworks for more on network automation + AI · mzsnetworks.com | red block behind the question OR red headline; @mzsnetworks + mzsnetworks.com prominent |
 
-**Layout system (body slides 2,3,5,6):** navy `#161a45` field · Nulshock Bold title top in cream · thin red rule · Garet body mid in cream · logo bottom-left · slide number bottom-right in muted cream.
+**Layout system (body slides 2,3,5,6):** navy `#161a45` field · Nulshock Bold title top in cream · thin red rule · Garet body mid in cream · `@mzsnetworks` text bottom-left in muted cream · slide number bottom-right in muted cream.
 
-**Cover (1) + CTA (8):** distinct from body — larger title, a red headline or red block for emphasis, logo prominent. Keep red ≤10% of the slide even here.
+**Cover (1) + CTA (8):** distinct from body — larger title, a red headline or red block for emphasis. Keep red ≤10% of the slide even here.
 
-**Build:** start a blank 1080×1350 carousel in Canva on brand kit `kAFgplDByUM`, apply Nulshock/Garet, drop the logo, follow the table. Keep red minimal — navy + cream + whitespace carry it.
+**Build:** start a blank 1080×1350 carousel in Canva on brand kit `kAFgplDByUM`, apply Nulshock/Garet, set the `@mzsnetworks` text mark, follow the table. Keep red minimal — navy + cream + whitespace carry it.
