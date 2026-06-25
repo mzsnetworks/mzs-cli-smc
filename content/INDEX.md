@@ -4,7 +4,7 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-06-24 | `plug-and-play-wifi-myth` | "Plug-and-play" Wi-Fi is a myth — you engineer it, not plug it in | LI · IG · X | — | SHIP |
+| 2026-06-24 | `plug-and-play-wifi-myth` | "Plug-and-play" Wi-Fi is a myth — you engineer it, not plug it in | LI · IG · X | infographic | SHIP |
 | 2026-06-24 | `operational-state` | The ISSU that refused to upgrade — operational state matters as much as config | LI · IG · X | — | SHIP |
 | 2026-06-24 | `ai-makes-us-judges` | NetOps vs NetDevOps is the wrong question — AI makes us judges (reference set) | LI · IG · X | carousel (8 png) | SHIP |
 

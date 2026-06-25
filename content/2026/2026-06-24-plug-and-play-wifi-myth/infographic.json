@@ -1,0 +1,32 @@
+{
+  "size": [1080, 1920],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "title": "\"Plug-and-Play\" Wi-Fi\n*Is a Myth*",
+  "subtitle": "You don't plug it in. You engineer it — or you reopen the same ticket forever.",
+  "sections": [
+    { "type": "compare",
+      "left":  { "title": "The demo", "items": ["Mount it.", "Power it.", "Broadcast an SSID.", "Works perfectly — in an empty room."] },
+      "right": { "title": "Monday morning", "items": ["200 clients show up.", "The appliance illusion dies.", "The work was never the AP."] } },
+    { "type": "list", "title": "What *\"slow Wi-Fi\"* tickets really are",
+      "items": [
+        "Coverage holes nobody surveyed for",
+        "Co-channel interference — APs fighting each other",
+        "Sticky clients clinging to a -80 dBm signal",
+        "Capacity you never designed for"
+      ] },
+    { "type": "stats", "title": "The part the box doesn't do",
+      "rows": [
+        { "num": "3", "label": "non-overlapping 2.4 GHz channels (1 / 6 / 11)" },
+        { "num": "100%", "label": "of roaming decisions are the client's, not yours" }
+      ] }
+  ],
+  "footer": "Wired networks fail loudly.\nWireless networks fail *politely* — never on your dashboard."
+}

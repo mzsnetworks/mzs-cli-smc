@@ -65,6 +65,14 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
 ```
 Wrap text in `*asterisks*` to color it red (italic in titles). `\n` = line break.
 
+### Infographic (single tall canvas)
+
+Same engine, one page. Write `infographic.json` and run:
+```
+node tools/render-infographic.mjs content/<year>/<date>-<slug>
+```
+→ `infographic.png` (default 1080×1920 at 2×). Shape: `title`, optional `subtitle`, `sections[]`, optional `footer` + `source`. Section `type`s: `heading` (title/body), `list` (red-tick items), `stats` (big-number rows), `steps` (numbered), `compare` (two columns, right column red-accented). Same `*asterisk*` accent + `\n` rules.
+
 ---
 
 ## Spec File Shape
