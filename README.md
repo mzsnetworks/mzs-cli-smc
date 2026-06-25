@@ -179,6 +179,7 @@ content/<year>/<YYYY-MM-DD>-<slug>/
 
 - `<YYYY-MM-DD>` = intended publish/creation date (sorts chronologically).
 - `<slug>` = short kebab-case handle from the idea's landing or thesis.
+- `content/INDEX.md` catalogs every post (date, slug, title, renders, visual, status), newest-first. `/post` and `/adapt` keep it current — it's how you look up a post's slug ("make a carousel for `plug-and-play-wifi-myth`").
 
 **Reference sets:**
 - `content/2026/2026-06-24-ai-makes-us-judges/` — the original calibration examples the rules and agents are tuned to.

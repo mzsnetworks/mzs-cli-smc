@@ -23,6 +23,8 @@ Target idea: **$ARGUMENTS**
 
 Always read `rules/SHARED.md`, the platform `rules/*.md` files, and `rules/VOICE.md`. Follow `agents/PIPELINE.md`.
 
+7. **Update the index.** Refresh this idea's row in `content/INDEX.md` — renders, visual, and status (SHIP once all renders scored ≥85).
+
 ## When done
 
 Report the folder path, which renders were rewritten, each character count vs its Length Target, and each Scorer verdict.

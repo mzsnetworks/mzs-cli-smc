@@ -78,6 +78,7 @@ content/<year>/<YYYY-MM-DD>-<slug>/
 - `<slug>` = short kebab-case handle from the idea's landing or thesis
 - Never scatter the three renders across separate trees — they belong to one idea
 - The Adapter writes the three renders as siblings of `master.md`, in the same folder
+- `content/INDEX.md` is the catalog of every post (date, slug, title, renders, visual, status), newest-first. `/post` and `/adapt` keep it current; the Visual skill updates the visual column. It's the lookup for "what's the slug for that post?"
 
 Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration examples the rules and agents are tuned to.
 

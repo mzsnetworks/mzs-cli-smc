@@ -25,6 +25,8 @@ Follow `agents/PIPELINE.md` exactly. Apply each agent's rules from its file in `
 
 7. **Scorer** (per render) → score 0–100. **Loop back to Editor/Writer until every render is SHIP (≥85).**
 
+8. **Update the index.** Add (or update) this idea's row in `content/INDEX.md` — date, slug, title/thesis, which renders exist, visual (— if none yet), and status (SHIP once all renders scored ≥85). Keep it newest-first.
+
 ## When done
 
 Report a short summary: the folder path, the four files written, each render's character count vs its Length Target, and each Scorer verdict. Show the LinkedIn render in full. Do not claim SHIP unless the Scorer actually returned ≥85 — show the real scores.

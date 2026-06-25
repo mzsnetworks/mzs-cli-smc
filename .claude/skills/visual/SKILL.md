@@ -12,4 +12,6 @@ Run the **VISUAL agent**. Read `agents/VISUAL.md`, `rules/SHARED.md`, `rules/VOI
 3. Default engine: **Canva via the Canva MCP** — create the design from the closest brand template, apply per-slide copy, export the PNG/PDF into the post's idea folder. Keep style identical across slides.
 4. Only use the Gemini whiteboard image prompt if the user wants the hand-drawn marker look.
 
+After exporting, update the post's row in `content/INDEX.md` — set the **Visual** column to what you produced (carousel / infographic / reel).
+
 On-demand only — never a pipeline gate. Strip creator-vanity footers unless the user wants a CTA slide. No fabricated stats on a slide.
