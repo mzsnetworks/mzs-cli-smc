@@ -1,6 +1,6 @@
 # Carousel build spec — ai-makes-us-judges
 
-8 slides · 1080×1350 (4:5). Brand + palette system from `rules/VOICE.md`.
+8 slides · 1080×1350 (4:5).
 
 ## How to generate (read first — paste this whole file)
 
@@ -16,7 +16,7 @@ Generate these as **individual images — one separate image per slide**, each *
 - MZS Networks · mzsnetworks.com · @mzsnetworks
 - Slide mark: no logo image — small **`@mzsnetworks`** text in cream, bottom-left on every slide (add `mzsnetworks.com` on the CTA)
 - Fonts: **Cormorant Garamond** Medium/500 (titles ~32) · **Lato** Regular/400 (body ~18)
-- No fabricated brands/URLs/events. Slide 4 stats are real (Gartner, cited in master.md).
+- No fabricated brands/URLs/events. Slide 4 stats are real (Gartner) — render them exactly as written.
 
 | # | Type | Title (Cormorant Garamond, cream) | Body (Lato, cream) | Red accent (only this) |
 |---|------|--------------------------|----------------------|------------------------|
@@ -33,4 +33,4 @@ Generate these as **individual images — one separate image per slide**, each *
 
 **Cover (1) + CTA (8):** distinct from body — larger title, a red headline or red block for emphasis. Keep red ≤10% of the slide even here.
 
-**Build:** start a blank 1080×1350 carousel in Canva on brand kit `kAFgplDByUM`, apply Cormorant Garamond (titles) + Lato (body), set the `@mzsnetworks` text mark, follow the table. Keep red minimal — navy + cream + whitespace carry it.
+**If building by hand (Canva, etc.):** blank 1080×1350 canvas, apply Cormorant Garamond (titles) + Lato (body), set the `@mzsnetworks` text mark, follow the table. Keep red minimal — navy + cream + whitespace carry it.

@@ -50,14 +50,14 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
 ```
 # Carousel build spec — <slug>
 
-8 slides · 1080×1350 (4:5). Brand from rules/VOICE.md.
+8 slides · 1080×1350 (4:5).
 
 ## How to generate (read first — paste this whole file)
 Generate as individual images, one per slide, 1080×1350 (4:5). No grid/collage.
 One slide at a time; wait for "next". Identical style across slides. Proof all text.
 
-**Brand**
-- Colors + palette system / Fonts / Identity / Slide mark (@handle text) (copied from VOICE.md)
+**Brand** (bake the actual values in — do NOT reference VOICE.md by path)
+- Colors + palette system · Fonts · Identity · Slide mark (@handle text)
 
 | # | Type | Title (title font) | Body (body font) | Notes |
 |---|------|--------------------|-------------------|-------|
@@ -73,6 +73,7 @@ One slide at a time; wait for "next". Identical style across slides. Proof all t
 
 - **On-demand only.** Not a pipeline stage.
 - **No image generation.** You output a markdown spec, never a PNG. Don't call Canva/image tools to render.
+- **Self-contained spec.** Bake the actual brand values into the spec. Never reference internal repo paths (`rules/VOICE.md`, `master.md`) or tool-specific IDs (Canva kit ids) inside it — the file gets pasted into external tools where those mean nothing.
 - ≤15 words of body per slide — legibility beats completeness.
 - Cover + CTA slides are visually distinct from body slides.
 - The CTA uses the real handle/URL from `rules/VOICE.md`. No fabricated identity, ever.
