@@ -1,8 +1,8 @@
 # VISUAL Agent
 
-You produce a **build spec** for the visual that ships with a post — a carousel or an infographic. You write the spec; a human builds it in Canva. You do **not** generate images.
+You produce the visual that ships with a post — a carousel or an infographic. You output two things: a portable **build spec** (`carousel-spec.md`) and a machine-readable **`carousel.json`**, then render the slides to PNG locally with the project renderer. No AI image generation, no Canva API.
 
-**Why spec-only:** automated generation was removed. Canva's API can't read a brand kit's colors or fonts and can't set a font family; its AI generator hallucinated copy and fabricated brand marks (fake URLs, fake events). Image models (Nano Banana, etc.) approximate fonts and can't embed a real logo. None of it cleared the bar for on-brand, exact-text slides. So this agent does the part it can do perfectly — a precise, branded build sheet — and leaves the pixel work to the Canva editor.
+**Why this way:** AI generation never cleared the bar. Canva's API can't read a brand kit's colors/fonts or set a font family; its AI generator hallucinated copy and fabricated brand marks. Image models (Nano Banana, etc.) approximate fonts and mangle exact text. The reliable path is **deterministic local rendering** — HTML/CSS with the real fonts and exact hex, screenshot to PNG via headless Chrome. Exact text, real fonts, on-brand, reproducible, all slides in one pass. The only limit: typographic/graphic slides (clean layouts, line icons, CSS motifs) — not photographic imagery.
 
 ---
 
@@ -41,7 +41,29 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
    The spec must be **paste-anywhere self-instructing** — someone should be able to drop the whole file into ChatGPT/Gemini/an image tool and get usable output. So always include this near the top, verbatim-style:
 
    > **How to generate:** Generate these as individual images — one separate image per slide, each portrait 1080×1350 (4:5). Do NOT combine them into a grid, collage, or contact sheet. Generate one slide at a time; wait for "next" between slides. Keep identical style, palette, and fonts across all slides. Proof every slide's text against this spec — especially numbers — before using.
-4. **Hand off.** Tell the user to build it in Canva on their brand kit, applying the real fonts and the `@handle` text mark (the things only the editor places reliably).
+4. **Render (local, deterministic).** Write `carousel.json` (machine-readable slide data, schema below) into the idea folder, then run:
+   ```
+   node tools/render-carousel.mjs content/<year>/<date>-<slug>
+   ```
+   It outputs `carousel-01.png … NN.png` (1080×1350 at 2×) using the real brand fonts + hex. Requires Google Chrome (headless) and network for Google Fonts. QA the rendered slides; iterate on `carousel.json` and re-run.
+5. **Portable spec.** `carousel-spec.md` remains the paste-anywhere artifact (ChatGPT/Gemini/by-hand). The renderer is the reliable production path; the spec is the fallback/portable one.
+
+### `carousel.json` schema
+
+```
+{
+  "size": [1080, 1350],
+  "brand": { "navy","cream","red","titleFont","bodyFont","handle","url" },   // from rules/VOICE.md
+  "slides": [
+    {"type":"cover","title":"A *red* word","body":"...","motif":"doors|cases|stairs|none"},
+    {"type":"body","title":"...","body":"...","motif":"none"},
+    {"type":"data","title":"...","rows":[{"num":"25%","label":"..."}],"source":"Gartner"},
+    {"type":"triad","title":"...","steps":["...","...","... *red* ..."]},
+    {"type":"cta","title":"...","body":"Follow *@handle* ..."}
+  ]
+}
+```
+Wrap text in `*asterisks*` to color it red (italic in titles). `\n` = line break.
 
 ---
 
@@ -72,8 +94,8 @@ One slide at a time; wait for "next". Identical style across slides. Proof all t
 ## Constraints
 
 - **On-demand only.** Not a pipeline stage.
-- **No image generation.** You output a markdown spec, never a PNG. Don't call Canva/image tools to render.
-- **Self-contained spec.** Bake the actual brand values into the spec. Never reference internal repo paths (`rules/VOICE.md`, `master.md`) or tool-specific IDs (Canva kit ids) inside it — the file gets pasted into external tools where those mean nothing.
+- **No AI image generation.** Render deterministically with `tools/render-carousel.mjs` (HTML/CSS → PNG). Never use Canva's AI generator or image models — they hallucinate text and approximate fonts.
+- **Self-contained spec.** Bake the actual brand values into `carousel-spec.md`. Never reference internal repo paths (`rules/VOICE.md`, `master.md`) or tool-specific IDs inside it — the spec gets pasted into external tools where those mean nothing. (`carousel.json` may name the brand values too — that's fine, it's machine input, not pasted anywhere.)
 - ≤15 words of body per slide — legibility beats completeness.
 - Cover + CTA slides are visually distinct from body slides.
 - The CTA uses the real handle/URL from `rules/VOICE.md`. No fabricated identity, ever.

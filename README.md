@@ -20,7 +20,7 @@ One idea flows through a pipeline and comes out as three platform-native posts.
                                           |  (on FAIL) |
                                           +-----<------+
 
-On-demand (not gates):  Voice (setup)   Formatter   Visual (build spec)   Reels
+On-demand (not gates):  Voice (setup)   Formatter   Visual (render carousel)   Reels
 ```
 
 The **front-end** (Research → Ideation → Hook) runs only when you don't already have an idea. The **core** (Writer → Scorer) takes one idea to three publish-ready posts. **On-demand** agents are run when a post calls for them.
@@ -42,7 +42,7 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Scorer** | core | no | Score each render 0–100 and gate publish (SHIP/REVISE/REWORK) |
 | **Voice** | on-demand | yes (`rules/VOICE.md`) | Build the author voice profile (run once at setup) |
 | **Formatter** | on-demand | yes | Impose a named framework (PAS/AIDA/BAB/STAR/SLAY) on a draft |
-| **Visual** | on-demand | yes (spec file) | Write a carousel/infographic build spec (copy + brand) to build by hand in Canva |
+| **Visual** | on-demand | yes (spec + PNGs) | Write a carousel spec + `carousel.json`, then render on-brand PNGs locally (HTML→PNG) |
 | **Reels** | on-demand | yes (script) | Write a 30–45s short-form video script from an idea |
 
 Each agent file in `agents/` ends with a **Usage** block — the exact prompt to run it. The how-to below stitches them into workflows.
@@ -97,7 +97,7 @@ After a post exists, ask for a carousel:
 
 > **Make a carousel for the self-inflicted-outages post.**
 
-Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then writes a **build spec** (`carousel-spec.md`) into the post folder — exact copy, your brand colors, fonts, and logo placement. You build the actual slides in Canva from that spec (image generation proved too unreliable for exact text + real fonts, so the system hands you a precise blueprint instead). For a video:
+Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then writes `carousel-spec.md` + `carousel.json` and **renders the slides locally** to `carousel-01.png … 08.png` — on-brand (your navy/cream/red, real Cormorant/Lato), exact text, all at once. Deterministic HTML→PNG, no AI image tool. (The `carousel-spec.md` is also portable — paste it into ChatGPT/Canva if you'd rather build there.) For a video:
 
 > **Write me a Reel script from that post.**
 

@@ -6,3 +6,7 @@
 !.claude/commands/
 !.claude/skills/
 .claude/settings.local.json
+
+# Scratch / render temp
+.build/
+**/.carousel-html/

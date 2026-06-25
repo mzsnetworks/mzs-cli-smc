@@ -1,0 +1,30 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    { "type": "cover", "title": "NetOps vs\nNetDevOps is\nthe *wrong question*", "body": "What is a network engineer\nwhen the CLI isn't the job?", "motif": "doors" },
+    { "type": "body", "title": "Same\ndestination,\ndifferent doors", "body": "NetOps automates operations.\nNetDevOps learns the network.\nOne room, two suitcases.", "motif": "cases" },
+    { "type": "body", "title": "The label\nwas always\na *proxy*", "body": "The real question: what is an engineer when typing commands ends?", "motif": "none" },
+    { "type": "data", "title": "The data\nanswers it", "rows": [
+      { "num": "25%", "label": "of configs AI-written by 2027" },
+      { "num": "70%", "label": "lean on AI for Day-2" },
+      { "num": "44% *→* 65%", "label": "automation in two years" }
+    ], "source": "Gartner" },
+    { "type": "body", "title": "Value moves\n*up the stack*", "body": "From typing commands to designing the system that types them.", "motif": "stairs" },
+    { "type": "body", "title": "*Judgment*\nbeats\ngeneration", "body": "The rare skill: knowing when the AI is confidently wrong.", "motif": "none" },
+    { "type": "triad", "title": "Operators →\nEngineers →\n*Judges*", "steps": [
+      "The CLI made us operators.",
+      "Code made us engineers.",
+      "AI makes us *judges*."
+    ] },
+    { "type": "cta", "title": "When the machine\nwrites the config —\ncan you tell if\nit's right?", "body": "Follow *@mzsnetworks* for more on\nnetwork automation + AI" }
+  ]
+}
