@@ -28,6 +28,7 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 | Platform | Sweet spot | Hard cap | Fold (hook must land before) |
 |----------|-----------|----------|------------------------------|
 | LinkedIn | ~1,300–2,000 chars (~200–350 words) | ~3,000 chars | ~210 chars (~3 lines) |
+| Facebook | ~400–800 chars | none (63k) | ~477 chars desktop (~400 mobile) |
 | Instagram | ~125–220 chars caption (more if carousel) | ~2,200 chars | ~125 chars (first line) |
 | X — single | ~240–270 chars | 280 chars | whole post visible |
 | X — thread | each tweet ≤280, one idea per tweet | 280/tweet | tweet 1 is the hook |

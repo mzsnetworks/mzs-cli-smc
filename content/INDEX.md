@@ -1,6 +1,6 @@
 # Content Index
 
-Every idea, newest first. The **slug** is how you reference a post ("make a carousel for `plug-and-play-wifi-myth`"). Maintained automatically by `/post` and `/adapt` — don't hand-edit unless you're fixing it.
+Every idea, newest first. The **slug** is how you reference a post ("make a carousel for `plug-and-play-wifi-myth`", "/publish `plug-and-play-wifi-myth`"). Maintained automatically by `/post`, `/adapt`, and `/publish` — don't hand-edit unless you're fixing it.
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
@@ -11,8 +11,8 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 ---
 
 **Legend**
-- **Renders:** LI = linkedin.md, IG = instagram.md, X = x.md present
+- **Renders:** LI = linkedin.md, FB = facebook.md, IG = instagram.md, X = x.md present
 - **Visual:** `carousel-spec` / `infographic-spec` / `reel` written into the folder, or `—` if none
-- **Status:** DRAFT (master only) · ADAPTED (renders written) · SHIP (all renders scored ≥85) · PUBLISHED (posted live)
+- **Status:** DRAFT (master only) · ADAPTED (renders written) · SHIP (all renders scored ≥85) · PUBLISHED (posted live via `/publish`; details in the folder's `published.md`)
 
 Path layout: `content/<year>/<YYYY-MM-DD>-<slug>/`

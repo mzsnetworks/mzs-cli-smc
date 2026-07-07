@@ -12,6 +12,9 @@ You edit the file directly — append only, never touch the body.
 - **2–3** hashtags, technical, PascalCase, at the very end.
 - Specific to the post's subject (`#NetDevOps #NetworkAutomation`). No generic or career-bait tags.
 
+### Facebook
+- **0–2** maximum — hashtags barely move reach on Facebook. Only when natural (`#NetDevOps`); zero is a valid choice.
+
 ### Instagram
 - **A block of 10–15**, kept separate from the caption (after a `---` or as the first comment).
 - Mix niche + broader reach tags. Instagram discovery rewards breadth, so reach tags (`#TechFuture #ITCareers`) are allowed here — but keep them technical-adjacent, not spam.
@@ -40,6 +43,7 @@ You edit the file directly — append only, never touch the body.
 ## Calibration (from the reference set)
 
 - LinkedIn: `#NetDevOps #NetworkAutomation`
+- Facebook: `#NetDevOps` (or none)
 - Instagram: `#NetworkEngineering #NetDevOps #NetworkAutomation #AIOps #NetOps #DevOps #CloudNetworking #Python #ITCareers #TechFuture #Networking #AIinTech #InfrastructureAsCode #CCIE #TechLeadership`
 - X: `#NetDevOps #NetworkAutomation`
 

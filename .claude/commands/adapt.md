@@ -1,5 +1,5 @@
 ---
-description: Re-render an existing fact-checked master into LinkedIn, Instagram, and X (skips drafting)
+description: Re-render an existing fact-checked master into LinkedIn, Facebook, Instagram, and X (skips drafting)
 argument-hint: <slug or path of an existing idea folder>
 ---
 
@@ -13,7 +13,7 @@ Target idea: **$ARGUMENTS**
 
 2. **Confirm the master is clean.** Apply the FACTCHECK agent to `master.md`. If FAIL, stop and report — do not adapt an unverified master.
 
-3. **Platform Adapter** → (re)write `linkedin.md`, `instagram.md`, `x.md` from the master, preserving the spine and the author's voice (`rules/VOICE.md` if present), each at its platform Length Target.
+3. **Platform Adapter** → (re)write `linkedin.md`, `facebook.md`, `instagram.md`, `x.md` from the master, preserving the spine and the author's voice (`rules/VOICE.md` if present), each at its platform Length Target.
 
 4. **Editor** (per render) → tighten to the platform sweet spot.
 

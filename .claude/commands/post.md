@@ -1,5 +1,5 @@
 ---
-description: Take one idea through the full pipeline to three publish-ready posts (LinkedIn, Instagram, X)
+description: Take one idea through the full pipeline to four publish-ready posts (LinkedIn, Facebook, Instagram, X)
 argument-hint: <topic, one-liner, or pasted notes>
 ---
 
@@ -17,7 +17,7 @@ Follow `agents/PIPELINE.md` exactly. Apply each agent's rules from its file in `
 
 3. **Factcheck** → verify every stat against a cited source. Output PASS/FAIL. **If FAIL, loop back to the Writer and fix before going on** — never adapt an unverified master.
 
-4. **Platform Adapter** → write `linkedin.md`, `instagram.md`, `x.md` beside the master, preserving the spine and voice, each at its platform Length Target.
+4. **Platform Adapter** → write `linkedin.md`, `facebook.md`, `instagram.md`, `x.md` beside the master, preserving the spine and voice, each at its platform Length Target.
 
 5. **Editor** (per render) → tighten to the platform sweet spot, keep hook/CTA/landing.
 
@@ -29,6 +29,6 @@ Follow `agents/PIPELINE.md` exactly. Apply each agent's rules from its file in `
 
 ## When done
 
-Report a short summary: the folder path, the four files written, each render's character count vs its Length Target, and each Scorer verdict. Show the LinkedIn render in full. Do not claim SHIP unless the Scorer actually returned ≥85 — show the real scores.
+Report a short summary: the folder path, the five files written, each render's character count vs its Length Target, and each Scorer verdict. Show the LinkedIn render in full. Do not claim SHIP unless the Scorer actually returned ≥85 — show the real scores. Mention that `/publish <slug>` takes it live when ready.
 
 If the user passed no idea (`$ARGUMENTS` is empty), ask them for the topic or notes before starting.
