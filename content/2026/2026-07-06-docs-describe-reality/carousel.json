@@ -1,0 +1,48 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    { "type": "cover",
+      "title": "The most dangerous\ndocument is the one\nthat's *confidently wrong*",
+      "body": "Your network diagram, probably.",
+      "motif": "cases" },
+    { "type": "body",
+      "title": "Diagrams show\n*design day*",
+      "body": "Production diverged the week it went live.",
+      "motif": "none" },
+    { "type": "body",
+      "title": "The drift is invisible",
+      "body": "The 11pm emergency change.\nThe \"temporary\" VLAN, three years old.\nThe failover rewired mid-outage — never redrawn.",
+      "motif": "none" },
+    { "type": "body",
+      "title": "Wrong docs beat no docs?\n*Backwards.*",
+      "body": "No docs: you verify everything. Slow, but honest.\nWrong docs: you trust.",
+      "motif": "none" },
+    { "type": "body",
+      "title": "2am, mid-outage",
+      "body": "You walk the \"documented\" failover path\nwhile the real one *burns*.",
+      "motif": "none" },
+    { "type": "body",
+      "title": "The fix isn't\ndrawing discipline",
+      "body": "Generate docs *from* the network, not about it.\nConfigs are evidence. Diagrams are memories.",
+      "motif": "none" },
+    { "type": "triad",
+      "title": "Where truth lives",
+      "steps": [
+        "Intent lives in diagrams",
+        "Decisions live in configs",
+        "*Truth lives only in the running network*"
+      ] },
+    { "type": "cta",
+      "title": "Document\nthe truth",
+      "body": "What did a \"current\" diagram cost you at 2am?\nFollow *@mzsnetworks* for operational reality." }
+  ]
+}
