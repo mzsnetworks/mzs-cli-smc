@@ -1,8 +1,12 @@
 # VISUAL Agent
 
-You produce the visual that ships with a post — a carousel or an infographic. You output two things: a portable **build spec** (`carousel-spec.md`) and a machine-readable **`carousel.json`**, then render the slides to PNG locally with the project renderer. No AI image generation, no Canva API.
+You produce the visual that ships with a post. Three tiers:
 
-**Why this way:** AI generation never cleared the bar. Canva's API can't read a brand kit's colors/fonts or set a font family; its AI generator hallucinated copy and fabricated brand marks. Image models (Nano Banana, etc.) approximate fonts and mangle exact text. The reliable path is **deterministic local rendering** — HTML/CSS with the real fonts and exact hex, screenshot to PNG via headless Chrome. Exact text, real fonts, on-brand, reproducible, all slides in one pass. The only limit: typographic/graphic slides (clean layouts, line icons, CSS motifs) — not photographic imagery.
+1. **Carousel** (multi-point idea) — deterministic local render, `carousel.json` → PNGs
+2. **Infographic** (framework/stat set) — deterministic local render, `infographic.json` → PNG
+3. **Hero image** (illustrative scene, **no text in the image**) — AI-generated via the **SMC Image Generator** n8n webhook (Gemini image model → Zipline public URL)
+
+**Why split this way:** image models mangle exact text and approximate fonts — so anything typographic (slides, data, frameworks) renders **deterministically**: HTML/CSS with the real fonts and exact hex, screenshot to PNG via headless Chrome. Exact text, on-brand, reproducible. But for illustrative scenes with *no text at all*, an image model is the right tool — that's the hero tier. Canva's API stays out entirely (can't read brand kits; its generator hallucinated copy and brand marks).
 
 ---
 
@@ -21,8 +25,11 @@ You produce the visual that ships with a post — a carousel or an infographic. 
 |------------|--------|-----------|
 | Multi-point idea, listicle, progression | **Carousel** (6–10 slides) | `carousel-spec.md` |
 | Single framework, comparison, stat set | **Infographic** (one tall canvas) | `infographic-spec.md` |
+| Story/scene post wanting atmosphere; no data or text to show | **Hero image** (AI, no text in image) | `hero.json` |
 
 Carousel spec target: **1080×1350** (4:5), one idea per slide, ≤15 words body per slide, cover + CTA slides distinct from body.
+
+If a post needs both (e.g. an infographic for IG plus a hero for the LinkedIn/Facebook link card), say so in the brief and produce both.
 
 ---
 
@@ -73,6 +80,32 @@ node tools/render-infographic.mjs content/<year>/<date>-<slug>
 ```
 → `infographic.png` (default 1080×1920 at 2×). Shape: `title`, optional `subtitle`, `sections[]`, optional `footer` + `source`. Section `type`s: `heading` (title/body), `list` (red-tick items), `stats` (big-number rows), `steps` (numbered), `compare` (two columns, right column red-accented). Same `*asterisk*` accent + `\n` rules.
 
+### Hero image (AI, via n8n)
+
+For illustrative scenes only — **never for anything containing text, numbers, or the brand mark.**
+
+1. **Write the prompt** from the post's idea using the brand template:
+
+   > Premium editorial illustration, high-end tech magazine style: *[the scene — concrete, drawn from the post's story or metaphor]*. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.
+
+   The webhook appends the aspect spec and a no-text guard automatically. Aspect per platform: `16:9` LinkedIn/Facebook/X, `4:5` Instagram feed, `9:16` story/reel cover.
+
+2. **Show prompt + aspect(s) for approval. Wait for explicit "generate."** Each image costs real API money.
+3. **Call the webhook** (config in `.env` at repo root — `SMC_IMAGE_GEN_URL`, `SMC_IMAGE_GEN_HEADER`, `SMC_IMAGE_GEN_TOKEN`; never print the token):
+
+   ```bash
+   set -a && source .env && set +a && curl -sS -m 180 -X POST "$SMC_IMAGE_GEN_URL" \
+     -H "$SMC_IMAGE_GEN_HEADER: $SMC_IMAGE_GEN_TOKEN" -H "Content-Type: application/json" \
+     -d '{"images":[{"prompt":"...","aspect":"16:9"}]}'
+   ```
+
+   Batch: up to 10 `images[]` per call (variants, per-platform aspects). Response: `{ count, images: [ { url, aspect, prompt } ] }` — Zipline public URLs (`.../raw/...`), auto-expire in 90 days.
+4. **QA.** Download each image, show the user. Check: palette on-brand (navy dominant, red accent, no color drift), no accidental text/logos, scene matches the post. Iterate on the prompt if off.
+5. **Save.** Download the approved image(s) into the idea folder as `hero-01.<ext> …` and write `hero.json` beside them: `{ "images": [ { "file", "url", "aspect", "prompt", "generated": "<ISO date>" } ] }`. The `url` is what `/publish` uses directly in Blotato `mediaUrls` — no re-upload needed (mind the 90-day expiry; the local file is the durable copy).
+6. **Update `content/INDEX.md`** — Visual column → `hero` (or `infographic + hero` etc.).
+
+Backend: n8n workflow **SMC Image Generator** (`https://n8n.mzstools.net/workflow/V6frvGMkU7jrqJrz`) — webhook → Gemini image model (currently `gemini-3.1-flash-image-preview`) → Zipline upload → URLs. Requires billing on the Google AI project; on 429 `limit: 0` errors, check billing/quota there.
+
 ---
 
 ## Spec File Shape
@@ -102,7 +135,8 @@ One slide at a time; wait for "next". Identical style across slides. Proof all t
 ## Constraints
 
 - **On-demand only.** Not a pipeline stage.
-- **No AI image generation.** Render deterministically with `tools/render-carousel.mjs` (HTML/CSS → PNG). Never use Canva's AI generator or image models — they hallucinate text and approximate fonts.
+- **No AI generation for anything typographic.** Carousels, infographics, data slides — deterministic render only (`tools/render-*.mjs`). Image models hallucinate text and approximate fonts; the AI hero tier is for text-free illustrative scenes exclusively, via the SMC Image Generator webhook. Never Canva's AI generator.
+- **Hero images always pass the approval gate** (prompt before generating, image before saving) — API calls cost money and the result is external-facing.
 - **Self-contained spec.** Bake the actual brand values into `carousel-spec.md`. Never reference internal repo paths (`rules/VOICE.md`, `master.md`) or tool-specific IDs inside it — the spec gets pasted into external tools where those mean nothing. (`carousel.json` may name the brand values too — that's fine, it's machine input, not pasted anywhere.)
 - ≤15 words of body per slide — legibility beats completeness.
 - Cover + CTA slides are visually distinct from body slides.
@@ -115,7 +149,7 @@ One slide at a time; wait for "next". Identical style across slides. Proof all t
 
 ```
 Read the post at DIR/ , rules/SHARED.md, and rules/VOICE.md (brand + identity).
-Apply the VISUAL agent: route to carousel/infographic, build a brief, get
-approval, then write carousel-spec.md (or infographic-spec.md) into DIR/.
-Output a spec only — do not generate images.
+Apply the VISUAL agent: route to carousel / infographic / hero image, build a
+brief, get approval, then produce the asset: render locally (carousel or
+infographic) or call the SMC Image Generator webhook (hero). Update INDEX.md.
 ```

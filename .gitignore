@@ -7,6 +7,9 @@
 !.claude/skills/
 .claude/settings.local.json
 
+# Secrets — never commit
+.env
+
 # Scratch / render temp
 .build/
 **/.carousel-html/

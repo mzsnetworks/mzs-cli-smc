@@ -42,7 +42,7 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Scorer** | core | no | Score each render 0–100 and gate publish (SHIP/REVISE/REWORK) |
 | **Voice** | on-demand | yes (`rules/VOICE.md`) | Build the author voice profile (run once at setup) |
 | **Formatter** | on-demand | yes | Impose a named framework (PAS/AIDA/BAB/STAR/SLAY) on a draft |
-| **Visual** | on-demand | yes (spec + PNGs) | Write a carousel spec + `carousel.json`, then render on-brand PNGs locally (HTML→PNG) |
+| **Visual** | on-demand | yes (spec + images) | Carousel/infographic rendered on-brand locally (HTML→PNG), or a text-free AI hero image via the n8n image webhook |
 | **Reels** | on-demand | yes (script) | Write a 30–45s short-form video script from an idea |
 | **Publish** | on-demand | yes (`published.md`) | Post SHIP renders live via Blotato — explicit confirmation gate, never automatic |
 
@@ -98,7 +98,13 @@ After a post exists, ask for a carousel:
 
 > **Make a carousel for the self-inflicted-outages post.**
 
-Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then writes `carousel-spec.md` + `carousel.json` and **renders the slides locally** to `carousel-01.png … 08.png` — on-brand (your navy/cream/red, real Cormorant/Lato), exact text, all at once. Deterministic HTML→PNG, no AI image tool. (The `carousel-spec.md` is also portable — paste it into ChatGPT/Canva if you'd rather build there.) For a video:
+Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then writes `carousel-spec.md` + `carousel.json` and **renders the slides locally** to `carousel-01.png … 08.png` — on-brand (your navy/cream/red, real Cormorant/Lato), exact text, all at once. Deterministic HTML→PNG, no AI image tool. (The `carousel-spec.md` is also portable — paste it into ChatGPT/Canva if you'd rather build there.)
+
+Want atmosphere instead of data? Ask for a **hero image**:
+
+> **Make a hero image for the operational-state post.**
+
+Claude writes a brand-locked prompt (navy/cream/red, no text in the image), shows it for approval, then generates it through the n8n **SMC Image Generator** webhook (Gemini → your Zipline host) and saves it into the post folder with its public URL — ready for `/publish`. AI is used *only* for these text-free scenes; anything with words or numbers stays on the deterministic renderer. For a video:
 
 > **Write me a Reel script from that post.**
 
@@ -113,6 +119,7 @@ Claude builds a slide-by-slide plan, shows it to you, waits for your "go," then 
 | Find trending stories | "What's trending in [niche] this week?" |
 | Punch up a weak opener | "Give me 6 hook options for [topic]." |
 | Make a carousel/graphic | "Make a carousel for the [slug] post." |
+| Make an AI hero image | "Make a hero image for the [slug] post." |
 | Make a video script | "Write a Reel script from the [slug] post." |
 | Re-shape a rambling draft | "Rewrite this as a PAS post: [paste]." |
 | Just one platform | "Write only a LinkedIn post about [topic]." |

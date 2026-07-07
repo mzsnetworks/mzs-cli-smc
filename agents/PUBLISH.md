@@ -40,9 +40,9 @@ Before publishing anything, ask (one question round):
 
 ## Media
 
-- **Instagram cannot post text-only.** If the folder has `carousel-01.png…NN.png`, publish them all as an IG carousel (multiple `mediaUrls`, in order). If it has `infographic.png`, publish that single image. If it has neither, run the **Visual agent first** (its normal approval gate applies), render, then publish.
-- **LinkedIn / Facebook:** attach the visual when one exists (infographic, or `carousel-01.png` as the cover) — visuals outperform text-only. Text-only is fine if no visual exists.
-- **X:** attach the infographic or cover image on the single-post version if one exists; threads go text-only unless the user asks.
+- **Instagram cannot post text-only.** If the folder has `carousel-01.png…NN.png`, publish them all as an IG carousel (multiple `mediaUrls`, in order). If it has `infographic.png` or a hero, publish that single image. If it has none, run the **Visual agent first** (its normal approval gate applies), produce the asset, then publish.
+- **LinkedIn / Facebook:** attach the visual when one exists (hero, infographic, or `carousel-01.png` as the cover) — visuals outperform text-only. Text-only is fine if no visual exists.
+- **X:** attach the hero, infographic, or cover image on the single-post version if one exists; threads go text-only unless the user asks.
 
 **Upload flow (local PNGs):** for each file, call `blotato_create_presigned_upload_url` with the filename, then upload the raw bytes:
 
@@ -51,6 +51,8 @@ curl -X PUT "<presignedUrl>" --data-binary "@<local_file_path>"
 ```
 
 Use the returned `publicUrl` in `mediaUrls`. Never pass a local path to `blotato_create_post`.
+
+**Hero shortcut:** if the folder's `hero.json` holds a Zipline URL (`https://zipline.mzstools.net/raw/...`), use it directly in `mediaUrls` — it's already public, no upload needed. Zipline files expire after 90 days; if the URL 404s, re-upload the local `hero-NN.<ext>` via the presigned flow instead.
 
 ---
 

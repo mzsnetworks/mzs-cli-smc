@@ -28,7 +28,7 @@ One idea flows through a pipeline and comes out as four platform-native posts:
 - **Hashtag** applies per-platform hashtag policy
 - **Scorer** scores each render and gates publish (SHIP / REVISE / REWORK)
 
-The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (writes a carousel spec + `carousel.json`, then renders on-brand PNGs locally via `tools/render-carousel.mjs`; deterministic, no AI image generation), **Reels** (short-form video script), **Publish** (post SHIP renders live via Blotato — asks platforms/LinkedIn target/timing/X shape every run, shows final text, publishes only on explicit approval, then writes `published.md` and flips the INDEX row to PUBLISHED). Full mechanics in `agents/PIPELINE.md`.
+The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (three tiers: carousel + infographic render deterministically on-brand via `tools/render-*.mjs` — never AI for anything typographic; text-free illustrative **hero images** generate via the SMC Image Generator n8n webhook, creds in `.env`), **Reels** (short-form video script), **Publish** (post SHIP renders live via Blotato — asks platforms/LinkedIn target/timing/X shape every run, shows final text, publishes only on explicit approval, then writes `published.md` and flips the INDEX row to PUBLISHED). Full mechanics in `agents/PIPELINE.md`.
 
 ### How the system is invoked
 

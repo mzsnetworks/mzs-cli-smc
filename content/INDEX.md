@@ -12,7 +12,7 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 **Legend**
 - **Renders:** LI = linkedin.md, FB = facebook.md, IG = instagram.md, X = x.md present
-- **Visual:** `carousel-spec` / `infographic-spec` / `reel` written into the folder, or `—` if none
+- **Visual:** `carousel` / `infographic` / `hero` / `reel` produced in the folder, or `—` if none
 - **Status:** DRAFT (master only) · ADAPTED (renders written) · SHIP (all renders scored ≥85) · PUBLISHED (posted live via `/publish`; details in the folder's `published.md`)
 
 Path layout: `content/<year>/<YYYY-MM-DD>-<slug>/`
