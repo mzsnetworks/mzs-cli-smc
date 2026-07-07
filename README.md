@@ -108,6 +108,26 @@ Claude writes a brand-locked prompt (navy/cream/red, no text in the image), show
 
 > **Write me a Reel script from that post.**
 
+### Step 4 — publish it (goes live, so it always asks first)
+
+When every render says SHIP:
+
+> **/publish self-inflicted-outages**   *(or just: "publish the self-inflicted-outages post")*
+
+Claude walks through a fixed script — nothing goes out without you:
+
+1. **Checks the gate.** Status must be SHIP. Missing a render (older posts have no `facebook.md`)? It backfills that render first, scores it, then continues.
+2. **Asks you four things**, once per run:
+   - *Which platforms?* (default: all four)
+   - *LinkedIn: personal profile or the MZS Networks company page?*
+   - *When?* now / Blotato's next free slot / a specific time ("tomorrow 9am" is fine — it converts)
+   - *X: the single post or the thread?*
+3. **Sorts out media.** Instagram can't post text-only — if the folder has a carousel or infographic it uses that; if not, it offers to make one (or a hero image) first. LinkedIn/Facebook/X get the visual attached when one exists.
+4. **Shows you the exact final text per platform** and stops. You type **"publish"** — that word is the trigger. Anything else, nothing posts.
+5. **Posts via Blotato**, reports each live URL (or failure, honestly), writes a `published.md` receipt into the post folder, and flips the post to **PUBLISHED** in `content/INDEX.md`.
+
+> 💡 Forgot what's ready to go? Ask **"what posts are ready to publish?"** — Claude reads `content/INDEX.md` and lists everything at SHIP.
+
 ### That's the whole thing
 
 | What you want | What you type |
@@ -124,6 +144,10 @@ Claude writes a brand-locked prompt (navy/cream/red, no text in the image), show
 | Re-shape a rambling draft | "Rewrite this as a PAS post: [paste]." |
 | Just one platform | "Write only a LinkedIn post about [topic]." |
 | Post it live | "/publish [slug]" — asks where/when, shows final text, waits for your OK |
+| Schedule instead of post now | "/publish [slug]" then answer "tomorrow 9am" (or "next free slot") when it asks |
+| Add Facebook to an older post | "/publish [slug]" backfills it — or "/adapt [slug]" re-renders all four |
+| See what you have | "What posts do I have?" / "What's ready to publish?" (reads `content/INDEX.md`) |
+| Re-render after editing the master | "/adapt [slug]" |
 
 You never have to name an agent or edit a rule file. Claude picks the right agents from what you ask.
 
@@ -136,7 +160,7 @@ And the on-demand capabilities are also installed as **skills** that fire automa
 
 ---
 
-### Worked example (start to finish)
+### Worked example 1 — writing a post (start to finish)
 
 Here's a real run, exactly as it happened, so you can see the shape of it.
 
@@ -149,9 +173,48 @@ Here's a real run, exactly as it happened, so you can see the shape of it.
 - Writes `linkedin.md` (1,662 chars), `instagram.md` (caption + 7 carousel slides + 15 hashtags), `x.md` (a 276-char single post **and** a 7-tweet thread).
 - Scores them: LinkedIn **97/100 SHIP**, Instagram **92 SHIP**, X **92 SHIP**.
 
-**You get:** four ready-to-publish files in one folder. Total effort on your side: one sentence.
+**You get:** ready-to-publish files in one folder. Total effort on your side: one sentence.
 
-> This exact post lives in `content/2026/2026-06-24-operational-state/` — open it to see what "done" looks like.
+> This exact post lives in `content/2026/2026-06-24-operational-state/` — open it to see what "done" looks like. (It predates the Facebook platform — a `/publish` or `/adapt` run adds `facebook.md` automatically.)
+
+### Worked example 2 — publishing (the shape of a run)
+
+**You type:**
+> /publish plug-and-play-wifi-myth
+
+**Claude:**
+- Reads `content/INDEX.md` → finds the folder, status SHIP, infographic present. Notices `facebook.md` is missing → renders it from the master, scores it (needs ≥85), shows it to you.
+- Asks: *platforms?* → you say "all four". *LinkedIn personal or company page?* → "personal". *When?* → "tomorrow 9am". *X: single or thread?* → "single".
+- Attaches `infographic.png` to LinkedIn/Facebook/X and uses it for Instagram (IG never posts text-only).
+- Shows the final text of all four posts, exactly as they'll appear. Waits.
+
+**You type:**
+> publish
+
+**Claude:** schedules all four for 9:00 tomorrow via Blotato, writes `published.md` into the folder (submission IDs + scheduled time), flips the INDEX row to **PUBLISHED**, and reports back. If any platform fails, it says so plainly with the error — no silent retries.
+
+### Worked example 3 — a hero image
+
+**You type:**
+> Make a hero image for the operational-state post.
+
+**Claude:**
+- Reads the post, drafts a brand-locked prompt — the scene (an engineer facing a rack that "passed every check"), navy `#161a45` dominant, cream highlights, thin red accents, *no text in the image* — and the aspect (16:9 for LinkedIn). Shows it to you and stops.
+- On your "generate": calls the n8n SMC Image Generator webhook (Gemini → your Zipline host), pulls the image back, and shows it.
+- You approve → it saves `hero-01.jpg` + `hero.json` (with the public URL) into the post folder and sets the INDEX Visual column to `hero`. That URL rides straight into `/publish`.
+
+---
+
+### If something doesn't work
+
+| Symptom | Cause / fix |
+|---------|-------------|
+| Carousel/infographic render fails | Google Chrome must be installed (the renderer runs it headless). Fonts need network (Google Fonts). |
+| Hero image call fails with 401/403 | `.env` missing or wrong — needs `SMC_IMAGE_GEN_URL`, `SMC_IMAGE_GEN_HEADER`, `SMC_IMAGE_GEN_TOKEN` (never committed; see `.gitignore`). |
+| Hero image fails with 429 "limit: 0" | The Google AI project behind the n8n Gemini credential lost billing/quota — image models aren't on the free tier. Fix billing in Google AI Studio. |
+| `/publish` can't find accounts | Blotato MCP disconnected — reconnect via `/mcp`. |
+| Instagram refuses to post | It needs media. Make a carousel, infographic, or hero first (Claude offers this automatically). |
+| A hero URL 404s at publish time | Zipline files expire after 90 days. The local `hero-*.jpg` in the post folder is the durable copy — Claude re-uploads it via Blotato automatically. |
 
 ---
 
