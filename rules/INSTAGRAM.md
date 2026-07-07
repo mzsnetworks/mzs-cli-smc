@@ -25,9 +25,9 @@ Layers on top of `SHARED.md`.
 
 ## Hashtags
 
-- **A block of 10–15**, kept separate from the caption (after a `---` or in the first comment).
-- Mix: niche-specific (`#NetDevOps #NetworkAutomation #AIOps`) + broader reach tags (`#Networking #ITCareers #TechFuture`). Instagram discovery rewards breadth, unlike LinkedIn.
-- Still technical-leaning. No spam tags unrelated to the content.
+- **Maximum 5** — Instagram (and Blotato's publish validation) caps at 5 hashtags per post; more gets the post rejected. Pick the 5 strongest.
+- Mix: mostly niche-specific (`#NetDevOps #NetworkAutomation`) + at most one broader reach tag. Prefer the narrowest accurate tags.
+- Kept at the end of the caption (or first comment). Still technical-leaning. No spam tags unrelated to the content.
 
 ## Calibration
 

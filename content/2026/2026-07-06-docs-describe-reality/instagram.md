@@ -21,7 +21,7 @@ What's the worst thing a "current" diagram ever did to you? 👇
 
 ---
 
-#NetworkEngineering #NetDevOps #NetworkAutomation #NetworkDocumentation #NetOps #DevOps #SysAdmin #ITInfrastructure #NetworkDesign #Troubleshooting #EngineeringLife #TechTruths #Networking #InfrastructureAsCode #ITCareers
+#NetworkEngineering #NetDevOps #NetworkAutomation #NetworkDocumentation #NetOps
 
 ## Carousel slide ideas (6)
 

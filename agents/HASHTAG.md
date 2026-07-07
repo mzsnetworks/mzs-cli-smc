@@ -16,8 +16,7 @@ You edit the file directly — append only, never touch the body.
 - **0–2** maximum — hashtags barely move reach on Facebook. Only when natural (`#NetDevOps`); zero is a valid choice.
 
 ### Instagram
-- **A block of 10–15**, kept separate from the caption (after a `---` or as the first comment).
-- Mix niche + broader reach tags. Instagram discovery rewards breadth, so reach tags (`#TechFuture #ITCareers`) are allowed here — but keep them technical-adjacent, not spam.
+- **Maximum 5** — Instagram (and Blotato's publish validation) rejects posts with more than 5 hashtags. Pick the 5 strongest, mostly niche-specific plus at most one reach tag.
 
 ### X
 - **1–2** maximum, technical, at the very end of the single post or final tweet. More reads as spam.
@@ -44,7 +43,7 @@ You edit the file directly — append only, never touch the body.
 
 - LinkedIn: `#NetDevOps #NetworkAutomation`
 - Facebook: `#NetDevOps` (or none)
-- Instagram: `#NetworkEngineering #NetDevOps #NetworkAutomation #AIOps #NetOps #DevOps #CloudNetworking #Python #ITCareers #TechFuture #Networking #AIinTech #InfrastructureAsCode #CCIE #TechLeadership`
+- Instagram: `#NetworkEngineering #NetDevOps #NetworkAutomation #AIOps #NetOps` (5 max — enforced at publish)
 - X: `#NetDevOps #NetworkAutomation`
 
 ---
