@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783396264648-0.jpg",
+      "aspect": "16:9",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a lone network engineer at 2am in a dark operations room, holding a large printed network diagram that glows faintly cream, while behind him the real equipment rack blazes with a completely different topology of glowing red cable paths — the mismatch is the story. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-07T04:31:00Z",
+      "use": "LinkedIn / Facebook / X attachment"
+    }
+  ]
+}
