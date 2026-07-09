@@ -1,4 +1,25 @@
-# Social Media Content System (claude-cli-smc)
+<div align="center">
+
+# 📡 Social Media Content System
+
+### `claude-cli-smc` · by [MZS Networks](https://mzsnetworks.com)
+
+**One idea → four platform-native posts → live.**
+_An editorial pipeline for technical social content, run entirely through Claude Code._
+
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)
+![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white)
+![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)
+![X](https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white)
+
+![License](https://img.shields.io/badge/license-MIT%20%2B%20brand%20notice-eb2027?style=flat)
+![Powered by Claude Code](https://img.shields.io/badge/powered%20by-Claude%20Code-D97757?style=flat)
+![Publish via Blotato](https://img.shields.io/badge/publish-Blotato-161a45?style=flat)
+![Fact discipline](https://img.shields.io/badge/every%20stat-cited%20or%20cut-F4EFE3?style=flat&labelColor=161a45)
+
+</div>
+
+---
 
 A multi-platform editorial system for technical social content. **Write one idea once, render it natively for LinkedIn, Facebook, Instagram, and X** — each with its own voice, length, emoji policy, and hashtag rules. Same message, platform-correct packaging. When it's ready, **`/publish` posts it live** through the connected Blotato accounts.
 

@@ -13,3 +13,11 @@
 # Scratch / render temp
 .build/
 **/.carousel-html/
+
+# Graphics — never store on GitHub (kept locally + hosted on Zipline/Blotato).
+# Specs (carousel.json / *-spec.md) stay tracked so any image is regenerable.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
