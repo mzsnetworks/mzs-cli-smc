@@ -71,6 +71,71 @@ Each agent file in `agents/` ends with a **Usage** block — the exact prompt to
 
 ---
 
+## Installation & Setup
+
+For a team standing this up fresh (e.g. a sister/parent company adopting the system). Most of it is markdown — the only real dependencies are Claude Code plus two connected services for visuals and publishing.
+
+### 1. Prerequisites
+
+| Need | For | Notes |
+|------|-----|-------|
+| **Claude Code** | everything | The agents run *inside* Claude Code. Open this repo folder in it. |
+| **Git** | clone + version the content | |
+| **Node.js 18+** | carousel/infographic rendering | Only if you produce those visuals. Runs `tools/render-*.mjs`. |
+| **Google Chrome** | the renderers (headless) | The deterministic HTML→PNG step drives headless Chrome. |
+| **Blotato account** (MCP) | `/publish` | Connect LinkedIn / Facebook / Instagram / X inside Blotato, then connect Blotato as an MCP server in Claude Code. Publishing is optional — the pipeline produces the copy without it. |
+| **n8n + image webhook** (MCP/HTTP) | AI **hero** images only | Optional. Carousels/infographics need *no* AI. See step 4. |
+
+There is nothing to `npm install` for the core system — the "code" is the markdown in `agents/`, `rules/`, and `.claude/`. Node is only for the visual renderers.
+
+### 2. Clone
+
+```bash
+git clone git@github.com:mzsnetworks/mzs-cli-smc.git
+cd mzs-cli-smc
+```
+
+Open the folder in Claude Code. It reads `CLAUDE.md` automatically and knows the whole system.
+
+### 3. Make it *your* brand (the rebrand step)
+
+This repo carries MZS Networks' identity. A new company replaces it in **one file plus two configs**:
+
+- **`rules/VOICE.md`** — the single source of truth for voice *and* brand. Edit the **Brand** section: company name, URL, `@handle`, the four hex colors, the palette rule, and the two fonts. The Visual agent reads only this. Then run the **Voice agent** (`build my voice`) to rewrite the author profile — pillars, defended opinions, war stories — for the new team.
+- **`content/`** — delete the example posts (or keep `content/2026/2026-06-24-ai-makes-us-judges/` as a calibration reference) and clear `content/INDEX.md` down to its header.
+- **`LICENSE`** — update the copyright holder and the reserved-brand NOTICE.
+
+Graphics are **not** stored in git (see `.gitignore`); each team generates its own on-brand assets.
+
+### 4. Secrets — `.env` (never commit)
+
+Only needed for the AI hero-image tier. Copy the template and fill in your own webhook:
+
+```bash
+cp .env.example .env    # then edit .env
+```
+
+```
+SMC_IMAGE_GEN_URL=https://<your-n8n-host>/webhook/<path>
+SMC_IMAGE_GEN_HEADER=<auth-header-name>
+SMC_IMAGE_GEN_TOKEN=<secret-token>
+```
+
+`.env` is gitignored. Never paste the token into chat or commit it. Blotato auth is handled by the Blotato MCP connection, not this file.
+
+### 5. Connect the MCP servers (in Claude Code)
+
+- **Blotato** — for `/publish`. After connecting, the Publish agent calls `blotato_list_accounts` to discover your account IDs (they differ per workspace — the presets in `agents/PUBLISH.md` are MZS-specific; update them).
+- **n8n** *(optional)* — only if you want AI hero images. Import an image-generation workflow that takes `{prompt, aspect}` and returns a public image URL, and point `.env` at its webhook.
+
+### 6. Verify
+
+In Claude Code, type: **`give me 5 post ideas`**. If it returns a pillar × format matrix drawn from your new `rules/VOICE.md`, the system is live. Then `write a post about <topic>` runs the full pipeline; `/publish <slug>` takes a SHIP-gated post live once Blotato is connected.
+
+> **No-visual / no-publish mode:** skip steps 4–5 entirely. You still get four fact-checked, platform-native drafts per idea — you just copy them out and post by hand.
+
+---
+
 ## How to Use
 
 **You don't run commands. You don't memorize agent names. You open Claude Code in this folder and talk to it in plain English.** Claude reads `CLAUDE.md` and the rule files automatically and knows what to do. The examples below are things you literally type into the chat.
