@@ -1,10 +1,7 @@
 .DS_Store
 
-# Ignore local Claude Code state, but track shared commands and skills —
-# they are part of this project's interface.
-.claude/*
-!.claude/commands/
-!.claude/skills/
+# Track all of .claude (commands, skills, agents, etc. — this project's interface),
+# except machine-local state and secrets.
 .claude/settings.local.json
 
 # Secrets — never commit
