@@ -4,6 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-07-08 | `toolchains-dont-create-accountability` | Toolchains don't create accountability — a toolchain distributes information, not ownership | LI · IG | hero | PUBLISHED (sched Jul 11 4pm · LI personal + IG) |
+| 2026-07-08 | `ci-cd-continuous-confidence` | CI/CD doesn't mean continuous confidence — a green pipeline is not a working network | LI · IG | hero | PUBLISHED (sched Jul 9 4pm · LI personal + IG) |
+| 2026-07-08 | `monitoring-vs-observability` | Your monitoring stack is a museum — monitoring answers *what*, observability answers *why* | LI · FB · IG · X | carousel (8 png) + hero | PUBLISHED (sched Jul 10 4pm) |
 | 2026-07-06 | `docs-describe-reality` | Your network diagram is a liability — docs must describe reality, not intent | LI · FB · IG · X | carousel (8 png) + hero | PUBLISHED (sched Jul 7 4pm) |
 | 2026-06-24 | `plug-and-play-wifi-myth` | "Plug-and-play" Wi-Fi is a myth — you engineer it, not plug it in | LI · IG · X | infographic | SHIP |
 | 2026-06-24 | `operational-state` | The ISSU that refused to upgrade — operational state matters as much as config | LI · IG · X | — | SHIP |

@@ -27,6 +27,22 @@ Always call `blotato_list_accounts` at the start of a run — accounts get recon
 
 ---
 
+## Named presets (audience bundles)
+
+The user works in two standing audience modes. When they name one, apply it instead of asking the platform/LinkedIn-target questions — still ask **timing** and **X shape** (if X is in the bundle).
+
+| Preset | Platforms | LinkedIn target |
+|--------|-----------|-----------------|
+| **Professional** | LinkedIn + Instagram | LinkedIn **personal** profile (Luis Mazariegos, `26694`, no `pageId`) · IG @mzsnetworks |
+| **Business** | LinkedIn + Facebook + Instagram + X (all four) | LinkedIn **MZS Networks company page** (`pageId 94095464`) · FB page `779757178552278` · IG @mzsnetworks · X @mzsnetworks |
+
+- "Professional" = the personal-brand mix (Luis on LinkedIn, MZS on IG).
+- "Business" = everything on the MZS company account.
+- Presets set platforms + LinkedIn target only. Timing and X shape are still per-run questions.
+- If the user names no preset, fall back to the full question round below.
+
+---
+
 ## Ask the user, every run
 
 Before publishing anything, ask (one question round):

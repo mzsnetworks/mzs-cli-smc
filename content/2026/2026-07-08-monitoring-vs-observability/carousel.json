@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type":"cover","title":"Your monitoring stack\nis a *museum*.","body":"It shows what broke. At 2am it tells you nothing you can act on.","motif":"none"},
+    {"type":"body","title":"Two words,\nmistaken for one","body":"Monitoring answers *what*.\nObservability answers *why*.","motif":"none"},
+    {"type":"body","title":"Monitoring","body":"The questions you knew to ask in advance. CPU. BGP. A latency threshold.","motif":"none"},
+    {"type":"body","title":"Observability","body":"The question you *didn't* pre-plan — asked mid-outage, without shipping a new sensor.","motif":"none"},
+    {"type":"body","title":"The tell is\nthe war room","body":"Still SSH-ing into boxes for context the dashboards never caught? That was monitoring.","motif":"none"},
+    {"type":"body","title":"Green wall,\n*down* service","body":"Every part read \"up\" while the service was down. Nobody instrumented the relationship.","motif":"none"},
+    {"type":"triad","title":"What you\nactually bought","steps":["Monitoring: it's down.","Observability: the *why*.","Judgment: knowing *which one*."]},
+    {"type":"cta","title":"Which one is your\nteam running?","body":"Follow *@mzsnetworks*\nmzsnetworks.com"}
+  ]
+}

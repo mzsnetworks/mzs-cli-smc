@@ -43,16 +43,26 @@ If `rules/VOICE.md` exists, pull pillars from it. Otherwise default to:
 ```
 ## Content Matrix — [date]
 
-| # | Pillar | Format | Idea (specific angle) | Needs cited stat? |
-|---|--------|--------|------------------------|-------------------|
-| 1 | Automation | Contrarian | ... | yes — Gartner config-gen forecast |
-| 2 | AIOps | Story | ... | no |
+| # | Pillar | Format | Idea (specific angle) | Needs cited stat? | Developed? |
+|---|--------|--------|------------------------|-------------------|------------|
+| 1 | Automation | Contrarian | ... | yes — Gartner config-gen forecast | — |
+| 2 | AIOps | Story | ... | no | — |
 ... (30+ rows)
 
 ## Top 5 to draft now
 1. [idea] — why it'll land
 ...
 ```
+
+The **Developed?** column tracks a row through the pipeline: `—` not started · `drafting` in `/post` · `SHIP` scored ≥85 · `PUBLISHED` live. Put the slug next to the status once the post folder exists.
+
+## Save the ideas
+
+After emitting the matrix and Top 5, **ask whether to save them.** On yes:
+
+- Write to `ideas/ideas-<YYYY-MM-DD>.md` (create the `ideas/` directory if it doesn't exist). Date = today.
+- Save the **full matrix including the Developed? column** plus the Top 5 block.
+- If a file for today already exists, ask before overwriting.
 
 ---
 

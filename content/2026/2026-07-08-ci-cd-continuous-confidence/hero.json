@@ -1,0 +1,11 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783561667235-0.jpg",
+      "aspect": "16:9",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: an automated assembly line inside a dark data center, a row of glowing cream-lit checkmark gates passing a payload along a conveyor toward a single server rack at the end that is fracturing and sparking with thin red fault lines, a lone engineer silhouette standing beside it watching. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition, no text or logos.",
+      "generated": "2026-07-08"
+    }
+  ]
+}
