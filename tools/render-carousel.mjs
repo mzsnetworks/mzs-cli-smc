@@ -92,8 +92,9 @@ function content(s) {
 }
 
 const page = (s, n) => {
-  const center = s.type !== 'cover';           // cover top-aligned (motif sits below); others vertically centered
-  const padBottom = (motifs[s.motif] && s.motif!=='none') ? 520 : 96;
+  const hasMotif = motifs[s.motif] && s.motif!=='none';
+  const center = s.type !== 'cover' || !hasMotif;   // cover top-aligns only when a motif fills the bottom; otherwise center like the rest
+  const padBottom = hasMotif ? 520 : 96;
   return `<!doctype html><html><head><meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
