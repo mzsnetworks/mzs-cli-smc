@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Your automation didn't *fail*.", "body": "Your team never agreed on what \"done\" meant.", "motif": "none"},
+    {"type": "body", "title": "Ask three engineers", "body": "When is a switch provisioning job actually \"done\"?", "motif": "none"},
+    {"type": "triad", "title": "Same task, three finish lines", "steps": ["Config pushed", "Ports up, passing traffic", "In monitoring, documented, *handed off*"]},
+    {"type": "body", "title": "Now automate it", "body": "The script picks *one* definition —\nand ships the other two as incomplete.", "motif": "none"},
+    {"type": "body", "title": "Runs green every time", "body": "The automation worked perfectly.\nThe outcome was still *wrong*.", "motif": "none"},
+    {"type": "body", "title": "The part no runbook covers", "body": "Automation encodes a *definition of done*. It won't resolve what the team never agreed on.", "motif": "none"},
+    {"type": "triad", "title": "A \"done\" everyone signs off on", "steps": ["Ports up, config in golden", "Monitoring live, docs updated", "*Ownership transferred*"]},
+    {"type": "cta", "title": "Automation only executes your agreement", "body": "It doesn't create alignment.\nWhere does your \"done\" disagree?\n\nFollow *@mzsnetworks*"}
+  ]
+}

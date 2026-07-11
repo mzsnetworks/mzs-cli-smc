@@ -1,0 +1,11 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783737726129-0.jpg",
+      "aspect": "16:9",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a pristine, brightly lit prototype network rack with three neatly cabled switches standing isolated in clean minimal studio space, while behind it looms a vast shadowed data-center aisle of dense tangled cabling disappearing into darkness — order in the light, chaos in the dark. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    }
+  ]
+}

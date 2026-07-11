@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783738682319-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a single network server rack moving along a conveyor line through three staggered finish-line gates receding into depth — the first gate brightly lit, the next two fading into darkness, one thin taut red ribbon marking the final gate. Sense of an unfinished journey mistaken for done. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    }
+  ]
+}
