@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Every script you automate is a *liability* you now own.", "body": "We only ever count the asset.", "motif": "none"},
+    {"type": "body", "title": "Automating feels like pure win", "body": "Do it once, it runs itself. Close the ticket. Move on.", "motif": "none"},
+    {"type": "body", "title": "What nobody logs", "body": "Software you now maintain and trust for life — or it becomes a *hazard*.", "motif": "none"},
+    {"type": "triad", "title": "The interest it accrues", "steps": ["Breaks on every vendor API change", "Only one person understands it", "The pipeline everyone's *afraid to touch*"]},
+    {"type": "body", "title": "Manual work degrades gracefully", "body": "A human notices when something's off.", "motif": "none"},
+    {"type": "body", "title": "Unmaintained automation has a *trapdoor*", "body": "It fails silently, at scale, on stale assumptions.", "motif": "none"},
+    {"type": "body", "title": "The uncomfortable math", "body": "Automation you don't maintain isn't saving time.\nIt's *deferring a bill*.", "motif": "none"},
+    {"type": "cta", "title": "Automate less. Own what you automate.", "body": "A little well-maintained beats a graveyard of scripts.\n\nFollow *@mzsnetworks*"}
+  ]
+}

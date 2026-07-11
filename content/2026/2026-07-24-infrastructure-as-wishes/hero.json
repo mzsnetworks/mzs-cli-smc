@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783742536377-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a glowing cream network schematic displayed on a confident control screen, while the physical server cabling it claims to represent has visibly drifted out of alignment beneath it — one red cable slipped loose that the screen doesn't show. The gap between a confident model and a drifted reality. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) schematic and highlights, thin red (#eb2027) accent on the undetected drift — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-11"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783742536378-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a glowing cream network schematic displayed on a confident control screen, while the physical server cabling it claims to represent has visibly drifted out of alignment beneath it — one red cable slipped loose that the screen doesn't show. The gap between a confident model and a drifted reality. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) schematic and highlights, thin red (#eb2027) accent on the undetected drift — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-11"
+    }
+  ]
+}

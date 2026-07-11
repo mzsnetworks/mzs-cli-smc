@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783742182464-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: an industrial duplication machine on a conveyor line copying a single crooked, tangled network diagram into an endless receding row of identical flawed copies — chaos reproduced at scale. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) diagrams and highlights, thin red (#eb2027) accent marking the repeated flaw — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783742182466-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: an industrial duplication machine on a conveyor line copying a single crooked, tangled network diagram into an endless receding row of identical flawed copies — chaos reproduced at scale. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) diagrams and highlights, thin red (#eb2027) accent marking the repeated flaw — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    }
+  ]
+}
