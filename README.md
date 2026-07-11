@@ -170,7 +170,7 @@ You get a new folder like `content/2026/2026-07-01-self-inflicted-outages/` with
 
 > **Give me 30 post ideas.**
 
-You get a table of specific angles (not vague topics) crossing your content pillars with proven post formats, plus a "Top 5 to write now." Pick one and go back to Step 1:
+You get a table of specific angles (not vague topics) crossing your content pillars with proven post formats, plus a "Top 5 to write now." When it's done, Claude **offers to save the batch** — say yes and it writes `ideas/ideas-<YYYY-MM-DD>.md` with a **Developed?** column that tracks each idea's status (`—` untouched → `drafting` → `SHIP` → `PUBLISHED · <slug>`). That file is your running backlog; as you write posts, the column keeps up. Pick one and go back to Step 1:
 
 > **Write idea #3 from that list through the full pipeline.**
 
@@ -208,6 +208,14 @@ Claude walks through a fixed script — nothing goes out without you:
    - *LinkedIn: personal profile or the MZS Networks company page?*
    - *When?* now / Blotato's next free slot / a specific time ("tomorrow 9am" is fine — it converts)
    - *X: the single post or the thread?*
+
+   **Presets skip the first two questions.** Name a standing audience bundle and Claude sets platforms + LinkedIn target for you (it still asks *when* and *X single vs thread*):
+   - **Professional** — your personal LinkedIn + MZS Instagram. For personal-brand posts.
+     > /publish self-inflicted-outages — Professional, tomorrow 4pm
+   - **Business** — all four platforms on the MZS company account (LinkedIn company page, Facebook, Instagram, X).
+     > publish the self-inflicted-outages post — Business settings, next free slot
+
+   Presets live in `agents/PUBLISH.md` (with the account IDs). A new team defines its own there.
 3. **Sorts out media.** Instagram can't post text-only — if the folder has a carousel or infographic it uses that; if not, it offers to make one (or a hero image) first. LinkedIn/Facebook/X get the visual attached when one exists.
 4. **Shows you the exact final text per platform** and stops. You type **"publish"** — that word is the trigger. Anything else, nothing posts.
 5. **Posts via Blotato**, reports each live URL (or failure, honestly), writes a `published.md` receipt into the post folder, and flips the post to **PUBLISHED** in `content/INDEX.md`.
@@ -221,7 +229,7 @@ Claude walks through a fixed script — nothing goes out without you:
 | Set up your voice (once) | "Build my voice profile." |
 | Write a post | "Write a post about [topic]. Run the full pipeline." |
 | Turn rough notes into a post | "Here are my notes: [paste]. Make a post out of this." |
-| Get ideas | "Give me 30 post ideas." |
+| Get ideas | "Give me 30 post ideas." (offers to save them to `ideas/` with a Developed? tracker) |
 | Find trending stories | "What's trending in [niche] this week?" |
 | Punch up a weak opener | "Give me 6 hook options for [topic]." |
 | Make a carousel/graphic | "Make a carousel for the [slug] post." |
@@ -230,6 +238,7 @@ Claude walks through a fixed script — nothing goes out without you:
 | Re-shape a rambling draft | "Rewrite this as a PAS post: [paste]." |
 | Just one platform | "Write only a LinkedIn post about [topic]." |
 | Post it live | "/publish [slug]" — asks where/when, shows final text, waits for your OK |
+| Post with a saved audience | "/publish [slug] — Professional" (personal LI + IG) or "— Business" (all four on company) |
 | Schedule instead of post now | "/publish [slug]" then answer "tomorrow 9am" (or "next free slot") when it asks |
 | Add Facebook to an older post | "/publish [slug]" backfills it — or "/adapt [slug]" re-renders all four |
 | See what you have | "What posts do I have?" / "What's ready to publish?" (reads `content/INDEX.md`) |
