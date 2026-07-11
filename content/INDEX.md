@@ -4,6 +4,10 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-07-25 | `culture-not-pipeline` | NetDevOps is a culture shift, not a pipeline — a pipeline is what the culture produces, not what produces it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 25 4pm · LI personal + IG) |
+| 2026-07-23 | `product-thinking` | NetDevOps without product thinking ships nothing — adoption is the deliverable, not working code | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 23 4pm · LI personal + IG) |
+| 2026-07-21 | `ops-own-netdevops` | NetDevOps succeeds when operations own it — give the automation to the people who get paged | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 21 4pm · LI personal + IG) |
+| 2026-07-18 | `declarative-ambiguity` | Declarative models don't fix ambiguity — they move it into the model and enforce whatever intent got committed | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 18 4pm · LI personal + IG) |
 | 2026-07-16 | `definition-of-done` | Automation fails when teams don't agree on "done" — it executes whatever agreement (or disagreement) you already had | LI · IG | carousel (8 png) + hero | PUBLISHED (sched Jul 16 4pm · LI personal + IG) |
 | 2026-07-14 | `automation-stops-at-poc` | Why network automation stops at proof of concept — the POC proves feasibility, not operational fit | LI · IG | hero | PUBLISHED (sched Jul 14 4pm · LI personal + IG) |
 | 2026-07-08 | `toolchains-dont-create-accountability` | Toolchains don't create accountability — a toolchain distributes information, not ownership | LI · IG | hero | PUBLISHED (sched Jul 11 4pm · LI personal + IG) |

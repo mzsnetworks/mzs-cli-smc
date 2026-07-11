@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783739438578-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a glowing precise cream wireframe blueprint of a network diagram projected in mid-air, hovering above a physical server rack whose real tangled cabling doesn't line up with the clean plan — projection and reality subtly misaligned. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines marking where plan and reality diverge — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783739515551-0.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a glowing precise cream wireframe blueprint of a network diagram projected in mid-air, hovering above a physical server rack whose real tangled cabling doesn't line up with the clean plan — projection and reality subtly misaligned. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines marking where plan and reality diverge — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    }
+  ]
+}

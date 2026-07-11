@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783739879819-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a single operations engineer seated at a console, one hand on the keyboard, a glowing cream automation pipeline flowing from their screen directly into a physical server rack beside them — the same person who writes it also runs it, a closed ownership loop. A small red alert light glowing on the desk. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783739879820-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a single operations engineer seated at a console, one hand on the keyboard, a glowing cream automation pipeline flowing from their screen directly into a physical server rack beside them — the same person who writes it also runs it, a closed ownership loop. A small red alert light glowing on the desk. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    }
+  ]
+}

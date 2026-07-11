@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783740471621-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a single glowing workstation running a polished automation tool, alone in a wide dark open-plan office full of empty unused desks receding into shadow — a capability that never spread beyond one person. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlight on the one lit desk, thin red (#eb2027) accent only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1783740471622-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a single glowing workstation running a polished automation tool, alone in a wide dark open-plan office full of empty unused desks receding into shadow — a capability that never spread beyond one person. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlight on the one lit desk, thin red (#eb2027) accent only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-10"
+    }
+  ]
+}
