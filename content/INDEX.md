@@ -4,14 +4,17 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-08-02 | `nobody-trusts-alerts` | You don't have an alerting problem — alert fatigue is a trust failure | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Aug 2 4pm · Business — all four on MZS) |
 | 2026-08-01 | `network-costume` | You don't have a network problem — an operational-discipline problem wearing a network costume | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 1 4pm · LI personal + IG) |
 | 2026-07-30 | `kill-config-drift` | Kill config drift in 30 minutes — NetBox source of truth → rendered intent → diff against running state | LI · IG | carousel (8 png) | PUBLISHED (sched Jul 30 4pm · LI personal + IG) |
 | 2026-07-28 | `postmortems-are-code-review` | Postmortems are becoming code review — "human error" stops being a root cause when the mistake is a commit | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 28 4pm · LI personal + IG) |
+| 2026-07-26 | `boring-networks` | The best-run networks are boring — an exciting NOC is a symptom, not a badge of honor | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Jul 26 4pm · Business — all four on MZS) |
 | 2026-07-25 | `culture-not-pipeline` | NetDevOps is a culture shift, not a pipeline — a pipeline is what the culture produces, not what produces it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 25 4pm · LI personal + IG) |
 | 2026-07-24 | `infrastructure-as-wishes` | Your IaC repo isn't infrastructure-as-code if the network still drifts — without enforcement it's infrastructure-as-wishes | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Jul 24 4pm · Business — all four on MZS) |
 | 2026-07-23 | `product-thinking` | NetDevOps without product thinking ships nothing — adoption is the deliverable, not working code | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 23 4pm · LI personal + IG) |
 | 2026-07-22 | `standardize-before-automate` | Automation without standardization just scales chaos — standardize first or it industrializes your variance | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Jul 22 4pm · Business — all four on MZS) |
 | 2026-07-21 | `ops-own-netdevops` | NetDevOps succeeds when operations own it — give the automation to the people who get paged | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 21 4pm · LI personal + IG) |
+| 2026-07-19 | `never-same-task-twice` | Automation's goal was never fewer engineers — it's engineers who never do the same task twice | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Jul 19 4pm · Business — all four on MZS) |
 | 2026-07-18 | `declarative-ambiguity` | Declarative models don't fix ambiguity — they move it into the model and enforce whatever intent got committed | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 18 4pm · LI personal + IG) |
 | 2026-07-17 | `automation-debt` | Automation debt is real debt — automation you don't maintain isn't saving time, it's deferring a bill | LI · FB · IG · X | hero (16:9) + carousel (8 png) | PUBLISHED (sched Jul 17 4pm · Business — all four on MZS) |
 | 2026-07-16 | `definition-of-done` | Automation fails when teams don't agree on "done" — it executes whatever agreement (or disagreement) you already had | LI · IG | carousel (8 png) + hero | PUBLISHED (sched Jul 16 4pm · LI personal + IG) |

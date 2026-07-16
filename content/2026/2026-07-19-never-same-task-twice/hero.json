@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784241949141-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a long corridor of identical glowing terminal screens repeating into the shadows, each displaying the same abstract pattern; in the foreground an engineer walks away from them toward a bright drafting table holding a luminous network blueprint. Leaving repetition behind for design work. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on one repeated screen — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784241949144-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a long corridor of identical glowing terminal screens repeating into the shadows, each displaying the same abstract pattern; in the foreground an engineer walks away from them toward a bright drafting table holding a luminous network blueprint. Leaving repetition behind for design work. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on one repeated screen — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784242476867-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a serene, immaculate network operations center — one engineer calmly reading at a tidy console, wall panels glowing a steady soft cream; behind them, seen through a glass wall and slightly blurred, a second control room frozen mid-chaos with chairs pushed back and panels flaring red. The calm room is the achievement; the exciting one is the warning. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accents confined to the chaotic room behind the glass — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784242476868-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a serene, immaculate network operations center — one engineer calmly reading at a tidy console, wall panels glowing a steady soft cream; behind them, seen through a glass wall and slightly blurred, a second control room frozen mid-chaos with chairs pushed back and panels flaring red. The calm room is the achievement; the exciting one is the warning. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accents confined to the chaotic room behind the glass — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}
