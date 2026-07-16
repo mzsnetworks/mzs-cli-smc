@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784245399234-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a long row of identical network switches receding into shadow, perfectly uniform and neatly cabled; a clean beam of automated light sweeps along the row from one end; mid-row, one switch is subtly different — an old hand-run cable looped and tied off years ago, its port glowing faint red — sitting directly in the beam's path. The machine-speed rollout about to meet the forgotten manual fix. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the one hand-fixed port only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784245399235-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a long row of identical network switches receding into shadow, perfectly uniform and neatly cabled; a clean beam of automated light sweeps along the row from one end; mid-row, one switch is subtly different — an old hand-run cable looped and tied off years ago, its port glowing faint red — sitting directly in the beam's path. The machine-speed rollout about to meet the forgotten manual fix. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the one hand-fixed port only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}

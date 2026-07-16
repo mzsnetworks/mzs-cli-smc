@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784244933713-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a shrink-wrapped warehouse pallet stacked with hundreds of identical small smart devices, parked incongruously in a dim, immaculate network equipment room beside a tidy server rack; an engineer stands before it with a clipboard lowered, sizing up the inheritance; deep inside the shrink-wrap one tiny device indicator glows red. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the single glowing indicator — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784244933720-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a shrink-wrapped warehouse pallet stacked with hundreds of identical small smart devices, parked incongruously in a dim, immaculate network equipment room beside a tidy server rack; an engineer stands before it with a clipboard lowered, sizing up the inheritance; deep inside the shrink-wrap one tiny device indicator glows red. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the single glowing indicator — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}

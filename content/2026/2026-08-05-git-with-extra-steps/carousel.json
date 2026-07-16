@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Your \"NetDevOps transformation\" might be *Git with extra steps*.", "body": "5 signs.", "motif": "none"},
+    {"type": "body", "title": "1 — Configs in a repo, pushed by hand", "body": "Truth is *stored* in Git but *decided* in a CLI session.\nA backup folder with a commit history.", "motif": "none"},
+    {"type": "body", "title": "2 — PRs approved unread", "body": "400 lines. \"LGTM\" in 40 seconds.\nA *turnstile*, not a gate.", "motif": "none"},
+    {"type": "body", "title": "3 — A green pipeline nobody trusts", "body": "The checks pass — and someone SSHes in to verify anyway.\nIt tests what was easy, not what *fails*.", "motif": "none"},
+    {"type": "body", "title": "4 — A branch named prod-final-v2", "body": "Branch names are process ambiguity, written down.\nNot a strategy — *archaeology*.", "motif": "none"},
+    {"type": "body", "title": "5 — Rollback = SSH", "body": "Forward path automated. Reverse path: a hero typing fast at 2am.\nA *one-way door* at machine speed.", "motif": "none"},
+    {"type": "body", "title": "Same root cause, all five", "body": "The tool got adopted.\nThe *behavior* didn't.", "motif": "none"},
+    {"type": "cta", "title": "Git stores your configs. It can't store your discipline.", "body": "A transformation is measured by what changes at 2am.\n\nFollow *@mzsnetworks*"}
+  ]
+}
