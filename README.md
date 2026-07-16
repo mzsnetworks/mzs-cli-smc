@@ -211,9 +211,16 @@ Claude walks through a fixed script — nothing goes out without you:
 
    **Presets skip the first two questions.** Name a standing audience bundle and Claude sets platforms + LinkedIn target for you (it still asks *when* and *X single vs thread*):
    - **Professional** — your personal LinkedIn + MZS Instagram. For personal-brand posts.
-     > /publish self-inflicted-outages — Professional, tomorrow 4pm
    - **Business** — all four platforms on the MZS company account (LinkedIn company page, Facebook, Instagram, X).
-     > publish the self-inflicted-outages post — Business settings, next free slot
+
+   All of these work — slug or title, relative or exact time:
+   > /publish self-inflicted-outages — Professional, tomorrow 4pm
+   > /publish definition-of-done — Professional, 7/16/2026 4pm
+   > /publish runbooks-rot — Business, 7/15/2026 4pm
+   > /publish Runbooks Rot When Nobody Runs Them — Business, next free slot   *(title works when you don't remember the slug)*
+   > publish the self-inflicted-outages post — Business settings, now
+
+   If the post doesn't exist yet, Claude runs the full pipeline first (write → factcheck → adapt → score → visual, each with its approval gate), *then* continues into the publish flow — one command takes an idea from nothing to scheduled.
 
    Presets live in `agents/PUBLISH.md` (with the account IDs). A new team defines its own there.
 3. **Sorts out media.** Instagram can't post text-only — if the folder has a carousel or infographic it uses that; if not, it offers to make one (or a hero image) first. LinkedIn/Facebook/X get the visual attached when one exists.
@@ -288,13 +295,35 @@ Here's a real run, exactly as it happened, so you can see the shape of it.
 
 **Claude:** schedules all four for 9:00 tomorrow via Blotato, writes `published.md` into the folder (submission IDs + scheduled time), flips the INDEX row to **PUBLISHED**, and reports back. If any platform fails, it says so plainly with the error — no silent retries.
 
-### Worked example 3 — a hero image
+### Worked example 3 — a preset run, from nothing to scheduled
+
+This is the everyday shape: the post doesn't exist yet, and one command carries it all the way.
+
+**You type:**
+> /publish Runbooks Rot When Nobody Runs Them — Business, 7/15/2026 4pm
+
+**Claude:**
+- Checks `content/INDEX.md` → no such post. Runs the full pipeline first: writes `master.md`, fact-checks it, adapts all four renders, tightens, hashtags, scores — reports the scores (must all be SHIP ≥85).
+- **Business** preset resolves the audience: LinkedIn **company page**, Facebook page, Instagram, X — all on the MZS account. No platform questions asked; it confirms *X: single or thread?* and uses your `7/15/2026 4pm` (converted to UTC) as the schedule.
+- Instagram needs media → proposes a hero image (16:9 for LI/FB/X **and** a 4:5 portrait variant for the IG feed), waits for your "generate," then makes both.
+- Shows the exact final text of all four posts. Waits for the word **"publish."**
+
+**You type:**
+> publish
+
+**Claude:** schedules all four for Jul 15 4:00 PM via Blotato, writes `published.md` (per-platform submission IDs), flips the INDEX row to PUBLISHED.
+
+The **Professional** variant is identical except the audience: personal LinkedIn + MZS Instagram, two posts instead of four:
+
+> /publish definition-of-done — Professional, tomorrow 4pm
+
+### Worked example 4 — a hero image
 
 **You type:**
 > Make a hero image for the operational-state post.
 
 **Claude:**
-- Reads the post, drafts a brand-locked prompt — the scene (an engineer facing a rack that "passed every check"), navy `#161a45` dominant, cream highlights, thin red accents, *no text in the image* — and the aspect (16:9 for LinkedIn). Shows it to you and stops.
+- Reads the post, drafts a brand-locked prompt — the scene (an engineer facing a rack that "passed every check"), navy `#161a45` dominant, cream highlights, thin red accents, *no text in the image* — and the aspects: 16:9 for LinkedIn/Facebook/X **plus a 4:5 portrait variant whenever Instagram is a target** (a 16:9 image gets cropped in the IG feed). Shows it to you and stops.
 - On your "generate": calls the n8n SMC Image Generator webhook (Gemini → your Zipline host), pulls the image back, and shows it.
 - You approve → it saves `hero-01.jpg` + `hero.json` (with the public URL) into the post folder and sets the INDEX Visual column to `hero`. That URL rides straight into `/publish`.
 

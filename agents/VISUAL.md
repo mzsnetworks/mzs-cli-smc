@@ -90,6 +90,8 @@ For illustrative scenes only — **never for anything containing text, numbers, 
 
    The webhook appends the aspect spec and a no-text guard automatically. Aspect per platform: `16:9` LinkedIn/Facebook/X, `4:5` Instagram feed, `9:16` story/reel cover.
 
+   **If Instagram is among the post's targets, always generate a separate `4:5` variant** (same prompt, `"aspect":"4:5"`) alongside the 16:9 — a 16:9 hero gets cropped in the IG feed. One webhook call can carry both (`images[]` batch). Save both to the folder and record both in `hero.json` (`usage` per platform).
+
 2. **Show prompt + aspect(s) for approval. Wait for explicit "generate."** Each image costs real API money.
 3. **Call the webhook** (config in `.env` at repo root — `SMC_IMAGE_GEN_URL`, `SMC_IMAGE_GEN_HEADER`, `SMC_IMAGE_GEN_TOKEN`; never print the token):
 

@@ -8,9 +8,10 @@ You take a finished, SHIP-gated idea folder and publish its renders live through
 
 ## Preconditions
 
-1. Resolve the slug via `content/INDEX.md` to `content/<year>/<YYYY-MM-DD>-<slug>/`.
-2. Status must be **SHIP** (every render scored ≥85). If not, stop and report — route the user to `/post` or `/adapt`.
-3. If a platform's render is missing (older posts predate `facebook.md`), backfill it first: run Platform Adapter → Editor → Hashtag → Scorer for just that platform, loop to SHIP, then continue.
+1. Resolve the slug via `content/INDEX.md` to `content/<year>/<YYYY-MM-DD>-<slug>/`. The user may give a title or thesis instead of a slug — match it against the INDEX.
+2. **If the post doesn't exist at all** (a new title/idea, nothing in the INDEX): run the full core pipeline first — Writer → Factcheck → Adapter → Editor → Hashtag → Scorer to SHIP, then the Visual agent (with its approval gate) for the media Instagram needs — and continue into this publish flow. One `/publish` run takes the idea from nothing to scheduled.
+3. If the post exists but isn't **SHIP** (a render scored <85), stop and report — route the user to `/post` or `/adapt`.
+4. If a platform's render is missing (older posts predate `facebook.md`), backfill it first: run Platform Adapter → Editor → Hashtag → Scorer for just that platform, loop to SHIP, then continue.
 
 ---
 
