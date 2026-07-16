@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784241128563-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a sleek network switch displayed on a museum pedestal, wearing an elegant theatrical masquerade mask; behind it, half in shadow, an open equipment cabinet spills a tangle of unlabeled cables onto the floor. The polished costume up front, the undisciplined reality behind. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the mask's edge and one loose cable — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784241128564-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a sleek network switch displayed on a museum pedestal, wearing an elegant theatrical masquerade mask; behind it, half in shadow, an open equipment cabinet spills a tangle of unlabeled cables onto the floor. The polished costume up front, the undisciplined reality behind. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the mask's edge and one loose cable — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}

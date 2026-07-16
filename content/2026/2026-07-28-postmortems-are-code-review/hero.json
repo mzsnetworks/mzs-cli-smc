@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784239629514-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a dim interrogation room where the chair sits empty and pushed aside; on the table under a single cone of light, a large translucent panel displays an abstract code diff — rows of soft cream bars with one thin red bar marking the removed line. The investigation has moved from the person to the change. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784239629517-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram (feed-native portrait)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a dim interrogation room where the chair sits empty and pushed aside; on the table under a single cone of light, a large translucent panel displays an abstract code diff — rows of soft cream bars with one thin red bar marking the removed line. The investigation has moved from the person to the change. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}

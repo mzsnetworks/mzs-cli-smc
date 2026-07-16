@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Kill config drift in *30 minutes*.", "body": "Not six months.", "motif": "none"},
+    {"type": "triad", "title": "Three pieces", "steps": ["NetBox — the source of truth", "Rendered intent — the config you *meant*", "The diff — intent vs running"]},
+    {"type": "body", "title": "1 — Source of truth", "body": "Intended state in NetBox. What *should* be running — not what is.\nCan't agree on \"should\"? That's the finding.", "motif": "none"},
+    {"type": "body", "title": "2 — Render the intent", "body": "Python + Jinja pull NetBox and render the config you meant, per device.\nNo push. No orchestration.", "motif": "none"},
+    {"type": "body", "title": "3 — Diff it", "body": "Running config vs rendered intent.\nEvery line that shows up is telling you something.", "motif": "none"},
+    {"type": "triad", "title": "Every diff line is one of three things", "steps": ["An *undocumented* fix", "An *unauthorized* change", "Stale intent"]},
+    {"type": "body", "title": "The trap: skipping to enforcement", "body": "Auto-remediation is month six.\nDay one is *visibility* — you can't enforce intent you never wrote down.", "motif": "none"},
+    {"type": "cta", "title": "Write the intent down. The diff writes itself.", "body": "Drift is intent living in someone's head instead of a system.\n\nFollow *@mzsnetworks*"}
+  ]
+}

@@ -4,6 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-08-01 | `network-costume` | You don't have a network problem — an operational-discipline problem wearing a network costume | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 1 4pm · LI personal + IG) |
+| 2026-07-30 | `kill-config-drift` | Kill config drift in 30 minutes — NetBox source of truth → rendered intent → diff against running state | LI · IG | carousel (8 png) | PUBLISHED (sched Jul 30 4pm · LI personal + IG) |
+| 2026-07-28 | `postmortems-are-code-review` | Postmortems are becoming code review — "human error" stops being a root cause when the mistake is a commit | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 28 4pm · LI personal + IG) |
 | 2026-07-25 | `culture-not-pipeline` | NetDevOps is a culture shift, not a pipeline — a pipeline is what the culture produces, not what produces it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 25 4pm · LI personal + IG) |
 | 2026-07-24 | `infrastructure-as-wishes` | Your IaC repo isn't infrastructure-as-code if the network still drifts — without enforcement it's infrastructure-as-wishes | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Jul 24 4pm · Business — all four on MZS) |
 | 2026-07-23 | `product-thinking` | NetDevOps without product thinking ships nothing — adoption is the deliverable, not working code | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Jul 23 4pm · LI personal + IG) |
