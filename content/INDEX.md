@@ -4,7 +4,7 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-08-05 | `git-with-extra-steps` | 5 signs your NetDevOps transformation is just Git with extra steps — the tool got adopted, the behavior didn't | LI · FB · IG · X | carousel (8 png) | PUBLISHED (sched Aug 5 4pm · Business — all four on MZS) |
+| 2026-08-05 | `git-with-extra-steps` | 5 signs your NetDevOps transformation is just Git with extra steps — the tool got adopted, the behavior didn't | LI · FB · IG · X | carousel (8 png) + hero (16:9) | PUBLISHED (sched Aug 5 4pm · Business — all four on MZS) |
 | 2026-08-02 | `nobody-trusts-alerts` | You don't have an alerting problem — alert fatigue is a trust failure | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Aug 2 4pm · Business — all four on MZS) |
 | 2026-08-01 | `network-costume` | You don't have a network problem — an operational-discipline problem wearing a network costume | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 1 4pm · LI personal + IG) |
 | 2026-07-31 | `script-worked-twice` | The script that worked perfectly, twice — idempotency isn't a coding concept, it's a brownfield problem | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Jul 31 4pm · Business — all four on MZS) |

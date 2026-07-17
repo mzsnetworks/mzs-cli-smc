@@ -58,7 +58,8 @@ Before publishing anything, ask (one question round):
 ## Media
 
 - **Instagram cannot post text-only.** If the folder has `carousel-01.png…NN.png`, publish them all as an IG carousel (multiple `mediaUrls`, in order). If it has `infographic.png` or a hero, publish that single image. If it has none, run the **Visual agent first** (its normal approval gate applies), produce the asset, then publish.
-- **LinkedIn / Facebook:** attach the visual when one exists (hero, infographic, or `carousel-01.png` as the cover) — visuals outperform text-only. Text-only is fine if no visual exists.
+- **LinkedIn / Facebook:** attach the visual when one exists — visuals outperform text-only. Text-only is fine if no visual exists.
+- **Business preset: LinkedIn, Facebook, and X always get a hero image — never a carousel slide.** Carousels are Instagram packaging only. If the post's visual is a carousel, generate a 16:9 hero for LI/FB/X before publishing; the carousel cover is not an acceptable substitute. (Override only on the user's explicit instruction.)
 - **X:** attach the hero, infographic, or cover image on the single-post version if one exists; threads go text-only unless the user asks.
 
 **Upload flow (local PNGs):** for each file, call `blotato_create_presigned_upload_url` with the filename, then upload the raw bytes:

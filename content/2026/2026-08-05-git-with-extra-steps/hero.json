@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1784246464915-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X — Business rule: hero always, carousel is IG-only",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a glowing abstract branching-diagram sculpture displayed like a trophy inside a pristine glass museum case on a pedestal; behind it, half in shadow, an engineer types at an old terminal wired directly to a network switch, a single cable visibly bypassing the display case. The tool on exhibit, the decisions still in the terminal. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the bypassing cable only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-16"
+    }
+  ]
+}
