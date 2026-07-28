@@ -36,7 +36,7 @@ Three layers, same logic underneath:
 
 1. **Plain English** — the user just says what they want ("write a post about X", "give me ideas"). Match the intent to the right agent(s) and run them.
 2. **Skills** (`.claude/skills/`) — auto-trigger the standalone capabilities: `build-voice`, `ideate`, `hook`, `niche-research`, `visual`, `reels`. Each skill is a thin trigger that reads its canonical `agents/*.md` and executes it.
-3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master; **`/publish <slug>`** posts a SHIP-gated idea live via Blotato (never publish without the user's explicit per-run confirmation of the final text).
+3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master; **`/publish <slug>`** posts a SHIP-gated idea live via Blotato (never publish without the user's explicit per-run confirmation of the final text); **`/schedule`** plans the next publishing cycle — assigns unpublished ideas (per preset, from `ideas/ideas-*.md`) to dates on the standing cadence (daily 4pm EDT, alternating Professional/Business, Mondays dark) and writes `ideas/schedule-<YYYY-MM>.md` (per `agents/SCHEDULER.md`; planning only, never publishes).
 
 `agents/*.md` files remain the **source of truth** — skills and commands point to them, never fork the logic. The core pipeline agents (Writer, Factcheck, Adapter, Editor, Hashtag, Scorer) are invoked *through* `/post`, not as individual skills.
 
@@ -58,7 +58,7 @@ agents/            # canonical agent logic (source of truth)
   # on-demand
   VOICE.md  FORMATTER.md  VISUAL.md  REELS.md  PUBLISH.md
 .claude/
-  commands/        # /post (full pipeline), /adapt (re-render), /publish (go live via Blotato)
+  commands/        # /post (full pipeline), /adapt (re-render), /publish (go live via Blotato), /schedule (plan cycle)
   skills/          # auto-triggered: build-voice, ideate, hook, niche-research, visual, reels
 content/           # generated posts (idea-first layout)
 ```
