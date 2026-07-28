@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "The change-window checklist that kills the *2am rollback*.", "body": "Four lines.", "motif": "none"},
+    {"type": "body", "title": "1 — Pre-checks, captured", "body": "Snapshot configs, routes, neighbors, counters — *before* anything changes.\nNot \"looks good.\" Recorded.", "motif": "none"},
+    {"type": "body", "title": "2 — Blast radius, written down", "body": "What can this break, worst case?\n*\"Not sure\" means not ready.*", "motif": "none"},
+    {"type": "body", "title": "3 — A back-out that's been run", "body": "An untested rollback is a *theory*.\nRehearse it. Mark the point of no return.", "motif": "none"},
+    {"type": "body", "title": "4 — One named decision-maker", "body": "Proceed or roll back — *one owner*, criteria written at 2pm.\nNever a group-chat vote.", "motif": "none"},
+    {"type": "body", "title": "What the checklist really does", "body": "It moves every decision *out of the window*.\nThe window is for execution.", "motif": "none"},
+    {"type": "body", "title": "Well-run changes look boring", "body": "Boring is the *achievement*.", "motif": "none"},
+    {"type": "cta", "title": "Plan at 2pm. Execute at 2am. Never think at 2am.", "body": "What's the checklist item that saved your team a night?\n\nFollow *@mzsnetworks*"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785207032379-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X — Business rule: hero always, carousel is IG-only",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a grand theater stage where a shiny robotic showpiece performs under a spotlight for an applauding audience of executives — while backstage, half in shadow, a small sturdy robot quietly tends a wall of humming network racks, holding a pager that glows softly. The show up front, the work in back. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the glowing pager only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    }
+  ]
+}

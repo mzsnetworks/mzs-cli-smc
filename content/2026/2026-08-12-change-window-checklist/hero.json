@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785208315110-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X — Business rule: hero always",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a split night scene — on one side, a calm engineer executes a change at a tidy desk lit by a single lamp, a neat physical checklist card with four clean checkmark boxes propped beside the keyboard; on the other side, faint and ghostly, the chaotic alternative timeline: silhouettes scrambling around a dark rack with tangled cables. The checklist is the wall between the two nights. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the four checkmarks only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    }
+  ]
+}

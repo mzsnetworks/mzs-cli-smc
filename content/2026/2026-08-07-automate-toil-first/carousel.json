@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "The 5 tasks worth automating first are *never the ones people ask for*.", "body": "Automate what pages you.", "motif": "none"},
+    {"type": "body", "title": "1 — State capture", "body": "Before and after *every change*.\n\"What changed?\" becomes one diff, not one hour.", "motif": "none"},
+    {"type": "body", "title": "2 — Config backup + drift alerts", "body": "Every device, every day.\nNotified when running config *drifts*. Boring. Priceless.", "motif": "none"},
+    {"type": "body", "title": "3 — Health checks", "body": "The senior engineer's checklist, encoded —\nsame rigor at *2am as 2pm*.", "motif": "none"},
+    {"type": "body", "title": "4 — The restart runbook", "body": "What you already restart out of self-defense —\nidentical, *verified*, every time.", "motif": "none"},
+    {"type": "body", "title": "5 — Alert enrichment", "body": "State, recent changes, last occurrence —\nattached *before a human opens it*.", "motif": "none"},
+    {"type": "body", "title": "Notice the pattern", "body": "None of these change the network.\nAutomation earns trust by being right *before it earns write access*.", "motif": "none"},
+    {"type": "cta", "title": "The demo impresses. The discipline pays.", "body": "What pages your team most — and is it on anyone's automation list?\n\nFollow *@mzsnetworks*"}
+  ]
+}
