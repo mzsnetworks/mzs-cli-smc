@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785209313567-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (company page) + Facebook + X — Business rule: hero always",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: two identical parallel suspension bridges spanning a dark chasm at night — the near bridge alive with flowing streams of glowing traffic; the twin backup bridge beside it looks flawless from a distance, but a small engineer walking it with a lantern has just discovered its far end stops short of the cliff, a thin gap hidden in the fog. Bought twice, proven once. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent outlining the hidden gap only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    },
+    {
+      "file": "hero-02.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785209313568-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (1080x1350 portrait)",
+      "prompt": "same prompt, 4:5 variant",
+      "generated": "2026-07-27"
+    }
+  ]
+}

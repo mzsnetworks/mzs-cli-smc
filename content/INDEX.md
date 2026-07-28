@@ -5,6 +5,7 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
 | 2026-08-15 | `fixed-vs-understood` | We "fixed" it by rebooting — fixed and understood are different states; only one prevents the sequel | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 15 4pm · LI personal + IG) |
+| 2026-08-14 | `resilience-isnt-redundancy` | Resilience isn't redundancy — two of everything and still down, because the failover was never tested | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Aug 14 4pm · Business — all four on MZS) |
 | 2026-08-13 | `escalate-early-escalate-clean` | Escalate early, escalate clean — the senior move is a tight evidence packet, not holding the issue for pride | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 13 4pm · LI personal + IG) |
 | 2026-08-12 | `change-window-checklist` | The change-window checklist that kills the 2am rollback — plan at 2pm, execute at 2am, never think at 2am | LI · FB · IG · X | carousel (8 png) + hero (16:9) | PUBLISHED (sched Aug 12 4pm · Business — all four on MZS) |
 | 2026-08-11 | `change-freezes-batch-risk` | Change freezes don't reduce risk — they batch it; January's avalanche is December's freeze with interest | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 11 4pm · LI personal + IG) |
