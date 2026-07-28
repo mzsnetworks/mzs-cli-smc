@@ -66,6 +66,7 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Visual** | on-demand | yes (spec + images) | Carousel/infographic rendered on-brand locally (HTML→PNG), or a text-free AI hero image via the n8n image webhook |
 | **Reels** | on-demand | yes (script) | Write a 30–45s short-form video script from an idea |
 | **Publish** | on-demand | yes (`published.md`) | Post SHIP renders live via Blotato — explicit confirmation gate, never automatic |
+| **Scheduler** | on-demand | yes (`ideas/schedule-*.md`) | Plan the next publishing cycle — assign unpublished ideas to dates per preset on the standing cadence (planning only, never publishes) |
 
 Each agent file in `agents/` ends with a **Usage** block — the exact prompt to run it. The how-to below stitches them into workflows.
 
@@ -250,13 +251,15 @@ Claude walks through a fixed script — nothing goes out without you:
 | Add Facebook to an older post | "/publish [slug]" backfills it — or "/adapt [slug]" re-renders all four |
 | See what you have | "What posts do I have?" / "What's ready to publish?" (reads `content/INDEX.md`) |
 | Re-render after editing the master | "/adapt [slug]" |
+| Plan the next posting cycle | "/schedule" — maps unpublished ideas to the next two weeks of dates, per preset |
 
 You never have to name an agent or edit a rule file. Claude picks the right agents from what you ask.
 
-**Prefer typing a command?** Three shortcuts:
+**Prefer typing a command?** Four shortcuts:
 - **`/post <topic>`** — runs the full pipeline (the Step 1 flow above) in one shot.
 - **`/adapt <slug>`** — re-renders an existing post's `master.md` into the four platforms.
 - **`/publish <slug>`** — posts a SHIP-gated idea live via Blotato (LinkedIn, Facebook, Instagram, X). Asks per run: which platforms, personal vs company page on LinkedIn, now vs scheduled, single vs thread on X. Shows the exact final text and publishes only on your explicit "publish."
+- **`/schedule [horizon]`** — plans the next publishing cycle (default: 2 weeks past the queue tail). Continues the standing cadence — daily 4pm EDT, alternating Professional/Business, Mondays dark — and fills each slot from the **matching preset's unpublished ideas** (`Developed? = —` rows in `ideas/ideas-*.md`; stat-gated ideas skipped by default). Shows the plan for approval, then writes `ideas/schedule-<YYYY-MM>.md`. Planning only — each row still fires through `/publish` with all its gates.
 
 And the on-demand capabilities are also installed as **skills** that fire automatically on plain-English phrasing — "build my voice", "give me ideas", "make a carousel", "write a reel", "what's trending". You don't need to learn them; they trigger themselves.
 
@@ -327,6 +330,30 @@ The **Professional** variant is identical except the audience: personal LinkedIn
 - On your "generate": calls the n8n SMC Image Generator webhook (Gemini → your Zipline host), pulls the image back, and shows it.
 - You approve → it saves `hero-01.jpg` + `hero.json` (with the public URL) into the post folder and sets the INDEX Visual column to `hero`. That URL rides straight into `/publish`.
 
+### Worked example 5 — planning a cycle with `/schedule`
+
+The queue runs on a standing cadence: **one post daily at 4pm EDT, presets alternating Professional/Business, Mondays dark.** When the queue tail approaches, plan the next cycle:
+
+**You type:**
+> /schedule
+
+**Claude:**
+- Reads `content/INDEX.md` → queue ends Aug 15 (Professional). The plan starts Aug 16 (Business, by alternation) and covers two weeks.
+- Pulls candidates **only from the matching preset's idea files**, only rows still marked `Developed? = —` — Professional slots from the Professional files, Business slots from the Business files, never crossed (the voice differs: personal "I" vs company "we"). Stat-gated ideas (`Cited stat? = yes`) are skipped so nothing blocks on Factcheck.
+- Drains each file's "Top 5 to write now" leftovers first, spreads themes apart (and may deliberately pair a two-part series in one week — flagged as such).
+- Shows the plan — Professional table first, then Business, each row Date · Day · Idea · Source — and **waits for your approval**.
+
+**You type:**
+> yes
+
+**Claude:** writes `ideas/schedule-2026-08.md` and commits it. Nothing is published — each row fires later, one at a time:
+
+> /publish The switch nobody dared reboot — Professional, 8/18/2026 4pm
+
+…and as rows go live, their Status flips to `DONE · <slug>` alongside the normal INDEX and ideas-file updates. If a preset's idea pool is dry, `/schedule` says so and points you at `/ideate` instead of stretching weak ideas.
+
+Variants: `/schedule through Sep 15` · `/schedule 1 week, Business only`.
+
 ---
 
 ### If something doesn't work
@@ -394,8 +421,11 @@ rules/
 agents/
   WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  SCORER.md   # core
   RESEARCH.md  IDEATION.md  HOOK.md                                                # front-end
-  VOICE.md  FORMATTER.md  VISUAL.md  REELS.md  PUBLISH.md                          # on-demand
+  VOICE.md  FORMATTER.md  VISUAL.md  REELS.md  PUBLISH.md  SCHEDULER.md            # on-demand
   PIPELINE.md                                                                      # run mechanics
+ideas/
+  ideas-<YYYY-MM-DD>.md          # idea trackers (one per batch, preset-tagged, Developed? column)
+  schedule-<YYYY-MM>.md          # forward publishing plans written by /schedule
 content/
   <year>/<YYYY-MM-DD>-<slug>/master.md linkedin.md facebook.md instagram.md x.md
 ```
