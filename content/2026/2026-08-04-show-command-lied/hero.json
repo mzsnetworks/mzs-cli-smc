@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785204163314-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal profile)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: an engineer at a sleek control desk facing a wall of serenely glowing, perfectly ordered status panels — every abstract indicator lit calm and bright; behind them, through a large window, the actual server room has gone completely dark, racks unlit, one unplugged cable hanging. The screens believe; the room knows. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the single dead cable path only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    },
+    {
+      "file": "hero-02.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785204163346-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (1080x1350 portrait)",
+      "prompt": "same prompt, 4:5 variant",
+      "generated": "2026-07-27"
+    }
+  ]
+}

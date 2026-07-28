@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Your \"temporary\" workaround is now *load-bearing*.", "body": "6 signs.", "motif": "none"},
+    {"type": "body", "title": "1 — It has a nickname", "body": "The moment the team *names* it, it's a system.", "motif": "none"},
+    {"type": "body", "title": "2 — New hires get taught it", "body": "Not documented — but it's in *onboarding*.", "motif": "none"},
+    {"type": "body", "title": "3 — Its alert is suppressed", "body": "Permanently.\nMonitoring learned to *look away*.", "motif": "none"},
+    {"type": "body", "title": "4 — Downstream depends on it", "body": "\"Fixing\" it breaks a thing *you can't explain*.", "motif": "none"},
+    {"type": "body", "title": "5 — Nobody remembers why", "body": "The original problem is gone.\nOnly the *fear of removal* remains.", "motif": "none"},
+    {"type": "body", "title": "6 — It survived a redesign", "body": "The architecture changed.\nThe workaround got *migrated with care*.", "motif": "none"},
+    {"type": "cta", "title": "Promote it — or give removal a date.", "body": "Temporary is intent. Load-bearing is dependency.\nWhat's the oldest \"temporary\" fix in your production path?\n\nFollow *@mzsnetworks*"}
+  ]
+}

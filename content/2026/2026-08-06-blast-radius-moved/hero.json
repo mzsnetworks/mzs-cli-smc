@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785204407240-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal profile)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a lone engineer at a small desk pressing a single glowing key; from that keystroke, one thin luminous shockwave ring expands outward across a vast dark hall filled with hundreds of identical network switch racks, the wave reaching the farthest rows — one small action, fleet-wide reach. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the expanding shockwave ring only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    },
+    {
+      "file": "hero-02.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785204407242-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (1080x1350 portrait)",
+      "prompt": "same prompt, 4:5 variant",
+      "generated": "2026-07-27"
+    }
+  ]
+}
