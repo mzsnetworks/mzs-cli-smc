@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785205946621-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal profile)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a towering translucent ice dam holding back an enormous compressed mass of glowing tangled network cables and packet streams, pressure visibly building against the wall, one thin red crack running up the dam face; on the calm downstream side, a tiny engineer sits at a small desk beside a blank wall calendar, serene and unaware. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the single crack only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    },
+    {
+      "file": "hero-02.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785205946624-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (1080x1350 portrait)",
+      "prompt": "same prompt, 4:5 variant",
+      "generated": "2026-07-27"
+    }
+  ]
+}

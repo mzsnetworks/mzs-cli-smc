@@ -4,6 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-08-15 | `fixed-vs-understood` | We "fixed" it by rebooting — fixed and understood are different states; only one prevents the sequel | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 15 4pm · LI personal + IG) |
+| 2026-08-13 | `escalate-early-escalate-clean` | Escalate early, escalate clean — the senior move is a tight evidence packet, not holding the issue for pride | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 13 4pm · LI personal + IG) |
+| 2026-08-11 | `change-freezes-batch-risk` | Change freezes don't reduce risk — they batch it; January's avalanche is December's freeze with interest | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 11 4pm · LI personal + IG) |
 | 2026-08-08 | `load-bearing-workaround` | 6 signs your "temporary" workaround became load-bearing infrastructure | LI · IG | carousel (8 png) | PUBLISHED (sched Aug 8 4pm · LI personal + IG) |
 | 2026-08-06 | `blast-radius-moved` | Automation didn't reduce your outages — it changed who causes them; the blast radius moved from a human to a playbook | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 6 4pm · LI personal + IG) |
 | 2026-08-05 | `git-with-extra-steps` | 5 signs your NetDevOps transformation is just Git with extra steps — the tool got adopted, the behavior didn't | LI · FB · IG · X | carousel (8 png) + hero (16:9) | PUBLISHED (sched Aug 5 4pm · Business — all four on MZS) |

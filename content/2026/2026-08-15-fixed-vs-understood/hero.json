@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785206539310-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal profile)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a dim server room where one engineer cheerfully mops the floor clean around a gleaming, freshly restarted rack — while a second engineer kneels close with a magnifying lens, examining the last remaining clue: a single thin red thread running under the rack. The room looks spotless; the story is not over. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent on the single thread only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    },
+    {
+      "file": "hero-02.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785206539314-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (1080x1350 portrait)",
+      "prompt": "same prompt, 4:5 variant",
+      "generated": "2026-07-27"
+    }
+  ]
+}

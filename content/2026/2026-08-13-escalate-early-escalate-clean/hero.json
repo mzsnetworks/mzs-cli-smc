@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785206352553-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (personal profile)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: two engineers mid-handoff in a dim operations room — one calmly passes the other a small, precisely organized glowing dossier of documents and diagrams; behind the first engineer, a fire smolders contained inside a glass server cabinet, casting warm light. Composure over panic; the handoff is the hero. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent as a single seal mark on the dossier only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+      "generated": "2026-07-27"
+    },
+    {
+      "file": "hero-02.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1785206352557-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (1080x1350 portrait)",
+      "prompt": "same prompt, 4:5 variant",
+      "generated": "2026-07-27"
+    }
+  ]
+}
