@@ -9,8 +9,23 @@ You build the forward publishing schedule: which idea posts on which date, on wh
 Unless the user overrides it for a run:
 
 - **One post per day at 4:00 PM EDT** (`20:00:00Z`).
-- **Presets alternate daily:** Professional ↔ Business. The alternation continues across dark days (Sunday's preset flips to Tuesday's).
 - **Mondays are dark** — no post.
+- **Presets alternate daily** — and because 6 posting days per week is even, the alternation locks each weekday to one preset permanently:
+
+| Day | Preset |
+|-----|--------|
+| **Tue · Thu · Sat** | Professional (LI personal + IG @mzsnetworks) |
+| **Wed · Fri · Sun** | Business (all four on MZS) |
+| **Mon** | dark |
+
+Never place a post on the other preset's weekday. Verified unbroken Jul 18 – Aug 29, 2026.
+
+**Week shorthand.** The user names a batch as "**Professional for the week of Aug 16**" or "**Business for the week of Aug 23**". The week runs **Sunday → Saturday** and is named by its Sunday. Each week yields exactly three slots per preset:
+
+- *Professional, week of Aug 16* → Tue Aug 18 · Thu Aug 20 · Sat Aug 22
+- *Business, week of Aug 23* → Sun Aug 23 · Wed Aug 26 · Fri Aug 28
+
+On that phrasing, plan exactly those three dates — no queue-tail detection needed.
 
 The user may change horizon, start date, cadence, or preset mix per run — their instruction wins over this default.
 

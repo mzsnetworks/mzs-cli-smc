@@ -9,7 +9,7 @@ Instructions for this run: **$ARGUMENTS** (default: the next 2 weeks after the c
 
 Follow `agents/SCHEDULER.md` exactly. In short:
 
-1. **Find the queue tail** in `content/INDEX.md` — last scheduled date + preset — and continue the standing cadence: daily 4pm EDT, alternating Professional/Business, Mondays dark. Check `ideas/schedule-*.md` for unfired rows; never double-book a date.
+1. **Resolve the dates.** Preset is locked to weekday: **Professional = Tue/Thu/Sat**, **Business = Wed/Fri/Sun**, **Monday dark**, all at 4pm EDT. If the run names a week ("Professional for the week of Aug 16" — weeks run Sunday→Saturday, named by their Sunday), plan exactly that preset's three days in it. Otherwise find the queue tail in `content/INDEX.md` and continue forward. Check `ideas/schedule-*.md` for unfired rows; never double-book a date.
 
 2. **Pull eligible ideas per preset:** only rows with `Developed? = —` from `ideas/ideas-*.md`, matching each file's declared preset. Skip stat-gated ideas (`Cited stat? = yes`) unless told otherwise. Drain Top-5 leftovers first, then oldest file first; spread themes.
 
