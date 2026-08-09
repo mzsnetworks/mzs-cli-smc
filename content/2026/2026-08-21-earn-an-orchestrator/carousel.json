@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Nobody needs an orchestrator on day one. You *earn* one.", "body": "Four things that earn it.", "motif": "none"},
+    {"type": "body", "title": "Orchestration multiplies", "body": "It doesn't create capability.\nReliable tasks → *leverage*.\nFlaky tasks → an expensive way to run broken scripts in the right order.", "motif": "none"},
+    {"type": "body", "title": "1 — Tasks that are idempotent", "body": "Run it twice, same result.\nIf a second run makes anyone *nervous*, it isn't ready to run unattended at 2am.", "motif": "none"},
+    {"type": "body", "title": "2 — Data you actually trust", "body": "A stale source of truth doesn't slow the tool down.\nIt executes *confidently* against the wrong list.", "motif": "none"},
+    {"type": "body", "title": "3 — A rollback somebody has run", "body": "Executed, not documented.\n*Half-applied* is the normal failure mode of orchestrated change.", "motif": "none"},
+    {"type": "body", "title": "4 — Failure you can see", "body": "\"The job failed\" isn't observability.\nWhich step? Which device? *In what state?*", "motif": "none"},
+    {"type": "body", "title": "None of it needs a purchase order", "body": "Just unglamorous work on what you already run — and it pays off *whether or not* a tool ever arrives.", "motif": "none"},
+    {"type": "cta", "title": "An orchestrator reveals how mature your automation already was.", "body": "It doesn't make it mature.\nWhat's the one task you'd trust to run 500 times tonight, unattended?\n\nFollow *@mzsnetworks*"}
+  ]
+}
