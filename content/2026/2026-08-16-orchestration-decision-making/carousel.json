@@ -1,0 +1,22 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {"type": "cover", "title": "Orchestration isn't automation at scale. It's *decision-making* at scale.", "body": "Scripts execute. Orchestrators decide.", "motif": "none"},
+    {"type": "body", "title": "The pitch", "body": "Forty scripts, three teams, buy the orchestrator — *now you have a platform*.\nThen the tool arrives.", "motif": "none"},
+    {"type": "body", "title": "The real work", "body": "Not wiring scripts together.\n*Answering questions nobody wrote down.*", "motif": "none"},
+    {"type": "body", "title": "What runs first. What blocks what.", "body": "Which steps run in parallel without *racing each other* for the same device.", "motif": "none"},
+    {"type": "body", "title": "Step 6 fails after step 5 changed state", "body": "Roll back, hold, or wake someone up?\nAnd *who decides* that at 2am — the tool, or a person?", "motif": "none"},
+    {"type": "body", "title": "The tool discovers nothing", "body": "It executes the dependency graph *you hand it*.\nHand it a wrong one and you've bought a faster way to be wrong.", "motif": "none"},
+    {"type": "body", "title": "The whiteboard test", "body": "Can't draw the order, the blockers, the rollback path?\n*You're not ready to buy the tool that automates it.*", "motif": "none"},
+    {"type": "cta", "title": "Draw the graph before you buy the tool.", "body": "Automation is execution. Orchestration is judgment, encoded.\nWhere does your dependency graph live — a diagram, or a person?\n\nFollow *@mzsnetworks*"}
+  ]
+}
