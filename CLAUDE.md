@@ -28,7 +28,7 @@ One idea flows through a pipeline and comes out as four platform-native posts:
 - **Hashtag** applies per-platform hashtag policy
 - **Scorer** scores each render and gates publish (SHIP / REVISE / REWORK)
 
-The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (three tiers: carousel + infographic render deterministically on-brand via `tools/render-*.mjs` — never AI for anything typographic; text-free illustrative **hero images** generate via the SMC Image Generator n8n webhook, creds in `.env`), **Reels** (short-form video script), **Publish** (post SHIP renders live via Blotato — asks platforms/LinkedIn target/timing/X shape every run, shows final text, publishes only on explicit approval, then writes `published.md` and flips the INDEX row to PUBLISHED). Full mechanics in `agents/PIPELINE.md`.
+The bracketed front-end runs only when you don't already have an idea. **On-demand agents** (not pipeline gates): **Voice** (build `rules/VOICE.md` author profile), **Formatter** (PAS/AIDA/BAB/STAR/SLAY skeletons), **Visual** (three tiers: carousel + infographic render deterministically on-brand via `tools/render-*.mjs` — never AI for anything typographic; text-free illustrative **hero images** generate via the SMC Image Generator n8n webhook, creds in `.env`), **Reels** (short-form video script), **Publish** (post SHIP renders live via Blotato — asks platforms/LinkedIn target/timing/X shape every run, shows final text, publishes only on explicit approval, then writes `published.md` and flips the INDEX row to PUBLISHED; media is per-platform — **LinkedIn and Instagram take the full carousel, Facebook and X a single 16:9 hero**, never a lone cover slide). Full mechanics in `agents/PIPELINE.md`.
 
 ### How the system is invoked
 
@@ -36,7 +36,9 @@ Three layers, same logic underneath:
 
 1. **Plain English** — the user just says what they want ("write a post about X", "give me ideas"). Match the intent to the right agent(s) and run them.
 2. **Skills** (`.claude/skills/`) — auto-trigger the standalone capabilities: `build-voice`, `ideate`, `hook`, `niche-research`, `visual`, `reels`. Each skill is a thin trigger that reads its canonical `agents/*.md` and executes it.
-3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master; **`/publish <slug>`** posts a SHIP-gated idea live via Blotato (never publish without the user's explicit per-run confirmation of the final text); **`/schedule`** plans the next publishing cycle — assigns unpublished ideas (per preset, from `ideas/ideas-*.md`) to dates on the standing cadence (daily 4pm EDT, alternating Professional/Business, Mondays dark) and writes `ideas/schedule-<YYYY-MM>.md` (per `agents/SCHEDULER.md`; planning only, never publishes).
+3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master; **`/publish <slug>`** posts a SHIP-gated idea live via Blotato (never publish without the user's explicit per-run confirmation of the final text); **`/schedule`** plans the next publishing cycle — assigns unpublished ideas (per preset, from `ideas/ideas-*.md`) to dates on the standing cadence and writes `ideas/schedule-<YYYY-MM>.md` (per `agents/SCHEDULER.md`; planning only, never publishes).
+
+**Standing cadence — preset locked to weekday.** One post daily at 4:00 PM EDT (`20:00:00Z`); **Professional = Tue/Thu/Sat**, **Business = Wed/Fri/Sun**, **Monday dark**. Six posting days is even, so daily alternation pins each weekday permanently. The user batches by week: "**Business for the week of Aug 16**" — week runs Sunday→Saturday, named by its Sunday, three slots per preset (→ Aug 16/19/21; Professional that week → Aug 18/20/22). Resolve those dates directly, no queue-tail detection.
 
 `agents/*.md` files remain the **source of truth** — skills and commands point to them, never fork the logic. The core pipeline agents (Writer, Factcheck, Adapter, Editor, Hashtag, Scorer) are invoked *through* `/post`, not as individual skills.
 
@@ -47,7 +49,7 @@ rules/
   SHARED.md        # niche, voice, fact discipline — applies to every platform
   LINKEDIN.md      # long-form, near-zero emoji, 2-3 hashtags, Sources block
   FACEBOOK.md      # ~400-800 chars, sparing emoji, 0-2 hashtags, inline cites
-  INSTAGRAM.md     # caption + carousel, purposeful emoji, 10-15 hashtag block
+  INSTAGRAM.md     # caption + carousel, purposeful emoji, exactly 5 hashtags (hard cap)
   X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
   VOICE.md         # author voice profile (created by the Voice agent; optional)
 agents/            # canonical agent logic (source of truth)

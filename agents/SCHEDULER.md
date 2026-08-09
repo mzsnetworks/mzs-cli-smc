@@ -33,7 +33,7 @@ The user may change horizon, start date, cadence, or preset mix per run — thei
 
 ## Inputs (read all before planning)
 
-1. **`content/INDEX.md`** — find the queue tail: the latest scheduled/published date and its preset. The new plan starts the day after and continues the alternation. Also scan recent titles to avoid scheduling a near-duplicate topic back-to-back.
+1. **`content/INDEX.md`** — find the queue tail: the latest scheduled/published date and its preset. The new plan starts the day after, on the weekday lock above. Also scan recent titles to avoid scheduling a near-duplicate topic back-to-back.
 2. **`ideas/ideas-*.md`** — the idea pools. Each file's header names its target preset (Professional or Business). **Eligible ideas are only the rows whose `Developed?` column is `—`** (nothing drafting, SHIP, or PUBLISHED).
 3. **`ideas/schedule-*.md`** — existing plans. Never double-book a date; if a prior plan has unfired rows, fold them in rather than reassigning their ideas.
 

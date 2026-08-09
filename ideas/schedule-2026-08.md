@@ -1,6 +1,6 @@
 # Publishing Schedule — Aug 16–29, 2026
 
-The standing cadence: **one post daily at 4:00 PM EDT, alternating Professional / Business presets, Mondays dark.** This plan fills the two weeks after the current queue (which ends Aug 15 · Professional).
+The standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun, Mondays dark.** This plan fills the two weeks after the current queue (which ends Aug 15 · Professional).
 
 Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with slug) as they're scheduled; update the source ideas file + `content/INDEX.md` per the normal publish flow.
 
@@ -29,4 +29,6 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 | Aug 28 | Fri | Uptime is a lagging indicator — change velocity vs review discipline predicts the next outage | ideas-2026-07-11 #10 | — |
 
 **Dark days:** Mon Aug 17 · Mon Aug 24.
-**After this cycle:** next open slot Aug 30 (Sun · Business by alternation), Aug 31 Monday dark.
+**After this cycle:** next open slot Aug 30 (Sun · Business by the weekday lock), Aug 31 Monday dark.
+
+**Idea pools as of Aug 9:** Business runway restored by `ideas-2026-08-09.md` (10 gate-free ideas) — ~4 weeks. Professional draws on `ideas-2026-07-08.md` + `ideas-2026-07-27.md`.

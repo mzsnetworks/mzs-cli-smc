@@ -66,7 +66,7 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Visual** | on-demand | yes (spec + images) | Carousel/infographic rendered on-brand locally (HTML→PNG), or a text-free AI hero image via the n8n image webhook |
 | **Reels** | on-demand | yes (script) | Write a 30–45s short-form video script from an idea |
 | **Publish** | on-demand | yes (`published.md`) | Post SHIP renders live via Blotato — explicit confirmation gate, never automatic |
-| **Scheduler** | on-demand | yes (`ideas/schedule-*.md`) | Plan the next publishing cycle — assign unpublished ideas to dates per preset on the standing cadence (planning only, never publishes) |
+| **Scheduler** | on-demand | yes (`ideas/schedule-*.md`) | Plan the next publishing cycle — assign unpublished ideas to dates per preset on the weekday-locked cadence (planning only, never publishes) |
 
 Each agent file in `agents/` ends with a **Usage** block — the exact prompt to run it. The how-to below stitches them into workflows.
 
@@ -224,7 +224,10 @@ Claude walks through a fixed script — nothing goes out without you:
    If the post doesn't exist yet, Claude runs the full pipeline first (write → factcheck → adapt → score → visual, each with its approval gate), *then* continues into the publish flow — one command takes an idea from nothing to scheduled.
 
    Presets live in `agents/PUBLISH.md` (with the account IDs). A new team defines its own there.
-3. **Sorts out media.** Instagram can't post text-only — if the folder has a carousel or infographic it uses that; if not, it offers to make one (or a hero image) first. LinkedIn/Facebook/X get the visual attached when one exists.
+3. **Sorts out media** (per-platform, not one image everywhere):
+   - **LinkedIn gets the *full* carousel** when the post has one — every slide, in order, both presets. A listicle teasing "6 signs" that publishes as a lone cover slide is a broken post. Hero image only when there's no carousel.
+   - **Instagram** can't post text-only — carousel (all slides), infographic, or a **4:5** hero. If none exists, Claude offers to make one first.
+   - **Facebook and X get a single 16:9 hero** — never carousel slides. If the post's visual is a carousel and Business is the preset, Claude generates a hero for those two before publishing.
 4. **Shows you the exact final text per platform** and stops. You type **"publish"** — that word is the trigger. Anything else, nothing posts.
 5. **Posts via Blotato**, reports each live URL (or failure, honestly), writes a `published.md` receipt into the post folder, and flips the post to **PUBLISHED** in `content/INDEX.md`.
 
@@ -247,11 +250,13 @@ Claude walks through a fixed script — nothing goes out without you:
 | Just one platform | "Write only a LinkedIn post about [topic]." |
 | Post it live | "/publish [slug]" — asks where/when, shows final text, waits for your OK |
 | Post with a saved audience | "/publish [slug] — Professional" (personal LI + IG) or "— Business" (all four on company) |
+| Run a whole week of one preset | "Business for the week of Aug 16" → its three slots (Aug 16/19/21), written and published one at a time |
 | Schedule instead of post now | "/publish [slug]" then answer "tomorrow 9am" (or "next free slot") when it asks |
 | Add Facebook to an older post | "/publish [slug]" backfills it — or "/adapt [slug]" re-renders all four |
 | See what you have | "What posts do I have?" / "What's ready to publish?" (reads `content/INDEX.md`) |
 | Re-render after editing the master | "/adapt [slug]" |
 | Plan the next posting cycle | "/schedule" — maps unpublished ideas to the next two weeks of dates, per preset |
+| See what ideas are left | "List the unpublished business ideas" (reads the `Developed? = —` rows in `ideas/`) |
 
 You never have to name an agent or edit a rule file. Claude picks the right agents from what you ask.
 
@@ -259,7 +264,24 @@ You never have to name an agent or edit a rule file. Claude picks the right agen
 - **`/post <topic>`** — runs the full pipeline (the Step 1 flow above) in one shot.
 - **`/adapt <slug>`** — re-renders an existing post's `master.md` into the four platforms.
 - **`/publish <slug>`** — posts a SHIP-gated idea live via Blotato (LinkedIn, Facebook, Instagram, X). Asks per run: which platforms, personal vs company page on LinkedIn, now vs scheduled, single vs thread on X. Shows the exact final text and publishes only on your explicit "publish."
-- **`/schedule [horizon]`** — plans the next publishing cycle (default: 2 weeks past the queue tail). Continues the standing cadence — daily 4pm EDT, alternating Professional/Business, Mondays dark — and fills each slot from the **matching preset's unpublished ideas** (`Developed? = —` rows in `ideas/ideas-*.md`; stat-gated ideas skipped by default). Shows the plan for approval, then writes `ideas/schedule-<YYYY-MM>.md`. Planning only — each row still fires through `/publish` with all its gates.
+- **`/schedule [horizon]`** — plans the next publishing cycle (default: 2 weeks past the queue tail). Continues the standing cadence (below) and fills each slot from the **matching preset's unpublished ideas** (`Developed? = —` rows in `ideas/ideas-*.md`; stat-gated ideas skipped by default). Shows the plan for approval, then writes `ideas/schedule-<YYYY-MM>.md`. Planning only — each row still fires through `/publish` with all its gates.
+
+### The standing cadence — one preset per weekday
+
+One post daily at **4:00 PM EDT**, presets alternating. Six posting days a week is an even number, so the alternation locks each weekday to one preset permanently:
+
+| Day | Preset |
+|-----|--------|
+| **Tue · Thu · Sat** | **Professional** — personal LinkedIn + IG @mzsnetworks |
+| **Wed · Fri · Sun** | **Business** — all four platforms on the MZS company account |
+| **Mon** | dark |
+
+Because the lock holds, you can ask for a whole week by name. The week runs **Sunday → Saturday** and is named by its Sunday — each one yields exactly three slots per preset:
+
+> **Business for the week of Aug 16** → Sun Aug 16 · Wed Aug 19 · Fri Aug 21
+> **Professional for the week of Aug 16** → Tue Aug 18 · Thu Aug 20 · Sat Aug 22
+
+Claude resolves the dates, pulls three unpublished ideas from that preset's pool, and runs each one through the full pipeline + `/publish` — still one explicit "publish" per post. No queue-tail detection, no date arithmetic on your side.
 
 And the on-demand capabilities are also installed as **skills** that fire automatically on plain-English phrasing — "build my voice", "give me ideas", "make a carousel", "write a reel", "what's trending". You don't need to learn them; they trigger themselves.
 
@@ -275,7 +297,7 @@ Here's a real run, exactly as it happened, so you can see the shape of it.
 **Claude does:**
 - Creates `content/2026/2026-06-24-operational-state/master.md` and drafts it in your voice — opening "The problem wasn't the procedure. It never is.", landing on a config/logs/state triad.
 - Fact-checks it → **PASS** (no stats to source; it's an experience post).
-- Writes `linkedin.md` (1,662 chars), `instagram.md` (caption + 7 carousel slides + 15 hashtags), `x.md` (a 276-char single post **and** a 7-tweet thread).
+- Writes `linkedin.md` (1,662 chars), `instagram.md` (caption + 7 carousel slides + a 5-hashtag block), `x.md` (a 276-char single post **and** a 7-tweet thread).
 - Scores them: LinkedIn **97/100 SHIP**, Instagram **92 SHIP**, X **92 SHIP**.
 
 **You get:** ready-to-publish files in one folder. Total effort on your side: one sentence.
@@ -332,13 +354,13 @@ The **Professional** variant is identical except the audience: personal LinkedIn
 
 ### Worked example 5 — planning a cycle with `/schedule`
 
-The queue runs on a standing cadence: **one post daily at 4pm EDT, presets alternating Professional/Business, Mondays dark.** When the queue tail approaches, plan the next cycle:
+The queue runs on the weekday-locked cadence above — **Professional Tue/Thu/Sat, Business Wed/Fri/Sun, Mondays dark, all at 4pm EDT.** When the queue tail approaches, plan the next cycle:
 
 **You type:**
 > /schedule
 
 **Claude:**
-- Reads `content/INDEX.md` → queue ends Aug 15 (Professional). The plan starts Aug 16 (Business, by alternation) and covers two weeks.
+- Reads `content/INDEX.md` → queue ends Aug 15 (a Saturday · Professional). The plan starts Aug 16 (Sunday → Business, by the weekday lock) and covers two weeks.
 - Pulls candidates **only from the matching preset's idea files**, only rows still marked `Developed? = —` — Professional slots from the Professional files, Business slots from the Business files, never crossed (the voice differs: personal "I" vs company "we"). Stat-gated ideas (`Cited stat? = yes`) are skipped so nothing blocks on Factcheck.
 - Drains each file's "Top 5 to write now" leftovers first, spreads themes apart (and may deliberately pair a two-part series in one week — flagged as such).
 - Shows the plan — Professional table first, then Business, each row Date · Day · Idea · Source — and **waits for your approval**.
@@ -366,6 +388,8 @@ Variants: `/schedule through Sep 15` · `/schedule 1 week, Business only`.
 | `/publish` can't find accounts | Blotato MCP disconnected — reconnect via `/mcp`. |
 | Instagram refuses to post | It needs media. Make a carousel, infographic, or hero first (Claude offers this automatically). |
 | A hero URL 404s at publish time | Zipline files expire after 90 days. The local `hero-*.jpg` in the post folder is the durable copy — Claude re-uploads it via Blotato automatically. |
+| LinkedIn published only one slide of a carousel | A media-rule bug, fixed Aug 2026 — LinkedIn now takes **all** slides. If you see it again, check the Media section of `agents/PUBLISH.md`. Live posts can't be deleted through Blotato; delete it in LinkedIn, then repost. |
+| Instagram rejects the post over hashtags | More than 5. Count inline ones too — a `#3` in a numbered caption counts against the cap. |
 
 ---
 
@@ -386,6 +410,8 @@ Everything an agent does is governed by the files in `rules/`:
 | Instagram | ~125–220 chars caption (more if carousel) | ~2,200 | ~125 chars (first line) |
 | X — single | ~240–270 chars | 280 | whole post visible |
 | X — thread | ≤280/tweet, one idea per tweet | 280/tweet | tweet 1 is the hook |
+
+**Hashtag counts** (Hashtag agent, enforced at publish): LinkedIn 2–3 PascalCase · Facebook 0–2 · **Instagram exactly 5 — a hard cap** (Blotato rejects a 6th, and an inline `#3` in the caption counts as one) · X 1–2.
 
 ---
 

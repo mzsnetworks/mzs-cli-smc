@@ -35,7 +35,7 @@ Never drop a cited statistic during adaptation. If a stat doesn't fit a shorter 
 
 ### Instagram (`rules/INSTAGRAM.md`)
 - Tighten to the emotional core. Short lines, purposeful emoji on key beats, arrow-bullet data.
-- Add a 10–15 hashtag block (separate) and 5–6 carousel slide ideas.
+- Add a hashtag block of **exactly 5** (separate) and 5–6 carousel slide ideas. Never number caption lines with `#1`/`#2` — Instagram counts those against the 5-hashtag cap.
 
 ### X (`rules/X.md`)
 - Produce both a single-post (<280 char) version and a numbered thread.
