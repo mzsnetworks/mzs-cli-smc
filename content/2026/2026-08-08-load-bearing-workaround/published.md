@@ -2,12 +2,14 @@
 
 **Preset:** Professional (LinkedIn personal + IG @mzsnetworks)
 **Scheduled:** 2026-08-08 4:00 PM EDT (`2026-08-08T20:00:00Z`)
-**Media:** LinkedIn → carousel cover slide (Professional precedent — Business hero rule N/A). Instagram → full 8-slide carousel (Blotato public_media PNGs).
+**Media:** LinkedIn → **full 8-slide carousel** (reposted 2026-08-09). Instagram → full 8-slide carousel (Blotato public_media PNGs).
 
 | Platform | Account | Submission ID | Status |
 |----------|---------|---------------|--------|
-| LinkedIn (personal — Luis Mazariegos) | 26694 | `13eb71aa-6a0c-405e-9a6a-d4376e3c95eb` | scheduled |
-| Instagram (@mzsnetworks · carousel) | 55865 | `267800b8-fe0c-4353-a939-d22549230b61` | scheduled |
+| LinkedIn (personal — Luis Mazariegos) | 26694 | `dc534922-2d58-4b4c-a818-58288fa31bd7` | published — https://linkedin.com/feed/update/urn:li:ugcPost:7492309911188684801 |
+| Instagram (@mzsnetworks · carousel) | 55865 | `267800b8-fe0c-4353-a939-d22549230b61` | published (Aug 8) |
+
+2026-08-09: original LI post (`13eb71aa…`, cover slide only — the flaw that triggered the LinkedIn-carousel rule change) deleted by user on LinkedIn; reposted with identical text + full 8-slide carousel.
 
 **Notes:**
 - CTA slide first render dropped the word "date" — `*date*` red-accent inside the red CTA block rendered red-on-red. Fixed by removing accent markup from the CTA title. Lesson: no `*accent*` in CTA/cover titles that sit on red blocks.
