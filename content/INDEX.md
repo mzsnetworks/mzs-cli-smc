@@ -4,6 +4,7 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-08-22 | `mean-time-to-innocence` | The network is guilty until proven innocent — half the job is proving a negative, and the capture is the only witness that doesn't guess | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 22 4pm · LI personal + IG) |
 | 2026-08-21 | `earn-an-orchestrator` | Nobody needs an orchestrator on day one — you earn one; it reveals how mature your automation already was | LI · FB · IG · X | carousel (8 png) + hero (16:9) | PUBLISHED (sched Aug 21 4pm · Business — all four on MZS) |
 | 2026-08-20 | `the-2pm-test` | The maturity metric nobody tracks — what % of your changes you'd run at 2pm; the 2am window is a confession | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 20 4pm · LI personal + IG) |
 | 2026-08-19 | `iot-inventory-not-security` | Your IoT problem isn't security, it's inventory — you can't write policy for a device you can't name | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Aug 19 4pm · Business — all four on MZS) |

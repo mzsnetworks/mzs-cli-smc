@@ -12,7 +12,7 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 |------|-----|------|--------|--------|
 | Aug 18 | Tue | The switch nobody dared reboot — seven years of uptime is fear with a counter | ideas-2026-07-27 #4 | DONE · `switch-nobody-dared-reboot` |
 | Aug 20 | Thu | The 2pm test — what % of changes would you run in daylight? The 2am window is a confession | ideas-2026-07-27 #9 | DONE · `the-2pm-test` |
-| Aug 22 | Sat | Mean-time-to-innocence — half the job is proving a negative | ideas-2026-07-27 #1 | — |
+| Aug 22 | Sat | Mean-time-to-innocence — half the job is proving a negative | ideas-2026-07-27 #1 | DONE · `mean-time-to-innocence` |
 | Aug 25 | Tue | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | — |
 | Aug 27 | Thu | Greenfield is a design exercise; brownfield is a negotiation with ten years of other people's decisions | ideas-2026-07-08 #4 | — |
 | Aug 29 | Sat | Your first automation should change nothing — read-only first, write access is earned | ideas-2026-07-27 #3 | — |

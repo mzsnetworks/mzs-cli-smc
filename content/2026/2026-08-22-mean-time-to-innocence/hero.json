@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786308678725-0.jpg",
+      "targets": ["linkedin"]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786308678727-1.jpg",
+      "targets": ["instagram"]
+    }
+  ],
+  "generated": "2026-08-09",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a dark courtroom where the witness stand holds no person — instead a single glowing waveform of captured network traffic stands as the witness, calm and precise, while empty accusing chairs face it from the shadows. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) light on the wooden stand and waveform, thin red (#eb2027) accent marking one spike in the waveform only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "Courtroom metaphor: the capture is the only witness that doesn't guess. 16:9 waveform glow renders slightly cooler than brand cream; accepted as monitor light. Zipline URLs expire after 90 days; local .jpg files are durable."
+}
