@@ -17,7 +17,7 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 | Aug 27 | Thu | Greenfield is a design exercise; brownfield is a negotiation with ten years of other people's decisions | ideas-2026-07-08 #4 | — |
 | Aug 29 | Sat | Your first automation should change nothing — read-only first, write access is earned | ideas-2026-07-27 #3 | — |
 
-## Business (all four on MZS · LI/FB/X hero + IG carousel-or-4:5-hero)
+## Business (all four on MZS · LI full-carousel-or-hero · FB/X hero · IG carousel-or-4:5-hero)
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
