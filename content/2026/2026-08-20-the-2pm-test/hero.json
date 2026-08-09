@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786308411751-0.jpg",
+      "targets": ["linkedin"]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786308411754-1.jpg",
+      "targets": ["instagram"]
+    }
+  ],
+  "generated": "2026-08-09",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a large analog wall clock in a dim empty operations room, its hands at two o'clock, the room split down the middle — one half washed in soft warm daylight through a window with occupied desks, the other half in deep night shadow with the same desks empty. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) daylight and clock face, thin red (#eb2027) accent on the clock hands only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere, and no numerals on the clock face. Cinematic moody lighting, minimalist composition.",
+  "note": "Split-room day/night carries the 2pm-vs-2am argument with no text. Clock face deliberately numeral-free — numerals would count as readable text. Zipline URLs expire after 90 days; local .jpg files are durable."
+}
