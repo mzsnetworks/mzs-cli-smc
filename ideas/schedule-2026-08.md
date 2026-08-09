@@ -22,7 +22,7 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
 | Aug 16 | Sun | Orchestration isn't automation at scale — it's decision-making at scale; the whiteboard test | ideas-2026-07-16 #4 | DONE · `orchestration-decision-making` |
-| Aug 19 | Wed | Your IoT problem isn't security, it's inventory — the 400 unknown MACs | ideas-2026-07-16 #2 | — |
+| Aug 19 | Wed | Your IoT problem isn't security, it's inventory — the 400 unknown MACs | ideas-2026-07-16 #2 | DONE · `iot-inventory-not-security` |
 | Aug 21 | Fri | Nobody needs an orchestrator on day one — you earn one (pairs with Aug 16) | ideas-2026-07-16 #5 | — |
 | Aug 23 | Sun | Your most valuable asset isn't the config — it's the reason behind it, in one person's head | ideas-2026-07-11 #8 | — |
 | Aug 26 | Wed | Your lab doesn't need to match production — it needs to match production's failure modes | ideas-2026-07-16 #10 | — |

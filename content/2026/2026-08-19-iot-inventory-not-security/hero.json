@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786307373645-0.jpg",
+      "targets": ["linkedin", "facebook", "x"]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786307373647-1.jpg",
+      "targets": ["instagram"]
+    }
+  ],
+  "generated": "2026-08-09",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a darkened cross-section of an office building at night, its floors revealed, hundreds of tiny device points scattered across every level — most of them dim, pale and unlabeled — while one dense cluster of points glows red, the devices nobody can name. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) points and thin structural lines, thin red (#eb2027) accent on that single cluster only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "No carousel for this post — single argument, hero reads better, and it varies the feed after the Aug 16 carousel. Zipline URLs expire after 90 days; local .jpg files are durable."
+}
