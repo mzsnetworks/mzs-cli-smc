@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786308188392-0.jpg",
+      "targets": ["linkedin"]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1786308188394-1.jpg",
+      "targets": ["instagram"]
+    }
+  ],
+  "generated": "2026-08-09",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a single network switch alone in a dark data center rack, its surface visibly furred with years of dust while every neighbouring device is clean, one small status light burning steady red — an old machine nobody has touched in years. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights on the rack edges and dust, thin red (#eb2027) accent on that one status light only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "Dust as the visual for untouched-for-years. Zipline URLs expire after 90 days; local .jpg files are durable."
+}

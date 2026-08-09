@@ -10,7 +10,7 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Aug 18 | Tue | The switch nobody dared reboot — seven years of uptime is fear with a counter | ideas-2026-07-27 #4 | — |
+| Aug 18 | Tue | The switch nobody dared reboot — seven years of uptime is fear with a counter | ideas-2026-07-27 #4 | DONE · `switch-nobody-dared-reboot` |
 | Aug 20 | Thu | The 2pm test — what % of changes would you run in daylight? The 2am window is a confession | ideas-2026-07-27 #9 | — |
 | Aug 22 | Sat | Mean-time-to-innocence — half the job is proving a negative | ideas-2026-07-27 #1 | — |
 | Aug 25 | Tue | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | — |
