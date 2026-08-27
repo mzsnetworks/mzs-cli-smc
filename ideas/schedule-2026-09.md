@@ -8,9 +8,9 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Sep 1 | Tue | — | — | planned |
-| Sep 3 | Thu | — | — | planned |
-| Sep 5 | Sat | — | — | planned |
+| Sep 1 | Tue | AI can't learn from your tickets — "Resolved: rebooted" teaches the workaround | ideas-2026-07-27 #5 | SHIP · `your-tickets-are-lies` |
+| Sep 3 | Thu | Your single pane of glass is a museum — dashboards show state, work changes it | ideas-2026-07-08 #3 | SHIP · `single-pane-museum` |
+| Sep 5 | Sat | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | SHIP · `audience-of-one` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
