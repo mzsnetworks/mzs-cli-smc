@@ -1,4 +1,4 @@
-# Publishing Schedule — Aug 16–29, 2026
+# Publishing Schedule — Aug 16–30, 2026
 
 The standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun, Mondays dark.** This plan fills the two weeks after the current queue (which ends Aug 15 · Professional).
 
@@ -13,9 +13,9 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 | Aug 18 | Tue | The switch nobody dared reboot — seven years of uptime is fear with a counter | ideas-2026-07-27 #4 | DONE · `switch-nobody-dared-reboot` |
 | Aug 20 | Thu | The 2pm test — what % of changes would you run in daylight? The 2am window is a confession | ideas-2026-07-27 #9 | DONE · `the-2pm-test` |
 | Aug 22 | Sat | Mean-time-to-innocence — half the job is proving a negative | ideas-2026-07-27 #1 | DONE · `mean-time-to-innocence` |
-| Aug 25 | Tue | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | — |
-| Aug 27 | Thu | Greenfield is a design exercise; brownfield is a negotiation with ten years of other people's decisions | ideas-2026-07-08 #4 | — |
-| Aug 29 | Sat | Your first automation should change nothing — read-only first, write access is earned | ideas-2026-07-27 #3 | — |
+| Aug 25 | Tue | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | MISSED · returned to pool |
+| Aug 27 | Thu | Greenfield is a design exercise; brownfield is a negotiation with ten years of other people's decisions | ideas-2026-07-08 #4 | SHIP · `brownfield-is-a-negotiation` |
+| Aug 29 | Sat | Your first automation should change nothing — read-only first, write access is earned | ideas-2026-07-27 #3 | SHIP · `read-only-first` |
 
 ## Business (all four on MZS · LI full-carousel-or-hero · FB/X hero · IG carousel-or-4:5-hero)
 
@@ -24,11 +24,14 @@ Stat-gated ideas (07-11 #7, 07-16 #8, 07-08 #5/#19) deliberately excluded — no
 | Aug 16 | Sun | Orchestration isn't automation at scale — it's decision-making at scale; the whiteboard test | ideas-2026-07-16 #4 | DONE · `orchestration-decision-making` |
 | Aug 19 | Wed | Your IoT problem isn't security, it's inventory — the 400 unknown MACs | ideas-2026-07-16 #2 | DONE · `iot-inventory-not-security` |
 | Aug 21 | Fri | Nobody needs an orchestrator on day one — you earn one (pairs with Aug 16) | ideas-2026-07-16 #5 | DONE · `earn-an-orchestrator` |
-| Aug 23 | Sun | Your most valuable asset isn't the config — it's the reason behind it, in one person's head | ideas-2026-07-11 #8 | — |
-| Aug 26 | Wed | Your lab doesn't need to match production — it needs to match production's failure modes | ideas-2026-07-16 #10 | — |
-| Aug 28 | Fri | Uptime is a lagging indicator — change velocity vs review discipline predicts the next outage | ideas-2026-07-11 #10 | — |
+| Aug 23 | Sun | Your most valuable asset isn't the config — it's the reason behind it, in one person's head | ideas-2026-07-11 #8 | MISSED · returned to pool |
+| Aug 26 | Wed | *(4pm slot passed — idea slid to Aug 30)* | — | SKIPPED |
+| Aug 28 | Fri | Uptime is a lagging indicator — change velocity vs review discipline predicts the next outage | ideas-2026-07-11 #10 | SHIP · `uptime-is-lagging` |
+| Aug 30 | Sun | Your lab doesn't need to match production — it needs to match production's failure modes | ideas-2026-07-16 #10 | SHIP · `lab-failure-modes` |
 
 **Dark days:** Mon Aug 17 · Mon Aug 24.
-**After this cycle:** next open slot Aug 30 (Sun · Business by the weekday lock), Aug 31 Monday dark.
+**After this cycle:** Aug 30 (Sun · Business) now filled by `lab-failure-modes`. Aug 31 Monday dark. Next open slot Sep 1 (Tue · Professional).
+
+**Returned to pool (missed slots):** 07-11 #8 (reason behind the config, Business) · 07-27 #7 (audience of one, Professional). Reassign in the next cycle.
 
 **Idea pools as of Aug 9:** Business runway restored by `ideas-2026-08-09.md` (10 gate-free ideas) — ~4 weeks. Professional draws on `ideas-2026-07-08.md` + `ideas-2026-07-27.md`.
