@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787801614063-4.jpg",
+      "targets": [
+        "linkedin"
+      ]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787801614082-5.jpg",
+      "targets": [
+        "instagram"
+      ]
+    }
+  ],
+  "generated": "2026-08-26",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a glass observation wall between a darkened operations floor and a lit row of network racks. Beams of soft cream light cross the glass to read the equipment but never touch it; one thin red line marks a closed door that stays shut. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) light beams, thin red (#eb2027) accent only on the door line — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "Zipline URLs expire after 90 days; local .jpg files are durable."
+}

@@ -1,0 +1,70 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Your lab doesn't need to match production. It needs to match its *failure modes*.",
+      "body": "The spec everyone writes wrong.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The digital twin",
+      "body": "Same platforms. Same topology. Faithful at scale.\nA year later, it proves the *happy path* works.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The happy path was never the question",
+      "body": "Outages don't come from the topology.\nThey come from the *seams*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The seams",
+      "body": "Failover that breaks only under asymmetric return traffic.\nAn upgrade that fails on *state left behind*.\nA “multicast problem” that was an app design flaw.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "A replica of a healthy network is healthy",
+      "body": "That's the design goal.\nIt reproduces *none* of it.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Write a different spec",
+      "body": "Can this lab reproduce\nour *last three outages*?",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Not port count. Not part numbers.",
+      "body": "Break the link, watch convergence take the documented path.\nLeave stale state behind, run the upgrade again.\nHalf-apply a change, rehearse the *rollback*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Two switches and a VM",
+      "body": "…that reproduce last quarter's incident teach more than a rack that mirrors the DC and has *never been broken on purpose*.",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "Only one of them gets tested at 2am.",
+      "body": "A lab that matches production proves your design.\nA lab that matches its failures proves your *operations*.\n\nFollow *@mzsnetworks*"
+    }
+  ]
+}

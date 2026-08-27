@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787801775886-0.jpg",
+      "targets": [
+        "facebook",
+        "x"
+      ]
+    }
+  ],
+  "generated": "2026-08-26",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a small crude workbench under a single spotlight — two stacked network switches and a laptop, cables deliberately pulled loose, one thin red fault light glowing; behind it in deep shadow sits an immaculate full-height data center row, untouched and dust-free. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights on the workbench, thin red (#eb2027) accent only on the fault light — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "Zipline URLs expire after 90 days; local .jpg files are durable."
+}

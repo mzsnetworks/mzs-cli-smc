@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787801614025-2.jpg",
+      "targets": [
+        "linkedin"
+      ]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787801775888-1.jpg",
+      "targets": [
+        "instagram"
+      ],
+      "url_stale": true,
+      "note": "Generator returned a cream-matted frame twice; local file is centre-cropped to a clean 860x1075 (4:5). The Zipline url still points at the MATTED original — /publish must upload the local file, not reuse this url."
+    }
+  ],
+  "generated": "2026-08-26",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a negotiation table in a dark room. On one side a single empty modern chair. On the other side a chair built out of a decade of legacy hardware — stacked old switches, coiled cable, patch panels — seated as if the past itself is the counterparty. A thin red line of light runs down the centre of the table. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights on the table surface, thin red (#eb2027) accent line only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "Zipline URLs expire after 90 days; local .jpg files are durable. hero-02-ig.jpg was cropped locally — see its note."
+}

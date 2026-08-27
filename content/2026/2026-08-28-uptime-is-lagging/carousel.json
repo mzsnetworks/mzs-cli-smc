@@ -1,0 +1,70 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Uptime is a *lagging* indicator.",
+      "body": "It tells you what survived.\nNot what's about to break.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The easiest number to count",
+      "body": "Four nines looks like a job well done.\nRight up until the quarter it *isn't*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Watch this pair instead",
+      "body": "How fast the environment changes —\nagainst how much review those changes *actually* get.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Velocity isn't the risk",
+      "body": "Per DORA's State of DevOps research, the fastest teams are also the most *stable*.\nThroughput and stability rise together.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "1 — The “standard change” list keeps growing",
+      "body": "Because getting an *exception* is slow.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "2 — Approvals in under a minute",
+      "body": "Which makes them approvals,\nnot *readings*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "3 — A rollback nobody has run",
+      "body": "A paragraph in the ticket.\n*Never executed.*",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "4 — The approver is the author",
+      "body": "The person who understands the change\nis the person *approving* it.",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "Review discipline decides which one you get.",
+      "body": "Uptime tells you what survived.\nChange velocity tells you what's coming.\n\nFollow *@mzsnetworks*"
+    }
+  ]
+}

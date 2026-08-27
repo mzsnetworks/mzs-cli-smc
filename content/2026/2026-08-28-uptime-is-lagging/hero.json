@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787801614015-0.jpg",
+      "targets": [
+        "facebook",
+        "x"
+      ]
+    }
+  ],
+  "generated": "2026-08-26",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a long dark corridor where a bright cream ribbon of light stretches backward into the distance, perfectly lit and orderly, while ahead of the viewer the same ribbon dissolves into unlit shadow — a single thin red line marks one turn ahead that nobody can see yet. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights along the ribbon, thin red (#eb2027) accent line only — no green, no purple, no rainbow palettes. No readable text, letters, or numbers anywhere. Cinematic moody lighting, minimalist composition.",
+  "note": "Zipline URLs expire after 90 days; local .jpg files are durable."
+}

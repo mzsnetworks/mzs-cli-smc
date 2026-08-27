@@ -4,10 +4,10 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-08-30 | `lab-failure-modes` | Your lab doesn't need to match production — it needs to match production's failure modes | LI · FB · IG · X | — | SHIP |
-| 2026-08-29 | `read-only-first` | Your first automation should change nothing — read-only first; write access is earned | LI · IG | — | SHIP |
-| 2026-08-28 | `uptime-is-lagging` | Uptime is a lagging indicator — change velocity measured against review discipline predicts the next outage | LI · FB · IG · X | — | SHIP |
-| 2026-08-27 | `brownfield-is-a-negotiation` | Greenfield is a design exercise; brownfield is a negotiation with ten years of other people's decisions | LI · IG | — | SHIP |
+| 2026-08-30 | `lab-failure-modes` | Your lab doesn't need to match production — it needs to match production's failure modes | LI · FB · IG · X | carousel (9 png) + hero (16:9) | SHIP |
+| 2026-08-29 | `read-only-first` | Your first automation should change nothing — read-only first; write access is earned | LI · IG | hero (16:9 + 4:5) | SHIP |
+| 2026-08-28 | `uptime-is-lagging` | Uptime is a lagging indicator — change velocity measured against review discipline predicts the next outage | LI · FB · IG · X | carousel (9 png) + hero (16:9) | SHIP |
+| 2026-08-27 | `brownfield-is-a-negotiation` | Greenfield is a design exercise; brownfield is a negotiation with ten years of other people's decisions | LI · IG | hero (16:9 + 4:5) | SHIP |
 | 2026-08-22 | `mean-time-to-innocence` | The network is guilty until proven innocent — half the job is proving a negative, and the capture is the only witness that doesn't guess | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 22 4pm · LI personal + IG) |
 | 2026-08-21 | `earn-an-orchestrator` | Nobody needs an orchestrator on day one — you earn one; it reveals how mature your automation already was | LI · FB · IG · X | carousel (8 png) + hero (16:9) | PUBLISHED (sched Aug 21 4pm · Business — all four on MZS) |
 | 2026-08-20 | `the-2pm-test` | The maturity metric nobody tracks — what % of your changes you'd run at 2pm; the 2am window is a confession | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 20 4pm · LI personal + IG) |
