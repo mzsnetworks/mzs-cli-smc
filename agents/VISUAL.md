@@ -102,8 +102,18 @@ For illustrative scenes only — **never for anything containing text, numbers, 
    ```
 
    Batch: up to 10 `images[]` per call (variants, per-platform aspects). Response: `{ count, images: [ { url, aspect, prompt } ] }` — Zipline public URLs (`.../raw/...`), auto-expire in 90 days.
-4. **QA.** Download each image, show the user. Check: palette on-brand (navy dominant, red accent, no color drift), no accidental text/logos, scene matches the post. Iterate on the prompt if off.
+4. **QA.** Download each image, show the user. Check: palette on-brand (navy dominant, red accent, no color drift), no accidental text/logos, scene matches the post, **and no border** — the generator sometimes returns the art matted inside a cream picture frame. Iterate on the prompt if off.
+
+   **Downloading:** Zipline rejects Python's default urllib user-agent with `HTTP 403: Forbidden`. Use curl with a UA:
+
+   ```bash
+   curl -sS -A "Mozilla/5.0" -o content/<year>/<date>-<slug>/hero-01.jpg "<zipline url>"
+   ```
+
+   **If an image comes back matted:** adding an explicit full-bleed clause to the prompt ("Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame") fixes it *sometimes* — it failed on a 4:5 retry in Aug 2026. When a re-roll won't drop the frame, keep the good composition and crop it instead (`sips -c <height> <width> file.jpg` centre-crops to an exact aspect; there is no PIL or ImageMagick here). A cropped file no longer matches its Zipline URL — see step 5.
 5. **Save.** Download the approved image(s) into the idea folder as `hero-01.<ext> …` and write `hero.json` beside them: `{ "images": [ { "file", "url", "aspect", "prompt", "generated": "<ISO date>" } ] }`. The `url` is what `/publish` uses directly in Blotato `mediaUrls` — no re-upload needed (mind the 90-day expiry; the local file is the durable copy).
+
+   **If you edited the image locally** (a crop, per step 4), the Zipline URL now points at something different from what you approved. Mark that variant `"url_stale": true` with a note saying why, so `/publish` uploads the local file via `blotato_create_presigned_upload_url` instead of reusing the URL.
 6. **Update `content/INDEX.md`** — Visual column → `hero` (or `infographic + hero` etc.).
 
 Backend: n8n workflow **SMC Image Generator** (`https://n8n.mzstools.net/workflow/V6frvGMkU7jrqJrz`) — webhook → Gemini image model (currently `gemini-3.1-flash-image-preview`) → Zipline upload → URLs. Requires billing on the Google AI project; on 429 `limit: 0` errors, check billing/quota there.

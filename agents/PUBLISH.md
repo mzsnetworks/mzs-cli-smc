@@ -73,6 +73,8 @@ Use the returned `publicUrl` in `mediaUrls`. Never pass a local path to `blotato
 
 **Hero shortcut:** if the folder's `hero.json` holds a Zipline URL (`https://zipline.mzstools.net/raw/...`), use it directly in `mediaUrls` — it's already public, no upload needed. Zipline files expire after 90 days; if the URL 404s, re-upload the local `hero-NN.<ext>` via the presigned flow instead.
 
+**Exception — `"url_stale": true`.** A variant carrying this flag was edited locally after generation (usually a crop), so its Zipline URL points at the *unedited* original. Ignore the URL and upload the local file through the presigned flow. Check for this flag before taking the shortcut.
+
 ---
 
 ## Text extraction
