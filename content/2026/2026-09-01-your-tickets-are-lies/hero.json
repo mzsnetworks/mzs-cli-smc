@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787804950954-0.jpg",
+      "targets": [
+        "linkedin"
+      ]
+    },
+    {
+      "aspect": "4:5",
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787804950956-1.jpg",
+      "targets": [
+        "instagram"
+      ]
+    }
+  ],
+  "generated": "2026-08-27",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a dark archive of identical filing drawers stretching row after row into shadow, every drawer standing slightly ajar with a single thin sheet inside, the endless repetition itself the subject of the image; one drawer near the front glows warm cream from within, holding a fuller page. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) glow from the single open drawer, thin red (#eb2027) accent line marking that one glowing drawer — no green, no purple, no rainbow palettes. No readable text, letters, numbers, labels, or signage anywhere. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the illustration must fill the entire frame with no border, no cream margin, no white matting, no picture frame, and no poster-print surround.",
+  "note": "Zipline URLs expire after 90 days; local .jpg files are durable."
+}
