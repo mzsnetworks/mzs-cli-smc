@@ -1,0 +1,70 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "An SLA is not a *design*.",
+      "body": "Four nines on the contract.\nOne fiber path in the ground.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Diverse on the invoice",
+      "body": "Two carriers. One conduit. *One bridge.*\nAdjacent in the dirt.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Nobody asked the physical question",
+      "body": "The contract had already answered a *different one*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "An SLA transfers risk",
+      "body": "It does *not* reduce it.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The credit doesn't run payroll",
+      "body": "A fraction of one month's bill, eventually.\nIt compensates you for the outage — it was never built to *prevent* one.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "1 — Where do the paths diverge?",
+      "body": "On a *map*.\nNot a logical diagram.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "2 — Whose conduit is that?",
+      "body": "And who else is in it?",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "3 — What runs when primary is down?",
+      "body": "Everything — or the subset somebody chose *three years ago*?",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "A design tells you whether it breaks.",
+      "body": "An SLA tells you what you're owed when it breaks.\n\nFollow *@mzsnetworks*"
+    }
+  ]
+}

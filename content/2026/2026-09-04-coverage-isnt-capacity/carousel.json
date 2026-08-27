@@ -1,0 +1,70 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Coverage isn't *capacity*.",
+      "body": "Green in every corner.\nThe complaints keep arriving.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Users don't feel dBm",
+      "body": "They feel *contention*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "A radio is a shared medium",
+      "body": "One device talks at a time.\nEveryone else *waits their turn*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Forty devices, one conversation",
+      "body": "Not forty conversations.\nOne — taken in turns, very quickly.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The slowest client sets the tax",
+      "body": "A device at the edge negotiates a low rate and holds the medium *longer* for the same data.\nSlow for everyone on that radio.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The map answers the wrong question",
+      "body": "“Did signal reach here.”\nThe complaint is *“did I get a turn.”*",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Look at these instead",
+      "body": "Channel utilization. Retry rate.\nClients per radio at *peak*.\nThe data rates in use.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "More power makes it worse",
+      "body": "Bigger cells → more clients per radio → more overlap.\nThe heat map gets greener while the experience *degrades*.",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "Capacity is the design.",
+      "body": "Coverage is a design input.\nA heat map tells you the signal arrived — not that the user got a turn to speak.\n\nFollow *@mzsnetworks*"
+    }
+  ]
+}

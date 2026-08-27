@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "aspect": "16:9",
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1787804199413-0.jpg",
+      "targets": [
+        "facebook",
+        "x"
+      ]
+    }
+  ],
+  "generated": "2026-08-27",
+  "prompt": "Premium editorial illustration, high-end tech magazine style: a large room completely and evenly flooded with warm cream light — every corner brightly and uniformly lit, no dark areas, the even illumination is the subject of the image. In this fully-lit room, dozens of small identical devices are queued in a long single-file line at one narrow doorway, passing through strictly one at a time while all the others wait. The contrast is deliberate: light everywhere, access through one point. Deep dark navy (#161a45) for the walls and structure, soft cream (#F4EFE3) flooding the floor and filling the room, thin red (#eb2027) accent line marking the doorway threshold only — no green, no purple, no rainbow palettes. No readable text, letters, numbers, labels, or signage anywhere. Cinematic lighting, minimalist isometric composition. Full-bleed edge-to-edge artwork: fills the entire frame with no border, no cream margin, no white matting, no picture frame.",
+  "note": "Second pass — the first render left the room dark, losing the coverage-everywhere half of the metaphor. Zipline URLs expire after 90 days; local .jpg is durable."
+}
