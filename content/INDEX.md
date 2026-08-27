@@ -4,8 +4,8 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-09-04 | `coverage-isnt-capacity` | Coverage isn't capacity — a heat map proves signal arrived, not that the user got a turn to speak | LI · FB · IG · X | carousel (9 png) + hero (16:9) | SHIP |
-| 2026-09-02 | `sla-is-not-a-design` | An SLA is not a design — it tells you what you're owed when it breaks, not whether it breaks | LI · FB · IG · X | carousel (9 png) + hero (16:9) | SHIP |
+| 2026-09-04 | `coverage-isnt-capacity` | Coverage isn't capacity — a heat map proves signal arrived, not that the user got a turn to speak | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Sep 4 4pm · Business — all four on MZS) |
+| 2026-09-02 | `sla-is-not-a-design` | An SLA is not a design — it tells you what you're owed when it breaks, not whether it breaks | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Sep 2 4pm · Business — all four on MZS) |
 | 2026-08-30 | `lab-failure-modes` | Your lab doesn't need to match production — it needs to match production's failure modes | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Aug 30 4pm · Business — all four on MZS) |
 | 2026-08-29 | `read-only-first` | Your first automation should change nothing — read-only first; write access is earned | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Aug 29 4pm · LI personal + IG) |
 | 2026-08-28 | `uptime-is-lagging` | Uptime is a lagging indicator — change velocity measured against review discipline predicts the next outage | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Aug 28 4pm · Business — all four on MZS) |
