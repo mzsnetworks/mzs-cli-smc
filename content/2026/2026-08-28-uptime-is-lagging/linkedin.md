@@ -30,8 +30,6 @@ Uptime tells you what survived. Change velocity tells you what's coming. Review 
 
 What's your ratio — and when did anyone last check it?
 
+Source: DORA (Google Cloud), State of DevOps Report — dora.dev/research
+
 #NetOps #ChangeManagement #NetDevOps
-
-## Sources
-
-- DORA (Google Cloud), *State of DevOps Report* — throughput and stability move together; the highest performers lead on both rather than trading one for the other. https://dora.dev/research/
