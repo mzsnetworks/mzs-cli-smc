@@ -1,0 +1,70 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Segment IoT without a *forklift*.",
+      "body": "Thirty days.\nThe gear you already own.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Days 1–10: profile what's talking",
+      "body": "DHCP options and MAC OUI give you the vendor.\nFlow data gives you *the truth*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Group by class, not vendor",
+      "body": "Cameras. Badge readers. HVAC. Printers. Lab gear.\nClass is what policy gets *written against*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Days 10–20: one VLAN per class",
+      "body": "An ACL that permits everything and logs it.\nYou're *recording* the truth, not enforcing it.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Pick the boring class first",
+      "body": "The camera vendor is not who you want as your *opening argument*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Days 20–30: the ACL writes itself",
+      "body": "Cameras reach the NVR, NTP and DNS.\nNothing reaches the *user VLAN*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "No new platform. No agent.",
+      "body": "Routed VLANs and access lists on hardware you *already pay maintenance on*.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Three moves, in order",
+      "steps": [
+        "Find them.",
+        "Fence them.",
+        "Then let them out *on purpose*."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "The hard part isn't technical.",
+      "body": "Segmentation forces a conversation about who owns the cameras.\nThe network can enforce a policy. It can't invent one.\n\nFollow *@mzsnetworks*"
+    }
+  ]
+}

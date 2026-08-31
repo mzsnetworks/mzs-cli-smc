@@ -1,0 +1,67 @@
+{
+  "size": [1080, 1350],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Supportable at *3am*.",
+      "body": "Five things.\nNone of them are products.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "1. Consistent naming",
+      "body": "At 3am you type the name before you think.\nNaming is *the index* into everything else.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "2. One source of truth",
+      "body": "Two systems disagree about a VLAN. Which wins?\nIf it's “ask Dave,” *Dave is asleep*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "3. Out-of-band that works",
+      "body": "Can you reach a console while the uplink is down, without transiting *what's broken*?",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "4. Backups someone restored",
+      "body": "A green checkmark is an unverified claim.\nThe backup is rarely the problem. *The restore is.*",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "5. One named owner",
+      "body": "Not a team alias.\n“Escalate to Network” is a *queue*, not an owner.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "None of it is a product",
+      "body": "Not one of these five appears in a *design review*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "At 3am nobody is clever",
+      "body": "You only have what you wrote down while it was *daylight*.",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "Which one would you fail tonight?",
+      "body": "Naming. Source of truth. Out-of-band.\nRestores. An owner.\n\nFollow *@mzsnetworks*"
+    }
+  ]
+}

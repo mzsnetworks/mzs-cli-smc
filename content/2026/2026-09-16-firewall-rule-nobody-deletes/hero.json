@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788136117509-0.jpg",
+      "aspect": "16:9",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a vast archaeological excavation cross-section that spans the full width of the frame from left edge to right edge, deep dark sediment layers stacked one on another and filling the whole picture, each layer holding a small plain glowing blank slab with no markings on it, the oldest slabs buried deepest, one slab far down glowing red, only a thin cream strip of topsoil along the very top edge. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame, no empty background field. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30",
+      "usage": "LinkedIn / Facebook / X (16:9)"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788135953898-8.jpg",
+      "aspect": "4:5",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: an archaeological excavation cross-section cut into deep sediment layers, each layer holding a small glowing rectangular tablet, the oldest tablets buried deepest, one tablet far down glowing red. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. No text, no numbers, no labels, no logos anywhere in the image.",
+      "generated": "2026-08-30",
+      "usage": "Instagram feed (4:5)"
+    }
+  ]
+}

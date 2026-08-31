@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788135953639-0.jpg",
+      "aspect": "16:9",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a vast dark control room where one enormous smooth calm curve glows across a floor-to-ceiling glass wall, while directly beneath it a single violent spike of light surges up through a narrow channel and floods past its edges \u2014 the calm curve completely unaware of the burst below it. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. No text, no numbers, no labels, no logos anywhere in the image.",
+      "generated": "2026-08-30",
+      "usage": "LinkedIn / Facebook / X (16:9)"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788135953687-1.jpg",
+      "aspect": "4:5",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a vast dark control room where one enormous smooth calm curve glows across a floor-to-ceiling glass wall, while directly beneath it a single violent spike of light surges up through a narrow channel and floods past its edges \u2014 the calm curve completely unaware of the burst below it. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. No text, no numbers, no labels, no logos anywhere in the image.",
+      "generated": "2026-08-30",
+      "usage": "Instagram feed (4:5)"
+    }
+  ]
+}
