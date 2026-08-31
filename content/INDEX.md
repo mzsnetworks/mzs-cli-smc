@@ -4,12 +4,12 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-09-18 | `supportable-at-3am` | 5 things that make a network supportable at 3am — none of them are products | LI · FB · IG · X | carousel (9 png) + hero (16:9) | SHIP |
-| 2026-09-16 | `firewall-rule-nobody-deletes` | Nobody has ever been promoted for deleting a firewall rule — rule bases only grow because the incentive is one-sided | LI · FB · IG · X | hero (16:9 + 4:5) | SHIP |
-| 2026-09-13 | `cutover-nobody-rehearsed` | Every project fails at the same milestone — the cutover is the only integration test, and it runs once, in production | LI · FB · IG · X | hero (16:9 + 4:5) | SHIP |
-| 2026-09-11 | `outsourcing-isnt-accountability` | You can outsource the work, not the consequence — the question isn't what you hand over, it's what you keep | LI · FB · IG · X | hero (16:9 + 4:5) | SHIP |
-| 2026-09-09 | `segment-iot-without-forklift` | Segmenting IoT doesn't need a forklift — thirty days, routed VLANs, and access lists you already own | LI · FB · IG · X | carousel (9 png) + hero (16:9) | SHIP |
-| 2026-09-06 | `bandwidth-graph-lies` | Your bandwidth graph lies — a five-minute average can't show the burst that filled the buffer | LI · FB · IG · X | hero (16:9 + 4:5) | SHIP |
+| 2026-09-18 | `supportable-at-3am` | 5 things that make a network supportable at 3am — none of them are products | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Sep 18 4pm · Business — all four on MZS) |
+| 2026-09-16 | `firewall-rule-nobody-deletes` | Nobody has ever been promoted for deleting a firewall rule — rule bases only grow because the incentive is one-sided | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Sep 16 4pm · Business — all four on MZS) |
+| 2026-09-13 | `cutover-nobody-rehearsed` | Every project fails at the same milestone — the cutover is the only integration test, and it runs once, in production | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Sep 13 4pm · Business — all four on MZS) |
+| 2026-09-11 | `outsourcing-isnt-accountability` | You can outsource the work, not the consequence — the question isn't what you hand over, it's what you keep | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Sep 11 4pm · Business — all four on MZS) |
+| 2026-09-09 | `segment-iot-without-forklift` | Segmenting IoT doesn't need a forklift — thirty days, routed VLANs, and access lists you already own | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Sep 9 4pm · Business — all four on MZS) |
+| 2026-09-06 | `bandwidth-graph-lies` | Your bandwidth graph lies — a five-minute average can't show the burst that filled the buffer | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Sep 6 4pm · Business — all four on MZS) |
 | 2026-09-05 | `audience-of-one` | Your automation has an audience of one — if only the author can run it, it's a personal productivity tool | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Sep 5 4pm · LI personal + IG) |
 | 2026-09-04 | `coverage-isnt-capacity` | Coverage isn't capacity — a heat map proves signal arrived, not that the user got a turn to speak | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Sep 4 4pm · Business — all four on MZS) |
 | 2026-09-03 | `single-pane-museum` | Your single pane of glass is a museum — dashboards show state, work changes it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Sep 3 4pm · LI personal + IG) |

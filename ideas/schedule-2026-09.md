@@ -18,12 +18,12 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 |------|-----|------|--------|--------|
 | Sep 2 | Wed | An SLA is not a design — it transfers risk, it doesn't reduce it | ideas-2026-08-09 #3 | DONE · `sla-is-not-a-design` |
 | Sep 4 | Fri | Coverage isn't capacity — a heat map proves signal arrived, not that the user got a turn | ideas-2026-08-09 #1 | DONE · `coverage-isnt-capacity` |
-| Sep 6 | Sun | Your bandwidth graph lies — 5-minute averages hide the microburst that filled the buffer | ideas-2026-08-09 #8 | SHIP · `bandwidth-graph-lies` |
-| Sep 9 | Wed | Segment IoT without a forklift — profile by class → quarantine VLAN → least-privilege per class | ideas-2026-07-16 #3 | SHIP · `segment-iot-without-forklift` |
-| Sep 11 | Fri | Outsourcing operations doesn't outsource accountability — hand over the runbook, not the risk | ideas-2026-08-09 #7 | SHIP · `outsourcing-isnt-accountability` |
-| Sep 13 | Sun | Every project fails at the same milestone: the cutover nobody rehearsed | ideas-2026-08-09 #6 | SHIP · `cutover-nobody-rehearsed` |
-| Sep 16 | Wed | The firewall rule nobody can delete — rule bases are archaeology | ideas-2026-08-09 #2 | SHIP · `firewall-rule-nobody-deletes` |
-| Sep 18 | Fri | 5 things that make a network supportable at 3am | ideas-2026-08-09 #10 | SHIP · `supportable-at-3am` |
+| Sep 6 | Sun | Your bandwidth graph lies — 5-minute averages hide the microburst that filled the buffer | ideas-2026-08-09 #8 | DONE · `bandwidth-graph-lies` |
+| Sep 9 | Wed | Segment IoT without a forklift — profile by class → quarantine VLAN → least-privilege per class | ideas-2026-07-16 #3 | DONE · `segment-iot-without-forklift` |
+| Sep 11 | Fri | Outsourcing operations doesn't outsource accountability — hand over the runbook, not the risk | ideas-2026-08-09 #7 | DONE · `outsourcing-isnt-accountability` |
+| Sep 13 | Sun | Every project fails at the same milestone: the cutover nobody rehearsed | ideas-2026-08-09 #6 | DONE · `cutover-nobody-rehearsed` |
+| Sep 16 | Wed | The firewall rule nobody can delete — rule bases are archaeology | ideas-2026-08-09 #2 | DONE · `firewall-rule-nobody-deletes` |
+| Sep 18 | Fri | 5 things that make a network supportable at 3am | ideas-2026-08-09 #10 | DONE · `supportable-at-3am` |
 
 **Dark days:** Mon Aug 31 · Mon Sep 7 · Mon Sep 14 · Mon Sep 21 · Mon Sep 28.
 
