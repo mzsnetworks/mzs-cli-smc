@@ -17,6 +17,10 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Sep 15 | Tue | The "intermittent" that fired every 47 minutes | ideas-2026-08-27 #3 | DONE · `intermittent-every-47-minutes` |
 | Sep 17 | Thu | Certificate expiry is an outage with a calendar invite you declined | ideas-2026-08-27 #14 | DONE · `certificate-calendar-invite` |
 | Sep 19 | Sat | Seniority isn't knowing more — it's needing fewer certainties before you act | ideas-2026-08-27 #29 | DONE · `fewer-certainties` |
+| Sep 22 | Tue | Check both directions before you blame either — asymmetric paths | ideas-2026-08-27 #10 | SHIP · `check-both-directions` |
+| Sep 24 | Thu | The LLM config that was syntactically perfect and operationally wrong | ideas-2026-08-27 #12 | SHIP · `llm-config-operationally-wrong` |
+| Sep 26 | Sat | The last thing you fixed that nobody ever knew was broken | ideas-2026-08-27 #15 | SHIP · `nobody-knew-it-was-broken` |
+| Sep 29 | Tue | The MTU problem that took a week | ideas-2026-08-27 #26 | SHIP · `the-mtu-week` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
@@ -38,7 +42,7 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 **Dark days:** Mon Aug 31 · Mon Sep 7 · Mon Sep 14 · Mon Sep 21 · Mon Sep 28.
 
-**Next open slots:** Sep 22 (Tue · Professional). Business runs through Sep 30 here and continues in `schedule-2026-10.md` (Oct 2).
+**Next open slots:** none in September — both presets are fully planned Sep 1–30. October continues in `schedule-2026-10.md`.
 
 **Pool warning:** after this batch the Business pool is down to three usable ideas (`08-09 #4`, `08-09 #9`, `07-11 #8`). Run `/ideate for Business` before planning the week of Sep 20.
 

@@ -8,7 +8,8 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| — | — | *(unplanned)* | — | — |
+| Oct 1 | Thu | The shift handoff that survives | ideas-2026-08-27 #27 | SHIP · `handoff-that-survives` |
+| Oct 3 | Sat | On-call rotation is where careers are actually made | ideas-2026-08-27 #32 | SHIP · `on-call-makes-careers` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
@@ -20,6 +21,6 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 **Context.** Oct 2 belongs to the week of Sep 27 (that week runs Sun Sep 27 → Sat Oct 3), planned alongside Sep 27 and Sep 30 in `schedule-2026-09.md`.
 
-**Next open slots after Oct 2:** Oct 4 (Sun · Business), and the whole Professional side of October is unplanned — first slot Oct 1 (Thu).
+**Next open slots after Oct 3:** Oct 4 (Sun · Business), then Oct 6 (Tue · Professional).
 
-**Pool status:** Business `ideas-2026-08-30.md` has 30 undeveloped ideas left. Professional `ideas-2026-08-27.md` has 29.
+**Pool status:** Business `ideas-2026-08-30.md` has 30 undeveloped ideas left. Professional `ideas-2026-08-27.md` has 23.
