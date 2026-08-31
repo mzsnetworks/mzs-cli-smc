@@ -11,12 +11,12 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Sep 1 | Tue | AI can't learn from your tickets — "Resolved: rebooted" teaches the workaround | ideas-2026-07-27 #5 | DONE · `your-tickets-are-lies` |
 | Sep 3 | Thu | Your single pane of glass is a museum — dashboards show state, work changes it | ideas-2026-07-08 #3 | DONE · `single-pane-museum` |
 | Sep 5 | Sat | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | DONE · `audience-of-one` |
-| Sep 8 | Tue | Layer 1 is still the answer more often than any of us admit | ideas-2026-08-27 #2 | SHIP · `layer-1-is-the-answer` |
-| Sep 10 | Thu | The status update that stops the calls — four lines, no speculation | ideas-2026-08-27 #19 | SHIP · `status-update-stops-calls` |
-| Sep 12 | Sat | I called it low risk. It wasn't — now I say what specifically breaks | ideas-2026-08-27 #7 | SHIP · `stopped-saying-low-risk` |
-| Sep 15 | Tue | The "intermittent" that fired every 47 minutes | ideas-2026-08-27 #3 | SHIP · `intermittent-every-47-minutes` |
-| Sep 17 | Thu | Certificate expiry is an outage with a calendar invite you declined | ideas-2026-08-27 #14 | SHIP · `certificate-calendar-invite` |
-| Sep 19 | Sat | Seniority isn't knowing more — it's needing fewer certainties before you act | ideas-2026-08-27 #29 | SHIP · `fewer-certainties` |
+| Sep 8 | Tue | Layer 1 is still the answer more often than any of us admit | ideas-2026-08-27 #2 | DONE · `layer-1-is-the-answer` |
+| Sep 10 | Thu | The status update that stops the calls — four lines, no speculation | ideas-2026-08-27 #19 | DONE · `status-update-stops-calls` |
+| Sep 12 | Sat | I called it low risk. It wasn't — now I say what specifically breaks | ideas-2026-08-27 #7 | DONE · `stopped-saying-low-risk` |
+| Sep 15 | Tue | The "intermittent" that fired every 47 minutes | ideas-2026-08-27 #3 | DONE · `intermittent-every-47-minutes` |
+| Sep 17 | Thu | Certificate expiry is an outage with a calendar invite you declined | ideas-2026-08-27 #14 | DONE · `certificate-calendar-invite` |
+| Sep 19 | Sat | Seniority isn't knowing more — it's needing fewer certainties before you act | ideas-2026-08-27 #29 | DONE · `fewer-certainties` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 

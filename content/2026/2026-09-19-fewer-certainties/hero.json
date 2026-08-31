@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788138745382-4.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (16:9)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a lone figure walking confidently onto a long bridge that is lit for only two steps ahead, the rest of the span disappearing completely into darkness. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame, no empty background field. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788138745397-5.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (4:5)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a lone figure walking confidently onto a long bridge that is lit for only two steps ahead, the rest of the span disappearing completely into darkness. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame, no empty background field. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30"
+    }
+  ]
+}
