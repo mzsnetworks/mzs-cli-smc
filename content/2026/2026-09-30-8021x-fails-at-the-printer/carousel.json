@@ -1,0 +1,15 @@
+{
+  "size": [1080, 1350],
+  "brand": {"navy":"#161a45","cream":"#F4EFE3","red":"#eb2027","titleFont":"Cormorant Garamond","bodyFont":"Lato","handle":"@mzsnetworks","url":"mzsnetworks.com"},
+  "slides": [
+    {"type":"cover","title":"802.1X fails at the *printer*.","body":"Not the laptop.","motif":"none"},
+    {"type":"body","title":"Laptops are 90% of the devices","body":"And about 10% of the work.\nSupplicant, domain, certificate, done.","motif":"none"},
+    {"type":"body","title":"Then you meet the rest","body":"Printers. HVAC. Cameras.\nThe lab instrument whose vendor says *static IP*.","motif":"none"},
+    {"type":"body","title":"Exceptions aren't cleanup","body":"They're the majority of the work — and all of the *political risk*.","motif":"none"},
+    {"type":"body","title":"Decide the fallback first","body":"Restrictive MAB is a decision.\nAn open VLAN is an *accident*.","motif":"none"},
+    {"type":"body","title":"One owner per class","body":"“Printers” has an owner.\n“This printer” has a *ticket*.","motif":"none"},
+    {"type":"body","title":"Expire every exception","body":"Or *temporary* MAB quietly becomes the permanent architecture.","motif":"none"},
+    {"type":"body","title":"Where projects actually die","body":"Nobody willing to say: then it goes in the *restricted segment*.","motif":"none"},
+    {"type":"cta","title":"The laptops are the demo.","body":"The exceptions are the project.\nDesign the exception process before the policy.\n\nFollow *@mzsnetworks*"}
+  ]
+}

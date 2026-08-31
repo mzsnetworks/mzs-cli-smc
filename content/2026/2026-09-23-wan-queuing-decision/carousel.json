@@ -1,0 +1,15 @@
+{
+  "size": [1080, 1350],
+  "brand": {"navy":"#161a45","cream":"#F4EFE3","red":"#eb2027","titleFont":"Cormorant Garamond","bodyFont":"Lato","handle":"@mzsnetworks","url":"mzsnetworks.com"},
+  "slides": [
+    {"type":"cover","title":"Bandwidth is a *purchase*.","body":"Priority is a decision.","motif":"none"},
+    {"type":"body","title":"The circuit has headroom","body":"And the complaint is still real.\nBoth are true at once.","motif":"none"},
+    {"type":"body","title":"Something has to wait","body":"When the link is momentarily full, one packet goes first.\nThat's all queuing *is*.","motif":"none"},
+    {"type":"body","title":"If you don't decide, the device does","body":"Its default is roughly first come, first served.","motif":"none"},
+    {"type":"body","title":"The file sync doesn't care","body":"The call does.\nThey queued *identically*.","motif":"none"},
+    {"type":"body","title":"More bandwidth won't remove the queue","body":"It changes how often it forms.\nTraffic expands to fill it.","motif":"none"},
+    {"type":"body","title":"Four or five classes","body":"Not twelve.\nNobody reasons about twelve at *2am*.","motif":"none"},
+    {"type":"body","title":"Shape to the rate you bought","body":"Your router sees a gigabit.\nThe carrier polices at *200 Mbps*.","motif":"none"},
+    {"type":"cta","title":"What will you let wait?","body":"Bandwidth is a purchase. Priority is a decision.\nOnly one requires somebody to say what matters least.\n\nFollow *@mzsnetworks*"}
+  ]
+}

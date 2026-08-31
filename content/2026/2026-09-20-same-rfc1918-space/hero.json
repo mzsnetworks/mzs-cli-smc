@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788139997483-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn / Facebook / X (16:9)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: two identical dark city street-grid maps sliding toward each other from opposite sides and overlapping in the middle, the overlapping region where the two grids coincide glowing red. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame, no empty background field. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788140104733-0.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (4:5)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: TWO separate identical dark street-grid maps, clearly two distinct rectangular map sheets with visible edges, one sliding down from the top of the frame and the other sliding up from the bottom, meeting and overlapping each other in the middle of the frame. The overlapping band where the two sheets cover the same ground glows red. It must be obvious that these are two copies of the same map colliding, not one continuous city. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30"
+    }
+  ]
+}
