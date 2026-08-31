@@ -1,6 +1,5 @@
 # LinkedIn — firewall-rule-nobody-deletes
 
-
 Nobody has ever been promoted for deleting a firewall rule.
 
 That single fact explains almost every rule base we're handed.

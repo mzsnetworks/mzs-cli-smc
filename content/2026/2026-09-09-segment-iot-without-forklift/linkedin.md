@@ -6,13 +6,13 @@ A while back we argued the IoT problem is inventory, not security — you can't 
 
 Here's the plan we run.
 
-**Days 1–10: profile what's talking.**
-Not a purchase. A capture. DHCP options and MAC OUI give you the vendor. mDNS and SSDP tell you what the device thinks it is. Flow data tells you where it actually goes. Group the results by device *class* — cameras, badge readers, HVAC controllers, printers, lab gear — not by vendor and not by building. Class is what policy gets written against.
+Days 1–10: profile what's talking.
+Not a purchase. A capture. DHCP options and MAC OUI give you the vendor. mDNS and SSDP tell you what the device thinks it is. Flow data tells you where it actually goes. Group the results by device class — cameras, badge readers, HVAC controllers, printers, lab gear — not by vendor and not by building. Class is what policy gets written against.
 
-**Days 10–20: one VLAN per class, logging only.**
+Days 10–20: one VLAN per class, logging only.
 Move a single class into its own VLAN with a routed gateway. Apply an ACL that permits everything and logs it. You're not enforcing yet; you're recording the truth. One class at a time, and pick the boring one first. The camera vendor is not who you want as your opening argument.
 
-**Days 20–30: write the policy from the logs.**
+Days 20–30: write the policy from the logs.
 Now the ACL writes itself. Cameras reach the NVR, NTP and DNS. Badge readers reach their controller. Nothing reaches the user VLAN, and nothing reaches the internet unless somebody can say why. Then flip from permit-and-log to deny-by-default with an explicit permit list — per class, in the order you profiled them.
 
 That's the whole thing. No new platform, no agent on the endpoint, no rip-out. Routed VLANs and access lists on hardware you're already paying maintenance on.

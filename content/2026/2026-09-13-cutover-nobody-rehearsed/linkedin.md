@@ -1,6 +1,5 @@
 # LinkedIn — cutover-nobody-rehearsed
 
-
 Every project we've been called into late failed at the same milestone.
 
 Not design. Design gets reviewed by four people who all want to be right. Not procurement. Not staging either — the gear arrives, gets built, labeled, configured, burned in, and it works on the bench.
