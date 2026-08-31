@@ -8,8 +8,8 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Oct 1 | Thu | The shift handoff that survives | ideas-2026-08-27 #27 | SHIP · `handoff-that-survives` |
-| Oct 3 | Sat | On-call rotation is where careers are actually made | ideas-2026-08-27 #32 | SHIP · `on-call-makes-careers` |
+| Oct 1 | Thu | The shift handoff that survives | ideas-2026-08-27 #27 | DONE · `handoff-that-survives` |
+| Oct 3 | Sat | On-call rotation is where careers are actually made | ideas-2026-08-27 #32 | DONE · `on-call-makes-careers` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
