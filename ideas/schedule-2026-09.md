@@ -30,11 +30,11 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Sep 13 | Sun | Every project fails at the same milestone: the cutover nobody rehearsed | ideas-2026-08-09 #6 | DONE · `cutover-nobody-rehearsed` |
 | Sep 16 | Wed | The firewall rule nobody can delete — rule bases are archaeology | ideas-2026-08-09 #2 | DONE · `firewall-rule-nobody-deletes` |
 | Sep 18 | Fri | 5 things that make a network supportable at 3am | ideas-2026-08-09 #10 | DONE · `supportable-at-3am` |
-| Sep 20 | Sun | The merger where both networks used the same RFC1918 space | ideas-2026-08-30 #18 | SHIP · `same-rfc1918-space` |
-| Sep 23 | Wed | Your WAN needs a queuing decision, not more bandwidth | ideas-2026-08-30 #1 | SHIP · `wan-queuing-decision` |
-| Sep 25 | Fri | Forty-two support contracts, thirty-one devices | ideas-2026-08-30 #28 | SHIP · `contracts-and-devices` |
-| Sep 27 | Sun | The cheapest bid wins the project and loses the decade | ideas-2026-08-30 #22 | SHIP · `cheapest-bid-loses-decade` |
-| Sep 30 | Wed | 802.1X fails at the printer, not the laptop | ideas-2026-08-30 #9 | SHIP · `8021x-fails-at-the-printer` |
+| Sep 20 | Sun | The merger where both networks used the same RFC1918 space | ideas-2026-08-30 #18 | DONE · `same-rfc1918-space` |
+| Sep 23 | Wed | Your WAN needs a queuing decision, not more bandwidth | ideas-2026-08-30 #1 | DONE · `wan-queuing-decision` |
+| Sep 25 | Fri | Forty-two support contracts, thirty-one devices | ideas-2026-08-30 #28 | DONE · `contracts-and-devices` |
+| Sep 27 | Sun | The cheapest bid wins the project and loses the decade | ideas-2026-08-30 #22 | DONE · `cheapest-bid-loses-decade` |
+| Sep 30 | Wed | 802.1X fails at the printer, not the laptop | ideas-2026-08-30 #9 | DONE · `8021x-fails-at-the-printer` |
 
 **Dark days:** Mon Aug 31 · Mon Sep 7 · Mon Sep 14 · Mon Sep 21 · Mon Sep 28.
 

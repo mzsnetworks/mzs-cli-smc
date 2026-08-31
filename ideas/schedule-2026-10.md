@@ -14,7 +14,7 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Oct 2 | Fri | Your monitoring bill scales with data, not insight | ideas-2026-08-30 #24 | SHIP · `monitoring-bill-scales` |
+| Oct 2 | Fri | Your monitoring bill scales with data, not insight | ideas-2026-08-30 #24 | DONE · `monitoring-bill-scales` |
 
 **Dark days:** Mon Oct 5 · Mon Oct 12 · Mon Oct 19 · Mon Oct 26.
 
