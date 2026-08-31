@@ -11,6 +11,12 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Sep 1 | Tue | AI can't learn from your tickets — "Resolved: rebooted" teaches the workaround | ideas-2026-07-27 #5 | DONE · `your-tickets-are-lies` |
 | Sep 3 | Thu | Your single pane of glass is a museum — dashboards show state, work changes it | ideas-2026-07-08 #3 | DONE · `single-pane-museum` |
 | Sep 5 | Sat | Your automation has an audience of one — bus factor 1 | ideas-2026-07-27 #7 | DONE · `audience-of-one` |
+| Sep 8 | Tue | Layer 1 is still the answer more often than any of us admit | ideas-2026-08-27 #2 | SHIP · `layer-1-is-the-answer` |
+| Sep 10 | Thu | The status update that stops the calls — four lines, no speculation | ideas-2026-08-27 #19 | SHIP · `status-update-stops-calls` |
+| Sep 12 | Sat | I called it low risk. It wasn't — now I say what specifically breaks | ideas-2026-08-27 #7 | SHIP · `stopped-saying-low-risk` |
+| Sep 15 | Tue | The "intermittent" that fired every 47 minutes | ideas-2026-08-27 #3 | SHIP · `intermittent-every-47-minutes` |
+| Sep 17 | Thu | Certificate expiry is an outage with a calendar invite you declined | ideas-2026-08-27 #14 | SHIP · `certificate-calendar-invite` |
+| Sep 19 | Sat | Seniority isn't knowing more — it's needing fewer certainties before you act | ideas-2026-08-27 #29 | SHIP · `fewer-certainties` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
@@ -27,7 +33,7 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 
 **Dark days:** Mon Aug 31 · Mon Sep 7 · Mon Sep 14 · Mon Sep 21 · Mon Sep 28.
 
-**Next open slots:** Sep 8 (Tue · Professional) — the Professional weeks of Sep 6 and Sep 13 are unplanned. Business resumes Sep 20 (Sun).
+**Next open slots:** Sep 20 (Sun · Business) and Sep 22 (Tue · Professional). Both weeks of Sep 6 and Sep 13 are now fully planned on both presets.
 
 **Pool warning:** after this batch the Business pool is down to three usable ideas (`08-09 #4`, `08-09 #9`, `07-11 #8`). Run `/ideate for Business` before planning the week of Sep 20.
 
