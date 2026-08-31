@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788142477887-0.jpg",
+      "aspect": "16:9",
+      "usage": "LinkedIn (16:9)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a deep dark canyon at night spanned by a single lit bridge; one bright stream of light crosses from left to right along the upper span, while a separate return stream of light takes a completely different lower route through the dark rocks below \u2014 the two paths clearly never meeting. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame, no empty background field. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30"
+    },
+    {
+      "file": "hero-02-ig.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788142477890-1.jpg",
+      "aspect": "4:5",
+      "usage": "Instagram feed (4:5)",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a deep dark canyon at night spanned by a single lit bridge; one bright stream of light crosses from left to right along the upper span, while a separate return stream of light takes a completely different lower route through the dark rocks below \u2014 the two paths clearly never meeting. Deep dark navy (#161a45) dominant palette filling most of the frame, soft cream (#F4EFE3) highlights used sparingly, thin red (#eb2027) accent lines only \u2014 no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork: the scene fills the entire frame corner to corner, no border, no cream margin, no white matting, no picture frame, no empty background field. No text, no numbers, no letters, no labels, no writing, no logos anywhere in the image.",
+      "generated": "2026-08-30"
+    }
+  ]
+}
