@@ -4,7 +4,7 @@
 
 ### `claude-cli-smc` · by [MZS Networks](https://mzsnetworks.com)
 
-**One idea → four platform-native posts → live.**
+**One idea → platform-native posts → live.**
 _An editorial pipeline for technical social content, run entirely through Claude Code._
 
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)
@@ -29,11 +29,26 @@ The "code" here is markdown: agents and rule files Claude Code follows. There is
 - **Audience:** practitioners and technical leaders — but engagement-oriented (reach matters), not a repel-mode personal blog.
 - **The one rule that never loosens:** every statistic must trace to a real, citable source. Factcheck enforces it and blocks the pipeline.
 
+### Two lanes
+
+The same pipeline runs two kinds of post. The agents and their order never change — only the render set and a couple of rule files do.
+
+| | **Thought leadership** | **Marketing** |
+|---|---|---|
+| Tree | `content/` | `marketing/` |
+| Ends on | a question — asks for nothing | a CTA — names an MZS product or service |
+| Renders | `linkedin.md` `facebook.md` `instagram.md` `x.md` | `linkedin.md` `linkedin-es.md` |
+| Platforms | LinkedIn · Facebook · Instagram · X | **LinkedIn only**, twice — English and Spanish |
+| Presets | Professional · Business | Marketing |
+| Extra rules | — | `rules/MARKETING.md` · `rules/SPANISH.md` |
+
+The marketing lane ships **English and Spanish**, because Spanish is a primary selling language for MZS rather than a translation layer. `linkedin-es.md` is *composed* from the master against an EN→ES glossary — never machine-translated from the English render.
+
 ---
 
 ## The Pipeline
 
-One idea flows through a pipeline and comes out as four platform-native posts.
+One idea flows through a pipeline and comes out as platform-native posts — four in the `content/` lane, two (English + Spanish LinkedIn) in the `marketing/` lane.
 
 ```
 [ Research --> Ideation --> Hook ] --> Writer --> Factcheck --> Platform Adapter --> Editor (x4) --> Hashtag (x4) --> Scorer (x4) --> [ Publish ]
@@ -44,7 +59,7 @@ One idea flows through a pipeline and comes out as four platform-native posts.
 On-demand (not gates):  Voice (setup)   Formatter   Visual (render carousel)   Reels   Publish (go live)
 ```
 
-The **front-end** (Research → Ideation → Hook) runs only when you don't already have an idea. The **core** (Writer → Scorer) takes one idea to four publish-ready posts. **On-demand** agents are run when a post calls for them — including **Publish**, which posts SHIP-gated renders live via Blotato behind an explicit confirmation.
+The **front-end** (Research → Ideation → Hook) runs only when you don't already have an idea. The **core** (Writer → Scorer) takes one idea to its publish-ready posts — read the `x4` above as `x2` for a marketing post. **On-demand** agents are run when a post calls for them — including **Publish**, which posts SHIP-gated renders live via Blotato behind an explicit confirmation.
 
 ---
 
@@ -57,7 +72,7 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Hook** | front-end | no | Generate 6 credible (non-clickbait) hook options for an idea |
 | **Writer** | core | yes | Draft the master post (LinkedIn-length) in the author's voice |
 | **Factcheck** | core | no | Verify every stat against its source — PASS/FAIL (blocking) |
-| **Platform Adapter** | core | yes | Render the master into LinkedIn / Facebook / Instagram / X |
+| **Platform Adapter** | core | yes | Render the master into the lane's set — LinkedIn/Facebook/Instagram/X, or LinkedIn EN+ES |
 | **Editor** | core | yes | Tighten each render to its platform length target |
 | **Hashtag** | core | yes (append) | Apply per-platform hashtag policy |
 | **Scorer** | core | no | Score each render 0–100 and gate publish (SHIP/REVISE/REWORK) |
@@ -67,6 +82,8 @@ The **front-end** (Research → Ideation → Hook) runs only when you don't alre
 | **Reels** | on-demand | yes (script) | Write a 30–45s short-form video script from an idea |
 | **Publish** | on-demand | yes (`published.md`) | Post SHIP renders live via Blotato — explicit confirmation gate, never automatic |
 | **Scheduler** | on-demand | yes (`ideas/schedule-*.md`) | Plan the next publishing cycle — assign unpublished ideas to dates per preset on the weekday-locked cadence (planning only, never publishes) |
+
+The **Marketing** lane adds no agents. It reuses all of the above, plus two rule files that change what they produce.
 
 Each agent file in `agents/` ends with a **Usage** block — the exact prompt to run it. The how-to below stitches them into workflows.
 
@@ -213,6 +230,7 @@ Claude walks through a fixed script — nothing goes out without you:
    **Presets skip the first two questions.** Name a standing audience bundle and Claude sets platforms + LinkedIn target for you (it still asks *when* and *X single vs thread*):
    - **Professional** — your personal LinkedIn + MZS Instagram. For personal-brand posts.
    - **Business** — all four platforms on the MZS company account (LinkedIn company page, Facebook, Instagram, X).
+   - **Marketing** — your personal LinkedIn only, **twice**: Spanish at 2 PM, English at 4 PM, on a Monday. This one answers *all four* questions, so Claude asks nothing but the final confirmation.
 
    All of these work — slug or title, relative or exact time:
    > /publish self-inflicted-outages — Professional, tomorrow 4pm
@@ -220,6 +238,7 @@ Claude walks through a fixed script — nothing goes out without you:
    > /publish runbooks-rot — Business, 7/15/2026 4pm
    > /publish Runbooks Rot When Nobody Runs Them — Business, next free slot   *(title works when you don't remember the slug)*
    > publish the self-inflicted-outages post — Business settings, now
+   > /publish drift-is-a-visibility-problem — Marketing, 9/14/2026   *(both languages, one run)*
 
    If the post doesn't exist yet, Claude runs the full pipeline first (write → factcheck → adapt → score → visual, each with its approval gate), *then* continues into the publish flow — one command takes an idea from nothing to scheduled.
 
@@ -249,39 +268,45 @@ Claude walks through a fixed script — nothing goes out without you:
 | Re-shape a rambling draft | "Rewrite this as a PAS post: [paste]." |
 | Just one platform | "Write only a LinkedIn post about [topic]." |
 | Post it live | "/publish [slug]" — asks where/when, shows final text, waits for your OK |
-| Post with a saved audience | "/publish [slug] — Professional" (personal LI + IG) or "— Business" (all four on company) |
-| Run a whole week of one preset | "Business for the week of Aug 16" → its three slots (Aug 16/19/21), written and published one at a time |
+| Post with a saved audience | "/publish [slug] — Professional" (personal LI + IG), "— Business" (all four on company), or "— Marketing" (personal LI, EN + ES) |
+| Write a marketing post | "Write a marketing post about config drift." → `marketing/` lane, LinkedIn EN + ES, ends on a CTA |
+| Run a whole week of one preset | "Business for the week of Aug 16" → its three slots (Aug 16/19/21), written and published one at a time. "Marketing for the week of Aug 16" → its one Monday (Aug 17), both languages |
 | Schedule instead of post now | "/publish [slug]" then answer "tomorrow 9am" (or "next free slot") when it asks |
-| Add Facebook to an older post | "/publish [slug]" backfills it — or "/adapt [slug]" re-renders all four |
-| See what you have | "What posts do I have?" / "What's ready to publish?" (reads `content/INDEX.md`) |
+| Add Facebook to an older post | "/publish [slug]" backfills it — or "/adapt [slug]" re-renders the lane's whole set |
+| Rewrite just the Spanish | "/adapt [slug] just the Spanish" |
+| See what you have | "What posts do I have?" / "What's ready to publish?" (reads `content/INDEX.md` and `marketing/INDEX.md`) |
 | Re-render after editing the master | "/adapt [slug]" |
 | Plan the next posting cycle | "/schedule" — maps unpublished ideas to the next two weeks of dates, per preset |
 | See what ideas are left | "List the unpublished business ideas" (reads the `Developed? = —` rows in `ideas/`) |
+| Get marketing ideas | "/ideate for Marketing" — uses the product/funnel spine, saves to `ideas/marketing-ideas-<date>.md` |
 
 You never have to name an agent or edit a rule file. Claude picks the right agents from what you ask.
 
 **Prefer typing a command?** Four shortcuts:
 - **`/post <topic>`** — runs the full pipeline (the Step 1 flow above) in one shot.
-- **`/adapt <slug>`** — re-renders an existing post's `master.md` into the four platforms.
-- **`/publish <slug>`** — posts a SHIP-gated idea live via Blotato (LinkedIn, Facebook, Instagram, X). Asks per run: which platforms, personal vs company page on LinkedIn, now vs scheduled, single vs thread on X. Shows the exact final text and publishes only on your explicit "publish."
+- **`/adapt <slug>`** — re-renders an existing post's `master.md` into its lane's platforms. Finds the slug in either tree.
+- **`/publish <slug>`** — posts a SHIP-gated idea live via Blotato. Asks per run: which platforms, personal vs company page on LinkedIn, now vs scheduled, single vs thread on X. The **Marketing** preset answers all four itself, so it asks nothing but the confirmation. Shows the exact final text and publishes only on your explicit "publish."
 - **`/schedule [horizon]`** — plans the next publishing cycle (default: 2 weeks past the queue tail). Continues the standing cadence (below) and fills each slot from the **matching preset's unpublished ideas** (`Developed? = —` rows in `ideas/ideas-*.md`; stat-gated ideas skipped by default). Shows the plan for approval, then writes `ideas/schedule-<YYYY-MM>.md`. Planning only — each row still fires through `/publish` with all its gates.
 
 ### The standing cadence — one preset per weekday
 
-One post daily at **4:00 PM EDT**, presets alternating. Six posting days a week is an even number, so the alternation locks each weekday to one preset permanently:
+One post daily at **4:00 PM EDT**, presets alternating Tuesday through Sunday. Six posting days is an even number, so the alternation locks each weekday to one preset permanently. **Monday belongs to Marketing** and is the one day carrying two slots:
 
-| Day | Preset |
-|-----|--------|
-| **Tue · Thu · Sat** | **Professional** — personal LinkedIn + IG @mzsnetworks |
-| **Wed · Fri · Sun** | **Business** — all four platforms on the MZS company account |
-| **Mon** | dark |
+| Day | Preset | Slots |
+|-----|--------|-------|
+| **Mon** | **Marketing** — personal LinkedIn, English + Spanish | **two** — ES 2:00 PM, EN 4:00 PM |
+| **Tue · Thu · Sat** | **Professional** — personal LinkedIn + IG @mzsnetworks | one — 4:00 PM |
+| **Wed · Fri · Sun** | **Business** — all four platforms on the MZS company account | one — 4:00 PM |
 
-Because the lock holds, you can ask for a whole week by name. The week runs **Sunday → Saturday** and is named by its Sunday — each one yields exactly three slots per preset:
+**Monday is one idea, not two.** The 2 PM and 4 PM slots are the Spanish and English renders of a single marketing post — Spanish goes first. A Monday consumes one marketing idea and produces two LinkedIn submissions.
+
+Because the lock holds, you can ask for a whole week by name. The week runs **Sunday → Saturday** and is named by its Sunday:
 
 > **Business for the week of Aug 16** → Sun Aug 16 · Wed Aug 19 · Fri Aug 21
 > **Professional for the week of Aug 16** → Tue Aug 18 · Thu Aug 20 · Sat Aug 22
+> **Marketing for the week of Aug 16** → Mon Aug 17 — one slot, one idea, both languages
 
-Claude resolves the dates, pulls three unpublished ideas from that preset's pool, and runs each one through the full pipeline + `/publish` — still one explicit "publish" per post. No queue-tail detection, no date arithmetic on your side.
+Professional and Business yield three slots a week; **Marketing yields one**, so "Marketing for the weeks of X and Y" means two ideas, not six. Claude resolves the dates, pulls unpublished ideas from that preset's pool, and runs each one through the full pipeline + `/publish` — still one explicit "publish" per post. No queue-tail detection, no date arithmetic on your side.
 
 And the on-demand capabilities are also installed as **skills** that fire automatically on plain-English phrasing — "build my voice", "give me ideas", "make a carousel", "write a reel", "what's trending". You don't need to learn them; they trigger themselves.
 
@@ -354,16 +379,16 @@ The **Professional** variant is identical except the audience: personal LinkedIn
 
 ### Worked example 5 — planning a cycle with `/schedule`
 
-The queue runs on the weekday-locked cadence above — **Professional Tue/Thu/Sat, Business Wed/Fri/Sun, Mondays dark, all at 4pm EDT.** When the queue tail approaches, plan the next cycle:
+The queue runs on the weekday-locked cadence above — **Marketing Mon, Professional Tue/Thu/Sat, Business Wed/Fri/Sun**, everything at 4pm EDT except Monday's Spanish slot at 2pm. When the queue tail approaches, plan the next cycle:
 
 **You type:**
 > /schedule
 
 **Claude:**
 - Reads `content/INDEX.md` → queue ends Aug 15 (a Saturday · Professional). The plan starts Aug 16 (Sunday → Business, by the weekday lock) and covers two weeks.
-- Pulls candidates **only from the matching preset's idea files**, only rows still marked `Developed? = —` — Professional slots from the Professional files, Business slots from the Business files, never crossed (the voice differs: personal "I" vs company "we"). Stat-gated ideas (`Cited stat? = yes`) are skipped so nothing blocks on Factcheck.
+- Pulls candidates **only from the matching preset's idea files**, only rows still marked `Developed? = —` — Professional and Business slots from `ideas/ideas-*.md`, Monday's Marketing slot from `ideas/marketing-ideas-*.md`, never crossed (the voices differ: personal "I" · company "we" · first-person-with-a-CTA, and only marketing names products and asks for the business). Stat-gated ideas (`Cited stat? = yes`) are skipped so nothing blocks on Factcheck.
 - Drains each file's "Top 5 to write now" leftovers first, spreads themes apart (and may deliberately pair a two-part series in one week — flagged as such).
-- Shows the plan — Professional table first, then Business, each row Date · Day · Idea · Source — and **waits for your approval**.
+- Shows the plan — Professional table first, then Business, then Marketing, each row Date · Day · Idea · Source — and **waits for your approval**. Marketing rows need no language column; every row is both.
 
 **You type:**
 > yes
@@ -375,6 +400,29 @@ The queue runs on the weekday-locked cadence above — **Professional Tue/Thu/Sa
 …and as rows go live, their Status flips to `DONE · <slug>` alongside the normal INDEX and ideas-file updates. If a preset's idea pool is dry, `/schedule` says so and points you at `/ideate` instead of stretching weak ideas.
 
 Variants: `/schedule through Sep 15` · `/schedule 1 week, Business only`.
+
+---
+
+### Worked example 6 — a marketing post (the second lane)
+
+The `marketing/` lane is the same pipeline with a different ending and a second language.
+
+**You type:**
+> Write a marketing post about config drift across multi-site networks. Marketing lane.
+
+**Claude does:**
+- Creates `marketing/2026/2026-09-14-drift-is-a-visibility-problem/master.md` and drafts it — reading `rules/MARKETING.md` on top of the usual files, so it lands on a CTA instead of a question and pulls **Driftguard** through by name.
+- Fact-checks it. The "38 of 40 sites" line passes as **ILLUSTRATIVE** — it describes the reader's network, not an MZS measurement. Had it said "we found drift at 38 of 40 client sites," that's a claim and it would need a source.
+- Writes `linkedin.md` (1,662 chars), then **composes** `linkedin-es.md` in Spanish from the master — usted register, glossary terms applied, "Driftguard" and "Ansible" left in English, hook written to the 210-character fold first.
+- Scores both. The Spanish render is scored against `rules/SPANISH.md`, not the English reference post — including a check that it reads as written-in-Spanish rather than translated.
+- Adds a row to `marketing/INDEX.md`.
+
+**You type:**
+> /publish drift-is-a-visibility-problem — Marketing
+
+**Claude:** asks nothing — the Marketing preset fixes the platform (your personal LinkedIn), the target (no company page), and both times. It shows the Spanish and English text side by side and waits. On your "publish," two submissions go out for **Monday Sep 14**: Spanish at 2:00 PM EDT, English at 4:00 PM. Then `published.md` and the INDEX row flip to PUBLISHED.
+
+> **Where the marketing voice comes from.** `rules/MARKETING.md` and `rules/SPANISH.md` are ported from the upstream `mzs-marketing` repo — its `mzs-brand` skill holds the voice and the glossary, `.agents/product-marketing.md` holds the products and CTA conventions. Edit the copy here; change the *voice* upstream and re-port, so the two repos don't drift.
 
 ---
 
@@ -390,6 +438,9 @@ Variants: `/schedule through Sep 15` · `/schedule 1 week, Business only`.
 | A hero URL 404s at publish time | Zipline files expire after 90 days. The local `hero-*.jpg` in the post folder is the durable copy — Claude re-uploads it via Blotato automatically. |
 | LinkedIn published only one slide of a carousel | A media-rule bug, fixed Aug 2026 — LinkedIn now takes **all** slides. If you see it again, check the Media section of `agents/PUBLISH.md`. Live posts can't be deleted through Blotato; delete it in LinkedIn, then repost. |
 | Instagram rejects the post over hashtags | More than 5. Count inline ones too — a `#3` in a numbered caption counts against the cap. |
+| A Spanish post's hook is cut off mid-sentence | The ~210-char fold doesn't scale with the language. Rewrite the hook shorter — don't trim the body and hope. |
+| Spanish copy reads stiff or oddly literal | It was translated instead of written. Re-run `/adapt [slug] just the Spanish`, which composes from the master against the glossary. |
+| A carousel's slides are English under a Spanish caption | Spanish posts take a text-free hero only — carousels render typographically in English. See `rules/SPANISH.md`. |
 
 ---
 
@@ -400,6 +451,8 @@ Everything an agent does is governed by the files in `rules/`:
 - **`SHARED.md`** — niche, audience, voice baseline, **fact discipline**, the spine (hook → POV → data → judgment → landing), and the **per-platform Length Targets** table.
 - **`LINKEDIN.md` / `FACEBOOK.md` / `INSTAGRAM.md` / `X.md`** — formatting that layers on top: length sweet spot, the "fold" the hook must clear, emoji policy, hashtag count.
 - **`VOICE.md`** — *your* voice (pillars, defended opinions, signature phrasings, word list, war stories). Mandatory for every writing agent when it exists.
+- **`MARKETING.md`** — the `marketing/` lane only: brand voice, the product catalog, approved CTAs, and one narrow exception to fact discipline. Ported from the upstream `mzs-marketing` repo, which owns the voice.
+- **`SPANISH.md`** — any `*-es.md` render: usted register, the EN→ES glossary, Spanish length targets, and the rule that Spanish is *written*, never translated.
 
 **Length Targets** (recommended, enforced by Editor + Scorer):
 
@@ -410,28 +463,40 @@ Everything an agent does is governed by the files in `rules/`:
 | Instagram | ~125–220 chars caption (more if carousel) | ~2,200 | ~125 chars (first line) |
 | X — single | ~240–270 chars | 280 | whole post visible |
 | X — thread | ≤280/tweet, one idea per tweet | 280/tweet | tweet 1 is the hook |
+| **LinkedIn (Spanish)** | **~1,500–2,300 chars** | ~3,000 | **~210 chars — unchanged** |
 
-**Hashtag counts** (Hashtag agent, enforced at publish): LinkedIn 2–3 PascalCase · Facebook 0–2 · **Instagram exactly 5 — a hard cap** (Blotato rejects a 6th, and an inline `#3` in the caption counts as one) · X 1–2.
+That last row is the trap worth knowing about. Spanish runs 15–25% longer than English for the same content, so the body target grows — but LinkedIn truncates on *characters*, so the Spanish hook still gets ~210 of them to say something that needs more words. The Spanish hook is the tightest constraint in the system; write it to the fold first, then build the body.
+
+**Hashtag counts** (Hashtag agent, enforced at publish): LinkedIn 2–3 PascalCase · Facebook 0–2 · **Instagram exactly 5 — a hard cap** (Blotato rejects a 6th, and an inline `#3` in the caption counts as one) · X 1–2. Spanish renders take 2–3 as well, without accents or ñ — and keep a tag in English when the industry says it in English (`#NetOps`, `#IaC`).
+
+**Fact discipline, and its one exception.** Every statistic must trace to a citable source; Factcheck blocks the pipeline otherwise. The `marketing/` lane carries one carve-out, adopted from upstream doctrine: an uncited number passes when the copy frames it as the *reader's* hypothetical scenario, and fails when it reads as something MZS measured.
+
+| Passes | Fails |
+|---|---|
+| "a template update that reached 38 of 40 sites" | "we found drift at 38 of 40 client sites" |
+| "imagine 30 branches and one engineer" | "our clients average 30 branches" |
+
+Credentials and proof points are outside the exception — they are claims and need attribution or a source. This carve-out does not exist in `content/`.
 
 ---
 
 ## Output Layout (idea-first, non-negotiable)
 
-One idea = one dated folder holding all its platform versions. Never scatter the renders across separate trees — they belong to one idea.
+One idea = one dated folder holding all its platform versions. Never scatter the renders across separate trees — they belong to one idea. Both lanes use the identical layout; only the render set differs.
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/
-  master.md      # fact-checked source (LinkedIn-length, full Sources block)
-  linkedin.md    # publish-ready LinkedIn render
-  facebook.md    # publish-ready Facebook render
-  instagram.md   # publish-ready Instagram render
-  x.md           # publish-ready X render
+content/<year>/<YYYY-MM-DD>-<slug>/         marketing/<year>/<YYYY-MM-DD>-<slug>/
+  master.md      # fact-checked source        master.md       # fact-checked source
+  linkedin.md    # LinkedIn render            linkedin.md     # English render
+  facebook.md    # Facebook render            linkedin-es.md  # Spanish render
+  instagram.md   # Instagram render           (hero-*.jpg / published.md)
+  x.md           # X render
   (carousel.png / infographic.png / reel-*.md / published.md — added on-demand)
 ```
 
 - `<YYYY-MM-DD>` = intended publish/creation date (sorts chronologically).
 - `<slug>` = short kebab-case handle from the idea's landing or thesis.
-- `content/INDEX.md` catalogs every post (date, slug, title, renders, visual, status), newest-first. `/post` and `/adapt` keep it current — it's how you look up a post's slug ("make a carousel for `plug-and-play-wifi-myth`").
+- **Each tree has its own catalog** — `content/INDEX.md` and `marketing/INDEX.md` (date, slug, title, renders, visual, status), newest-first. `/post` and `/adapt` keep them current — it's how you look up a post's slug ("make a carousel for `plug-and-play-wifi-myth`"). Give Claude a bare slug and it searches both.
 
 **Reference sets:**
 - `content/2026/2026-06-24-ai-makes-us-judges/` — the original calibration examples the rules and agents are tuned to.
@@ -444,16 +509,20 @@ content/<year>/<YYYY-MM-DD>-<slug>/
 ```
 rules/
   SHARED.md  LINKEDIN.md  FACEBOOK.md  INSTAGRAM.md  X.md  VOICE.md
+  MARKETING.md  SPANISH.md                                                         # marketing lane
 agents/
   WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  SCORER.md   # core
   RESEARCH.md  IDEATION.md  HOOK.md                                                # front-end
   VOICE.md  FORMATTER.md  VISUAL.md  REELS.md  PUBLISH.md  SCHEDULER.md            # on-demand
   PIPELINE.md                                                                      # run mechanics
 ideas/
-  ideas-<YYYY-MM-DD>.md          # idea trackers (one per batch, preset-tagged, Developed? column)
-  schedule-<YYYY-MM>.md          # forward publishing plans written by /schedule
-content/
+  ideas-<YYYY-MM-DD>.md            # idea trackers (one per batch, preset-tagged, Developed? column)
+  marketing-ideas-<YYYY-MM-DD>.md  # the Marketing lane's pool
+  schedule-<YYYY-MM>.md            # forward publishing plans written by /schedule
+content/                           # thought leadership — INDEX.md at the tree root
   <year>/<YYYY-MM-DD>-<slug>/master.md linkedin.md facebook.md instagram.md x.md
+marketing/                         # company marketing — its own INDEX.md
+  <year>/<YYYY-MM-DD>-<slug>/master.md linkedin.md linkedin-es.md
 ```
 
 ---
