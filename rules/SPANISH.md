@@ -22,14 +22,15 @@ The tell for a translated post is idiom that survived word-for-word. "Fix the vi
 
 ## Glossary (EN → ES)
 
-Use these mappings. They come from `mzs-marketing/.claude/skills/mzs-brand/SKILL.md` and are the upstream source of truth.
+Use these mappings. They originate in `mzs-marketing/.claude/skills/mzs-brand/SKILL.md`; this table is what agents in this repo read, and it wins where the two differ (see the note below).
 
 | EN | ES |
 |----|-----|
 | network automation | automatización de redes |
 | Infrastructure as Code (IaC) | infraestructura como código (IaC) |
 | configuration drift | desviación de configuración |
-| compliance validation | validación de cumplimiento |
+| compliance | cumplimiento normativo |
+| compliance validation | validación de cumplimiento normativo |
 | device provisioning | aprovisionamiento de dispositivos |
 | firewall policy updates | actualizaciones de políticas de firewall |
 | multi-site deployments | despliegues multi-sitio |
@@ -38,6 +39,8 @@ Use these mappings. They come from `mzs-marketing/.claude/skills/mzs-brand/SKILL
 | Book a consultation | Reserve una consulta |
 | Talk to an engineer | Hable con un ingeniero |
 | engineers who run production | ingenieros que operan producción |
+
+**Corrections made here are local until re-ported upstream.** `compliance → cumplimiento normativo` was corrected by the author on 2026-09-09; `mzs-marketing/.claude/skills/mzs-brand/SKILL.md` still carries the shorter `cumplimiento`. This file wins for anything rendered in this repo.
 
 **When a term is missing from the glossary,** keep the English term and add a short Spanish gloss on first use. Do not coin a translation for an industry term that practitioners say in English.
 
@@ -61,7 +64,7 @@ The fold does **not** scale. LinkedIn truncates on characters, not on meaning, s
 
 2–3, same as the English render, at the very end.
 
-- Spanish tags for Spanish concepts, no accents and no ñ (LinkedIn tags handle them inconsistently): `#AutomatizacionDeRedes`, `#InfraestructuraComoCodigo`, `#IngenieriaDeRedes`, `#Cumplimiento`.
+- Spanish tags for Spanish concepts, no accents and no ñ (LinkedIn tags handle them inconsistently): `#AutomatizacionDeRedes`, `#InfraestructuraComoCodigo`, `#IngenieriaDeRedes`, `#CumplimientoNormativo`.
 - **Keep the tag in English when the industry says it in English** — `#NetOps`, `#NetDevOps`, `#DevOps`, `#IaC`. A Spanish-speaking network engineer follows `#NetOps`, not a translation of it.
 - PascalCase throughout, same as English.
 

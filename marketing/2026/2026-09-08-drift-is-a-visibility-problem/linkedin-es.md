@@ -18,7 +18,7 @@ Nadie fue descuidado. La desviación de configuración no aparece cuando la gent
 
 Por eso más disciplina no lo resuelve. Un control de cambios más estricto y listas de verificación más largas gobiernan lo que usted pretende desplegar. Nada de eso lee la configuración en ejecución para decirle qué hay realmente.
 
-Entonces llega la auditoría, y la validación de cumplimiento se convierte en semanas de comparaciones manuales.
+Entonces llega la auditoría, y la validación de cumplimiento normativo se convierte en semanas de comparaciones manuales.
 
 Para eso construimos Driftguard — detección continua de desviación de configuración en todos los sitios, para que la respuesta a "¿qué está desplegado?" sea un dashboard y no un proyecto de arqueología.
 
@@ -26,4 +26,4 @@ La desviación no es un problema de disciplina. Es un problema de visibilidad. R
 
 Reserve una consulta: mzsnetworks.com
 
-#AutomatizacionDeRedes #Cumplimiento #NetOps
+#AutomatizacionDeRedes #CumplimientoNormativo #NetOps
