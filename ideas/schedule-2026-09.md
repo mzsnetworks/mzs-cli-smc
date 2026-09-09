@@ -46,7 +46,7 @@ Added 2026-09-09, when the Marketing lane opened Monday. Each row is one idea in
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Sep 14 | Mon | Automation isn't the risk, unreviewed change is — manual change only feels safer because a human is watching | `marketing/` transfer, mzs-marketing Post 1 | — |
+| Sep 14 | Mon | Automation isn't the risk, unreviewed change is — manual change only feels safer because a human is watching | `marketing/` transfer, mzs-marketing Post 1 | DONE · `automation-isnt-the-risk` |
 | Sep 21 | Mon | You probably don't need a network automation framework — automate one bottleneck first | `marketing/` transfer, mzs-marketing Post 2 | — |
 | Sep 28 | Mon | Can you say what's configured across every site right now? Drift is a visibility problem — Driftguard | `marketing/` transfer, mzs-marketing Post 3 | — |
 
