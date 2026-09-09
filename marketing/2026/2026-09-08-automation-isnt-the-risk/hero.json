@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "file": "hero-03.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1788931471254-0.jpg",
+      "aspect": "16:9",
+      "usage": "linkedin-en, linkedin-es",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: luminous warm cream (#F4EFE3) cables glowing soft cream-gold, rising from a single trunk at the bottom center and branching cleanly and symmetrically to a long receding row of identical dark server cabinets on both sides, every branch visible and traceable. Exactly ONE single cable is red (#eb2027), solid and uninterrupted along its entire length. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, one thin red accent. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork. No text, no numbers, no letterforms, no logos, no signage.",
+      "generated": "2026-09-09"
+    }
+  ],
+  "notes": "Text-free hero, so it carries both the Spanish (2 PM) and English (4 PM) posts. Approved on the third roll. Roll 1 (hero-01.jpg) drifted to cyan cables, off-palette. Roll 2 (hero-02.jpg) fixed the palette but the red path broke into gold segments and read as two cables. Roll 3 is approved with a known cosmetic exception: the single red cable forks into two red endpoints near the top right. Kept deliberately."
+}

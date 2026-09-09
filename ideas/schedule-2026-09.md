@@ -1,8 +1,8 @@
 # Publishing Schedule — Sep 2026
 
-Standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun, Mondays dark.**
+Standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun. Mondays are the Marketing lane** and carry two slots for one idea: ES at 2:00 PM EDT (`18:00:00Z`), EN at 4:00 PM (`20:00:00Z`).
 
-Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with slug) as they're scheduled; update the source ideas file + `content/INDEX.md` per the normal publish flow.
+Fire each with: `/publish <idea> - <preset>, <date> 4pm`. A Marketing row fires both languages in one run. Mark rows DONE (with slug) as they're scheduled; update the source ideas file + `content/INDEX.md` (or `marketing/INDEX.md`) per the normal publish flow.
 
 ## Professional (LI personal + IG @mzsnetworks)
 
@@ -40,9 +40,25 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Sep 27 | Sun | The cheapest bid wins the project and loses the decade | ideas-2026-08-30 #22 | DONE · `cheapest-bid-loses-decade` |
 | Sep 30 | Wed | 802.1X fails at the printer, not the laptop | ideas-2026-08-30 #9 | DONE · `8021x-fails-at-the-printer` |
 
-**Dark days:** Mon Aug 31 · Mon Sep 7 · Mon Sep 14 · Mon Sep 21 · Mon Sep 28.
+## Marketing (LI personal, EN + ES — Mondays)
 
-**Next open slots:** none in September — both presets are fully planned Sep 1–30. October continues in `schedule-2026-10.md`.
+Added 2026-09-09, when the Marketing lane opened Monday. Each row is one idea in two languages: Spanish at 2:00 PM EDT, English at 4:00 PM, same day, same profile.
+
+| Date | Day | Idea | Source | Status |
+|------|-----|------|--------|--------|
+| Sep 14 | Mon | Automation isn't the risk, unreviewed change is — manual change only feels safer because a human is watching | `marketing/` transfer, mzs-marketing Post 1 | — |
+| Sep 21 | Mon | You probably don't need a network automation framework — automate one bottleneck first | `marketing/` transfer, mzs-marketing Post 2 | — |
+| Sep 28 | Mon | Can you say what's configured across every site right now? Drift is a visibility problem — Driftguard | `marketing/` transfer, mzs-marketing Post 3 | — |
+
+All three are SHIP in `marketing/INDEX.md`. Order runs objection-handling → positioning → product pull-through, matching the upstream marketing plan.
+
+---
+
+**Dark days:** Mon Aug 31 · Mon Sep 7. Mondays Sep 14, 21 and 28 are no longer dark — the Marketing lane took them.
+
+**Next open slots:** none in September — all three presets are fully planned Sep 1–30. October continues in `schedule-2026-10.md`.
+
+**Marketing pool is empty after Sep 28.** The three rows above are the entire lane — everything upstream in `mzs-marketing/work/social/` was already transferred. Run `/ideate for Marketing` before planning Oct 5, or Monday goes dark again.
 
 **Pool warning:** after this batch the Business pool is down to three usable ideas (`08-09 #4`, `08-09 #9`, `07-11 #8`). Run `/ideate for Business` before planning the week of Sep 20.
 
