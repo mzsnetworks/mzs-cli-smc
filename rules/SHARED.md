@@ -2,6 +2,15 @@
 
 These apply to every post regardless of platform. Platform files layer formatting on top; they never override these.
 
+**Two lanes.** Posts live in one of two trees, and the lane changes which rule files apply:
+
+| Lane | Tree | Ends on | Extra rules |
+|------|------|---------|-------------|
+| Thought leadership | `content/` | a question, no company ask | — |
+| Marketing | `marketing/` | a CTA, names an MZS product or service | `rules/MARKETING.md` · `rules/SPANISH.md` |
+
+Everything in this file applies to both, with one narrow exception noted under Fact Discipline.
+
 ---
 
 ## Niche & Audience
@@ -25,6 +34,8 @@ If `rules/VOICE.md` exists, it is the **author's** voice profile and it is **man
 
 Hooks always sit above the platform "fold." Stay near the sweet spot, not the hard cap.
 
+**These targets are calibrated to English.** Spanish runs roughly 15–25% longer for the same content — see `rules/SPANISH.md` for the ES numbers. The *fold* does not scale in either language.
+
 | Platform | Sweet spot | Hard cap | Fold (hook must land before) |
 |----------|-----------|----------|------------------------------|
 | LinkedIn | ~1,300–2,000 chars (~200–350 words) | ~3,000 chars | ~210 chars (~3 lines) |
@@ -43,6 +54,8 @@ This is the one rule that does not loosen.
 - If a number can't be sourced, cut it or reframe it as judgment ("most teams," "in my experience").
 - Vendor forecasts (Gartner, IDC, etc.) must name the source and the year.
 - The Factcheck agent enforces this. A post with an uncited stat does not ship.
+
+**The one exception, `marketing/` lane only:** an uncited number passes when the copy frames it as the *reader's* hypothetical scenario ("a template update that reached 38 of 40 sites") and never as something MZS measured ("we found drift at 38 of 40 client sites"). Credentials and proof points are excluded from the exception — they are claims and need attribution or a source. Full table in `rules/MARKETING.md`; enforced by `agents/FACTCHECK.md`. This exception does not exist for `content/` posts.
 
 ## Always Banned (every platform)
 

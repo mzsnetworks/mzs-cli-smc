@@ -28,6 +28,32 @@ Adapted from a data-driven post-scorer. The original pulls the user's post histo
 
 ---
 
+## Marketing-lane rubric (`marketing/` tree only)
+
+A marketing post has a different job than a thought-leadership post: it ends on an ask, and it has to sound like the brand while doing it. Two dimensions change; the other four are unchanged.
+
+| Dimension | Pts | What earns the points |
+|-----------|-----|------------------------|
+| **Hook** | 25 | Unchanged. |
+| **Spine** | 20 | Unchanged. |
+| **Fact discipline** | 20 | Per `FACTCHECK.md`'s marketing exception — illustrative reader-scenario numbers pass; anything readable as an MZS claim needs a source. A credential attributed to the company rather than the author is an automatic REWORK. |
+| **Judgment** | 15 | Unchanged. |
+| **Landing + CTA** | 10 | The compressed principle still lands, *and* the CTA follows it on its own line in an approved form ("Book a consultation" / "Talk to an engineer", ES: "Reserve una consulta" / "Hable con un ingeniero"). A CTA pasted on in place of a real landing scores 4 at most. A second ask inside the body costs points. |
+| **Brand + platform fit** | 10 | Length, fold, emoji, hashtags per platform — plus `rules/MARKETING.md` compliance: products as proper nouns with no article, "MZS Networks" then "MZS", named tools over vague capability language, no exclamation marks, no SaaS vocabulary, no invented fifth product. |
+
+### Scoring an ES render
+
+Score `linkedin-es.md` against **`rules/SPANISH.md` + `rules/MARKETING.md`**, never against the English reference post — the calibration bar in `rules/LINKEDIN.md` is an English post and does not transfer.
+
+Two checks live inside Brand + platform fit for Spanish:
+
+- **Does the hook land inside ~210 characters?** The fold does not scale with the language. This is the most common ES failure.
+- **Does it read as written-in-Spanish, or as translated English?** Surviving word-for-word idiom, English sentence rhythm, or a glossary term rendered literally where practitioners would say the English — any of these fails Platform fit regardless of character count.
+
+Also check: usted throughout, product and tool names left in English, no accents or ñ in hashtags, and the EN structure kept parallel.
+
+---
+
 ## Output Format
 
 ```
@@ -53,8 +79,8 @@ Adapted from a data-driven post-scorer. The original pulls the user's post histo
 
 ## Constraints
 
-- An unsourced stat caps the post at REWORK regardless of other scores. Fact discipline is non-negotiable.
-- Score each platform render against *its own* rules file, not LinkedIn's.
+- An unsourced stat caps the post at REWORK regardless of other scores. Fact discipline is non-negotiable — the marketing lane's exception narrows what counts as unsourced, it does not remove the cap.
+- Score each platform render against *its own* rules file, not LinkedIn's — and each *language* against its own, not English's.
 - Don't reward length or emoji for their own sake — reward clarity and credibility.
 
 ---
@@ -63,6 +89,8 @@ Adapted from a data-driven post-scorer. The original pulls the user's post histo
 
 ```
 Read rules/SHARED.md and the relevant rules/[PLATFORM].md, plus the post at
-[path]. Apply the SCORER agent: score 0–100 across the rubric, return
+[path]. For a post in the marketing/ tree, also read rules/MARKETING.md —
+and rules/SPANISH.md if the render is the ES one — and use the marketing
+rubric. Apply the SCORER agent: score 0–100 across the rubric, return
 SHIP/REVISE/REWORK with line-level fixes. Do not edit the post.
 ```

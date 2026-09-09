@@ -5,11 +5,15 @@ description: Generate a content-idea matrix — 30+ specific post angles crossin
 
 # Ideate
 
-Run the **IDEATION agent**. Read `agents/IDEATION.md`, `rules/SHARED.md`, and `rules/VOICE.md` (if it exists — pull pillars from it), then execute:
+Run the **IDEATION agent**. Read `agents/IDEATION.md`, `rules/SHARED.md`, and `rules/VOICE.md` (if it exists — pull pillars from it), then execute.
+
+**If the user asks for Marketing ideas**, also read `rules/MARKETING.md` and use the agent's marketing-lane mode: the four-part content spine (drift/audit stories · safety practice · technical teardowns · anonymized proof) crossed with funnel stage, not the personal pillars. Every row names the MZS product or service it pulls through, and must be able to end on an approved CTA. Save to `ideas/marketing-ideas-<YYYY-MM-DD>.md`, and generate at least 12 — the lane burns one idea per Monday.
+
+Otherwise:
 
 1. Cross the author's content pillars with the 8 formats into a 30+ row table of *specific* angles (a real post, not a topic). Include a **Developed?** column (`—` / `drafting` / `SHIP` / `PUBLISHED`).
 2. Flag which ideas will need a cited stat.
 3. End with a "Top 5 to write now."
-4. **Ask if the user wants to save the ideas.** If yes, write them to `ideas/ideas-<YYYY-MM-DD>.md` (create the `ideas/` directory if absent) — the full matrix (with the **Developed?** column) plus the Top 5.
+4. **Ask if the user wants to save the ideas.** If yes, write them to `ideas/ideas-<YYYY-MM-DD>.md` (or `ideas/marketing-ideas-<YYYY-MM-DD>.md` for the Marketing lane) (create the `ideas/` directory if absent) — the full matrix (with the **Developed?** column) plus the Top 5.
 
 If the user hands you a RESEARCH story list, use it as raw material. Do not draft full posts — when the user picks one, hand off to `/post`.

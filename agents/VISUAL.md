@@ -50,7 +50,7 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
    > **How to generate:** Generate these as individual images — one separate image per slide, each portrait 1080×1350 (4:5). Do NOT combine them into a grid, collage, or contact sheet. Generate one slide at a time; wait for "next" between slides. Keep identical style, palette, and fonts across all slides. Proof every slide's text against this spec — especially numbers — before using.
 4. **Render (local, deterministic).** Write `carousel.json` (machine-readable slide data, schema below) into the idea folder, then run:
    ```
-   node tools/render-carousel.mjs content/<year>/<date>-<slug>
+   node tools/render-carousel.mjs <tree>/<year>/<date>-<slug>
    ```
    It outputs `carousel-01.png … NN.png` (1080×1350 at 2×) using the real brand fonts + hex. Requires Google Chrome (headless) and network for Google Fonts. QA the rendered slides; iterate on `carousel.json` and re-run.
 5. **Portable spec.** `carousel-spec.md` remains the paste-anywhere artifact (ChatGPT/Gemini/by-hand). The renderer is the reliable production path; the spec is the fallback/portable one.
@@ -76,7 +76,7 @@ Wrap text in `*asterisks*` to color it red (italic in titles). `\n` = line break
 
 Same engine, one page. Write `infographic.json` and run:
 ```
-node tools/render-infographic.mjs content/<year>/<date>-<slug>
+node tools/render-infographic.mjs <tree>/<year>/<date>-<slug>
 ```
 → `infographic.png` (default 1080×1920 at 2×). Shape: `title`, optional `subtitle`, `sections[]`, optional `footer` + `source`. Section `type`s: `heading` (title/body), `list` (red-tick items), `stats` (big-number rows), `steps` (numbered), `compare` (two columns, right column red-accented). Same `*asterisk*` accent + `\n` rules.
 
@@ -88,7 +88,7 @@ For illustrative scenes only — **never for anything containing text, numbers, 
 
    > Premium editorial illustration, high-end tech magazine style: *[the scene — concrete, drawn from the post's story or metaphor]*. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) highlights, thin red (#eb2027) accent lines only — no green, no purple, no rainbow palettes. Cinematic moody lighting, minimalist composition.
 
-   The webhook appends the aspect spec and a no-text guard automatically. Aspect per platform: `16:9` LinkedIn/Facebook/X, `4:5` Instagram feed, `9:16` story/reel cover.
+   The webhook appends the aspect spec and a no-text guard automatically. Aspect per platform: `16:9` LinkedIn/Facebook/X, `4:5` Instagram feed, `9:16` story/reel cover. The **marketing lane is LinkedIn-only**, so `16:9` is the only aspect it needs — no 4:5 variant, because there is no Instagram target.
 
    **If Instagram is among the post's targets, always generate a separate `4:5` variant** (same prompt, `"aspect":"4:5"`) alongside the 16:9 — a 16:9 hero gets cropped in the IG feed. One webhook call can carry both (`images[]` batch). Save both to the folder and record both in `hero.json` (`usage` per platform).
 
@@ -107,14 +107,14 @@ For illustrative scenes only — **never for anything containing text, numbers, 
    **Downloading:** Zipline rejects Python's default urllib user-agent with `HTTP 403: Forbidden`. Use curl with a UA:
 
    ```bash
-   curl -sS -A "Mozilla/5.0" -o content/<year>/<date>-<slug>/hero-01.jpg "<zipline url>"
+   curl -sS -A "Mozilla/5.0" -o <tree>/<year>/<date>-<slug>/hero-01.jpg "<zipline url>"
    ```
 
    **If an image comes back matted:** adding an explicit full-bleed clause to the prompt ("Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame") fixes it *sometimes* — it failed on a 4:5 retry in Aug 2026. When a re-roll won't drop the frame, keep the good composition and crop it instead (`sips -c <height> <width> file.jpg` centre-crops to an exact aspect; there is no PIL or ImageMagick here). A cropped file no longer matches its Zipline URL — see step 5.
 5. **Save.** Download the approved image(s) into the idea folder as `hero-01.<ext> …` and write `hero.json` beside them: `{ "images": [ { "file", "url", "aspect", "prompt", "generated": "<ISO date>" } ] }`. The `url` is what `/publish` uses directly in Blotato `mediaUrls` — no re-upload needed (mind the 90-day expiry; the local file is the durable copy).
 
    **If you edited the image locally** (a crop, per step 4), the Zipline URL now points at something different from what you approved. Mark that variant `"url_stale": true` with a note saying why, so `/publish` uploads the local file via `blotato_create_presigned_upload_url` instead of reusing the URL.
-6. **Update `content/INDEX.md`** — Visual column → `hero` (or `infographic + hero` etc.).
+6. **Update the post's tree INDEX** — `content/INDEX.md` or `marketing/INDEX.md` — Visual column → `hero` (or `infographic + hero` etc.).
 
 Backend: n8n workflow **SMC Image Generator** (`https://n8n.mzstools.net/workflow/V6frvGMkU7jrqJrz`) — webhook → Gemini image model (currently `gemini-3.1-flash-image-preview`) → Zipline upload → URLs. Requires billing on the Google AI project; on 429 `limit: 0` errors, check billing/quota there.
 
@@ -165,3 +165,15 @@ Apply the VISUAL agent: route to carousel / infographic / hero image, build a
 brief, get approval, then produce the asset: render locally (carousel or
 infographic) or call the SMC Image Generator webhook (hero). Update INDEX.md.
 ```
+
+---
+
+## Language and the marketing lane
+
+Carousels and infographics render **typographically, in English** — the slide copy, the font stack, and the renderer's hardcoded `Source:` label all are. That makes them English-only assets.
+
+- **Never render a Spanish carousel or infographic.** A `linkedin-es.md` post takes a **text-free hero image only**, which carries no type and is therefore language-neutral.
+- When a marketing idea's English render uses a carousel, its Spanish render reuses that idea's hero if one exists, or ships text-only. One idea can hold both: a carousel for the EN post, a hero for the ES post.
+- Marketing heroes need only `16:9`. No 4:5 variant — that aspect exists for the Instagram feed, and the marketing lane doesn't post there.
+
+`<tree>` in every path above is `content` or `marketing`, matching the tree the post lives in.

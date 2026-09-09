@@ -6,13 +6,15 @@ Guidance for Claude Code when working in this repository.
 
 A **multi-platform social media content system** for technical posts. The core workflow: write one idea once, then render it natively for **LinkedIn, Facebook, Instagram, and X**. Same message, platform-correct packaging. Finished posts go live via **`/publish`** (Blotato MCP), always behind an explicit user confirmation.
 
+**Two lanes** share one pipeline. `content/` is thought leadership — ends on a question, asks for nothing. `marketing/` is company marketing — ends on a CTA, names an MZS product or service, and ships **English + Spanish**. The agents and their order are identical; only the render set and a few rule files differ.
+
 Niche: network engineering, infrastructure, automation, AIOps. Audience: practitioners and technical leaders, but **engagement-oriented** (reach matters here, unlike a repel-mode personal blog).
 
 This is an editorial system, not a software project. The "code" is markdown agents and rule files.
 
 ## How It Works
 
-One idea flows through a pipeline and comes out as four platform-native posts:
+One idea flows through a pipeline and comes out as platform-native posts — four for `content/`, two (English + Spanish LinkedIn) for `marketing/`:
 
 ```
 [ Research --> Ideation --> Hook ] --> Writer --> Factcheck --> Platform Adapter --> Editor (x4) --> Hashtag (x4) --> Scorer (x4) --> [ Publish ]
@@ -36,9 +38,9 @@ Three layers, same logic underneath:
 
 1. **Plain English** — the user just says what they want ("write a post about X", "give me ideas"). Match the intent to the right agent(s) and run them.
 2. **Skills** (`.claude/skills/`) — auto-trigger the standalone capabilities: `build-voice`, `ideate`, `hook`, `niche-research`, `visual`, `reels`. Each skill is a thin trigger that reads its canonical `agents/*.md` and executes it.
-3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master; **`/publish <slug>`** posts a SHIP-gated idea live via Blotato (never publish without the user's explicit per-run confirmation of the final text); **`/schedule`** plans the next publishing cycle — assigns unpublished ideas (per preset, from `ideas/ideas-*.md`) to dates on the standing cadence and writes `ideas/schedule-<YYYY-MM>.md` (per `agents/SCHEDULER.md`; planning only, never publishes).
+3. **Commands** (`.claude/commands/`) — explicit multi-step workflows: **`/post <topic>`** runs the full core pipeline (Writer→Scorer); **`/adapt <slug>`** re-renders an existing master; **`/publish <slug>`** posts a SHIP-gated idea live via Blotato (never publish without the user's explicit per-run confirmation of the final text); **`/schedule`** plans the next publishing cycle — assigns unpublished ideas (per preset, from `ideas/ideas-*.md` and `ideas/marketing-ideas-*.md`) to dates on the standing cadence and writes `ideas/schedule-<YYYY-MM>.md` (per `agents/SCHEDULER.md`; planning only, never publishes).
 
-**Standing cadence — preset locked to weekday.** One post daily at 4:00 PM EDT (`20:00:00Z`); **Professional = Tue/Thu/Sat**, **Business = Wed/Fri/Sun**, **Monday dark**. Six posting days is even, so daily alternation pins each weekday permanently. The user batches by week: "**Business for the week of Aug 16**" — week runs Sunday→Saturday, named by its Sunday, three slots per preset (→ Aug 16/19/21; Professional that week → Aug 18/20/22). Resolve those dates directly, no queue-tail detection.
+**Standing cadence — preset locked to weekday.** One post daily at 4:00 PM EDT (`20:00:00Z`); **Professional = Tue/Thu/Sat**, **Business = Wed/Fri/Sun**. Six posting days is even, so daily alternation pins each weekday permanently. **Monday is Marketing** — and carries **two** slots for a single idea: Spanish at 2:00 PM EDT (`18:00:00Z`), English at 4:00 PM. The user batches by week: "**Business for the week of Aug 16**" — week runs Sunday→Saturday, named by its Sunday, three slots per preset (→ Aug 16/19/21; Professional that week → Aug 18/20/22). Marketing yields **one** Monday per week, not three. Resolve those dates directly, no queue-tail detection.
 
 `agents/*.md` files remain the **source of truth** — skills and commands point to them, never fork the logic. The core pipeline agents (Writer, Factcheck, Adapter, Editor, Hashtag, Scorer) are invoked *through* `/post`, not as individual skills.
 
@@ -52,6 +54,8 @@ rules/
   INSTAGRAM.md     # caption + carousel, purposeful emoji, exactly 5 hashtags (hard cap)
   X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
   VOICE.md         # author voice profile (created by the Voice agent; optional)
+  MARKETING.md     # marketing lane only: brand voice, products, CTA, the figures exception
+  SPANISH.md       # any *-es.md render: usted, glossary, ES length targets, never translate
 agents/            # canonical agent logic (source of truth)
   # core pipeline
   WRITER.md  FACTCHECK.md  PLATFORM_ADAPTER.md  EDITOR.md  HASHTAG.md  SCORER.md  PIPELINE.md
@@ -62,29 +66,30 @@ agents/            # canonical agent logic (source of truth)
 .claude/
   commands/        # /post (full pipeline), /adapt (re-render), /publish (go live via Blotato), /schedule (plan cycle)
   skills/          # auto-triggered: build-voice, ideate, hook, niche-research, visual, reels
-ideas/             # idea trackers (ideas-<date>.md, preset-tagged) + forward plans (schedule-<YYYY-MM>.md)
-content/           # generated posts (idea-first layout)
+ideas/             # idea trackers (ideas-<date>.md, marketing-ideas-<date>.md) + forward plans (schedule-<YYYY-MM>.md)
+content/           # generated thought-leadership posts (idea-first layout)
+marketing/         # generated company marketing posts (same layout, own INDEX.md)
 ```
 
 ## Output Layout (Non-Negotiable)
 
-Posts are **idea-first**. One idea = one dated folder holding all its platform versions:
+Posts are **idea-first**. One idea = one dated folder holding all its platform versions. Both trees use the identical layout; only the render set differs:
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/
-  master.md      # fact-checked source (LinkedIn-length, full Sources block)
-  linkedin.md    # publish-ready LinkedIn render
-  facebook.md    # publish-ready Facebook render
-  instagram.md   # publish-ready Instagram render
-  x.md           # publish-ready X render
+content/<year>/<YYYY-MM-DD>-<slug>/        marketing/<year>/<YYYY-MM-DD>-<slug>/
+  master.md      # fact-checked source       master.md       # fact-checked source
+  linkedin.md    # LinkedIn render           linkedin.md     # English render
+  facebook.md    # Facebook render           linkedin-es.md  # Spanish render
+  instagram.md   # Instagram render          published.md    # written by /publish
+  x.md           # X render
   published.md   # written by /publish — per-platform live URLs / schedule / status
 ```
 
 - `<YYYY-MM-DD>` = intended publish/creation date (sorts chronologically)
 - `<slug>` = short kebab-case handle from the idea's landing or thesis
 - Never scatter the renders across separate trees — they belong to one idea
-- The Adapter writes the four renders as siblings of `master.md`, in the same folder
-- `content/INDEX.md` is the catalog of every post (date, slug, title, renders, visual, status), newest-first. `/post`, `/adapt`, and `/publish` keep it current; the Visual skill updates the visual column. It's the lookup for "what's the slug for that post?"
+- The Adapter writes the lane's renders as siblings of `master.md`, in the same folder
+- **Each tree has its own catalog** — `content/INDEX.md` and `marketing/INDEX.md` (date, slug, title, renders, visual, status), newest-first. `/post`, `/adapt`, and `/publish` keep them current; the Visual skill updates the visual column. They're the lookup for "what's the slug for that post?" — when resolving a slug, search both.
 
 Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration examples the rules and agents are tuned to.
 
@@ -92,13 +97,17 @@ Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration
 
 The one rule that never loosens: **every statistic must trace to a real, citable source.** Vendor forecasts name the firm and the year. Uncited stats get cut or reframed as judgment. Factcheck enforces this and blocks the pipeline.
 
+**The marketing lane carries one narrow exception** (adopted 2026-09-09 from upstream doctrine): an uncited number passes when the copy frames it as the *reader's* hypothetical scenario ("a template update that reached 38 of 40 sites"), and fails when it reads as an MZS measurement ("we found drift at 38 of 40 client sites"). Credentials and proof points are excluded — they are claims. See `rules/MARKETING.md`. This exception does not exist in `content/`.
+
 Otherwise this system is engagement-oriented, NOT repel-mode:
 - Emojis allowed per platform (heavy Instagram, sparing X, ~none LinkedIn)
 - CTAs and closing questions allowed
 - First-person and personal-anecdote openings allowed
 - Threads, carousels, and long form where the platform supports them
 
-Every post needs a strong **hook** in line one. The default shape is **hook → POV → cited data → judgment → memorable landing**. Protect the landing (often a triad or a real question).
+Every post needs a strong **hook** in line one. The default shape is **hook → POV → cited data → judgment → memorable landing**. Protect the landing (often a triad or a real question). In `marketing/`, the CTA follows the landing on its own line — it never replaces it.
+
+**Spanish is written, never translated.** `linkedin-es.md` is composed from the master against the upstream EN→ES glossary — usted register, neutral Latin-American Spanish, product and tool names left in English. The ES targets run longer than English (~1,500–2,300 chars), but the ~210-char fold does *not* scale, which makes the Spanish hook the tightest constraint in the system. See `rules/SPANISH.md`.
 
 ## Origin
 

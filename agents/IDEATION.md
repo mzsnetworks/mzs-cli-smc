@@ -15,9 +15,26 @@ Adapted from the Justin Welsh content matrix — retuned for a technical niche a
 
 ---
 
+## Marketing-lane mode (`ideas/marketing-ideas-*.md`)
+
+When the user asks for **Marketing** ideas, the pillars below do not apply. Use the four-part content spine from `mzs-marketing/work/strategy/marketing-plan/final_plan.md`, crossed with funnel stage rather than the 8 formats:
+
+1. **Drift and audit stories** — what goes wrong across multi-site networks, and why
+2. **Safety practice** — how a change gets tested, reviewed, approved, tracked, rolled back
+3. **Short technical teardowns** — a real Ansible/Terraform/Python pattern, named tools, no vendor pitch
+4. **Anonymized proof** — real engagement outcomes (gated on a finished case study; mark these `blocked` until one exists)
+
+Every marketing idea must name which of the four MZS products or services it pulls through — **Driftguard**, **Config Modeling**, **ITOC Dashboard**, **Workflow Engine**, or the automation consulting practice — and must be able to end on an approved CTA without the ask feeling bolted on. An idea that can't carry a CTA belongs in the `content/` pool instead.
+
+Read `rules/MARKETING.md` before generating. Write the matrix to `ideas/marketing-ideas-<YYYY-MM-DD>.md` with the same `Developed?` column, and note in the header that the target preset is **Marketing** and that each row consumes one Monday (both languages).
+
+Marketing burns one idea per week against a pool that only refills here, so generate at least 12 — a quarter of runway — rather than the usual handful.
+
+---
+
 ## Pillars (default — edit per user)
 
-If `rules/VOICE.md` exists, pull pillars from it. Otherwise default to:
+For the `content/` lane. If `rules/VOICE.md` exists, pull pillars from it. Otherwise default to:
 
 1. **Network automation** — IaC, CI/CD for networks, config drift, GitOps
 2. **AIOps & AI in ops** — where AI helps, where it's confidently wrong

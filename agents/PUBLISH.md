@@ -8,8 +8,12 @@ You take a finished, SHIP-gated idea folder and publish its renders live through
 
 ## Preconditions
 
-1. Resolve the slug via `content/INDEX.md` to `content/<year>/<YYYY-MM-DD>-<slug>/`. The user may give a title or thesis instead of a slug — match it against the INDEX.
-2. **If the post doesn't exist at all** (a new title/idea, nothing in the INDEX): run the full core pipeline first — Writer → Factcheck → Adapter → Editor → Hashtag → Scorer to SHIP, then the Visual agent (with its approval gate) for the media Instagram needs — and continue into this publish flow. One `/publish` run takes the idea from nothing to scheduled.
+1. Resolve the slug to its idea folder. **There are two content trees**, each with its own catalog — search both:
+   - `content/INDEX.md` → `content/<year>/<YYYY-MM-DD>-<slug>/` — the thought-leadership lane (Professional and Business presets)
+   - `marketing/INDEX.md` → `marketing/<year>/<YYYY-MM-DD>-<slug>/` — the company marketing lane (Marketing preset)
+
+   The user may give a title or thesis instead of a slug — match it against both INDEXes. If a slug somehow exists in both, ask which. Everything below that says "the INDEX" means whichever one owns the resolved post.
+2. **If the post doesn't exist at all** (a new title/idea, nothing in either INDEX): run the full core pipeline first — in the lane the user named — Writer → Factcheck → Adapter → Editor → Hashtag → Scorer to SHIP, then the Visual agent (with its approval gate) for the media Instagram needs — and continue into this publish flow. One `/publish` run takes the idea from nothing to scheduled.
 3. If the post exists but isn't **SHIP** (a render scored <85), stop and report — route the user to `/post` or `/adapt`.
 4. If a platform's render is missing (older posts predate `facebook.md`), backfill it first: run Platform Adapter → Editor → Hashtag → Scorer for just that platform, loop to SHIP, then continue.
 
@@ -30,17 +34,34 @@ Always call `blotato_list_accounts` at the start of a run — accounts get recon
 
 ## Named presets (audience bundles)
 
-The user works in two standing audience modes. When they name one, apply it instead of asking the platform/LinkedIn-target questions — still ask **timing** and **X shape** (if X is in the bundle).
+The user works in three standing audience modes. When they name one, apply it instead of asking the platform/LinkedIn-target questions — still ask **timing** and **X shape** (if X is in the bundle).
 
-| Preset | Platforms | LinkedIn target |
-|--------|-----------|-----------------|
-| **Professional** | LinkedIn + Instagram | LinkedIn **personal** profile (Luis Mazariegos, `26694`, no `pageId`) · IG @mzsnetworks |
-| **Business** | LinkedIn + Facebook + Instagram + X (all four) | LinkedIn **MZS Networks company page** (`pageId 94095464`) · FB page `779757178552278` · IG @mzsnetworks · X @mzsnetworks |
+| Preset | Tree | Platforms | LinkedIn target |
+|--------|------|-----------|-----------------|
+| **Professional** | `content/` | LinkedIn + Instagram | LinkedIn **personal** profile (Luis Mazariegos, `26694`, no `pageId`) · IG @mzsnetworks |
+| **Business** | `content/` | LinkedIn + Facebook + Instagram + X (all four) | LinkedIn **MZS Networks company page** (`pageId 94095464`) · FB page `779757178552278` · IG @mzsnetworks · X @mzsnetworks |
+| **Marketing** | `marketing/` | LinkedIn only — **twice**, EN and ES | LinkedIn **personal** profile (`26694`, no `pageId`) |
 
 - "Professional" = the personal-brand mix (Luis on LinkedIn, MZS on IG).
 - "Business" = everything on the MZS company account.
-- Presets set platforms + LinkedIn target only. Timing and X shape are still per-run questions.
+- "Marketing" = the company marketing lane on Luis's personal profile: two LinkedIn submissions per idea, one per language. No company page, no Facebook, no Instagram, no X.
+- Presets set platforms + LinkedIn target only. Timing and X shape are still per-run questions — **except Marketing**, whose timing is fixed (below).
 - If the user names no preset, fall back to the full question round below.
+
+### The Marketing preset in detail
+
+One idea produces **two** `blotato_create_post` calls, both to LinkedIn account `26694` with no `pageId`:
+
+| Render | Text | Scheduled time |
+|--------|------|----------------|
+| `linkedin-es.md` | Spanish | **2:00 PM EDT** = `18:00:00Z` |
+| `linkedin.md` | English | **4:00 PM EDT** = `20:00:00Z` |
+
+Same date — Spanish fires first. Marketing posts run **Mondays** (see `agents/SCHEDULER.md`), so the date is a Monday unless the user overrides it.
+
+- **Do not ask the platform, LinkedIn-target, timing, or X-shape questions for this preset.** All four are determined. Ask only for the final text confirmation.
+- Publish both languages or neither. If one render isn't SHIP, stop and report rather than shipping a half-bilingual idea.
+- Both submissions still get the full final-text gate below — show the Spanish and the English side by side, and wait for one explicit "publish" covering both.
 
 ---
 
@@ -48,7 +69,7 @@ The user works in two standing audience modes. When they name one, apply it inst
 
 Before publishing anything, ask (one question round):
 
-1. **Platforms** — which of the four to publish this run (default: all with a SHIP render).
+1. **Platforms** — which to publish this run (default: all with a SHIP render). Skip entirely when the preset already fixes the set.
 2. **LinkedIn target** — personal profile (omit `pageId`) or the MZS Networks company page (`pageId`). Never assume.
 3. **Timing** — now, next free slot (`useNextFreeSlot`), or a scheduled time. If scheduled, get the local time and convert to UTC ISO 8601 for `scheduledTime`.
 4. **X shape** — `x.md` holds both a single post and a thread; ask which to publish (thread → first tweet as `text`, rest as `additionalPosts`).
@@ -58,8 +79,9 @@ Before publishing anything, ask (one question round):
 ## Media
 
 - **Instagram cannot post text-only.** If the folder has `carousel-01.png…NN.png`, publish them all as an IG carousel (multiple `mediaUrls`, in order). If it has `infographic.png` or a hero, publish that single image. If it has none, run the **Visual agent first** (its normal approval gate applies), produce the asset, then publish.
-- **LinkedIn gets the FULL carousel.** If the folder has `carousel-01.png…NN.png`, pass **all slides** in `mediaUrls`, in order — Blotato supports LinkedIn carousels via multiple image URLs. This applies to **both presets** (personal profile and company page). Never publish a lone cover slide to LinkedIn — a single slide teasing "6 signs" is a broken post. Hero image only when the post has no carousel.
+- **LinkedIn gets the FULL carousel.** If the folder has `carousel-01.png…NN.png`, pass **all slides** in `mediaUrls`, in order — Blotato supports LinkedIn carousels via multiple image URLs. This applies to **every preset** (personal profile and company page alike), English renders included. Never publish a lone cover slide to LinkedIn — a single slide teasing "6 signs" is a broken post. Hero image only when the post has no carousel.
 - **Facebook / X: single hero image** — never carousel slides. If the post's visual is a carousel and the Business preset targets FB/X, generate a 16:9 hero for those two before publishing.
+- **Marketing lane (LinkedIn EN + ES):** the English post may take a carousel or a hero. The **Spanish post takes a text-free hero only, never carousel or infographic slides** — those render typographically in English, and English slides under a Spanish caption is a broken post (`rules/SPANISH.md`). When the EN post uses a carousel, the ES post reuses that idea's hero if one exists, or ships text-only. Never render a Spanish carousel.
 - **LinkedIn / Facebook text-only** is fine when no visual exists — but visuals outperform, so prefer running the Visual agent first.
 - **X:** attach the hero, infographic, or cover image on the single-post version if one exists; threads go text-only unless the user asks.
 
@@ -81,8 +103,11 @@ Use the returned `publicUrl` in `mediaUrls`. Never pass a local path to `blotato
 
 Each render file is publish-ready copy, but strip editorial scaffolding before sending:
 
-- Drop any markdown heading/front-matter the render carries (e.g. a `# LinkedIn` title line).
-- **LinkedIn:** publish body + hashtags + the `## Sources` block (plain "Sources:" + links, not a markdown heading).
+Match the rule by **filename**, not by platform name — `linkedin-es.md` is a LinkedIn render and takes the LinkedIn rule.
+
+- Drop any markdown heading/front-matter the render carries (e.g. a `# LinkedIn` or `# LinkedIn (ES)` title line).
+- **LinkedIn:** publish body + hashtags + the `## Sources` block (plain "Sources:" + links, not a markdown heading). Marketing-lane posts carry a Sources block only when they cite a real sourced statistic — if there is none, there is nothing to append, and you never add an empty "Sources:" line.
+- **`*-es.md` renders:** same rule as their English twin, plus — publish the Spanish hashtags exactly as the render carries them. Never substitute the English tags, never translate a tag, and never machine-translate any part of the copy at publish time. What the Scorer passed is what ships.
 - **Facebook:** body as-is (sources are inline by rule). If the render specifies a link attachment, pass it via `link`, not in the text.
 - **Instagram:** caption + the hashtag block. Drop "carousel slide ideas" or any other notes-to-self sections.
 - **X:** exactly the chosen version's text; for threads, one tweet per `additionalPosts` entry, verbatim.
@@ -102,8 +127,8 @@ Each render file is publish-ready copy, but strip editorial scaffolding before s
 
 ## After publishing
 
-1. Write (or append to) `published.md` in the idea folder — one row per platform: timestamp (UTC), platform, submission id, live URL (or scheduled time / failure).
-2. Update the post's row in `content/INDEX.md`: status → **PUBLISHED** once at least one platform is live (note partial publishes in the Visual/notes column if some platforms are still scheduled or skipped).
+1. Write (or append to) `published.md` in the idea folder — one row per submission: timestamp (UTC), platform, **language** (for the Marketing lane's EN/ES pair), submission id, live URL (or scheduled time / failure).
+2. Update the post's row in **its own tree's INDEX** — `content/INDEX.md` or `marketing/INDEX.md`: status → **PUBLISHED** once at least one platform is live (note partial publishes in the Visual/notes column if some platforms are still scheduled or skipped). A Marketing row goes PUBLISHED only when both languages are away.
 
 ---
 
@@ -119,8 +144,9 @@ Each render file is publish-ready copy, but strip editorial scaffolding before s
 ## Usage
 
 ```
-Read agents/PUBLISH.md and content/INDEX.md, resolve <slug> to its idea
-folder, verify SHIP, backfill any missing render, ask the user the four
-run questions, upload media, show final text per platform, and on explicit
-approval publish via Blotato. Then write published.md and update INDEX.md.
+Read agents/PUBLISH.md, content/INDEX.md and marketing/INDEX.md, resolve
+<slug> to its idea folder in whichever tree owns it, verify SHIP, backfill
+any missing render, ask the run questions the preset leaves open, upload
+media, show the final text per submission, and on explicit approval publish
+via Blotato. Then write published.md and update that tree's INDEX.md.
 ```
