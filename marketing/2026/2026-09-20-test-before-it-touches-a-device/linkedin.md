@@ -3,7 +3,7 @@
 
 In most disciplines, "we'll run it and see what happens" is not a test plan.
 
-In networking it is still the default. The change gets reviewed by reading it, approved by someone who also read it, and then validated by applying it to production during a window and watching what breaks.
+In networking it is still the default. The change gets reviewed by reading it, approved by someone who also read it, and then validated by applying it to production during a window and watching what breaks. Nobody would call that a test anywhere else in the organization.
 
 Reading a change tells you it is syntactically fine. It does not tell you that this ACL, on this device, with this routing table, drops the traffic you forgot about.
 

@@ -12,3 +12,5 @@
 **Media:** both submissions carry the same text-free hero, `hero-01.jpg` → `https://zipline.mzstools.net/raw/smc-1789936810658-3.jpg`. URL read from `hero.json`, never typed, and verified to return JPEG bytes after submission. Zipline expires files after 90 days (≈2026-12-19); the local `hero-01.jpg` is the durable copy.
 
 **Note:** scheduled well ahead of publication. Any correction from here means editing a live Blotato schedule rather than a file — the submission IDs above are the handles for `blotato_update_schedule`.
+
+**Correction — 2026-09-20.** The English render was missing a sentence the Spanish carried ("Nadie lo llamaría una prueba en ningún otro lugar de la organización"). Paragraph 2 ran two sentences in EN against three in ES. English was expanded to match and the live schedule updated: Blotato schedule ID **`4644083`** (not the submission ID above — `blotato_update_schedule` takes the numeric schedule ID, found by paging `blotato_list_schedules`). Time, media and account unchanged; ES untouched. Found by the sentence-count parity check in `tools/check-renders.py`.

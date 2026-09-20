@@ -3,7 +3,7 @@
 
 The most common objection we hear is not about price. It is "we tried this before and it went nowhere."
 
-That is a fair thing to be worried about, so here is the shape of a first month, concretely.
+That is a fair thing to be worried about, and the worry is usually founded on something real. So here is the shape of a first month, concretely.
 
 Week one is reading, not building. Current configurations, the actual change process as practiced rather than as documented, what the team already automated and why it stopped being used. There is almost always something half-built. It usually failed for an organizational reason, not a technical one, and that reason is still there.
 
