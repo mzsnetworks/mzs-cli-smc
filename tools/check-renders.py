@@ -35,18 +35,52 @@ BRITISH = {
  'realise','realised','apologise','travelling','labelled','modelling','signalling','rumour',
 }
 
+# FAILURE HISTORY: a word set cannot catch "on holiday" or "whilst" in context.
+BRITISH_PHRASES = [
+ 'on holiday', 'whilst', 'fortnight', 'learnt', 'spelt', 'amongst',
+ 'in hospital', 'car park', 'have got to', 'different to',
+]
+
 CTA_EN = ("Book a consultation: mzsnetworks.com", "Talk to an engineer: mzsnetworks.com")
 CTA_ES = ("Reserve una consulta: mzsnetworks.com", "Hable con un ingeniero: mzsnetworks.com")
 
 # name: (min, max, draft_target, fold, tag_min, tag_max)
+#
+# FAILURE HISTORY / why these numbers. Measured across every render in the repo:
+# output clusters 1-5% under whatever number is ENFORCED and never approaches a
+# number that is merely stated. Facebook sat at 774-798 against a prose cap of
+# 800 for two months; the first batch written against an enforced warn-at-750
+# landed at 621-711. LinkedIn has 17 published renders at 2001-2090 against a
+# prose "sweet spot" ceiling of 2000. So the max below is deliberately set BELOW
+# where the output should land, not at the outer limit of what the platform
+# tolerates. Do not "relax" these to match a platform cap -- that is the change
+# that caused the overruns.
 SPEC = {
- 'linkedin.md':    (1300, 2000, '1500-1800', 210, 2, 3),
- # FAILURE HISTORY: Facebook overran 800 on 6 of 6 Business posts written
- # 2026-09-20, every one needing two trim passes. 800 is the cap; draft to 650.
- 'facebook.md':    (400,   800, '550-700',   477, 0, 2),
- 'instagram.md':   (0,    2200, '600-900',   125, 5, 5),
- 'linkedin-es.md': (1500, 2300, '1700-2000', 210, 2, 3),
+ 'linkedin.md':    (1300, 1900, '1600-1850', 210, 2, 3),
+ 'facebook.md':    (400,   760, '550-700',   477, 0, 2),
+ # Instagram splits by whether the post carries a carousel. A caption under ten
+ # slides needs to carry the argument; a caption under one image does not.
+ # rules/INSTAGRAM.md said 125-220 while every post ever written was 650-2000 --
+ # the rule and the practice had never agreed. Resolved 2026-09-20.
+ 'instagram.md':   (0,     900, '600-900',   125, 5, 5),   # carousel-bearing
+ 'instagram-solo': (100,   400, '125-220',   125, 5, 5),   # image-only post
+ 'linkedin-es.md': (1500, 2200, '1700-2000', 210, 2, 3),
 }
+
+def sentences(par):
+    """Count sentence terminators. Spanish inverted marks open but do not
+    terminate, so only . ! ? at a boundary count. Bullet lines are counted as
+    one sentence each so a bulleted paragraph does not read as zero."""
+    t = re.sub(r'\b(?:Mr|Mrs|Ms|Dr|Sr|Sra|vs|etc|i\.e|e\.g|a\.m|p\.m)\.', 'X', par)
+    # Normalize quote-adjacent punctuation before counting. English puts the
+    # period inside the quote ("the config parses.") and Spanish puts it
+    # outside ("la configuración compila".) -- counting raw produced four
+    # false positives on real posts from that convention alone.
+    t = re.sub(r'([.!?])["\u2019\u201d\u00bb]', r'\1', t)      # ." -> .
+    t = re.sub(r'["\u2019\u201d\u00bb]([.!?])', r'\1', t)      # ". -> .
+    n = len(re.findall(r'[.!?](?=\s|$)', t))
+    bullets = len([l for l in par.split('\n') if l.lstrip().startswith(('—', '-', '•', '→'))])
+    return max(n, bullets)
 
 def body(path, strip_notes=True):
     lines = open(path, encoding='utf-8').read().split('\n')
@@ -57,7 +91,7 @@ def body(path, strip_notes=True):
         t = t.split('\n---\n')[0].strip()   # drop "carousel slide ideas"
     return t
 
-def check_file(path, lane, fails, warns):
+def check_file(path, lane, fails, warns, carousel=True):
     f = os.path.basename(path)
     rel = os.path.join(os.path.basename(os.path.dirname(path)), f)
 
@@ -80,12 +114,15 @@ def check_file(path, lane, fails, warns):
                     fails.append(f"{rel}: thread tweet {len(t.strip())} > 280 — {t.strip()[:40]!r}")
         targets = [single]
     else:
-        lo, hi, draft, fold, tmin, tmax = SPEC[f]
+        key = f
+        if f == 'instagram.md' and not carousel:
+            key = 'instagram-solo'
+        lo, hi, draft, fold, tmin, tmax = SPEC[key]
         b = body(path)
         n = len(b)
         if not lo <= n <= hi:
             fails.append(f"{rel}: {n} chars outside {lo}-{hi} (draft target {draft})")
-        elif f == 'facebook.md' and n > 750:
+        elif f == 'facebook.md' and n > 720:
             warns.append(f"{rel}: {n} chars — inside the cap but above the {draft} draft target")
         lines = [l for l in b.split('\n') if l.strip()]
         if lines and len(lines[0]) > fold:
@@ -121,6 +158,10 @@ def check_file(path, lane, fails, warns):
         hit = {w.lower() for w in re.findall(r"[A-Za-z']+", t)} & BRITISH
         if hit:
             fails.append(f"{rel}: British spelling {sorted(hit)} — the corpus is American")
+        low = t.lower()
+        ph = [x for x in BRITISH_PHRASES if re.search(r'\b' + re.escape(x) + r'\b', low)]
+        if ph:
+            fails.append(f"{rel}: British usage {ph} — the corpus is American")
 
 def preset_of(d):
     """Read the preset from master.md. content/ holds two presets with
@@ -140,8 +181,11 @@ RENDERS = {
 
 def check_post(d):
     d = d.rstrip('/')
-    lane = 'marketing' if (d + '/').startswith('marketing/') or '/marketing/' in d + '/' else 'content'
     preset = preset_of(d)
+    # Lane follows the preset, not the path: the path is wrong for fixtures and
+    # for any folder that gets moved, and the preset is what actually decides
+    # which rules apply.
+    lane = 'marketing' if preset == 'marketing' else 'content'
     if preset not in RENDERS:
         # Unlabelled older post: check whatever renders it actually has.
         expect = [f for f in ('linkedin.md','facebook.md','instagram.md','x.md','linkedin-es.md')
@@ -149,24 +193,48 @@ def check_post(d):
     else:
         expect = RENDERS[preset]
     fails, warns = [], []
+    carousel = bool(glob.glob(os.path.join(d, 'carousel-*.png'))) or \
+               os.path.exists(os.path.join(d, 'carousel.json'))
     for f in expect:
         p = os.path.join(d, f)
         if not os.path.exists(p):
             fails.append(f"{os.path.basename(d)}/{f}: MISSING — the {lane} lane needs it")
             continue
-        check_file(p, lane, fails, warns)
+        check_file(p, lane, fails, warns, carousel=carousel)
 
     # FAILURE HISTORY: on 2026-09-20 four marketing ES renders were expanded
     # without mirroring the addition into the English, and two shipped that way.
-    if lane == 'marketing' and not fails:
+    # Two bugs in the first version of this check, both found 2026-09-20:
+    #   1. it was gated behind `not fails`, so any other failure hid a parity break;
+    #   2. it compared paragraph COUNTS, so the break that actually shipped -- a
+    #      sentence appended INSIDE an existing paragraph -- passed clean.
+    # Parity is now checked per paragraph by length ratio, and always runs.
+    both = all(os.path.exists(os.path.join(d, f)) for f in ('linkedin.md', 'linkedin-es.md'))
+    if lane == 'marketing' and both:
         en, es = body(os.path.join(d, 'linkedin.md')), body(os.path.join(d, 'linkedin-es.md'))
-        pe = len([p for p in en.split('\n\n') if p.strip()])
-        ps = len([p for p in es.split('\n\n') if p.strip()])
-        if pe != ps:
-            fails.append(f"{os.path.basename(d)}: EN/ES paragraph parity {pe} vs {ps} — both renders must carry the same beats")
+        pe = [p for p in en.split('\n\n') if p.strip()]
+        ps = [p for p in es.split('\n\n') if p.strip()]
+        name = os.path.basename(d)
+        if len(pe) != len(ps):
+            fails.append(f"{name}: EN/ES paragraph parity {len(pe)} vs {len(ps)} — both renders must carry the same beats")
+        else:
+            for i, (a_, b_) in enumerate(zip(pe, ps), 1):
+                if a_.lstrip().startswith('#') or b_.lstrip().startswith('#'):
+                    continue            # hashtag block: lengths legitimately differ
+                # Sentence COUNT, not length. A sentence appended to a long
+                # paragraph moves its length ratio by ~1.1 -- well inside any
+                # band loose enough to tolerate Spanish running longer. The
+                # count is structural and moves by exactly one.
+                ca, cb = sentences(a_), sentences(b_)
+                if ca != cb:
+                    fails.append(f"{name}: paragraph {i} has {ca} sentence(s) in EN and {cb} in ES — one language carries content the other does not")
+                    continue
+                r = len(b_) / max(len(a_), 1)
+                if not 0.80 <= r <= 1.90:
+                    warns.append(f"{name}: paragraph {i} ES/EN length ratio {r:.2f} (EN {len(a_)}, ES {len(b_)})")
         r = len(es) / len(en)
         if r < 1.05 and len(es) < 1700:
-            warns.append(f"{os.path.basename(d)}: ES/EN ratio {r:.2f} and ES only {len(es)} chars — the Spanish is likely tracking the English sentence for sentence rather than breathing")
+            warns.append(f"{name}: overall ES/EN ratio {r:.2f}, ES {len(es)} chars — the Spanish may be tracking the English sentence for sentence")
     return fails, warns
 
 def main():
