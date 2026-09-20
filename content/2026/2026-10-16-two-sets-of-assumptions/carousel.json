@@ -1,0 +1,77 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "An acquisition doesn't\njoin two networks.",
+      "body": "It joins two sets of\n*assumptions* about who is trusted.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "And nobody documented either",
+      "body": "Not in a policy. Not anywhere.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "What gets scoped first",
+      "body": "Address space. Routing between\ntwo cores. DNS resolving both ways.\nReal work, *known answers*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "That's the easy half",
+      "body": "You can estimate it.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The half that overruns",
+      "body": "Is the part nobody wrote down.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "In their estate",
+      "body": "A flat segment carrying production —\nbecause ten years ago the team was\nsmall and everyone shared a building.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "In yours",
+      "body": "A rule permitting a source range,\nfor a project that ended in *2021*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Neither is written as a policy",
+      "body": "*Both are policies.*",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "So what do you actually get?",
+      "body": "Not the union of two security\npostures. The *weaker* one,\napplied to everything.",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "Integration is cheap.",
+      "body": "Reconciling two undocumented\ntrust models is *the project*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

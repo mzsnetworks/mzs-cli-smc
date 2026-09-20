@@ -1,0 +1,80 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Root cause is usually\na *decision*, not a device.",
+      "body": "Five whys stops the moment the\nhonest answer names a tradeoff.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The supervisor failed",
+      "body": "Why did that take the site down?",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The redundant path",
+      "body": "Wasn't carrying the routes\nit was supposed to.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Why not?",
+      "body": "A config changed during a migration\nand *never reverted*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Why wasn't it caught?",
+      "body": "Validation was dropped when the\nmaintenance window got compressed.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Why was it compressed?",
+      "body": "*That's where the document ends.*\nThe finding reads \"hardware failure.\"",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "But the chain was still going",
+      "body": "A fixed business deadline. A real risk\nweighed against a real cost.\nA choice that was probably *right*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Naming it isn't blame",
+      "body": "You cannot buy a supervisor that\nsurvives having its redundancy\n*silently removed*.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Postmortems that change anything",
+      "steps": [
+        "Record the constraint, not just the event.",
+        "Separate the *decision* from the outcome.",
+        "A reasonable decision can still cause an outage."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "It found where the\nfailure surfaced.",
+      "body": "Not *why it was possible*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

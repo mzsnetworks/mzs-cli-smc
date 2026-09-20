@@ -1,0 +1,77 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "A branch build\nshould take two days.",
+      "body": "Most take *two weeks*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The gap isn't engineering time",
+      "body": "It's *waiting*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Where the two weeks go",
+      "body": "Addressing requested, then waited on.\n\"Which switch is standard\n this quarter?\" — *two answers*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "A config copied from a copy",
+      "body": "Which was copied from the one\nbefore it, carrying a typo through\n*four buildings*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "None of it is difficult",
+      "body": "All of it is *undecided*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "One template",
+      "body": "Parameterized. Fill in values —\ndon't copy and edit.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "One addressing scheme",
+      "body": "Allocated from a system that\nrecords who holds what.\nNot a *spreadsheet*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "One staging step",
+      "body": "Configured, powered and validated\n*before it ships* — not in a closet\non speakerphone.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "One acceptance test",
+      "body": "Written down. Including one that\nproves traffic takes the path\nyou *intended*.",
+      "motif": "none"
+    },
+    {
+      "type": "cta",
+      "title": "Four decisions made once.",
+      "body": "Not renegotiated at every site.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

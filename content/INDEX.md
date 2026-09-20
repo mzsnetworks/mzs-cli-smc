@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-10-11 | `branch-build-two-days` | A branch build should take two days and takes two weeks — the gap is four undecided things, not engineering time | LI · FB · IG · X | — | SHIP |
-| 2026-10-14 | `root-cause-is-a-decision` | Five whys stops the moment the honest answer names a tradeoff somebody made — the device was never the variable | LI · FB · IG · X | — | SHIP |
-| 2026-10-16 | `two-sets-of-assumptions` | An acquisition joins two undocumented trust models; you get the weaker posture applied to everything | LI · FB · IG · X | — | SHIP |
+| 2026-10-11 | `branch-build-two-days` | A branch build should take two days and takes two weeks — the gap is four undecided things, not engineering time | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
+| 2026-10-14 | `root-cause-is-a-decision` | Five whys stops the moment the honest answer names a tradeoff somebody made — the device was never the variable | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
+| 2026-10-16 | `two-sets-of-assumptions` | An acquisition joins two undocumented trust models; you get the weaker posture applied to everything | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
 | 2026-10-04 | `diverse-carriers-shared-conduit` | Carrier diversity is a contract; path diversity is where the fiber is buried — most "redundant" WANs share a manhole | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 4 4pm · Business — all four on MZS) |
 | 2026-10-07 | `cloud-moved-the-failure-domain` | The cloud didn't shrink your network — it moved a failure domain into somebody else's routing table and left you the ticket | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 7 4pm · Business — all four on MZS) |
 | 2026-10-09 | `the-device-nobody-can-log-into` | Every inherited environment has one device nobody can log into, and it is never the unimportant one — credentials are the visible end of an ownership gap | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 9 4pm · Business — all four on MZS) |
