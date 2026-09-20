@@ -92,6 +92,16 @@ For illustrative scenes only — **never for anything containing text, numbers, 
 
    **If Instagram is among the post's targets, always generate a separate `4:5` variant** (same prompt, `"aspect":"4:5"`) alongside the 16:9 — a 16:9 hero gets cropped in the IG feed. One webhook call can carry both (`images[]` batch). Save both to the folder and record both in `hero.json` (`usage` per platform).
 
+   **Guards that belong in every hero prompt.** Each one is here because the generator failed that way on a real post:
+
+   - **Pin the highlight color AND exclude blue by name.** "Soft cream (#F4EFE3) highlights" is not enough — blue sits close enough to navy that the model treats it as in-bounds and returns cyan. Say *never blue, never cyan, no teal anywhere*. (Cost two re-rolls on the Sep 14 hero.)
+   - **Exactly one red element, and don't let it travel.** A red *path* fragments into segments or forks into two endpoints; a red *mark* or short line does not. Say "exactly one red element in the image, nothing else red." (Cost two re-rolls across Sep 14 and Sep 20.)
+   - **Full-bleed clause up front**, not after it comes back matted: "no border, no cream margin, no white matting, no picture frame."
+   - **Name the generic result to exclude when the concept is abstract.** An abstract brief reliably returns stock imagery — a waveform brief came back as an ECG heartbeat. Add "absolutely no waveform, no heartbeat, no ECG, no graph of any kind."
+   - **Exclude numerals on anything that could carry a scale** — gauges, timelines, rulers: "no tick-mark numerals."
+   - **Architectural and equipment scenes invite signage.** The no-text clause is mandatory, and signage is the first thing to check on QA.
+   - **Pin the background too** when a previous roll drifted: "every background surface is deep dark navy, never a lighter or more saturated blue."
+
 2. **Show prompt + aspect(s) for approval. Wait for explicit "generate."** Each image costs real API money.
 3. **Call the webhook** (config in `.env` at repo root — `SMC_IMAGE_GEN_URL`, `SMC_IMAGE_GEN_HEADER`, `SMC_IMAGE_GEN_TOKEN`; never print the token):
 
@@ -102,7 +112,19 @@ For illustrative scenes only — **never for anything containing text, numbers, 
    ```
 
    Batch: up to 10 `images[]` per call (variants, per-platform aspects). Response: `{ count, images: [ { url, aspect, prompt } ] }` — Zipline public URLs (`.../raw/...`), auto-expire in 90 days.
-4. **QA.** Download each image, show the user. Check: palette on-brand (navy dominant, red accent, no color drift), no accidental text/logos, scene matches the post, **and no border** — the generator sometimes returns the art matted inside a cream picture frame. Iterate on the prompt if off.
+4. **QA.** Download each image, show the user. Check, in this order:
+
+   **a. Does the image argue what the post argues?** This is the check that matters most and the only one no tool can do. An image can be beautifully executed and still say the wrong thing. A hero for a post arguing *"anomaly detection stays silent about your chronic faults"* came back as a waveform with one red spike — which reads as "the anomaly the tool caught," the opposite of the thesis. Craft was fine; the meaning was inverted. **Reject for concept even when the craft is good**, and say which of the two failed so the re-roll targets the right thing.
+
+   **b. Palette.** Navy dominant, cream the only highlight, one red accent, no colour drift. Blue and cyan are the recurring drift.
+
+   **c. Text.** No letterforms, numerals, signage or logos. Rack faceplates and equipment panels are where marks that read as vendor branding appear.
+
+   **d. Matting.** No border, no cream margin — the generator sometimes returns the art inside a picture frame.
+
+   Iterate on the prompt if any of these is off. Record in `hero.json` which roll was approved and *why the rejected ones were rejected*, so the next brief inherits the lesson.
+
+   **Downloading a batch:** map each returned URL to its destination **explicitly** and verify the files differ. A zero-indexed shell array silently shifted every image to the wrong post's folder on 2026-09-20 (this shell is zsh, where arrays start at 1) — the tell was two byte-identical files. After downloading, md5 the set and confirm the count of distinct hashes equals the count of images. Also confirm each file starts with the JPEG magic bytes `ffd8ffe0`: Zipline returns an HTML not-found page with HTTP 200, so a successful-looking download can still be a web page.
 
    **Downloading:** Zipline rejects Python's default urllib user-agent with `HTTP 403: Forbidden`. Use curl with a UA:
 

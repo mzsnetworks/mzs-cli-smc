@@ -10,6 +10,11 @@ fails, so it can gate a publish.
 
 Every rule here exists because it was violated in a real post. See the
 FAILURE HISTORY notes on each check.
+
+This checks TEXT ONLY. It cannot look at a carousel slide or a hero image,
+and the most expensive visual failure is semantic rather than mechanical —
+an image that is well executed and argues the opposite of its post. That
+check is human, and it lives in agents/VISUAL.md under QA step (a).
 """
 import re, sys, json, glob, os
 
