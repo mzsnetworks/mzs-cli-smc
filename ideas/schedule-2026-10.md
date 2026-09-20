@@ -10,15 +10,15 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 |------|-----|------|--------|--------|
 | Oct 1 | Thu | The shift handoff that survives | ideas-2026-08-27 #27 | DONE · `handoff-that-survives` |
 | Oct 3 | Sat | On-call rotation is where careers are actually made | ideas-2026-08-27 #32 | DONE · `on-call-makes-careers` |
-| Oct 6 | Tue | "What changed?" searches a record of what people remembered to log; "when did it last work?" is answerable from evidence and bounds the window | ideas-2026-08-27 #1 | SHIP · `when-did-it-last-work` |
-| Oct 8 | Thu | "It's not the network" costs credibility if you are wrong once — six checks that earn the right to say it | ideas-2026-08-27 #34 | SHIP · `before-its-not-the-network` |
-| Oct 10 | Sat | Half the job is waiting, and the estimate never counts the queues — human latency is most of the duration | ideas-2026-08-27 #35 | SHIP · `latency-in-the-humans` |
-| Oct 13 | Tue | A config is printed in parser order, not execution order — read it top to bottom and you model a box that does not exist | ideas-2026-08-27 #31 | SHIP · `read-it-in-execution-order` |
-| Oct 15 | Thu | BGP communities are documentation that executes — intent in a wiki drifts, intent in a tag cannot | ideas-2026-08-27 #13 | SHIP · `documentation-that-executes` |
-| Oct 17 | Sat | Four incidents beat any certification, because each changed a default rather than a fact | ideas-2026-08-27 #16 | SHIP · `four-incidents-taught-me` |
-| Oct 20 | Tue | "It's slow" is a feeling, not a symptom — get a number, a direction and a boundary before touching anything | ideas-2026-08-27 #6 | SHIP · `slow-is-not-a-symptom` |
-| Oct 22 | Thu | Prompting is the new documenting — the model is not rewarding a new skill, it is exposing an old one | ideas-2026-08-27 #20 | SHIP · `prompting-is-documenting` |
-| Oct 24 | Sat | The feature you bought and never enabled is technical debt with a maintenance contract, and the auditor sees the license | ideas-2026-08-27 #30 | SHIP · `bought-and-never-enabled` |
+| Oct 6 | Tue | "What changed?" searches a record of what people remembered to log; "when did it last work?" is answerable from evidence and bounds the window | ideas-2026-08-27 #1 | DONE · `when-did-it-last-work` |
+| Oct 8 | Thu | "It's not the network" costs credibility if you are wrong once — six checks that earn the right to say it | ideas-2026-08-27 #34 | DONE · `before-its-not-the-network` |
+| Oct 10 | Sat | Half the job is waiting, and the estimate never counts the queues — human latency is most of the duration | ideas-2026-08-27 #35 | DONE · `latency-in-the-humans` |
+| Oct 13 | Tue | A config is printed in parser order, not execution order — read it top to bottom and you model a box that does not exist | ideas-2026-08-27 #31 | DONE · `read-it-in-execution-order` |
+| Oct 15 | Thu | BGP communities are documentation that executes — intent in a wiki drifts, intent in a tag cannot | ideas-2026-08-27 #13 | DONE · `documentation-that-executes` |
+| Oct 17 | Sat | Four incidents beat any certification, because each changed a default rather than a fact | ideas-2026-08-27 #16 | DONE · `four-incidents-taught-me` |
+| Oct 20 | Tue | "It's slow" is a feeling, not a symptom — get a number, a direction and a boundary before touching anything | ideas-2026-08-27 #6 | DONE · `slow-is-not-a-symptom` |
+| Oct 22 | Thu | Prompting is the new documenting — the model is not rewarding a new skill, it is exposing an old one | ideas-2026-08-27 #20 | DONE · `prompting-is-documenting` |
+| Oct 24 | Sat | The feature you bought and never enabled is technical debt with a maintenance contract, and the auditor sees the license | ideas-2026-08-27 #30 | DONE · `bought-and-never-enabled` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
