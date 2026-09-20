@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "The most expensive hour\nof an outage is the *first*.",
+   "body": "It is rarely spent diagnosing.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "It is spent deciding",
+   "body": "*Whose problem*\nthis is.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The bridge",
+   "body": "Fourteen people, most of\nwhom don't need to be there.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "In sequence",
+   "body": "Network: clean interfaces.\nApp team: responds on localhost.\nStorage: green.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Each proof is honest",
+   "body": "Competent, correct,\nand *twelve minutes* long.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The result",
+   "body": "Everybody is *correct*\nand nothing is fixed.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Why",
+   "body": "Nobody can assign the problem,\nso everybody defends against\n*being assigned it*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The split",
+   "body": "Ownership is a *role*,\nat minute zero.\nCause is a *finding*, days later.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "The default",
+   "steps": [
+    "When ownership is genuinely ambiguous",
+    "it resolves to a *name*, not a debate.",
+    "Getting it wrong costs minutes. Debating costs the hour."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "The first hour decides\nwhether the next three\nhave an *owner*.",
+   "body": "Not where you\nfind the cause.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

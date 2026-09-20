@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-10-25 | `five-questions-before-wireless` | Every wireless RFP opens with an AP count — that number is an answer to five questions nobody has asked yet | LI · FB · IG · X | — | SHIP |
-| 2026-10-28 | `runbook-nobody-had-run` | A quarterly-reviewed failover runbook nobody had executed in two years — encoding it was the audit | LI · FB · IG · X | — | SHIP |
-| 2026-10-30 | `first-hour-of-an-outage` | The first hour is spent deciding whose problem it is; ownership is a role at minute zero, cause is a finding later | LI · FB · IG · X | — | SHIP |
+| 2026-10-25 | `five-questions-before-wireless` | Every wireless RFP opens with an AP count — that number is an answer to five questions nobody has asked yet | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
+| 2026-10-28 | `runbook-nobody-had-run` | A quarterly-reviewed failover runbook nobody had executed in two years — encoding it was the audit | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
+| 2026-10-30 | `first-hour-of-an-outage` | The first hour is spent deciding whose problem it is; ownership is a role at minute zero, cause is a finding later | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
 | 2026-10-18 | `time-to-safe-change` | Automation coverage measures how much you built; time-to-safe-change measures whether it mattered | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 18 4pm · Business — all four on MZS) |
 | 2026-10-21 | `failover-worked-app-didnt-follow` | The network recovered and the application didn't — resilience is a property of the whole path, not one layer | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 21 4pm · Business — all four on MZS) |
 | 2026-10-23 | `definition-of-normal` | Anomaly detection learns your chronic faults as normal, so it goes quietest about your oldest problems | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 23 4pm · Business — all four on MZS) |

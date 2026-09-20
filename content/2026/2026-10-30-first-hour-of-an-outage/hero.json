@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789946551636-2.jpg",
+   "aspect": "16:9",
+   "prompt": "A wide conference room seen from the doorway during an incident: several people seated around a long table, each lit by their own laptop screen, all facing different directions, nobody looking at each other. An empty whiteboard on the far wall with nobody standing at it. Cream screen glow is the only highlight. The single red element is one small light on a ceiling-mounted conference unit. Faces indistinct and not identifiable. Wide angle. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full carousel.",
+   "qa": "Approved on the first roll. Everyone lit by their own screen, blank whiteboard, nobody standing at it — activity without direction. Faces indistinct as briefed."
+  }
+ ]
+}

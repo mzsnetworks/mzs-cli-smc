@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Every wireless RFP\nopens with an *AP count*.",
+   "body": "That number is an answer.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Nobody asked\nthe questions yet",
+   "body": "We ask five before quoting.\nNone of them is\n*how many APs*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "1. Density",
+   "body": "The worst room at the\nworst moment. Not the *average*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "2. Materials",
+   "body": "Poured concrete, foil-backed\ninsulation and cold stores\nare not *plasterboard*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "3. Clients",
+   "body": "The decade-old scanners\nthat only speak 2.4 GHz.\nOne class holds a *band hostage*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "4. Application",
+   "body": "Email tolerates a half-second\nroam. A voice call *does not*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "5. Who owns\nthe ceiling",
+   "body": "Mounting, conduit,\nasbestos, landlord consent.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "This is what\nmoves dates",
+   "body": "RF design: *two weeks*.\nCeiling access: *four months*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Why they get skipped",
+   "steps": [
+    "None of them is a difficult question.",
+    "Each one can *change the number*.",
+    "A quote that skips them isn't cheaper."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "The AP count is the\n*last* thing we work out.",
+   "body": "It falls out of\nthe answers.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789946551632-1.jpg",
+   "aspect": "16:9",
+   "prompt": "A thick printed document lying closed and untouched on a plain desk in a dim equipment room, the dark silhouette of a server rack behind it and slightly out of focus. The paper is clean and unmarked, no creases and no annotations, and its surface is seen at a grazing angle so nothing written on it could be visible. Cream light falls across the paper. The single red element is one small indicator LED on the rack. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full carousel.",
+   "qa": "Approved on the first roll. A closed, unopened volume beside the equipment it describes — argues 'reviewed but never run'. Grazing-angle clause kept any writing off the page."
+  }
+ ]
+}

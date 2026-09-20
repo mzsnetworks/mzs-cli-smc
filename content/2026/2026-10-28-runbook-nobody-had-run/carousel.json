@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "The runbook nobody\nhad run in *two years*.",
+   "body": "We were asked to automate it.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "On paper",
+   "body": "Version controlled.\nReviewed quarterly.\nSigned off.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The catch",
+   "body": "It had been tested\nby *reading*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What that verifies",
+   "body": "That the document\nis still *readable*.\nNothing else.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Why encoding it\nchanged things",
+   "body": "Every ambiguity has to be\nresolved before anything runs.\nThree *didn't survive*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Gap one",
+   "body": "A step naming a VLAN\nrenumbered 18 months ago.\nA person silently corrects that.\nA script *doesn't*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Gap two",
+   "body": "Restarts ordered so the app\ncame up *before* its database\naccepted connections.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Gap three",
+   "body": "Verification checked the\ninterface was up. Not that\ntraffic *flowed*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "The point",
+   "steps": [
+    "None of it was found by testing the automation.",
+    "It was found by *writing* it.",
+    "The cheapest audit you will ever run."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "When did you last\n*run* yours?",
+   "body": "Rather than\nread it.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}
