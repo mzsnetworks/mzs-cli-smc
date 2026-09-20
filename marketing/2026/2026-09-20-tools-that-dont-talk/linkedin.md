@@ -7,7 +7,7 @@ A ticket gets raised. Someone checks monitoring to confirm the symptom. Someone 
 
 Every one of those systems has an API. Almost none of them are connected to each other.
 
-What fills the gap is a person, moving information between browser tabs. That person is also the failure point: when they are on vacation the process degrades, and when they are busy the CMDB is the step that gets skipped.
+What fills the gap is a person, moving information between browser tabs. That person is also the failure point: when they are on vacation the process degrades, and when they are busy the CMDB is the step that gets skipped. That role is on nobody's org chart and it exists anyway, and most teams only discover how much depended on it when that person changes jobs.
 
 This is the least glamorous automation work there is and frequently the highest return, because you are not replacing engineering judgment — you are replacing transcription. Ticket opens, enrichment runs, change executes against the platform, ticket updates itself, inventory reconciles, monitoring adjusts.
 
