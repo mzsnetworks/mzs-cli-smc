@@ -1,0 +1,22 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947847500-3.jpg",
+   "aspect": "16:9",
+   "prompt": "A dark room in which a narrow cream beam of light crosses several upright panes of clear glass arranged one behind another, each pane bending the beam slightly as it passes through in sequence. The single red element is one small red point where the beam finally exits. Precise and physical. Absolutely no graph, no chart, no waveform, no diagram of any kind. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "LinkedIn (personal profile)",
+   "qa": "Approved, first roll. Optical bench, beam crossing panes in sequence, single red terminus. The no-chart clause held; no stock diagram imagery."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947929794-3.jpg",
+   "aspect": "4:5",
+   "prompt": "A dark room in which a narrow cream beam of light crosses several upright panes of clear glass arranged one behind another, each pane bending the beam slightly as it passes through in sequence. The single red element is one small red point where the beam finally exits. Precise and physical. Absolutely no graph, no chart, no waveform, no diagram of any kind. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Instagram feed — a 16:9 hero gets cropped there, so this is a separately composed portrait variant, not a crop.",
+   "qa": "Approved, first roll. Optical bench, beam crossing panes in sequence, single red terminus. The no-chart clause held; no stock diagram imagery."
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947847492-1.jpg",
+   "aspect": "16:9",
+   "prompt": "Close on a dense patch panel filled with cream and dark grey cables, one human hand gently drawing a single cable clear of the bundle to trace it. Cream light across the panel face. The single red element is one small port indicator LED. Intimate, hands-on, tightly framed. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "LinkedIn (personal profile)",
+   "qa": "Approved with a caveat, first roll. Hand tracing one cable out of a dense cream patch field, single port LED. Possible faint port numerals on the upper panel, ambiguous at full size and invisible at feed scale; re-roll if it reads as text on a larger display."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947929754-1.jpg",
+   "aspect": "4:5",
+   "prompt": "Close on a dense patch panel filled with cream and dark grey cables, one human hand gently drawing a single cable clear of the bundle to trace it. Cream light across the panel face. The single red element is one small port indicator LED. Intimate, hands-on, tightly framed. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Instagram feed — a 16:9 hero gets cropped there, so this is a separately composed portrait variant, not a crop.",
+   "qa": "Approved with a caveat, first roll. Hand tracing one cable out of a dense cream patch field, single port LED. Possible faint port numerals on the upper panel, ambiguous at full size and invisible at feed scale; re-roll if it reads as text on a larger display."
+  }
+ ]
+}

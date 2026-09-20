@@ -1,0 +1,22 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947847504-4.jpg",
+   "aspect": "16:9",
+   "prompt": "A small blank metal tag wired to a thick bundle of cables, seen edge-on at a grazing angle so that no writing on it could be visible, and it is unmarked. The rack behind is dark and out of focus. Cream light catches the metal edge of the tag. The single red element is one red cable tie in the bundle. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "LinkedIn (personal profile)",
+   "qa": "Approved, first roll. Blank metal tag wired to a bundle, one red cable tie. Tag came back genuinely unmarked despite facing the camera."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947929816-4.jpg",
+   "aspect": "4:5",
+   "prompt": "A small blank metal tag wired to a thick bundle of cables, seen edge-on at a grazing angle so that no writing on it could be visible, and it is unmarked. The rack behind is dark and out of focus. Cream light catches the metal edge of the tag. The single red element is one red cable tie in the bundle. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Instagram feed — a 16:9 hero gets cropped there, so this is a separately composed portrait variant, not a crop.",
+   "qa": "Approved, first roll. Blank metal tag wired to a bundle, one red cable tie. Tag came back genuinely unmarked despite facing the camera."
+  }
+ ]
+}

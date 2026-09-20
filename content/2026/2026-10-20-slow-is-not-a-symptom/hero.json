@@ -1,0 +1,22 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947847519-6.jpg",
+   "aspect": "16:9",
+   "prompt": "A single drop of water suspended in mid-fall just above a still dark surface, with the first ripple already spreading below it. Macro, high shutter, the moment held. Cream light rims the drop. The single red element is one red reflection caught in the ripple. Absolutely no graph, no chart, no waveform, no diagram of any kind. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "LinkedIn (personal profile)",
+   "qa": "Approved, first roll. Suspended drop above a spreading ripple: a measurable instant against a vague feeling. The no-chart clause held."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789947929841-6.jpg",
+   "aspect": "4:5",
+   "prompt": "A single drop of water suspended in mid-fall just above a still dark surface, with the first ripple already spreading below it. Macro, high shutter, the moment held. Cream light rims the drop. The single red element is one red reflection caught in the ripple. Absolutely no graph, no chart, no waveform, no diagram of any kind. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Instagram feed — a 16:9 hero gets cropped there, so this is a separately composed portrait variant, not a crop.",
+   "qa": "Approved, first roll. Suspended drop above a spreading ripple: a measurable instant against a vague feeling. The no-chart clause held."
+  }
+ ]
+}
