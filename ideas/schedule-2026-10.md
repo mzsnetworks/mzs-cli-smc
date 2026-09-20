@@ -25,9 +25,9 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Oct 18 | Sun | Automation coverage is the wrong metric; time-to-safe-change is the right one | ideas-2026-08-30 #17 | DONE · `time-to-safe-change` |
 | Oct 21 | Wed | The failover worked and the application never followed | ideas-2026-08-30 #5 | DONE · `failover-worked-app-didnt-follow` |
 | Oct 23 | Fri | Anomaly detection needs a definition of normal | ideas-2026-08-30 #36 | DONE · `definition-of-normal` |
-| Oct 25 | Sun | 5 questions we ask before quoting a wireless project | ideas-2026-08-30 #6 | SHIP · `five-questions-before-wireless` |
-| Oct 28 | Wed | The runbook we automated that nobody had run manually in two years | ideas-2026-08-30 #15 | SHIP · `runbook-nobody-had-run` |
-| Oct 30 | Fri | The most expensive hour of any outage is the first one | ideas-2026-08-30 #31 | SHIP · `first-hour-of-an-outage` |
+| Oct 25 | Sun | 5 questions we ask before quoting a wireless project | ideas-2026-08-30 #6 | DONE · `five-questions-before-wireless` |
+| Oct 28 | Wed | The runbook we automated that nobody had run manually in two years | ideas-2026-08-30 #15 | DONE · `runbook-nobody-had-run` |
+| Oct 30 | Fri | The most expensive hour of any outage is the first one | ideas-2026-08-30 #31 | DONE · `first-hour-of-an-outage` |
 
 Week of Oct 25 (Sun Oct 25 → Sat Oct 31). Screened against both lanes: `#23` (vendor lock-in) duplicates the marketing lane's Dec 7 `one-vendor-isnt-automation`; `#16` and `#29` (evidence collection, acceptance tests) collide with marketing Oct 26 `evidence-not-assurances` and Oct 19 `test-before-it-touches-a-device`; `#20` (brownfield takeover) collides with marketing Nov 2 `assessment-what-it-finds`; `#35` (AIOps) lands two days after `definition-of-normal`; `#4` (cost per site) repeats the "you can only name one line item" insight from `monitoring-bill-scales`. Wireless is territory neither lane has touched.
 
