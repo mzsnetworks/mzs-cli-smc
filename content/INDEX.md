@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-10-18 | `time-to-safe-change` | Automation coverage measures how much you built; time-to-safe-change measures whether it mattered | LI · FB · IG · X | — | SHIP |
-| 2026-10-21 | `failover-worked-app-didnt-follow` | The network recovered and the application didn't — resilience is a property of the whole path, not one layer | LI · FB · IG · X | — | SHIP |
-| 2026-10-23 | `definition-of-normal` | Anomaly detection learns your chronic faults as normal, so it goes quietest about your oldest problems | LI · FB · IG · X | — | SHIP |
+| 2026-10-18 | `time-to-safe-change` | Automation coverage measures how much you built; time-to-safe-change measures whether it mattered | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
+| 2026-10-21 | `failover-worked-app-didnt-follow` | The network recovered and the application didn't — resilience is a property of the whole path, not one layer | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
+| 2026-10-23 | `definition-of-normal` | Anomaly detection learns your chronic faults as normal, so it goes quietest about your oldest problems | LI · FB · IG · X | carousel (10 png) + hero (16:9) | SHIP |
 | 2026-10-11 | `branch-build-two-days` | A branch build should take two days and takes two weeks — the gap is four undecided things, not engineering time | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 11 4pm · Business — all four on MZS) |
 | 2026-10-14 | `root-cause-is-a-decision` | Five whys stops the moment the honest answer names a tradeoff somebody made — the device was never the variable | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 14 4pm · Business — all four on MZS) |
 | 2026-10-16 | `two-sets-of-assumptions` | An acquisition joins two undocumented trust models; you get the weaker posture applied to everything | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 16 4pm · Business — all four on MZS) |
