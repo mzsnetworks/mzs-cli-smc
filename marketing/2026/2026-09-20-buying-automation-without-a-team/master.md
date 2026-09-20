@@ -21,9 +21,9 @@ The honest version for a team in that position is narrower.
 
 Pick processes where the automation can be operated without being modified. A well-built provisioning workflow with clear inputs can be run by any engineer on the team; a fragile pipeline that needs its YAML edited for each site cannot. That distinction matters more than which tool gets used.
 
-Insist that the artefacts are ordinary. Python and Ansible over anything bespoke, because you can hire for them and read them.
+Insist that the artifacts are ordinary. Python and Ansible over anything bespoke, because you can hire for them and read them.
 
-And be honest about maintenance before you start. Automation that nobody maintains becomes automation debt, and network automation debt fails in a more expensive place than most.
+And be honest about maintenance before you start, with yourself and with whoever is selling you the project. Automation that nobody maintains becomes automation debt, and network automation debt fails in a more expensive place than most.
 
 There is real work available for teams with no automation engineers. It just is not the work the conference talks describe.
 

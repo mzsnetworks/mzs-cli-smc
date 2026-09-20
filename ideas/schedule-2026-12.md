@@ -8,13 +8,13 @@ Batch 2, transferred 2026-09-20. All three are SHIP in `marketing/INDEX.md`; non
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Dec 7 | Mon | One vendor isn't automation — portability is a design decision made early or paid for later | batch 2 #06 | — |
-| Dec 14 | Mon | Three countries, one standard — multi-site drift across a language and supplier boundary | batch 2 #09 | — |
-| Dec 21 | Mon | We hand it back — handover as a design constraint | batch 2 #11 | — |
+| Dec 7 | Mon | One vendor isn't automation — portability is a design decision made early or paid for later | batch 2 #06 | DONE · `one-vendor-isnt-automation` |
+| Dec 14 | Mon | Three countries, one standard — multi-site drift across a language and supplier boundary | batch 2 #09 | DONE · `three-countries-one-standard` |
+| ~~Dec 21~~ | Mon | We hand it back — handover as a design constraint | batch 2 #11 | **HELD to Jan 2027** |
 
-**Dec 21 is a holiday week.** Upstream suggests holding `we-hand-it-back` to January, which is reasonable and buys a week of runway. Decide before scheduling that row.
+**Dec 21 is held.** Decided 2026-09-20: `we-hand-it-back` moves to January 2027 rather than publishing in Christmas week. Its hero is generated and both renders are SHIP — it needs only a date. **Dec 21 and Dec 28 are both dark**, and the lane resumes with this post on the first Monday of January.
 
-**Dec 28:** unwritten. This is where the Marketing lane runs out — batch 2 ends at Dec 21 and there is no batch 3.
+**After Dec 14** the lane has exactly one written post left (`we-hand-it-back`, held for January). There is no batch 3. Writing one upstream is the next real piece of work for this lane.
 
 ## Professional · Business
 

@@ -7,6 +7,8 @@ The pattern is consistent. Headquarters writes the standard in English. The regi
 
 The fix is not stricter documentation. It is making the standard executable: intent expressed as code, applied the same way in Monterrey, Bogotá and Miami, with the same validation running against all three. A template does not care which language the person deploying it thinks in.
 
+It is worth saying what this does not solve. An executable standard does not remove the negotiation with the local integrator, and it does not replace the judgment of the regional team, who almost always know something about their environment that headquarters does not. What it does is put the intent in writing, in a form that can be checked — so that departing from it is a decision rather than an accident.
+
 Two practical notes from doing this work. Local regulatory and carrier differences are real and belong in the model as explicit exceptions, not as undocumented local practice. And the automation has to be operable by the regional team in their own language, or it becomes another headquarters tool that the people closest to the network cannot use.
 
 We work in English and Spanish because the networks do.

@@ -10,11 +10,11 @@ Batch 2, transferred 2026-09-20. All four are SHIP in `marketing/INDEX.md`; none
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Nov 2 | Mon | An assessment is not a sales call with a report attached — what two weeks of looking turns up | batch 2 #01 | — |
-| Nov 9 | Mon | Rollback is an acceptance criterion, not a paragraph in the change record | batch 2 #10 | — |
-| Nov 16 | Mon | The tools don't talk and the glue is a person · Workflow Engine | batch 2 #05 | — |
-| Nov 23 | Mon | Your NOC sees alerts, not state · ITOC Dashboard | batch 2 #04 | — |
-| Nov 30 | Mon | Buying automation without an automation team | batch 2 #12 | — |
+| Nov 2 | Mon | An assessment is not a sales call with a report attached — what two weeks of looking turns up | batch 2 #01 | DONE · `assessment-what-it-finds` |
+| Nov 9 | Mon | Rollback is an acceptance criterion, not a paragraph in the change record | batch 2 #10 | DONE · `rollback-is-an-acceptance-criterion` |
+| Nov 16 | Mon | The tools don't talk and the glue is a person · Workflow Engine | batch 2 #05 | DONE · `tools-that-dont-talk` |
+| Nov 23 | Mon | Your NOC sees alerts, not state · ITOC Dashboard | batch 2 #04 | DONE · `noc-sees-alerts-not-state` |
+| Nov 30 | Mon | Buying automation without an automation team | batch 2 #12 | DONE · `buying-automation-without-a-team` |
 
 ## Professional · Business
 
