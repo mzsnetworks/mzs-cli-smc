@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "file": "hero-01.jpg",
+      "url": "https://zipline.mzstools.net/raw/smc-1789936460062-0.jpg",
+      "aspect": "16:9",
+      "usage": "linkedin-en, linkedin-es",
+      "prompt": "Premium editorial illustration, high-end tech magazine style: a vast empty steel building frame at night, all exposed girders and open sky, unlit and skeletal, receding upward - and at its base one small completed room glowing warm cream (#F4EFE3) from within, the only occupied space in the entire structure. Deep dark navy (#161a45) dominant palette, soft cream (#F4EFE3) as the only light source, with a single thin red (#eb2027) accent line at the base of the lit room. Cinematic moody lighting, minimalist composition. Full-bleed edge-to-edge artwork. No text, no numbers, no letterforms, no logos, no signage.",
+      "generated": "2026-09-20"
+    }
+  ],
+  "notes": "Text-free hero, so it carries both the Spanish (2 PM) and English (4 PM) posts. Approved on the first roll -- the two guards carried over from the Sep 14 hero both worked: pinning cream and explicitly excluding blue prevented the cyan drift, and specifying exactly one non-traveling red element prevented the fragmented/forked red path. Architectural scenes invite signage; checked and clean."
+}
