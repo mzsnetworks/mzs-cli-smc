@@ -9,6 +9,7 @@ Layers on top of `SHARED.md`.
 - **Length depends on what the caption sits under**, and the checker enforces the two cases separately:
   - **Caption over a carousel — draft to 600–900 characters** (fails above 900). The slides carry the argument, so the caption sets it up and lands it. This is what nearly every post in this repo actually is.
   - **Caption under a single image — draft to 125–220 characters** (fails below 100 or above 400). Nothing else is carrying the idea's weight, so the caption is a hook and a landing, nothing more.
+  - **Professional-preset post — draft to 900–1400 characters** (fails below 600 or above 1600). These are hero-only by design: there are no slides, so the caption *is* the post and has to carry the whole argument. Set 2026-09-20, after 26 posts drifted from 596 to 2,080 characters with nothing enforcing a ceiling. Existing posts are grandfathered; new ones are written to the band.
   - The old rule said 125–220 for everything while every post ever written here ran 650–2,069. The rule and the practice had never agreed; resolved 2026-09-20 in favor of splitting by post type.
 - **The fold:** Instagram truncates the caption at ~125 characters behind "…more." The hook must land in that first line.
 

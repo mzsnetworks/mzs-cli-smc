@@ -25,7 +25,11 @@ spec.loader.exec_module(cr)
 CASES = {
     'clean-business':            None,
     'clean-professional':        None,
-    'clean-professional-solo':   None,
+    # Business post with no carousel -> instagram-solo (125-220 teaser).
+    'clean-business-solo':       None,
+    # Professional post: hero-only by design, so the caption carries the
+    # argument -> instagram-pro (900-1400), not the image-only band.
+    'clean-professional-hero':   None,
     'clean-marketing':           None,
     # EN puts the period inside the quote, ES outside. Identical content,
     # and the sentence-count parity check must not call that a break.

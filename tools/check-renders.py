@@ -64,6 +64,11 @@ SPEC = {
  # the rule and the practice had never agreed. Resolved 2026-09-20.
  'instagram.md':   (0,     900, '600-900',   125, 5, 5),   # carousel-bearing
  'instagram-solo': (100,   400, '125-220',   125, 5, 5),   # image-only post
+ # A Professional post is hero-only by design -- no slides. With nothing else
+ # carrying the idea on Instagram, its caption IS the post, so the image-only
+ # band would delete the format. Its own band instead. Set 2026-09-20 after
+ # 26 posts drifted 596 -> 2080 with nothing enforcing a ceiling.
+ 'instagram-pro':  (600,  1600, '900-1400',   125, 5, 5),   # hero-only, caption carries the argument
  'linkedin-es.md': (1500, 2200, '1700-2000', 210, 2, 3),
 }
 
@@ -91,7 +96,7 @@ def body(path, strip_notes=True):
         t = t.split('\n---\n')[0].strip()   # drop "carousel slide ideas"
     return t
 
-def check_file(path, lane, fails, warns, carousel=True):
+def check_file(path, lane, fails, warns, carousel=True, preset=None):
     f = os.path.basename(path)
     rel = os.path.join(os.path.basename(os.path.dirname(path)), f)
 
@@ -116,7 +121,10 @@ def check_file(path, lane, fails, warns, carousel=True):
     else:
         key = f
         if f == 'instagram.md' and not carousel:
-            key = 'instagram-solo'
+            # 'lane' collapses professional and business into 'content', so the
+            # preset is what distinguishes a hero-only Professional post (whose
+            # caption carries the argument) from a plain image-only one.
+            key = 'instagram-pro' if preset == 'professional' else 'instagram-solo'
         lo, hi, draft, fold, tmin, tmax = SPEC[key]
         b = body(path)
         n = len(b)
@@ -200,7 +208,7 @@ def check_post(d):
         if not os.path.exists(p):
             fails.append(f"{os.path.basename(d)}/{f}: MISSING — the {lane} lane needs it")
             continue
-        check_file(p, lane, fails, warns, carousel=carousel)
+        check_file(p, lane, fails, warns, carousel=carousel, preset=preset)
 
     # FAILURE HISTORY: on 2026-09-20 four marketing ES renders were expanded
     # without mirroring the addition into the English, and two shipped that way.

@@ -53,7 +53,7 @@ rules/
   SHARED.md        # niche, voice, fact discipline — applies to every platform
   LINKEDIN.md      # 1600-1850 chars (fail >1900), near-zero emoji, 2-3 hashtags, Sources block
   FACEBOOK.md      # 550-700 chars (fail >760), sparing emoji, 0-2 hashtags, inline cites
-  INSTAGRAM.md     # caption 600-900 over a carousel / 125-220 under one image, exactly 5 hashtags
+  INSTAGRAM.md     # caption 600-900 over a carousel / 900-1400 Professional hero-only / 125-220 under one image; exactly 5 hashtags
   X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
   VOICE.md         # author voice profile (created by the Voice agent; optional)
   MARKETING.md     # marketing lane only: brand voice, products, CTA, the figures exception

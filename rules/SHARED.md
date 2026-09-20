@@ -43,6 +43,7 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 | Facebook | **550–700 chars** | <400 or >760 | ~477 chars desktop (~400 mobile) |
 | Instagram — caption over a carousel | **600–900 chars** | >900 | ~125 chars (first line) |
 | Instagram — caption under one image | **125–220 chars** | <100 or >400 | ~125 chars (first line) |
+| Instagram — Professional (hero-only) | **900–1400 chars** | <600 or >1600 | ~125 chars (first line) |
 | X — single | **240–270 chars** | >280 | whole post visible |
 | X — thread | **≤280 per tweet**, one idea each | >280 on any tweet | tweet 1 is the hook |
 
