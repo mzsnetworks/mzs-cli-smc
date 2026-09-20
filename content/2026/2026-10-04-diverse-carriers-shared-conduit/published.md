@@ -16,3 +16,7 @@
 **LinkedIn company page.** `pageId: 94095464` was passed explicitly. That subaccount was absent from `blotato_list_accounts` on 2026-09-09 and again on the morning of 2026-09-20, and had returned by that afternoon with nothing reconnected manually — so it is verified per run. Omitting the pageId does not error; it silently posts to Luis's personal profile, which would put company-voice copy on the wrong account.
 
 **No statistics** in any render, so Factcheck passed with no source gate and the marketing illustrative-figure exception is not in play (that exception is `marketing/` only regardless).
+
+**Correction — 2026-09-20.** `facebook.md` ran over the length band (794 → 672 chars). The Facebook cap moved from 800 to a 760 FAIL line with a 550–700 draft target, and LinkedIn to a 1900 FAIL line, after `tools/check-renders.py` showed output clustering 1–5% under whatever number is actually enforced. Cut the second paragraph, which asked the same question as the closing line. Hook and landing are unchanged.
+
+Live Blotato schedule updated in place: schedule ID `4645230`. Scheduled time, media and page target (FB page `779757178552278`, LI company page `94095464`) all carried through and verified by re-reading the schedule afterwards. The other renders on this post were not touched.

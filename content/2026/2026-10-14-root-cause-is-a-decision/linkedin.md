@@ -5,11 +5,11 @@ Root cause is usually a decision, not a device.
 
 Five whys works right up until the honest answer names a tradeoff somebody made. Then it quietly stops.
 
-You have read the report. The supervisor failed. Why did the supervisor failing take the site down? Because the redundant path was not carrying the routes it was supposed to. Why not? Because the config was changed during a migration and not reverted. Why wasn't that caught? Because the validation step was dropped when the maintenance window got compressed. Why was it compressed?
+You have read the report. The supervisor failed. Why did the supervisor failing take the site down? Because the redundant path was not carrying the routes it was supposed to. Why not? Because a migration config was never reverted. Why wasn't that caught? Because the validation step was dropped when the maintenance window got compressed. Why was it compressed?
 
-That is where the document usually ends, and the finding reads "hardware failure."
+That is where the document usually ends: "hardware failure."
 
-But the chain was still going. The window got compressed because the change had already slipped twice and a business deadline was fixed. Somebody weighed a real risk against a real cost and chose. That choice was not careless. Given what they knew, it was probably right.
+But the chain was still going. The window got compressed because the change had already slipped twice and a business deadline was fixed. Somebody weighed a real risk against a real cost and chose. Given what they knew, it was probably right.
 
 Naming it is not blame. It is the only way to change the outcome, because the device was never the variable. You cannot buy a supervisor that survives having its redundancy silently removed.
 
