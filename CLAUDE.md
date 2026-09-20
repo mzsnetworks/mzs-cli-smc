@@ -42,6 +42,8 @@ Three layers, same logic underneath:
 
 **Standing cadence — preset locked to weekday.** One post daily at 4:00 PM EDT (`20:00:00Z`); **Professional = Tue/Thu/Sat**, **Business = Wed/Fri/Sun**. Six posting days is even, so daily alternation pins each weekday permanently. **Monday is Marketing** — and carries **two** slots for a single idea: Spanish at 2:00 PM EDT (`18:00:00Z`), English at 4:00 PM. The user batches by week: "**Business for the week of Aug 16**" — week runs Sunday→Saturday, named by its Sunday, three slots per preset (→ Aug 16/19/21; Professional that week → Aug 18/20/22). Marketing yields **one** Monday per week, not three. Resolve those dates directly, no queue-tail detection.
 
+**Before publishing anything, run `python3 tools/check-renders.py <postdir>`.** It validates every render mechanically — length bands and draft targets, the hook against each platform's fold, hashtag counts, markdown emphasis (no platform renders it; `*word*` publishes as an asterisk), stray numeric hashtags like "window #47" that linkify, American spelling, and for marketing posts the CTA form and EN/ES paragraph parity. It exits non-zero and every rule in it exists because it was violated in a real post. `--all` sweeps both trees.
+
 `agents/*.md` files remain the **source of truth** — skills and commands point to them, never fork the logic. The core pipeline agents (Writer, Factcheck, Adapter, Editor, Hashtag, Scorer) are invoked *through* `/post`, not as individual skills.
 
 ## Repository Structure

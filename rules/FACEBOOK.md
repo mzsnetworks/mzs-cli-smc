@@ -4,7 +4,8 @@ Layers on top of `SHARED.md`. Target: the **MZS Networks Facebook page** (a bran
 
 ## Format
 
-- **Length:** shorter than LinkedIn, longer than a caption. **Sweet spot: ~400–800 characters.** Facebook's hard cap is effectively unlimited (63k), but engagement falls off fast past ~1,000.
+- **Length:** shorter than LinkedIn, longer than a caption. **Draft to ~550–700 characters; 800 is the cap, not the target.** Facebook's hard cap is effectively unlimited (63k), but engagement falls off fast past ~1,000.
+- **This is the render that overruns.** Facebook exceeded 800 on six of six Business posts written on 2026-09-20, every one needing two trim passes, because it was drafted at LinkedIn density and cut back. Render it *from the master* rather than by shortening the LinkedIn version — the compression is a different edit, not a smaller one.
 - **The fold:** Facebook truncates at ~477 characters on desktop (~400 mobile) behind "See more." Hook *and* the core claim must land above it.
 - **Structure:** hook line → POV → one load-bearing cited stat → judgment → landing/question.
 - **Paragraphs:** short, one to two lines, generous white space — same as LinkedIn but tighter.

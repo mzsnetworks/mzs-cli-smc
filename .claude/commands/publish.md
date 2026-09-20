@@ -11,7 +11,9 @@ Follow `agents/PUBLISH.md` exactly. In short:
 
 1. **Resolve + gate.** Find the folder for `$ARGUMENTS` by searching **both** catalogs — `content/INDEX.md` and `marketing/INDEX.md`. The tree it lives in determines the preset. Status must be SHIP — if not, stop and point the user at `/post` or `/adapt`.
 
-2. **Backfill.** If a render is missing (e.g. `facebook.md` on an older post), run Adapter → Editor → Hashtag → Scorer for that platform to SHIP first.
+2. **Verify.** Run `python3 tools/check-renders.py <postdir>`. Any failure blocks the publish.
+
+3. **Backfill.** If a render is missing (e.g. `facebook.md` on an older post), run Adapter → Editor → Hashtag → Scorer for that platform to SHIP first.
 
 3. **Ask the run questions** (one round): platforms to publish, LinkedIn personal vs company page, timing (now / next free slot / scheduled), and single-vs-thread for X. A named preset answers the first two; the **Marketing** preset answers all four — LinkedIn personal profile, twice, ES at `18:00:00Z` and EN at `20:00:00Z` on the same Monday — so ask nothing and go straight to the final gate.
 

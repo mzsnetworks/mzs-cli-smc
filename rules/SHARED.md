@@ -44,7 +44,9 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 | X — single | ~240–270 chars | 280 chars | whole post visible |
 | X — thread | each tweet ≤280, one idea per tweet | 280/tweet | tweet 1 is the hook |
 
-The Editor tightens to these; the Scorer's "platform fit" dimension checks them.
+The Editor tightens to these; the Scorer's "platform fit" dimension checks them. **`python3 tools/check-renders.py <postdir>` verifies them mechanically** — run it before publish, always.
+
+**Draft to the middle of the band, not the cap.** The numbers above are limits. Writing to the limit and trimming afterward wastes a pass and reliably overshoots: Facebook exceeded 800 on six of six Business posts written on 2026-09-20, each needing two rounds of cuts. Draft targets that hold: LinkedIn ~1,500–1,800 · **Facebook ~550–700** · Instagram ~600–900 caption · Spanish LinkedIn ~1,700–2,000.
 
 ## Fact Discipline (Non-Negotiable)
 
@@ -56,6 +58,16 @@ This is the one rule that does not loosen.
 - The Factcheck agent enforces this. A post with an uncited stat does not ship.
 
 **The one exception, `marketing/` lane only:** an uncited number passes when the copy frames it as the *reader's* hypothetical scenario ("a template update that reached 38 of 40 sites") and never as something MZS measured ("we found drift at 38 of 40 client sites"). Credentials and proof points are excluded from the exception — they are claims and need attribution or a source. Full table in `rules/MARKETING.md`; enforced by `agents/FACTCHECK.md`. This exception does not exist for `content/` posts.
+
+## Renders Are Plain Text (every platform)
+
+**No platform in this system renders markdown.** LinkedIn, Facebook, Instagram and X all publish `*asterisks*`, `**bold**`, `_underscores_` and `` `backticks` `` as literal characters. A render is the exact string that will appear in the feed.
+
+- Never use markdown emphasis in a render. Carry emphasis with sentence structure and line breaks instead.
+- The one place asterisks are correct is `carousel.json`, where `*word*` is the renderer's own syntax for the red accent. Those files never publish.
+- **A `#` followed by digits becomes a hashtag.** "change window #47" and "reason #3" linkify and count against the platform's tag limit. Write "window 47" or "the third reason".
+
+This has shipped twice — markdown to LinkedIn in the Sep 6–18 batch, and in every Instagram caption in the Oct 11 batch — so it is checked mechanically: `python3 tools/check-renders.py <postdir>`.
 
 ## Always Banned (every platform)
 

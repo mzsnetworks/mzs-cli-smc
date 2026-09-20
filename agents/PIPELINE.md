@@ -127,6 +127,17 @@ Read rules/[PLATFORM].md and DIR/[platform].md. Apply the HASHTAG agent
 per that platform's rules. Append only.
 ```
 
+**Step 5b — Verify (mechanical, all renders at once)**
+```
+python3 tools/check-renders.py DIR
+```
+Checks length bands and draft targets, the hook against each platform's fold,
+hashtag counts, markdown emphasis (no platform renders it), stray numeric
+hashtags, American spelling, and for marketing posts the CTA form and EN/ES
+paragraph parity. Exits non-zero on failure. Fix everything it reports before
+scoring — the Scorer judges quality, this catches the mechanical faults that
+have actually shipped.
+
 **Step 6 — Scorer (per file)**
 ```
 Read rules/SHARED.md, rules/[PLATFORM].md, and DIR/[platform].md.
@@ -143,7 +154,8 @@ line-level fixes. Do not edit. Loop back to Editor/Writer until SHIP.
 3. Platform Adapter has produced all of the lane's render files with the spine intact — for marketing, both languages
 4. Editor has tightened each to platform length
 5. Hashtag has applied the correct per-platform tag policy
-6. Scorer returns SHIP (≥85) on each render
+6. `python3 tools/check-renders.py DIR` passes with no failures
+7. Scorer returns SHIP (≥85) on each render
 
 Visuals (carousel/infographic) and a Reel script are produced on-demand via the Visual and Reels agents when a post calls for them — they are not gates.
 

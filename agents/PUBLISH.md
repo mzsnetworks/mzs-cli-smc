@@ -15,7 +15,8 @@ You take a finished, SHIP-gated idea folder and publish its renders live through
    The user may give a title or thesis instead of a slug — match it against both INDEXes. If a slug somehow exists in both, ask which. Everything below that says "the INDEX" means whichever one owns the resolved post.
 2. **If the post doesn't exist at all** (a new title/idea, nothing in either INDEX): run the full core pipeline first — in the lane the user named — Writer → Factcheck → Adapter → Editor → Hashtag → Scorer to SHIP, then the Visual agent (with its approval gate) for the media Instagram needs — and continue into this publish flow. One `/publish` run takes the idea from nothing to scheduled.
 3. If the post exists but isn't **SHIP** (a render scored <85), stop and report — route the user to `/post` or `/adapt`.
-4. If a platform's render is missing (older posts predate `facebook.md`), backfill it first: run Platform Adapter → Editor → Hashtag → Scorer for just that platform, loop to SHIP, then continue.
+4. **Run `python3 tools/check-renders.py <postdir>` and do not publish if it reports a failure.** It catches the mechanical faults that have reached live posts before: markdown that publishes as literal asterisks, a hashtag count over the platform limit, a stray `#47` that linkifies, an over-length render, and EN/ES parity breaks in the marketing lane.
+5. If a platform's render is missing (older posts predate `facebook.md`), backfill it first: run Platform Adapter → Editor → Hashtag → Scorer for just that platform, loop to SHIP, then continue.
 
 ---
 

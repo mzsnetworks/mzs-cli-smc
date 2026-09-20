@@ -15,6 +15,9 @@ You edit the file directly. You only remove and tighten — you do not add ideas
   - **English renders only.** For a `*-es.md` render, use the Spanish filler list in `rules/SPANISH.md` (*realmente*, *básicamente*, *simplemente*, *con el fin de*, *cabe destacar que*…) and its ES length targets — the English word list and the English character counts both mislead there.
 - Cut hedges that dilute a strong claim
 - Prefer active voice and short sentences
+- **Never leave markdown in a render.** No platform here renders it, so `*word*` publishes as an asterisk. Emphasis comes from structure and line breaks. Same for a `#` before digits — "window #47" linkifies as a hashtag.
+- Tighten to the **draft target**, not the cap (`rules/SHARED.md`). Facebook especially: ~550–700, not "under 800."
+- When done, run `python3 tools/check-renders.py <postdir>` and fix what it reports.
 
 ---
 

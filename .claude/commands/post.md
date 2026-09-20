@@ -25,9 +25,11 @@ Follow `agents/PIPELINE.md` exactly. Apply each agent's rules from its file in `
 
 6. **Hashtag** (per render) → append per-platform hashtags.
 
-7. **Scorer** (per render) → score 0–100. **Loop back to Editor/Writer until every render is SHIP (≥85).**
+7. **Verify** → `python3 tools/check-renders.py <postdir>`. Fix every failure before scoring.
 
-8. **Update the index.** Add (or update) this idea's row in the lane's index — `content/INDEX.md` or `marketing/INDEX.md` — date, slug, title/thesis, which renders exist, visual (— if none yet), and status (SHIP once all renders scored ≥85). Keep it newest-first.
+8. **Scorer** (per render) → score 0–100. **Loop back to Editor/Writer until every render is SHIP (≥85).**
+
+9. **Update the index.** Add (or update) this idea's row in the lane's index — `content/INDEX.md` or `marketing/INDEX.md` — date, slug, title/thesis, which renders exist, visual (— if none yet), and status (SHIP once all renders scored ≥85). Keep it newest-first.
 
 ## When done
 

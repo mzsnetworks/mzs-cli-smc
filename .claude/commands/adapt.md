@@ -21,11 +21,13 @@ Target idea: **$ARGUMENTS**
 
 5. **Hashtag** (per render) → append per-platform hashtags.
 
-6. **Scorer** (per render) → score and loop until SHIP (≥85).
+6. **Verify** → `python3 tools/check-renders.py <postdir>`; fix every failure.
+
+7. **Scorer** (per render) → score and loop until SHIP (≥85).
 
 Always read `rules/SHARED.md`, the platform `rules/*.md` files, and `rules/VOICE.md`. For a `marketing/` idea also read `rules/MARKETING.md` and `rules/SPANISH.md`. Follow `agents/PIPELINE.md`.
 
-7. **Update the index.** Refresh this idea's row in its own tree's index — `content/INDEX.md` or `marketing/INDEX.md` — renders, visual, and status (SHIP once all renders scored ≥85).
+8. **Update the index.** Refresh this idea's row in its own tree's index — `content/INDEX.md` or `marketing/INDEX.md` — renders, visual, and status (SHIP once all renders scored ≥85).
 
 ## When done
 
