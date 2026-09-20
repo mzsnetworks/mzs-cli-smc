@@ -14,6 +14,14 @@ Ordered by **scheduled publish date**, newest first. The `Date` column is the *t
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-09-20 | `assessment-what-it-finds` | An assessment is not a sales call with a report attached — what two weeks of actually looking turns up, and why the findings are always ordinary | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `rollback-is-an-acceptance-criterion` | Most change records have a rollback plan; far fewer have a rollback anyone has run — treat it as an acceptance criterion | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `tools-that-dont-talk` | Every system a routine change touches has an API and almost none are connected — the glue is currently a person · Workflow Engine | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `noc-sees-alerts-not-state` | Ask your NOC a question that isn't an alert and watch what happens — events describe what broke, not what is · ITOC Dashboard | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `buying-automation-without-a-team` | Most automation advice assumes you already employ automation engineers — the honest version for a team that doesn't | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `one-vendor-isnt-automation` | Vendor-native automation works beautifully until the second vendor arrives, which it always does | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `three-countries-one-standard` | Multi-country networks fragment across a language boundary and a supplier boundary before they fragment technically | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `we-hand-it-back` | The quiet objection isn't "will it work", it's "will we be able to touch it afterwards" — handover as a design constraint | LI · LI-ES | — | **SHIP** |
 | 2026-09-20 | `evidence-not-assurances` | Auditors don't ask whether you have a standard, they ask you to prove what was deployed on a date — Driftguard | LI · LI-ES | hero | **PUBLISHED** · Mon Oct 26 |
 | 2026-09-20 | `test-before-it-touches-a-device` | Networking is the last place where the test plan is "apply it in production and watch" — Config Modeling | LI · LI-ES | hero | **PUBLISHED** · Mon Oct 19 |
 | 2026-09-20 | `cant-hire-your-way-out` | Manual change scales linearly and headcount doesn't — the hiring plan is usually a deferred automation decision | LI · LI-ES | hero | **PUBLISHED** · Mon Oct 12 |
@@ -22,9 +30,9 @@ Ordered by **scheduled publish date**, newest first. The `Date` column is the *t
 | 2026-09-08 | `one-bottleneck-not-a-framework` | You probably don't need a network automation framework — automate one repetitive process and let the quick win pay for the roadmap conversation | LI · LI-ES | hero | **PUBLISHED** · Mon Sep 21 |
 | 2026-09-08 | `automation-isnt-the-risk` | Automation isn't the risk, unreviewed change is — manual change only feels safer because a human is watching | LI · LI-ES | hero | **PUBLISHED** · Mon Sep 14 |
 
-**Runway.** Every Monday is covered through **Oct 26** — all seven posts above are scheduled or live. The next open slot is **Mon Nov 2**.
+**Runway.** All of batch 2 is now transferred. Mondays are covered through **Oct 26** as scheduled posts, and **Nov 2 – Dec 21** as SHIP posts awaiting art and a publish run. The next unwritten Monday is **Dec 28**, a holiday week — holding `we-hand-it-back` to January is reasonable and buys a week.
 
-Eight batch-2 posts remain written but untransferred in `mzs-marketing/work/social/2026-09-20-marketing-batch-2/` (#01 assessment-what-it-finds, #04 noc-sees-alerts-not-state, #05 tools-that-dont-talk, #06 one-vendor-isnt-automation, #09 three-countries-one-standard, #10 rollback-is-an-acceptance-criterion, #11 we-hand-it-back, #12 buying-automation-without-a-team), covering **Nov 2 – Dec 21**. Nothing is written beyond Dec 21.
+Nothing exists beyond Dec 21. The lane needs a batch 3 written upstream before January 2027.
 
 **Pillar gap.** The four-part spine is drift/audit, safety practice, technical teardowns, and *anonymized proof*. No post in either batch uses the fourth — it is blocked until a real case study exists. When one does, proof-led posts become the strongest available in this lane.
 

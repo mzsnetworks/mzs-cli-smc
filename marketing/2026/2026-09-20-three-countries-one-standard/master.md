@@ -1,0 +1,28 @@
+# Master — three-countries-one-standard
+
+**Preset:** Marketing — LinkedIn **only**, Luis's personal profile (not the company page), twice: ES at 2:00 PM EDT and EN at 4:00 PM, on a Monday.
+**Date:** 2026-09-20
+**Source:** `mzs-marketing` → `work/social/2026-09-20-marketing-batch-2/09-three-countries-one-standard.md` (batch 2)
+**Drafted:** 2026-09-20. Copied into this repo 2026-09-20; the folder date is the transfer date, not a publish date.
+**Planned:** Mon Dec 14, 2026.
+**Thesis:** Multi-country networks fragment for reasons that are procedural and linguistic before they are technical. The standard has to survive translation and local suppliers.
+**Pillar:** Drift and audit stories
+**Sells:** Multi-site deployments · US + LatAm operations
+**Stats:** none. Batch 2 carries no metrics, no client results and no case studies by design. Factcheck needs no source gate and the marketing illustrative-figure exception is not invoked.
+**Language:** EN master with an ES render (`linkedin-es.md`) per `rules/SPANISH.md` — usted register, product and tool names left in English.
+
+---
+
+A network spanning the US and Latin America does not drift because the engineering is harder. It drifts because the process crosses a language boundary and a supplier boundary at the same time.
+
+The pattern is consistent. Headquarters writes the standard in English. The regional team implements it through a local integrator who has their own conventions. Nobody translates the intent, only the instructions — so the naming scheme survives and the reasoning behind it does not. Two years later the configuration is defensible in each country and incoherent across them.
+
+The fix is not stricter documentation. It is making the standard executable: intent expressed as code, applied the same way in Monterrey, Bogotá and Miami, with the same validation running against all three. A template does not care which language the person deploying it thinks in.
+
+Two practical notes from doing this work. Local regulatory and carrier differences are real and belong in the model as explicit exceptions, not as undocumented local practice. And the automation has to be operable by the regional team in their own language, or it becomes another headquarters tool that the people closest to the network cannot use.
+
+We work in English and Spanish because the networks do.
+
+Book a consultation: mzsnetworks.com
+
+#NetworkAutomation #NetOps #NetworkEngineering
