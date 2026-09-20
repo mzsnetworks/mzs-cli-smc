@@ -16,6 +16,11 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
 | Oct 2 | Fri | Your monitoring bill scales with data, not insight | ideas-2026-08-30 #24 | DONE · `monitoring-bill-scales` |
+| Oct 4 | Sun | Diverse carriers are not diverse conduit — most "redundant" WANs share a manhole | ideas-2026-08-30 #12 | SHIP, awaiting art |
+| Oct 7 | Wed | The cloud moved a failure domain into somebody else's routing table | ideas-2026-08-30 #10 | SHIP, awaiting art |
+| Oct 9 | Fri | Every inherited environment has one device nobody can log into | ideas-2026-08-30 #21 | SHIP, awaiting art |
+
+Week of Oct 4 (Sun Oct 4 → Sat Oct 10). Screened against both lanes: `#4` (cost per site) sits two days after `monitoring-bill-scales`; `#2` (SD-WAN per-application) collides with `wan-queuing-decision` Sep 23; `#25` (IPAM) with `same-rfc1918-space` Sep 20; `#23` (vendor lock-in) duplicates the marketing lane's Dec 7 post. Cloud was chosen deliberately — it is a named service line with no post in either lane.
 
 ## Marketing (LI personal, EN + ES — Mondays)
 

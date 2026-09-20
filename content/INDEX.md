@@ -4,6 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-10-04 | `diverse-carriers-shared-conduit` | Carrier diversity is a contract; path diversity is where the fiber is buried — most "redundant" WANs share a manhole | LI · FB · IG · X | — | SHIP |
+| 2026-10-07 | `cloud-moved-the-failure-domain` | The cloud didn't shrink your network — it moved a failure domain into somebody else's routing table and left you the ticket | LI · FB · IG · X | — | SHIP |
+| 2026-10-09 | `the-device-nobody-can-log-into` | Every inherited environment has one device nobody can log into, and it is never the unimportant one — credentials are the visible end of an ownership gap | LI · FB · IG · X | — | SHIP |
 | 2026-09-18 | `supportable-at-3am` | 5 things that make a network supportable at 3am — none of them are products | LI · FB · IG · X | carousel (9 png) + hero (16:9) | PUBLISHED (sched Sep 18 4pm · Business — all four on MZS) |
 | 2026-09-16 | `firewall-rule-nobody-deletes` | Nobody has ever been promoted for deleting a firewall rule — rule bases only grow because the incentive is one-sided | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Sep 16 4pm · Business — all four on MZS) |
 | 2026-09-13 | `cutover-nobody-rehearsed` | Every project fails at the same milestone — the cutover is the only integration test, and it runs once, in production | LI · FB · IG · X | hero (16:9 + 4:5) | PUBLISHED (sched Sep 13 4pm · Business — all four on MZS) |
