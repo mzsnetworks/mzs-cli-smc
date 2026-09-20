@@ -19,9 +19,9 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Oct 4 | Sun | Diverse carriers are not diverse conduit — most "redundant" WANs share a manhole | ideas-2026-08-30 #12 | DONE · `diverse-carriers-shared-conduit` |
 | Oct 7 | Wed | The cloud moved a failure domain into somebody else's routing table | ideas-2026-08-30 #10 | DONE · `cloud-moved-the-failure-domain` |
 | Oct 9 | Fri | Every inherited environment has one device nobody can log into | ideas-2026-08-30 #21 | DONE · `the-device-nobody-can-log-into` |
-| Oct 11 | Sun | The branch build that takes two days instead of two weeks | ideas-2026-08-30 #3 | SHIP, awaiting art |
-| Oct 14 | Wed | Root cause is usually a decision, not a device | ideas-2026-08-30 #34 | SHIP, awaiting art |
-| Oct 16 | Fri | An acquisition joins two sets of assumptions about who is trusted | ideas-2026-08-30 #19 | SHIP, awaiting art |
+| Oct 11 | Sun | The branch build that takes two days instead of two weeks | ideas-2026-08-30 #3 | DONE · `branch-build-two-days` |
+| Oct 14 | Wed | Root cause is usually a decision, not a device | ideas-2026-08-30 #34 | DONE · `root-cause-is-a-decision` |
+| Oct 16 | Fri | An acquisition joins two sets of assumptions about who is trusted | ideas-2026-08-30 #19 | DONE · `two-sets-of-assumptions` |
 
 Week of Oct 4 (Sun Oct 4 → Sat Oct 10). Screened against both lanes: `#4` (cost per site) sits two days after `monitoring-bill-scales`; `#2` (SD-WAN per-application) collides with `wan-queuing-decision` Sep 23; `#25` (IPAM) with `same-rfc1918-space` Sep 20; `#23` (vendor lock-in) duplicates the marketing lane's Dec 7 post. Cloud was chosen deliberately — it is a named service line with no post in either lane.
 
