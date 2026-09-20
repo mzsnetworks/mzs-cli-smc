@@ -22,9 +22,9 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Oct 11 | Sun | The branch build that takes two days instead of two weeks | ideas-2026-08-30 #3 | DONE · `branch-build-two-days` |
 | Oct 14 | Wed | Root cause is usually a decision, not a device | ideas-2026-08-30 #34 | DONE · `root-cause-is-a-decision` |
 | Oct 16 | Fri | An acquisition joins two sets of assumptions about who is trusted | ideas-2026-08-30 #19 | DONE · `two-sets-of-assumptions` |
-| Oct 18 | Sun | Automation coverage is the wrong metric; time-to-safe-change is the right one | ideas-2026-08-30 #17 | SHIP, awaiting art |
-| Oct 21 | Wed | The failover worked and the application never followed | ideas-2026-08-30 #5 | SHIP, awaiting art |
-| Oct 23 | Fri | Anomaly detection needs a definition of normal | ideas-2026-08-30 #36 | SHIP, awaiting art |
+| Oct 18 | Sun | Automation coverage is the wrong metric; time-to-safe-change is the right one | ideas-2026-08-30 #17 | DONE · `time-to-safe-change` |
+| Oct 21 | Wed | The failover worked and the application never followed | ideas-2026-08-30 #5 | DONE · `failover-worked-app-didnt-follow` |
+| Oct 23 | Fri | Anomaly detection needs a definition of normal | ideas-2026-08-30 #36 | DONE · `definition-of-normal` |
 
 Week of Oct 4 (Sun Oct 4 → Sat Oct 10). Screened against both lanes: `#4` (cost per site) sits two days after `monitoring-bill-scales`; `#2` (SD-WAN per-application) collides with `wan-queuing-decision` Sep 23; `#25` (IPAM) with `same-rfc1918-space` Sep 20; `#23` (vendor lock-in) duplicates the marketing lane's Dec 7 post. Cloud was chosen deliberately — it is a named service line with no post in either lane.
 
