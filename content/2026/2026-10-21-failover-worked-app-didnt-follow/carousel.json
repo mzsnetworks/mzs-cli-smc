@@ -1,0 +1,80 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "The failover worked\nperfectly.",
+      "body": "The application\n*never followed*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "What you proved",
+      "body": "Circuit drops. Secondary path\ntakes over in under a second.\nRouting table exactly right.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "What was still true",
+      "body": "The service is *down*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The connection pool",
+      "body": "Holding sessions to an address\nthat no longer answers.\nWon't retry for four minutes.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "DNS",
+      "body": "Handing out a cached record\nwith a ten-minute TTL.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The health check",
+      "body": "Passes. It only tests whether\nthe process is *alive*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The licensing server",
+      "body": "Nobody remembers it. Reachable\nfrom the primary path —\n*not the secondary*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The uncomfortable part",
+      "body": "None of it is a network fault.\nAll of it is *your outage*.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Test the whole path",
+      "steps": [
+        "Fail the link, then run a real transaction.",
+        "Time until it *works* — not until the route appears.",
+        "Write down every dependency you find."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Resilience without\ndependency mapping",
+      "body": "Is a rehearsal for\n*half the play*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

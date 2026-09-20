@@ -1,0 +1,80 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Automation coverage\nis the *wrong metric*.",
+      "body": "It measures how much you built.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Everyone reports it",
+      "body": "Because it's the one\nyou can compute.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The number climbs",
+      "body": "Sixty percent of provisioning.\nForty percent of compliance checks.\nEvery quarter, a little higher.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "And nobody can say",
+      "body": "Whether anything\nactually got *better*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The trap",
+      "body": "Ninety percent coverage on the\ntasks that were never\nthe *bottleneck*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The metric that holds",
+      "body": "Time-to-safe-change.\nFrom \"we decided\" to \"it's live,\nverified and *revertible*.\"",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Including the waiting",
+      "body": "Script runs in four seconds.\nBoard meets Thursdays.\nYour number is *a week*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Why it travels",
+      "body": "A CFO can't read \"60% coverage.\"\nThey can read \"nine days\ndown to *one*.\"",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "How to use it",
+      "steps": [
+        "Measure before you automate anything.",
+        "Then measure *per change type*.",
+        "The average hides the one that takes three weeks."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Coverage says how\nmuch you built.",
+      "body": "This says whether\nit *mattered*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

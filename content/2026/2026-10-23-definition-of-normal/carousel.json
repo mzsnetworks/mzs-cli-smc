@@ -1,0 +1,80 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Anomaly detection needs\na definition of *normal*.",
+      "body": "Most networks have never had a\nquiet enough week to learn one.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "That's what the demo skips",
+      "body": "Clean baseline. Injected fault.\nEveryone impressed.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Then it meets production",
+      "body": "An environment that has been\nrunning slightly wrong\nfor *three years*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "So it learns",
+      "body": "The interface that resets\nevery few days — *normal*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "And this",
+      "body": "The link that saturates every\nafternoon — *normal*.\nThe device that drops SNMP\nduring backups — *normal*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Because none of it",
+      "body": "Was ever labeled as broken.\nIt is all in the training data.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The model cannot tell",
+      "body": "\"This is how the network behaves\"\nfrom \"this is what nobody\nhas *fixed yet*.\"",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The result",
+      "body": "A system that is quietest\nabout your *oldest problems*.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Not an argument against the tools",
+      "steps": [
+        "Fix or explicitly accept what you already know about.",
+        "Label the known-bad periods so they can be excluded.",
+        "Start where normal is *genuinely stable*."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "It tells you\nwhat *changed*.",
+      "body": "Not what was wrong\nall along.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}
