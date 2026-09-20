@@ -1,0 +1,80 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Two carriers.\nTwo invoices.\n*One conduit*.",
+      "body": "Which of your circuits have\ngenuinely diverse paths?",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Not diverse carriers",
+      "body": "Diverse *conduit*.\nThose are different purchases.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "One is on the contract",
+      "body": "Carrier diversity is commercial —\ntwo vendors, two bills.\nPath diversity is *physical*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Carriers lease from each other",
+      "body": "Your circuit rides another carrier's\nfiber for the middle third of\nits route. Nobody mentions it.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "So both links share a route",
+      "body": "Same side of the building.\nSame bridge. The *same manhole*\ntwo miles away.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Nobody lied to you",
+      "body": "Nobody at either carrier\nhad the whole picture either.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "You find out on one day",
+      "body": "A backhoe finds the manhole.\nBoth circuits drop inside the\n*same second*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Ask for the route",
+      "body": "Request the KMZ or circuit\nlayout from both carriers.\nA refusal is *information*.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Then you have a real choice",
+      "steps": [
+        "Accept the risk knowingly.",
+        "Buy a genuinely diverse path.",
+        "Put a *different medium* on the backup."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Redundancy you haven't traced\nis not redundancy.",
+      "body": "It's *two invoices*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

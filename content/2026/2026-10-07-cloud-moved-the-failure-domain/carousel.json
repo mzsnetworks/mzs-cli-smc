@@ -1,0 +1,80 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "The cloud didn't\nshrink your network.",
+      "body": "It moved a failure domain into\n*somebody else's* routing table.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "And left you the ticket",
+      "body": "That trade is often worth making.\nIt is rarely made *deliberately*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "First workload moves",
+      "body": "Someone builds a VPN,\nbecause it is the fastest\nthing that works.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "By the fourth",
+      "body": "A direct connect. Two tunnels\nnobody will decommission.\nRouting policy in *three places*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "That agrees in two",
+      "body": "Nobody designed this.\nIt accumulated, one urgent\nproject at a time.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Each decision was correct",
+      "body": "Which is why nothing\never got revisited.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "On-premises you owned every hop",
+      "body": "You could instrument it,\ncapture it, *fix it*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Now the path crosses an edge",
+      "body": "One you cannot see into.\n\"It isn't us — and we\n*can't prove that*.\"",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Worth asking",
+      "steps": [
+        "Which cloud paths are load-bearing?",
+        "What is your *tested* failover?",
+        "Can you see loss to the provider edge?"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "The cost isn't the outage.",
+      "body": "It's the hour spent establishing\n*whose outage it is*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}

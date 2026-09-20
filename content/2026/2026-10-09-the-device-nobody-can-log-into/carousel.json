@@ -1,0 +1,83 @@
+{
+  "size": [
+    1080,
+    1350
+  ],
+  "brand": {
+    "navy": "#161a45",
+    "cream": "#F4EFE3",
+    "red": "#eb2027",
+    "titleFont": "Cormorant Garamond",
+    "bodyFont": "Lato",
+    "handle": "@mzsnetworks",
+    "url": "mzsnetworks.com"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Every environment\nwe inherit has one device\n*nobody can log into*.",
+      "body": "It is never the\nleast important one.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "It's the core switch",
+      "body": "In the oldest building.\nOr the firewall in front of what\nfinance uses on the *31st*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "The person who built it",
+      "body": "Left in 2019.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "And it works",
+      "body": "Six years forwarding traffic\nwithout a complaint — which is\n*exactly* why nobody opened it.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "This isn't about passwords",
+      "body": "It is the point where operational\nownership *stopped transferring*.",
+      "motif": "none"
+    },
+    {
+      "type": "body",
+      "title": "Credentials are the symptom",
+      "body": "The part you can see\nfrom outside.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "Underneath it, the same gap",
+      "steps": [
+        "The change history nobody can reconstruct.",
+        "The config that was never backed up.",
+        "The dependency *one person* understood."
+      ]
+    },
+    {
+      "type": "body",
+      "title": "So \"get into the device\"",
+      "body": "Is the wrong goal.\nIt's a ticket, *not a fix*.",
+      "motif": "none"
+    },
+    {
+      "type": "triad",
+      "title": "The real work",
+      "steps": [
+        "Find every device whose last change predates the team.",
+        "Restore one onto *spare hardware*.",
+        "Name an owner. Put it on the leaver's checklist."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "It isn't your risk.",
+      "body": "It's the only one that\n*raised its hand*.\n\nFollow *@mzsnetworks*",
+      "motif": "none"
+    }
+  ]
+}
