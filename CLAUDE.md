@@ -51,9 +51,9 @@ Three layers, same logic underneath:
 ```
 rules/
   SHARED.md        # niche, voice, fact discipline — applies to every platform
-  LINKEDIN.md      # long-form, near-zero emoji, 2-3 hashtags, Sources block
-  FACEBOOK.md      # ~400-800 chars, sparing emoji, 0-2 hashtags, inline cites
-  INSTAGRAM.md     # caption + carousel, purposeful emoji, exactly 5 hashtags (hard cap)
+  LINKEDIN.md      # 1600-1850 chars (fail >1900), near-zero emoji, 2-3 hashtags, Sources block
+  FACEBOOK.md      # 550-700 chars (fail >760), sparing emoji, 0-2 hashtags, inline cites
+  INSTAGRAM.md     # caption 600-900 over a carousel / 125-220 under one image, exactly 5 hashtags
   X.md             # 280-char single or thread, sparing emoji, 1-2 hashtags
   VOICE.md         # author voice profile (created by the Voice agent; optional)
   MARKETING.md     # marketing lane only: brand voice, products, CTA, the figures exception
@@ -93,7 +93,9 @@ content/<year>/<YYYY-MM-DD>-<slug>/        marketing/<year>/<YYYY-MM-DD>-<slug>/
 - The Adapter writes the lane's renders as siblings of `master.md`, in the same folder
 - **Each tree has its own catalog** — `content/INDEX.md` and `marketing/INDEX.md` (date, slug, title, renders, visual, status), newest-first. `/post`, `/adapt`, and `/publish` keep them current; the Visual skill updates the visual column. They're the lookup for "what's the slug for that post?" — when resolving a slug, search both.
 
-Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration examples the rules and agents are tuned to.
+Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration examples for **hook, structure, voice, and landing**.
+
+**Its lengths and hashtag counts are not the bar.** It predates the current bands and fails `tools/check-renders.py` on four counts (LinkedIn 2,831 chars against a 1,900 ceiling; Instagram 15 hashtags against a hard 5; `x.md` missing its `## Single` heading). When the reference set and `rules/SHARED.md` disagree, the rules win — and when the rules and the checker disagree, the checker wins.
 
 ## Writing Rules
 
@@ -109,7 +111,7 @@ Otherwise this system is engagement-oriented, NOT repel-mode:
 
 Every post needs a strong **hook** in line one. The default shape is **hook → POV → cited data → judgment → memorable landing**. Protect the landing (often a triad or a real question). In `marketing/`, the CTA follows the landing on its own line — it never replaces it.
 
-**Spanish is written, never translated.** `linkedin-es.md` is composed from the master against the upstream EN→ES glossary — usted register, neutral Latin-American Spanish, product and tool names left in English. The ES targets run longer than English (~1,500–2,300 chars), but the ~210-char fold does *not* scale, which makes the Spanish hook the tightest constraint in the system. See `rules/SPANISH.md`.
+**Spanish is written, never translated.** `linkedin-es.md` is composed from the master against the upstream EN→ES glossary — usted register, neutral Latin-American Spanish, product and tool names left in English. The ES targets run longer than English (draft 1,700–2,000 chars), but the ~210-char fold does *not* scale, which makes the Spanish hook the tightest constraint in the system. See `rules/SPANISH.md`.
 
 ## Origin
 

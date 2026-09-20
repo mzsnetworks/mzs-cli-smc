@@ -36,17 +36,21 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 
 **These targets are calibrated to English.** Spanish runs roughly 15–25% longer for the same content — see `rules/SPANISH.md` for the ES numbers. The *fold* does not scale in either language.
 
-| Platform | Sweet spot | Hard cap | Fold (hook must land before) |
-|----------|-----------|----------|------------------------------|
-| LinkedIn | ~1,300–2,000 chars (~200–350 words) | ~3,000 chars | ~210 chars (~3 lines) |
-| Facebook | ~400–800 chars | none (63k) | ~477 chars desktop (~400 mobile) |
-| Instagram | ~125–220 chars caption (more if carousel) | ~2,200 chars | ~125 chars (first line) |
-| X — single | ~240–270 chars | 280 chars | whole post visible |
-| X — thread | each tweet ≤280, one idea per tweet | 280/tweet | tweet 1 is the hook |
+| Platform | Draft target | Checker FAILs outside | Fold (hook must land before) |
+|----------|-------------|----------------------|------------------------------|
+| LinkedIn | **1,600–1,850 chars** | <1,300 or >1,900 | ~210 chars (~3 lines) |
+| LinkedIn (Spanish) | **1,700–2,000 chars** | <1,500 or >2,200 | ~210 chars — does **not** scale |
+| Facebook | **550–700 chars** | <400 or >760 | ~477 chars desktop (~400 mobile) |
+| Instagram — caption over a carousel | **600–900 chars** | >900 | ~125 chars (first line) |
+| Instagram — caption under one image | **125–220 chars** | <100 or >400 | ~125 chars (first line) |
+| X — single | **240–270 chars** | >280 | whole post visible |
+| X — thread | **≤280 per tweet**, one idea each | >280 on any tweet | tweet 1 is the hook |
 
-The Editor tightens to these; the Scorer's "platform fit" dimension checks them. **`python3 tools/check-renders.py <postdir>` verifies them mechanically** — run it before publish, always.
+**`tools/check-renders.py` is the source of truth for these numbers.** Its `SPEC` table holds them in executable form; this table restates them for readers. If the two ever disagree, the checker is right and this file is stale — fix it here, and change a threshold in the checker first, with a fixture in `tools/fixtures/` that proves the new behavior.
 
-**Draft to the middle of the band, not the cap.** The numbers above are limits. Writing to the limit and trimming afterward wastes a pass and reliably overshoots: Facebook exceeded 800 on six of six Business posts written on 2026-09-20, each needing two rounds of cuts. Draft targets that hold: LinkedIn ~1,500–1,800 · **Facebook ~550–700** · Instagram ~600–900 caption · Spanish LinkedIn ~1,700–2,000.
+**Draft to the target, not to the FAIL line.** Output reliably clusters 1–5% under whatever number is actually *enforced* and never approaches a number that is merely *stated*. Facebook sat at 774–798 for two months against a prose cap of 800; the first batch written against an enforced warning at 750 landed at 621–711. That is why the bands above are narrow and why the checker warns inside the cap: a stated ceiling becomes the target, so the ceiling has to be the number you actually want.
+
+The Editor tightens to the draft target; the Scorer's "platform fit" dimension checks it. **`python3 tools/check-renders.py <postdir>` verifies all of it mechanically** — run it before publish, always.
 
 ## Fact Discipline (Non-Negotiable)
 

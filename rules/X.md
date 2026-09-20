@@ -30,4 +30,4 @@ Provide both when adapting, so the user can choose:
 
 ## Calibration
 
-The reference `content/2026/2026-06-24-ai-makes-us-judges/x.md` is the target: a single-post option (reframe + triad + question, no hashtags inline until the end) and a 7-tweet thread option with the 🧵 hook, bulleted data, and the triad close with two hashtags.
+The reference `content/2026/2026-06-24-ai-makes-us-judges/x.md` is the target for shape: a single-post option (reframe + triad + question, no hashtags inline until the end) and a 7-tweet thread option with the 🧵 hook, bulleted data, and the triad close with two hashtags. Note it predates `## Single` / `## Thread` as required headings — write those, or the checker cannot parse the file.

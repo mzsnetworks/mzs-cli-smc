@@ -39,7 +39,7 @@ Never drop a cited statistic during adaptation. If a stat doesn't fit a shorter 
 - Usually the master itself, lightly tuned. Long-form, near-zero emoji, 2–3 hashtags, Sources block retained.
 
 ### Facebook (`rules/FACEBOOK.md`)
-- Compress toward ~400–800 chars. Keep the spine; keep the single most load-bearing stat, cited inline ("per Gartner, 2025") — no Sources block.
+- Compress toward **550–700 chars** (the checker fails below 400 or above 760). Keep the spine; keep the single most load-bearing stat, cited inline ("per Gartner, 2025") — no Sources block.
 - Sparing emoji (0–2), 0–2 hashtags, end on a real question when the idea supports one.
 
 ### Instagram (`rules/INSTAGRAM.md`)
@@ -53,7 +53,7 @@ Never drop a cited statistic during adaptation. If a stat doesn't fit a shorter 
 ### LinkedIn ES — marketing lane only (`rules/SPANISH.md`)
 - **Write it; do not translate it.** Read the master, understand the argument, and compose it in Spanish. Never run the English render through a translation, mentally or otherwise — a post that reads as translated fails scoring on Platform fit no matter how accurate it is.
 - usted register, neutral Latin-American Spanish, the upstream EN→ES glossary applied. Product names (Driftguard, Config Modeling, ITOC Dashboard, Workflow Engine) and tool names (Python, Ansible, Terraform) stay in English.
-- Target ~1,500–2,300 chars — longer than the English sweet spot, because Spanish is. But the fold does **not** scale: the hook still has to land inside ~210 characters. Write the Spanish hook to the fold first, then the body.
+- Target **1,700–2,000 chars** (the checker fails below 1,500 or above 2,200) — longer than the English target, because Spanish is. But the fold does **not** scale: the hook still has to land inside ~210 characters. Write the Spanish hook to the fold first, then the body.
 - Spanish hashtags without accents or ñ, except tags the industry says in English (`#NetOps`, `#IaC`). Same CTA, per the glossary: "Reserve una consulta" / "Hable con un ingeniero".
 - Keep the EN structure parallel — same beats, same landing, same CTA position.
 

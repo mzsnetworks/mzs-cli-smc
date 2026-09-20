@@ -6,7 +6,10 @@ Layers on top of `SHARED.md`.
 
 - **Caption:** punchy and scannable. Short lines, frequent breaks. Lead with the hook in the first line (the rest is hidden behind "more").
 - **Arrow bullets** for data: `→ AI will write 25% of configs by 2027 (was <3% in 2024)`.
-- **Length:** **sweet spot ~125–220 characters of caption** for engagement; up to ~2,200 hard max if the idea is carrying a carousel. Tighten the master to its emotional core — shorter than LinkedIn.
+- **Length depends on what the caption sits under**, and the checker enforces the two cases separately:
+  - **Caption over a carousel — draft to 600–900 characters** (fails above 900). The slides carry the argument, so the caption sets it up and lands it. This is what nearly every post in this repo actually is.
+  - **Caption under a single image — draft to 125–220 characters** (fails below 100 or above 400). Nothing else is carrying the idea's weight, so the caption is a hook and a landing, nothing more.
+  - The old rule said 125–220 for everything while every post ever written here ran 650–2,069. The rule and the practice had never agreed; resolved 2026-09-20 in favor of splitting by post type.
 - **The fold:** Instagram truncates the caption at ~125 characters behind "…more." The hook must land in that first line.
 
 ## Emoji
@@ -31,4 +34,6 @@ Layers on top of `SHARED.md`.
 
 ## Calibration
 
-The reference `content/2026/2026-06-24-ai-makes-us-judges/instagram.md` is the target: emoji-accented caption, arrow-bullet data, the same triad landing, a closing question, a 15-tag block, and six carousel slide ideas.
+The reference `content/2026/2026-06-24-ai-makes-us-judges/instagram.md` is the target **for shape and voice**: emoji-accented caption, arrow-bullet data, the same triad landing, a closing question, and six carousel slide ideas.
+
+**Its hashtag block does not apply.** That post carries 15 tags, written before the cap; the rule is **exactly 5** and Blotato rejects a sixth. Copy the caption's texture, not its tag count or its length.

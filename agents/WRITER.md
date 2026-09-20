@@ -27,7 +27,7 @@ You produce the **master version** of a post — usually LinkedIn-length. The Pl
 
 ## Constraints
 
-- Follow `rules/SHARED.md` and `rules/LINKEDIN.md`. The master lives at LinkedIn length — sweet spot ~1,300–2,000 characters, hook above the ~210-char fold.
+- Follow `rules/SHARED.md` and `rules/LINKEDIN.md`. The master lives at LinkedIn length — **draft to 1,600–1,850 characters**, hook above the ~210-char fold. `tools/check-renders.py` fails the render below 1,300 or above 1,900.
 - If `rules/VOICE.md` exists, read it and write in the **author's** voice — pillars, signature openings/landings, word list. Mandatory when present.
 - Every statistic must be sourced. If you can't source it, reframe as experience or cut it.
 - Strong opinions are good. Hype is not — credibility comes from specifics.
@@ -43,7 +43,7 @@ The reference `content/2026/2026-06-24-ai-makes-us-judges/linkedin.md`:
 - Judgment: the rare skill isn't generation, it's knowing when the AI is confidently wrong.
 - Landing: "The CLI made us operators. Code made us engineers. AI is about to make us judges."
 
-Write to that bar.
+Write to that bar **for hook, structure, and landing**. Not for length: that post is 2,831 characters and fails the current checker. The bands in `rules/SHARED.md` win over anything the reference set demonstrates.
 
 ---
 

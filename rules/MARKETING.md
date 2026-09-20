@@ -98,7 +98,7 @@ Ideation for this lane crosses these four with funnel stage, not the personal pi
 
 ## Length and format
 
-Standard `LINKEDIN.md` rules apply — 1,300–2,000 chars, hook above the ~210-char fold, short paragraphs, near-zero emoji, 2–3 PascalCase hashtags at the end.
+Standard `LINKEDIN.md` rules apply — draft to 1,600–1,850 chars (the checker fails below 1,300 or above 1,900), hook above the ~210-char fold, short paragraphs, near-zero emoji, 2–3 PascalCase hashtags at the end.
 
 Two differences:
 

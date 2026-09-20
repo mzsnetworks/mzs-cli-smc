@@ -54,7 +54,8 @@ Tool names stay in English as well: Python, Ansible, Terraform, API.
 
 | | English (`SHARED.md`) | Spanish |
 |---|---|---|
-| LinkedIn sweet spot | ~1,300–2,000 chars | **~1,500–2,300 chars** |
+| LinkedIn draft target | **1,600–1,850 chars** | **1,700–2,000 chars** |
+| Checker fails outside | <1,300 or >1,900 | <1,500 or >2,200 |
 | Hard cap | ~3,000 chars | ~3,000 chars (platform limit, unchanged) |
 | Fold — hook must land before | ~210 chars | **~210 chars (unchanged)** |
 

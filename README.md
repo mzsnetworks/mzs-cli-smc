@@ -454,16 +454,19 @@ Everything an agent does is governed by the files in `rules/`:
 - **`MARKETING.md`** — the `marketing/` lane only: brand voice, the product catalog, approved CTAs, and one narrow exception to fact discipline. Ported from the upstream `mzs-marketing` repo, which owns the voice.
 - **`SPANISH.md`** — any `*-es.md` render: usted register, the EN→ES glossary, Spanish length targets, and the rule that Spanish is *written*, never translated.
 
-**Length Targets** (recommended, enforced by Editor + Scorer):
+**Length Targets** — enforced by Editor + Scorer, and verified mechanically by `tools/check-renders.py`, which is the source of truth for these numbers:
 
-| Platform | Sweet spot | Hard cap | Fold (hook must land before) |
-|----------|-----------|----------|------------------------------|
-| LinkedIn | ~1,300–2,000 chars | ~3,000 | ~210 chars (~3 lines) |
-| Facebook | ~400–800 chars | none (63k) | ~477 chars desktop (~400 mobile) |
-| Instagram | ~125–220 chars caption (more if carousel) | ~2,200 | ~125 chars (first line) |
-| X — single | ~240–270 chars | 280 | whole post visible |
-| X — thread | ≤280/tweet, one idea per tweet | 280/tweet | tweet 1 is the hook |
-| **LinkedIn (Spanish)** | **~1,500–2,300 chars** | ~3,000 | **~210 chars — unchanged** |
+| Platform | Draft target | Checker FAILs outside | Fold (hook must land before) |
+|----------|-------------|----------------------|------------------------------|
+| LinkedIn | **1,600–1,850 chars** | <1,300 or >1,900 | ~210 chars (~3 lines) |
+| Facebook | **550–700 chars** | <400 or >760 | ~477 chars desktop (~400 mobile) |
+| Instagram — over a carousel | **600–900 chars** | >900 | ~125 chars (first line) |
+| Instagram — under one image | **125–220 chars** | <100 or >400 | ~125 chars (first line) |
+| X — single | **240–270 chars** | >280 | whole post visible |
+| X — thread | **≤280/tweet**, one idea per tweet | >280 on any tweet | tweet 1 is the hook |
+| **LinkedIn (Spanish)** | **1,700–2,000 chars** | <1,500 or >2,200 | **~210 chars — unchanged** |
+
+These bands are narrower than the platforms' own limits on purpose. Output clusters 1–5% under whatever number is actually *enforced* and ignores a number that is merely *stated*: Facebook sat at 774–798 for two months against a prose cap of 800, and LinkedIn produced seventeen published renders at 2,001–2,090 against a prose ceiling of 2,000. The fail line has to be the number you actually want.
 
 That last row is the trap worth knowing about. Spanish runs 15–25% longer than English for the same content, so the body target grows — but LinkedIn truncates on *characters*, so the Spanish hook still gets ~210 of them to say something that needs more words. The Spanish hook is the tightest constraint in the system; write it to the fold first, then build the body.
 
@@ -499,7 +502,7 @@ content/<year>/<YYYY-MM-DD>-<slug>/         marketing/<year>/<YYYY-MM-DD>-<slug>
 - **Each tree has its own catalog** — `content/INDEX.md` and `marketing/INDEX.md` (date, slug, title, renders, visual, status), newest-first. `/post` and `/adapt` keep them current — it's how you look up a post's slug ("make a carousel for `plug-and-play-wifi-myth`"). Give Claude a bare slug and it searches both.
 
 **Reference sets:**
-- `content/2026/2026-06-24-ai-makes-us-judges/` — the original calibration examples the rules and agents are tuned to.
+- `content/2026/2026-06-24-ai-makes-us-judges/` — the original calibration examples, for hook, structure, voice, and landing. Not for length or hashtag count: it predates the current bands and fails the checker.
 - `content/2026/2026-06-24-operational-state/` — first post written in the author's voice profile end-to-end (all three renders scored SHIP).
 
 ---

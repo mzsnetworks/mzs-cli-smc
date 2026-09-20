@@ -53,7 +53,7 @@ Strongest: #N — [one line on why it earns the second line]
 
 ## Calibration
 
-Target the reference bar: `content/2026/2026-06-24-ai-makes-us-judges/`. The winning hook there is the Tension shape — a decade-old argument resolved by a hard reality in two sentences. Write to that.
+Target the reference bar: `content/2026/2026-06-24-ai-makes-us-judges/`. The winning hook there is the Tension shape — a decade-old argument resolved by a hard reality in two sentences. Write to that. (The reference set calibrates voice and structure only — its lengths and hashtag counts predate the current bands and fail the checker.)
 
 ---
 
