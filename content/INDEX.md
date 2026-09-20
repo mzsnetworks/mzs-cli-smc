@@ -4,6 +4,15 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-10-06 | `when-did-it-last-work` | "What changed?" searches a record of what people remembered to log; "when did it last work?" is answerable from evidence and bounds the window | LI · IG | — | SHIP |
+| 2026-10-08 | `before-its-not-the-network` | "It's not the network" costs credibility if you are wrong once — six checks that earn the right to say it | LI · IG | — | SHIP |
+| 2026-10-10 | `latency-in-the-humans` | Half the job is waiting, and the estimate never counts the queues — human latency is most of the duration | LI · IG | — | SHIP |
+| 2026-10-13 | `read-it-in-execution-order` | A config is printed in parser order, not execution order — read it top to bottom and you model a box that does not exist | LI · IG | — | SHIP |
+| 2026-10-15 | `documentation-that-executes` | BGP communities are documentation that executes — intent in a wiki drifts, intent in a tag cannot | LI · IG | — | SHIP |
+| 2026-10-17 | `four-incidents-taught-me` | Four incidents beat any certification, because each changed a default rather than a fact | LI · IG | — | SHIP |
+| 2026-10-20 | `slow-is-not-a-symptom` | "It's slow" is a feeling, not a symptom — get a number, a direction and a boundary before touching anything | LI · IG | — | SHIP |
+| 2026-10-22 | `prompting-is-documenting` | Prompting is the new documenting — the model is not rewarding a new skill, it is exposing an old one | LI · IG | — | SHIP |
+| 2026-10-24 | `bought-and-never-enabled` | The feature you bought and never enabled is technical debt with a maintenance contract, and the auditor sees the license | LI · IG | — | SHIP |
 | 2026-10-25 | `five-questions-before-wireless` | Every wireless RFP opens with an AP count — that number is an answer to five questions nobody has asked yet | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 25 4pm · Business — all four on MZS) |
 | 2026-10-28 | `runbook-nobody-had-run` | A quarterly-reviewed failover runbook nobody had executed in two years — encoding it was the audit | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 28 4pm · Business — all four on MZS) |
 | 2026-10-30 | `first-hour-of-an-outage` | The first hour is spent deciding whose problem it is; ownership is a role at minute zero, cause is a finding later | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Oct 30 4pm · Business — all four on MZS) |

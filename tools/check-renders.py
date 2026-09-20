@@ -130,8 +130,14 @@ def check_file(path, lane, fails, warns, carousel=True, preset=None):
         n = len(b)
         if not lo <= n <= hi:
             fails.append(f"{rel}: {n} chars outside {lo}-{hi} (draft target {draft})")
-        elif f == 'facebook.md' and n > 720:
-            warns.append(f"{rel}: {n} chars — inside the cap but above the {draft} draft target")
+        else:
+            # Warn on every platform, not just Facebook. This rule was
+            # Facebook-only until 2026-09-20, which is why LinkedIn renders
+            # clustered just under the 1900 FAIL line instead of inside the
+            # 1600-1850 target: the only number being enforced was the cap.
+            draft_hi = int(draft.split('-')[1])
+            if n > draft_hi:
+                warns.append(f"{rel}: {n} chars — inside the cap but above the {draft} draft target")
         lines = [l for l in b.split('\n') if l.strip()]
         if lines and len(lines[0]) > fold:
             fails.append(f"{rel}: hook {len(lines[0])} chars, fold is {fold}")

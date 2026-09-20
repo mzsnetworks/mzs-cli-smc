@@ -44,6 +44,13 @@ CASES = {
     'fail-missing-render':       'MISSING',
 }
 
+# fixture -> substring that must appear in at least one WARNING (and no failure)
+WARN_CASES = {
+    # Inside the FAIL band but above the draft ceiling. Until 2026-09-20 this
+    # warning was Facebook-only, which let LinkedIn drift to just under its cap.
+    'warn-above-draft-target':   'above the 1600-1850 draft target',
+}
+
 def main():
     os.chdir(ROOT)
     bad = 0
@@ -63,7 +70,20 @@ def main():
             else:
                 print(f"  FAIL  {name}: expected a failure containing {expect!r}, got {fails or 'nothing'}")
                 bad += 1
-    print(f"\n{len(CASES)} case(s) · {bad} failing")
+    for name, expect in WARN_CASES.items():
+        d = os.path.join('tools', 'fixtures', name)
+        if not os.path.isdir(d):
+            print(f"  MISSING FIXTURE  {name}"); bad += 1; continue
+        fails, warns = cr.check_post(d)
+        if fails:
+            print(f"  FAIL  {name}: expected only a warning, got failures {fails}"); bad += 1
+        elif any(expect in w for w in warns):
+            print(f"  ok    {name}: warned {expect!r}")
+        else:
+            print(f"  FAIL  {name}: expected a warning containing {expect!r}, got {warns or 'nothing'}")
+            bad += 1
+
+    print(f"\n{len(CASES) + len(WARN_CASES)} case(s) · {bad} failing")
     if bad:
         print("CHECKER IS BROKEN — do not rely on it until this passes")
     else:
