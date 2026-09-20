@@ -23,10 +23,10 @@ Batch 2, transferred from `mzs-marketing` on 2026-09-20. Each row is one idea in
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Oct 5 | Mon | The objection isn't price, it's "we tried this before" — the concrete shape of a first month | batch 2 #08 | — |
-| Oct 12 | Mon | You can't hire your way out — manual change scales linearly, headcount doesn't | batch 2 #07 | — |
-| Oct 19 | Mon | Test it before it touches a device — Config Modeling | batch 2 #03 | — |
-| Oct 26 | Mon | Evidence, not assurances — proving what was deployed on a date · Driftguard | batch 2 #02 | — |
+| Oct 5 | Mon | The objection isn't price, it's "we tried this before" — the concrete shape of a first month | batch 2 #08 | DONE · `first-thirty-days` |
+| Oct 12 | Mon | You can't hire your way out — manual change scales linearly, headcount doesn't | batch 2 #07 | DONE · `cant-hire-your-way-out` |
+| Oct 19 | Mon | Test it before it touches a device — Config Modeling | batch 2 #03 | DONE · `test-before-it-touches-a-device` |
+| Oct 26 | Mon | Evidence, not assurances — proving what was deployed on a date · Driftguard | batch 2 #02 | DONE · `evidence-not-assurances` |
 
 All four are SHIP in `marketing/INDEX.md`. Batch 2 runs on through Dec 21; the remaining eight are still upstream and untransferred.
 

@@ -48,7 +48,7 @@ Added 2026-09-09, when the Marketing lane opened Monday. Each row is one idea in
 |------|-----|------|--------|--------|
 | Sep 14 | Mon | Automation isn't the risk, unreviewed change is — manual change only feels safer because a human is watching | `marketing/` transfer, mzs-marketing Post 1 | DONE · `automation-isnt-the-risk` |
 | Sep 21 | Mon | You probably don't need a network automation framework — automate one bottleneck first | `marketing/` transfer, mzs-marketing Post 2 | DONE · `one-bottleneck-not-a-framework` |
-| Sep 28 | Mon | Can you say what's configured across every site right now? Drift is a visibility problem — Driftguard | `marketing/` transfer, mzs-marketing Post 3 | — |
+| Sep 28 | Mon | Can you say what's configured across every site right now? Drift is a visibility problem — Driftguard | `marketing/` transfer, mzs-marketing Post 3 | DONE · `drift-is-a-visibility-problem` |
 
 All three are SHIP in `marketing/INDEX.md`. Order runs objection-handling → positioning → product pull-through, matching the upstream marketing plan.
 
