@@ -1,6 +1,6 @@
 # Publishing Schedule — Oct 2026
 
-Standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun, Mondays dark.**
+Standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun. Mondays are the Marketing lane** and carry two slots for one idea: ES at 2:00 PM EDT (`18:00:00Z`), EN at 4:00 PM (`20:00:00Z`).
 
 Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with slug) as they're scheduled; update the source ideas file + `content/INDEX.md` per the normal publish flow.
 
@@ -17,10 +17,23 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 |------|-----|------|--------|--------|
 | Oct 2 | Fri | Your monitoring bill scales with data, not insight | ideas-2026-08-30 #24 | DONE · `monitoring-bill-scales` |
 
-**Dark days:** Mon Oct 5 · Mon Oct 12 · Mon Oct 19 · Mon Oct 26.
+## Marketing (LI personal, EN + ES — Mondays)
+
+Batch 2, transferred from `mzs-marketing` on 2026-09-20. Each row is one idea in two languages: Spanish at 2:00 PM EDT, English at 4:00 PM, same day, same profile. Order follows the upstream sequence — objection-handling first, product pull-through spaced.
+
+| Date | Day | Idea | Source | Status |
+|------|-----|------|--------|--------|
+| Oct 5 | Mon | The objection isn't price, it's "we tried this before" — the concrete shape of a first month | batch 2 #08 | — |
+| Oct 12 | Mon | You can't hire your way out — manual change scales linearly, headcount doesn't | batch 2 #07 | — |
+| Oct 19 | Mon | Test it before it touches a device — Config Modeling | batch 2 #03 | — |
+| Oct 26 | Mon | Evidence, not assurances — proving what was deployed on a date · Driftguard | batch 2 #02 | — |
+
+All four are SHIP in `marketing/INDEX.md`. Batch 2 runs on through Dec 21; the remaining eight are still upstream and untransferred.
+
+**Dark days:** none in October — the Marketing lane took every Monday.
 
 **Context.** Oct 2 belongs to the week of Sep 27 (that week runs Sun Sep 27 → Sat Oct 3), planned alongside Sep 27 and Sep 30 in `schedule-2026-09.md`.
 
-**Next open slots after Oct 3:** Oct 4 (Sun · Business), then Oct 6 (Tue · Professional).
+**Next open slots after Oct 3:** Oct 4 (Sun · Business), then Oct 5 (Mon · Marketing), then Oct 6 (Tue · Professional).
 
-**Pool status:** Business `ideas-2026-08-30.md` has 30 undeveloped ideas left. Professional `ideas-2026-08-27.md` has 23.
+**Pool status:** Business `ideas-2026-08-30.md` has 30 undeveloped ideas left. Professional `ideas-2026-08-27.md` has 23. Marketing has **eight** written but untransferred posts upstream (batch 2 #01, 04, 05, 06, 09, 10, 11, 12), covering Mondays Nov 2 – Dec 21. Nothing written beyond Dec 21.

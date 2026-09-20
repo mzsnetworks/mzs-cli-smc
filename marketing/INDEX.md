@@ -2,6 +2,8 @@
 
 Company marketing posts, newest first. Distinct from `content/INDEX.md`: those are personal thought-leadership pieces that end on a question, these are brand posts that end on a CTA and name MZS services or products. The **slug** is how you reference one ("/adapt `automation-isnt-the-risk`").
 
+Batch 2 (the four `2026-09-20` rows) carries **no metrics, no client results and no case studies** — deliberately, since nothing is documented to cite yet. The illustrative-figure exception below is therefore not invoked by any of them.
+
 Sourced from the `mzs-marketing` repo, which owns the brand voice, the ES glossary, and the strategy these posts serve — specifically `.claude/skills/mzs-brand/SKILL.md` (voice + EN→ES glossary), `.agents/product-marketing.md` (products, positioning, CTA conventions), and `work/strategy/marketing-plan/final_plan.md` (the four-part content spine). Note that "mzs-brand" there is a *skill inside `mzs-marketing`*, not the `mzs-brand` repo — that repo is a UI design-system kit and holds no voice or Spanish content.
 
 Those upstream rules are ported into `rules/MARKETING.md` and `rules/SPANISH.md`, which is what the agents in this repo actually read. Edit the copy here; if the voice or positioning itself needs to change, change it upstream and re-port.
@@ -10,6 +12,10 @@ Those upstream rules are ported into `rules/MARKETING.md` and `rules/SPANISH.md`
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-09-20 | `first-thirty-days` | The objection isn't price, it's "we tried this before" — so here's the concrete shape of a first month | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `cant-hire-your-way-out` | Manual change scales linearly and headcount doesn't — the hiring plan is usually a deferred automation decision | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `test-before-it-touches-a-device` | Networking is the last place where the test plan is "apply it in production and watch" — Config Modeling | LI · LI-ES | — | **SHIP** |
+| 2026-09-20 | `evidence-not-assurances` | Auditors don't ask whether you have a standard, they ask you to prove what was deployed on a date — Driftguard | LI · LI-ES | — | **SHIP** |
 | 2026-09-08 | `automation-isnt-the-risk` | Automation isn't the risk, unreviewed change is — manual change only feels safer because a human is watching | LI · LI-ES | hero | **PUBLISHED** · Mon Sep 14 |
 | 2026-09-08 | `one-bottleneck-not-a-framework` | You probably don't need a network automation framework — automate one repetitive process and let the quick win pay for the roadmap conversation | LI · LI-ES | hero | **PUBLISHED** · Mon Sep 21 |
 | 2026-09-08 | `drift-is-a-visibility-problem` | Can you say what's actually configured across every site right now? Drift isn't a discipline problem, it's a visibility problem | LI · LI-ES | — | **SHIP** |
