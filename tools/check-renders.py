@@ -16,7 +16,7 @@ and the most expensive visual failure is semantic rather than mechanical —
 an image that is well executed and argues the opposite of its post. That
 check is human, and it lives in agents/VISUAL.md under QA step (a).
 """
-import re, sys, json, glob, os
+import re, sys, json, glob, os, subprocess
 
 # --- FAILURE HISTORY: markdown emphasis shipped to LinkedIn in the Sep 6-18
 # Business batch and again in every Instagram caption in the Oct 11 batch.
@@ -177,6 +177,51 @@ def check_file(path, lane, fails, warns, carousel=True, preset=None):
         if ph:
             fails.append(f"{rel}: British usage {ph} — the corpus is American")
 
+# --- Baseline -------------------------------------------------------------
+# The length bands were tightened in 6f2f5a3 (2026-09-20T19:05-04:00) and the
+# Professional Instagram band added in 1605cb7 shortly after. Posts written
+# before that were written against different numbers and are not defects --
+# reporting them makes --all cry wolf across 68 posts, which is how a checker
+# gets ignored. A post is judged against the rules in force when it was
+# written: first commit before the baseline means skip it.
+#
+# Deliberately NOT applied to a post named directly on the command line. If
+# you ask about one post you get the truth about it, whatever its age.
+BASELINE = '2026-09-20T19:05:38-04:00'
+
+def _first_commit_dates():
+    """folder -> ISO timestamp of the commit that first added any file in it."""
+    try:
+        out = subprocess.run(
+            ['git', 'log', '--diff-filter=A', '--format=C%cI', '--name-only',
+             '--', 'content', 'marketing'],
+            capture_output=True, text=True, timeout=60,
+            cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))).stdout
+    except (OSError, subprocess.SubprocessError):
+        return {}
+    first, cur = {}, None
+    for line in out.splitlines():
+        if line.startswith('C'):
+            cur = line[1:]
+        elif line.strip() and cur and '/' in line:
+            d = os.path.dirname(line)
+            if d.count('/') != 2:      # want <tree>/<year>/<slug>, not the file
+                continue
+            if d not in first or cur < first[d]:
+                first[d] = cur
+    return first
+
+def pre_baseline(dirs):
+    """Subset of dirs first committed before the bands changed."""
+    first = _first_commit_dates()
+    out = set()
+    for d in dirs:
+        key = os.path.normpath(d).strip('./')
+        t = first.get(key)
+        if t and t < BASELINE:
+            out.add(d)
+    return out
+
 def preset_of(d):
     """Read the preset from master.md. content/ holds two presets with
     different render sets, so the tree alone does not determine them."""
@@ -255,7 +300,17 @@ def main():
     args = sys.argv[1:]
     if not args:
         print(__doc__); sys.exit(2)
-    dirs = sorted(glob.glob('content/*/*/') + glob.glob('marketing/*/*/')) if args[0] == '--all' else args
+    everything = '--everything' in args
+    args = [a for a in args if a != '--everything']
+    sweep = args and args[0] == '--all'
+    dirs = sorted(glob.glob('content/*/*/') + glob.glob('marketing/*/*/')) if sweep else args
+    skipped = set()
+    if sweep and not everything:
+        # Judge a post against the rules in force when it was written. Never
+        # applied to a post named explicitly -- ask about one post, get the
+        # truth about it.
+        skipped = pre_baseline(dirs)
+        dirs = [d for d in dirs if d not in skipped]
     allf, allw = [], []
     for d in dirs:
         if not os.path.exists(os.path.join(d.rstrip('/'), 'master.md')):
@@ -266,7 +321,11 @@ def main():
             print(f"--- {d.rstrip('/')}")
             for x in f: print(f"  FAIL  {x}")
             for x in w: print(f"  warn  {x}")
-    print(f"\n{len(dirs)} post(s) checked · {len(allf)} failure(s) · {len(allw)} warning(s)")
+    note = ''
+    if skipped:
+        note = (f" · {len(skipped)} pre-baseline post(s) skipped"
+                f" (written before the bands changed; --everything includes them)")
+    print(f"\n{len(dirs)} post(s) checked · {len(allf)} failure(s) · {len(allw)} warning(s){note}")
     print("OK — safe to publish" if not allf else "NOT SAFE TO PUBLISH")
     sys.exit(1 if allf else 0)
 

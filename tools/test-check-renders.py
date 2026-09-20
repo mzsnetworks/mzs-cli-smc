@@ -83,7 +83,30 @@ def main():
             print(f"  FAIL  {name}: expected a warning containing {expect!r}, got {warns or 'nothing'}")
             bad += 1
 
-    print(f"\n{len(CASES) + len(WARN_CASES)} case(s) · {bad} failing")
+    # Baseline filter. Fixtures cannot exercise this (it reads git history for
+    # content/ and marketing/), so assert against two real posts: one written
+    # before the bands changed and one after.
+    OLD = 'content/2026/2026-10-03-on-call-makes-careers/'
+    NEW = 'content/2026/2026-10-24-bought-and-never-enabled/'
+    if os.path.isdir(OLD) and os.path.isdir(NEW):
+        skipped = cr.pre_baseline([OLD, NEW])
+        if OLD in skipped and NEW not in skipped:
+            print("  ok    baseline: pre-baseline post skipped, post-baseline post kept")
+        else:
+            print(f"  FAIL  baseline: expected only {OLD} skipped, got {skipped}")
+            bad += 1
+        # An explicitly named post is never filtered -- ask about one post,
+        # get the truth about it regardless of age.
+        f, _ = cr.check_post(OLD)
+        if f:
+            print("  ok    baseline: explicit post still reports its failures")
+        else:
+            print("  FAIL  baseline: explicit pre-baseline post reported clean")
+            bad += 1
+    else:
+        print("  skip  baseline: reference posts not present")
+
+    print(f"\n{len(CASES) + len(WARN_CASES) + 2} case(s) · {bad} failing")
     if bad:
         print("CHECKER IS BROKEN — do not rely on it until this passes")
     else:

@@ -53,6 +53,8 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 
 The Editor tightens to the draft target; the Scorer's "platform fit" dimension checks it. **`python3 tools/check-renders.py <postdir>` verifies all of it mechanically** — run it before publish, always.
 
+These bands apply to posts written after 2026-09-20. Earlier posts were written against looser numbers and are not retro-fitted: rewriting finished work to a new threshold is churn no reader benefits from, and the bands exist to stop *new* drift. `--all` skips them by default and says how many it skipped.
+
 ## Fact Discipline (Non-Negotiable)
 
 This is the one rule that does not loosen.
