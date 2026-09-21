@@ -1,0 +1,22 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789949354417-2.jpg",
+   "aspect": "16:9",
+   "prompt": "A single taut cable stretched horizontally across a dark empty space from one edge of frame to the other, with one metal clamp fixed at its exact midpoint. Nothing else in the frame. Cream light rims the cable and the clamp body. The single red element is the clamp. Absolutely no graph, no chart, no diagram, no flowchart, no tree of any kind. Stark and physical. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "LinkedIn (personal profile)",
+   "qa": "Approved, first roll. Taut cable, one clamp at the exact midpoint, nothing else in frame. The no-diagram clause held — 'binary search' is the brief that otherwise returns a flowchart or a tree. The 4:5 variant's background reads a touch more saturated than the 16:9 but stays navy, no cyan drift."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789949382291-2.jpg",
+   "aspect": "4:5",
+   "prompt": "A single taut cable stretched horizontally across a dark empty space from one edge of frame to the other, with one metal clamp fixed at its exact midpoint. Nothing else in the frame. Cream light rims the cable and the clamp body. The single red element is the clamp. Absolutely no graph, no chart, no diagram, no flowchart, no tree of any kind. Stark and physical. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Instagram feed — separately composed portrait, not a crop of the 16:9.",
+   "qa": "Approved, first roll. Taut cable, one clamp at the exact midpoint, nothing else in frame. The no-diagram clause held — 'binary search' is the brief that otherwise returns a flowchart or a tree. The 4:5 variant's background reads a touch more saturated than the 16:9 but stays navy, no cyan drift."
+  }
+ ]
+}

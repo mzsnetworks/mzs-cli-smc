@@ -1,0 +1,22 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789949354404-0.jpg",
+   "aspect": "16:9",
+   "prompt": "A small network switch screwed to a bare plywood board on the wall of a cramped storage room. A mop leans against the wall beside it, cardboard boxes are stacked below, and there is visible dust on the switch housing. Cables run from it into a rough hole in the plasterboard. Cream light falls from a single bulb. The single red element is one link indicator on the switch. Cluttered, domestic, forgotten — not a clean data centre rack. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "LinkedIn (personal profile)",
+   "qa": "Approved, first roll. Cluttered storage room — plywood, mop, boxes, dust on the housing, cables into a rough hole in the wall. Deliberately not a clean rack, to avoid twinning with the Oct 24 Business hero three days earlier. Single link LED, no vendor marks."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1789949382253-0.jpg",
+   "aspect": "4:5",
+   "prompt": "A small network switch screwed to a bare plywood board on the wall of a cramped storage room. A mop leans against the wall beside it, cardboard boxes are stacked below, and there is visible dust on the switch housing. Cables run from it into a rough hole in the plasterboard. Cream light falls from a single bulb. The single red element is one link indicator on the switch. Cluttered, domestic, forgotten — not a clean data centre rack. Deep dark navy dominates every surface and every background plane — never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-09-20",
+   "usage": "Instagram feed — separately composed portrait, not a crop of the 16:9.",
+   "qa": "Approved, first roll. Cluttered storage room — plywood, mop, boxes, dust on the housing, cables into a rough hole in the wall. Deliberately not a clean rack, to avoid twinning with the Oct 24 Business hero three days earlier. Single link LED, no vendor marks."
+  }
+ ]
+}
