@@ -2,11 +2,20 @@
 """Validate a post's renders against the platform rules before publish.
 
     python3 tools/check-renders.py <postdir> [<postdir> ...]
-    python3 tools/check-renders.py --all
+    python3 tools/check-renders.py --all [--everything]
+    python3 tools/check-renders.py --diff [<git-ref>]
 
-Lane is inferred from the path: content/ expects linkedin, facebook, instagram
-and x; marketing/ expects linkedin and linkedin-es. Exits non-zero if anything
-fails, so it can gate a publish.
+Render set follows the preset in master.md, not the path: Professional expects
+linkedin and instagram, Business all four, Marketing linkedin and linkedin-es.
+Exits non-zero if anything fails, so it can gate a publish.
+
+--all sweeps both trees but skips posts written before the length bands were
+set; --everything includes them. A post named explicitly is never skipped.
+
+--diff reports renders that changed since a git ref (default HEAD), and fails
+on any change to a post that already has published.md — because that copy is
+live in Blotato and the file no longer matches it. Run it before committing
+edits to existing posts.
 
 Every rule here exists because it was violated in a real post. See the
 FAILURE HISTORY notes on each check.
@@ -222,6 +231,82 @@ def pre_baseline(dirs):
             out.add(d)
     return out
 
+# --- Diff -----------------------------------------------------------------
+# FAILURE HISTORY: on 2026-09-20 a hashtag was silently changed from
+# #InfrastructureAsCode to #NetDevOps on an already-scored render, for no
+# stated reason. Nothing caught it; it was found by diffing against git days
+# later. A render that has already been submitted to Blotato is worse than
+# unreviewed -- the file and the live schedule have silently diverged, and the
+# file is the thing a human will read when deciding what went out.
+
+RENDER_FILES = ('linkedin.md', 'linkedin-es.md', 'facebook.md',
+                'instagram.md', 'x.md')
+
+def strip_heading(text, is_instagram=False):
+    lines = text.split('\n')
+    while lines and (lines[0].startswith('# ') or not lines[0].strip()):
+        lines.pop(0)
+    t = '\n'.join(lines).strip()
+    if is_instagram:
+        t = t.split('\n---\n')[0].strip()
+    return t
+
+def diff_render(old, new, is_instagram=False):
+    """Compare two versions of one render. Pure, so it can be tested."""
+    a = strip_heading(old, is_instagram)
+    b = strip_heading(new, is_instagram)
+    ta = set(re.findall(r'#\w+', a))
+    tb = set(re.findall(r'#\w+', b))
+    return {
+        'changed':   a != b,
+        'chars':     len(b) - len(a),
+        'tags_added':   sorted(tb - ta),
+        'tags_removed': sorted(ta - tb),
+        'text_changed': re.sub(r'#\w+', '', a).strip() != re.sub(r'#\w+', '', b).strip(),
+    }
+
+def _git(args):
+    return subprocess.run(['git'] + args, capture_output=True, text=True,
+                          cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))).stdout
+
+def run_diff(ref):
+    """Report renders that changed between `ref` and the working tree."""
+    changed = [l for l in _git(['diff', '--name-only', ref, '--', 'content', 'marketing']).splitlines()
+               if os.path.basename(l) in RENDER_FILES]
+    if not changed:
+        print(f"No render changed since {ref}.")
+        return 0
+    fails = warns = 0
+    for path in sorted(changed):
+        d = os.path.dirname(path)
+        old = _git(['show', f'{ref}:{path}'])
+        try:
+            new = open(path, encoding='utf-8').read()
+        except OSError:
+            print(f"  FAIL  {path}: deleted"); fails += 1; continue
+        r = diff_render(old, new, 'instagram' in os.path.basename(path))
+        if not r['changed']:
+            continue
+        live = os.path.exists(os.path.join(d, 'published.md'))
+        bits = []
+        if r['chars']:        bits.append(f"{r['chars']:+d} chars")
+        if r['tags_removed']: bits.append(f"-{' '.join(r['tags_removed'])}")
+        if r['tags_added']:   bits.append(f"+{' '.join(r['tags_added'])}")
+        if r['text_changed']: bits.append("body text")
+        detail = ', '.join(bits)
+        if live:
+            print(f"  FAIL  {path}: {detail} — this post has published.md, so the "
+                  f"file and the live Blotato schedule have diverged")
+            fails += 1
+        else:
+            print(f"  warn  {path}: {detail}")
+            warns += 1
+    print(f"\n{len(changed)} render(s) changed since {ref} · {fails} on published posts · {warns} on drafts")
+    if fails:
+        print("A published post's copy changed. Either revert the file or update "
+              "the live schedule with blotato_update_schedule, but do not leave them different.")
+    return 1 if fails else 0
+
 def preset_of(d):
     """Read the preset from master.md. content/ holds two presets with
     different render sets, so the tree alone does not determine them."""
@@ -300,6 +385,9 @@ def main():
     args = sys.argv[1:]
     if not args:
         print(__doc__); sys.exit(2)
+    if args[0] == '--diff':
+        ref = args[1] if len(args) > 1 else 'HEAD'
+        sys.exit(run_diff(ref))
     everything = '--everything' in args
     args = [a for a in args if a != '--everything']
     sweep = args and args[0] == '--all'

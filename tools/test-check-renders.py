@@ -83,6 +83,40 @@ def main():
             print(f"  FAIL  {name}: expected a warning containing {expect!r}, got {warns or 'nothing'}")
             bad += 1
 
+    # diff_render is pure, so it is tested directly rather than through git.
+    # The first case is the real 2026-09-20 defect: a hashtag silently swapped
+    # on an already-scored render, with the body untouched.
+    DIFF_CASES = [
+        ("silent hashtag swap",
+         "# LinkedIn\n\n\nBody stays identical.\n\n#NetOps #InfrastructureAsCode",
+         "# LinkedIn\n\n\nBody stays identical.\n\n#NetOps #NetDevOps",
+         dict(changed=True, tags_added=['#NetDevOps'],
+              tags_removed=['#InfrastructureAsCode'], text_changed=False)),
+        ("body edit, tags untouched",
+         "# LinkedIn\n\n\nThe original sentence.\n\n#NetOps",
+         "# LinkedIn\n\n\nA rewritten sentence.\n\n#NetOps",
+         dict(changed=True, tags_added=[], tags_removed=[], text_changed=True)),
+        ("heading-only change is not a change",
+         "# LinkedIn — old-slug\n\n\nSame body.\n\n#NetOps",
+         "# LinkedIn — new-slug\n\n\nSame body.\n\n#NetOps",
+         dict(changed=False, tags_added=[], tags_removed=[], text_changed=False)),
+    ]
+    for name, old, new, want in DIFF_CASES:
+        got = cr.diff_render(old, new)
+        if all(got[k] == v for k, v in want.items()):
+            print(f"  ok    diff: {name}")
+        else:
+            print(f"  FAIL  diff: {name} — wanted {want}, got {got}")
+            bad += 1
+    # Instagram carousel notes live below a --- and must not count as a change.
+    ig_old = "# Instagram\n\n\nCaption.\n\n#A #B #C #D #E\n\n---\n\n## Carousel slide ideas\n1. Old idea"
+    ig_new = "# Instagram\n\n\nCaption.\n\n#A #B #C #D #E\n\n---\n\n## Carousel slide ideas\n1. New idea"
+    if not cr.diff_render(ig_old, ig_new, is_instagram=True)['changed']:
+        print("  ok    diff: instagram slide notes ignored")
+    else:
+        print("  FAIL  diff: instagram slide notes counted as a copy change")
+        bad += 1
+
     # Baseline filter. Fixtures cannot exercise this (it reads git history for
     # content/ and marketing/), so assert against two real posts: one written
     # before the bands changed and one after.
@@ -106,7 +140,7 @@ def main():
     else:
         print("  skip  baseline: reference posts not present")
 
-    print(f"\n{len(CASES) + len(WARN_CASES) + 2} case(s) · {bad} failing")
+    print(f"\n{len(CASES) + len(WARN_CASES) + 6} case(s) · {bad} failing")
     if bad:
         print("CHECKER IS BROKEN — do not rely on it until this passes")
     else:

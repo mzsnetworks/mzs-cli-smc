@@ -44,6 +44,8 @@ Three layers, same logic underneath:
 
 **Before publishing anything, run `python3 tools/check-renders.py <postdir>`.** It validates every render mechanically — length bands and draft targets, the hook against each platform's fold, hashtag counts, markdown emphasis (no platform renders it; `*word*` publishes as an asterisk), stray numeric hashtags like "window #47" that linkify, American spelling, and for marketing posts the CTA form and EN/ES paragraph parity. It exits non-zero and every rule in it exists because it was violated in a real post.
 
+**`--diff [<ref>]`** reports every render that changed since a git ref (default `HEAD`) and **fails on any change to a post that already has `published.md`** — that copy is live in Blotato, so the file and the schedule have silently diverged. It exists because a hashtag was once swapped on an already-scored render for no stated reason and nothing caught it. Run it before committing edits to existing posts.
+
 `--all` sweeps both trees, but reports only posts written **after** the length bands were set (2026-09-20). Older posts were written against different numbers; flagging them made `--all` report 185 failures across 68 posts, which is how a checker stops being read. `--all --everything` includes them. A post named explicitly on the command line is never filtered — ask about one post and you get the truth about it, whatever its age.
 
 `agents/*.md` files remain the **source of truth** — skills and commands point to them, never fork the logic. The core pipeline agents (Writer, Factcheck, Adapter, Editor, Hashtag, Scorer) are invoked *through* `/post`, not as individual skills.
