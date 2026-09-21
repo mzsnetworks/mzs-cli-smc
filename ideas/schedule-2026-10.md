@@ -19,6 +19,9 @@ Fire each with: `/publish <idea> - <preset>, <date> 4pm`. Mark rows DONE (with s
 | Oct 20 | Tue | "It's slow" is a feeling, not a symptom — get a number, a direction and a boundary before touching anything | ideas-2026-08-27 #6 | DONE · `slow-is-not-a-symptom` |
 | Oct 22 | Thu | Prompting is the new documenting — the model is not rewarding a new skill, it is exposing an old one | ideas-2026-08-27 #20 | DONE · `prompting-is-documenting` |
 | Oct 24 | Sat | The feature you bought and never enabled is technical debt with a maintenance contract, and the auditor sees the license | ideas-2026-08-27 #30 | DONE · `bought-and-never-enabled` |
+| Oct 27 | Tue | The device that isn't in monitoring is the one that pages you | ideas-2026-08-27 #9 | SHIP · `not-in-monitoring` |
+| Oct 29 | Thu | The change you didn't make is also a decision, and it never enters the record | ideas-2026-08-27 #23 | SHIP · `the-change-you-didnt-make` |
+| Oct 31 | Sat | Binary search beats intuition at 3am | ideas-2026-08-27 #4 | SHIP · `binary-search-at-3am` |
 
 ## Business (all four on MZS · LI + IG full carousel · FB/X 16:9 hero)
 
@@ -55,7 +58,7 @@ Batch 2, transferred from `mzs-marketing` on 2026-09-20. Each row is one idea in
 
 All four are SHIP in `marketing/INDEX.md`. Batch 2 runs on through Dec 21; the remaining eight are still upstream and untransferred.
 
-**Dark days:** none in October — the Marketing lane took every Monday.
+**Dark days:** none in October. Every slot from Oct 1 to Oct 31 is filled across the three lanes.
 
 **Context.** Oct 2 belongs to the week of Sep 27 (that week runs Sun Sep 27 → Sat Oct 3), planned alongside Sep 27 and Sep 30 in `schedule-2026-09.md`.
 
