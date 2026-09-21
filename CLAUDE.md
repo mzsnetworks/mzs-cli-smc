@@ -44,6 +44,11 @@ Three layers, same logic underneath:
 
 **Before publishing anything, run `python3 tools/check-renders.py <postdir>`.** It validates every render mechanically — length bands and draft targets, the hook against each platform's fold, hashtag counts, markdown emphasis (no platform renders it; `*word*` publishes as an asterisk), stray numeric hashtags like "window #47" that linkify, American spelling, and for marketing posts the CTA form and EN/ES paragraph parity. It exits non-zero and every rule in it exists because it was violated in a real post.
 
+**Two hooks in `.claude/settings.json` make this automatic** (they are project-level, so they travel with the repo):
+
+- **PostToolUse on `Write|Edit`** → `.claude/hooks/check-render-edit.py` runs the checker on any render as soon as it is written and reports failures and warnings immediately. Non-blocking: the write has already happened, and the point is to close the feedback loop at the edit rather than at the publish.
+- **PreToolUse on `blotato_create_post`** → `.claude/hooks/gate-publish.py` locates the post by matching the first line of the submitted text against the repo, runs the checker on it, and **denies the call** if it fails. Publishing is irreversible; `agents/PUBLISH.md` step 4 says to check first, and this makes that true whether or not anyone remembers. It **fails open** — if the post cannot be identified, the call is allowed, because a gate that blocks work it does not understand gets switched off and then protects nothing.
+
 **`--diff [<ref>]`** reports every render that changed since a git ref (default `HEAD`) and **fails on any change to a post that already has `published.md`** — that copy is live in Blotato, so the file and the schedule have silently diverged. It exists because a hashtag was once swapped on an already-scored render for no stated reason and nothing caught it. Run it before committing edits to existing posts.
 
 `--all` sweeps both trees, but reports only posts written **after** the length bands were set (2026-09-20). Older posts were written against different numbers; flagging them made `--all` report 185 failures across 68 posts, which is how a checker stops being read. `--all --everything` includes them. A post named explicitly on the command line is never filtered — ask about one post and you get the truth about it, whatever its age.

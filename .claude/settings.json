@@ -3,5 +3,33 @@
     "allow": [
       "Bash(git push:*)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/check-render-edit.py",
+            "timeout": 60,
+            "statusMessage": "Checking render..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__claude_ai_Blotato__blotato_create_post",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/gate-publish.py",
+            "timeout": 60,
+            "statusMessage": "Validating render before publish..."
+          }
+        ]
+      }
+    ]
   }
 }
