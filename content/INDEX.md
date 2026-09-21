@@ -4,6 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
+| 2026-10-27 | `not-in-monitoring` | The device that is not in monitoring is the one that pages you — coverage measured against the inventory can never see what the inventory missed | LI · IG | — | SHIP |
+| 2026-10-29 | `the-change-you-didnt-make` | Deciding not to act is a decision that leaves no artifact, so deferrals accumulate outside every review process | LI · IG | — | SHIP |
+| 2026-10-31 | `binary-search-at-3am` | Tired pattern-matching is guessing with confidence; halving the path pays off precisely when you are wrong | LI · IG | — | SHIP |
 | 2026-10-06 | `when-did-it-last-work` | "What changed?" searches a record of what people remembered to log; "when did it last work?" is answerable from evidence and bounds the window | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Oct 4pm · LI personal + IG) | 6
 | 2026-10-08 | `before-its-not-the-network` | "It's not the network" costs credibility if you are wrong once — six checks that earn the right to say it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Oct 4pm · LI personal + IG) | 8
 | 2026-10-10 | `latency-in-the-humans` | Half the job is waiting, and the estimate never counts the queues — human latency is most of the duration | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Oct 4pm · LI personal + IG) | 10
