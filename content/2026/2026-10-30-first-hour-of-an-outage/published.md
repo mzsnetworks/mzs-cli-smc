@@ -16,3 +16,13 @@
 **Accounts verified at submission.** `blotato_list_accounts` was called first: the LinkedIn company-page subaccount `94095464` was present. It has gone missing before, and omitting `pageId` silently posts to the personal profile instead.
 
 **Note.** Any correction from here means editing a live Blotato schedule, not a file. `blotato_update_schedule` takes the **numeric schedule ID**, not the submission IDs above — find it by paging `blotato_list_schedules`. Note also that `pageId` lives in `draft.target`, not `draft.content`, so a round-trip that drops it will move the post to the wrong destination.
+
+**Slide 10 corrected 2026-10-18, before this post fired.** The carousel renderer colored an
+accented word red, and the CTA title sits on a red band, so the emphasized word rendered
+invisible — this post's final slide read with "owner" missing from the sentence. Fixed in
+`tools/render-carousel.mjs` (the CTA title now passes navy to `rich()`), slide 10 re-rendered and
+re-uploaded, and both carousel schedules updated via `blotato_update_schedule` (LinkedIn `4647590`,
+Instagram `4647592`). The other nine slides, the caption, the scheduled time and the LinkedIn
+`pageId` were all carried forward unchanged and verified afterwards. Blotato re-hosts and
+downscales uploaded media, so the live URL differs from the one uploaded; the served image was
+fetched back and confirmed to be the corrected art.

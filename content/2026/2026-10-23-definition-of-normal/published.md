@@ -16,3 +16,13 @@
 **Media.** All ten slides to LinkedIn and Instagram, in order. Each upload returned HTTP 200 and each public URL was then fetched and confirmed to serve PNG bytes. URLs in `carousel-urls.json`. Facebook and X carry the hero from `hero.json` (`smc-1789943888872-0.jpg`).
 
 **`pageId: 94095464`** passed explicitly on the LinkedIn call.
+
+**Slide 10 corrected 2026-10-18, before this post fired.** The carousel renderer colored an
+accented word red, and the CTA title sits on a red band, so the emphasized word rendered
+invisible — this post's final slide read with "changed" missing from the sentence. Fixed in
+`tools/render-carousel.mjs` (the CTA title now passes navy to `rich()`), slide 10 re-rendered and
+re-uploaded, and both carousel schedules updated via `blotato_update_schedule` (LinkedIn `4646378`,
+Instagram `4646381`). The other nine slides, the caption, the scheduled time and the LinkedIn
+`pageId` were all carried forward unchanged and verified afterwards. Blotato re-hosts and
+downscales uploaded media, so the live URL differs from the one uploaded; the served image was
+fetched back and confirmed to be the corrected art.
