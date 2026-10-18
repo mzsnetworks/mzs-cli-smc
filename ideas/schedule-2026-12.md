@@ -18,4 +18,4 @@ Batch 2, transferred 2026-09-20. All three are SHIP in `marketing/INDEX.md`; non
 
 ## Professional · Business
 
-Not yet planned. Pools: Professional `ideas-2026-08-27.md` (23 undeveloped), Business `ideas-2026-08-30.md` (30).
+Not yet planned. Pools, recounted 2026-10-18: Professional `ideas-2026-08-27.md` has **11** undeveloped, Business `ideas-2026-08-30.md` has **17**. December needs 14 Professional slots and 13 Business ones, so **neither pool covers December** — both need ideation before this month can be planned.

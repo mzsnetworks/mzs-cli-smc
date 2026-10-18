@@ -56,7 +56,7 @@ Batch 2, transferred from `mzs-marketing` on 2026-09-20. Each row is one idea in
 | Oct 19 | Mon | Test it before it touches a device — Config Modeling | batch 2 #03 | DONE · `test-before-it-touches-a-device` |
 | Oct 26 | Mon | Evidence, not assurances — proving what was deployed on a date · Driftguard | batch 2 #02 | DONE · `evidence-not-assurances` |
 
-All four are SHIP in `marketing/INDEX.md`. Batch 2 runs on through Dec 21; the remaining eight are still upstream and untransferred.
+All four are SHIP in `marketing/INDEX.md`. Batch 2 is **fully transferred** — all twelve posts are in `marketing/` and every Monday from Oct 5 through Dec 14 is scheduled in Blotato. The twelfth, `we-hand-it-back`, was deliberately held back from Dec 21 to January 2027 (Christmas week), so Dec 21 and Dec 28 are dark.
 
 **Dark days:** none in October. Every slot from Oct 1 to Oct 31 is filled across the three lanes.
 
@@ -64,4 +64,4 @@ All four are SHIP in `marketing/INDEX.md`. Batch 2 runs on through Dec 21; the r
 
 **Next open slots:** Professional's queue tail is still Oct 3 — Oct 6 (Tue), Oct 8 (Thu), Oct 10 (Sat) and every Professional slot after are open. Business is now planned through Oct 30; the next Business slot is Nov 1 (Sun).
 
-**Pool status:** Business `ideas-2026-08-30.md` has 30 undeveloped ideas left. Professional `ideas-2026-08-27.md` has 23. Marketing has **eight** written but untransferred posts upstream (batch 2 #01, 04, 05, 06, 09, 10, 11, 12), covering Mondays Nov 2 – Dec 21. Nothing written beyond Dec 21.
+**Pool status** (recounted 2026-10-18, after the October runs): Business `ideas-2026-08-30.md` has **17** undeveloped ideas left of 36. Professional `ideas-2026-08-27.md` has **11** of 35. Marketing is fully transferred and scheduled through Dec 14; nothing is written beyond it, and there is no batch 3.
