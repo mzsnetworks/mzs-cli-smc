@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "A window that finishes\ntwo hours early is\n*not* good news.",
+   "body": "We ask what got skipped.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Usually nothing",
+   "body": "Not on *purpose*.\nThe work went in clean.\nThe team was tired.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The slip",
+   "body": "\"Applied without error\"\nquietly became\n*\"done.\"*",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The gap",
+   "body": "Those aren't the same state.\nThe gap between them is where\n*Monday morning* lives.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Saturday night",
+   "steps": [
+    "Every command returns clean.",
+    "Interfaces up, device reachable.",
+    "Config matches what was staged."
+   ]
+  },
+  {
+   "type": "body",
+   "title": "The false signal",
+   "body": "By every signal\navailable at 2am,\nit *worked*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Monday",
+   "body": "Real traffic, real patterns.\nSomething that only shows\n*under load* starts failing.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The real fault",
+   "body": "The window wasn't too short.\nThe *definition of done*\nwas too small.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Write it down first",
+   "body": "A named condition,\na named owner.\nNot \"confirm change successful.\"",
+   "motif": "none"
+  },
+  {
+   "type": "cta",
+   "title": "Applied is a change\nyou *made*.",
+   "body": "Verified is one\nyou can *defend*.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

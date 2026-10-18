@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Most change records are\nwritten to be *filed*,\nnot to be read.",
+   "body": "We ask for them early.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What we find",
+   "body": "Complete.\nAnd close to *useless*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What's in them",
+   "body": "Ticket number. Requester.\nCategory. Risk rating: \"low.\"\nApproval chain. Date.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Who that serves",
+   "body": "Everything an *audit* asks for.\nNothing the person\nat 2am needs.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "1 — What changed",
+   "body": "The actual *diff*.\nNot \"updated ACL\nper request.\"",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "2 — Why",
+   "body": "The condition that *forced* it.\nNot the ticket\nthat authorized it.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "3 — Who approved it",
+   "body": "A *name*.\nA queue is routing,\nnot accountability.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "4 — How to undo it",
+   "body": "Steps somebody has\n*run* at least once.\nIf nobody has, say so.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "5 — The one that's skipped",
+   "steps": [
+    "What breaks, for whom, if this is wrong.",
+    "One line.",
+    "It tells the engineer at 2am whether to *roll back* or keep looking."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "A change record\nisn't a *receipt*.",
+   "body": "It's a message to\nwhoever is awake\nwhen it matters.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

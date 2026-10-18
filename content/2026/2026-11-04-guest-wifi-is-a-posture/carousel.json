@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Guest Wi-Fi is a\n*security posture*,\nnot an amenity.",
+   "body": "It rarely gets designed that way.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What gets designed",
+   "body": "The splash page.\nLogo, terms checkbox,\nmaybe an email capture.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The problem",
+   "body": "That's the *least* interesting\ndecision in it.\nAnd the only one reviewed.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What can it reach?",
+   "body": "The internet, plus three\nthings somebody\n*needed once*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "The three",
+   "steps": [
+    "A printer.",
+    "A conference room display.",
+    "A file share that was supposed to be *temporary*."
+   ]
+  },
+  {
+   "type": "body",
+   "title": "What can it resolve?",
+   "body": "A guest VLAN on the\ninternal resolver enumerates\nthe estate from the *parking lot*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "How long does a\ndevice stay on it?",
+   "body": "A lease measured in days\nisn't a guest network.\nIt's an unmanaged corporate one.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "When it's abused",
+   "body": "Can you name\nthe *device*?\nDoes anyone own the answer?",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Not more friction",
+   "body": "A harder portal just pushes\npeople onto a *hotspot*.\nWorse for everyone.",
+   "motif": "none"
+  },
+  {
+   "type": "cta",
+   "title": "The one network you\n*intend* strangers to use.",
+   "body": "It should be the one\nyou can describe\nmost precisely.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}
