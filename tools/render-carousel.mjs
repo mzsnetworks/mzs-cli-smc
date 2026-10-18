@@ -34,9 +34,12 @@ const [W, H] = cfg.size || [1080, 1350];
 const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-// *accent* -> red span; \n -> <br>.  italic=true for serif titles.
-const rich = (s, italic) => esc(s)
-  .replace(/\*([^*]+)\*/g, (_,t)=>`<span style="color:${B.red}${italic?';font-style:italic':''}">${t}</span>`)
+// *accent* -> colored span; \n -> <br>.  italic=true for serif titles.
+// `accent` must contrast with whatever the text sits on: the CTA title sits on
+// a red band, and the default red rendered it invisible on four live carousels
+// before anyone looked at slide 10 (found 2026-10-18).
+const rich = (s, italic, accent = B.red) => esc(s)
+  .replace(/\*([^*]+)\*/g, (_,t)=>`<span style="color:${accent}${italic?';font-style:italic':''}">${t}</span>`)
   .replace(/\n/g,'<br>');
 
 const ic = {
@@ -81,7 +84,7 @@ function content(s) {
   }
   if (s.type === 'cta') {
     return `<div style="background:${B.red};padding:46px 40px;border-radius:6px;margin-right:30px">
-      <div class="title" style="font-size:62px;color:${B.cream}">${rich(s.title,true)}</div></div>
+      <div class="title" style="font-size:62px;color:${B.cream}">${rich(s.title,true,B.navy)}</div></div>
       <div class="rule"></div>
       <div class="body" style="font-size:34px">${rich(s.body,false)}</div>`;
   }
