@@ -21,9 +21,9 @@ Planned 2026-10-18 against `ideas-2026-08-27.md` (Professional) and `ideas-2026-
 | Nov 21 | Sat | What would you actually let an AI change without asking you first? Most honest answers are "nothing" — and that's the real state of AIOps adoption | ideas-2026-08-27 #33 | — |
 | Nov 24 | Tue | Spare parts are a strategy, not a storeroom — RMA time is a design constraint you've probably never written down | ideas-2026-08-27 #25 | — |
 | Nov 26 | Thu | Did your last outage change a document, or change a default? Only one of those survives you | ideas-2026-08-27 #28 | — |
-| **Nov 28** | **Sat** | **OPEN — pool exhausted** | — | — |
+| Nov 28 | Sat | If you cannot run it twice, it is not automation — idempotence is the whole game, and most scripts fail it quietly | ideas-2026-10-18 #8 | — |
 
-This plan empties the Professional pool. Eleven undeveloped rows against twelve November slots, so **Nov 28 has no idea assigned**; `/ideate for Professional` fills it, and everything from Dec 1 on.
+This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows against twelve November slots. The twelfth, Nov 28, draws from **`ideas-2026-10-18.md`**, generated the same day to refill the lane: 36 fresh rows, 35 of them gate-free.
 
 **One overlap to handle when writing.** Nov 26 (#28) argues that an outage changing a *default* outlives one that changes a document. `four-incidents-taught-me` (Oct 17) already made the default-versus-fact point. It is placed last deliberately — six weeks of separation — but write it toward postmortem artifacts and what survives a handover, not toward defaults, or it reads as a reprise of October.
 
@@ -70,10 +70,10 @@ Batch 2, transferred 2026-09-20. All five are **PUBLISHED** in `marketing/INDEX.
 
 ---
 
-**Dark days:** **Nov 28 (Sat, Professional)** is the only one, and only until the Professional pool is refilled. Every other slot from Nov 1 to Nov 30 is assigned across the three lanes.
+**Dark days:** none. Every slot from Nov 1 to Nov 30 is assigned across the three lanes.
 
-**Pool status after this plan.** Professional `ideas-2026-08-27.md`: **0 undeveloped** — fully drained. Business `ideas-2026-08-30.md`: **4 left** (`#4`, `#14`, `#16`, `#23`), about a week and a half, and three of those four were screened out for collisions rather than quality.
+**Pool status after this plan.** Professional `ideas-2026-08-27.md`: **0 undeveloped** — fully drained. `ideas-2026-10-18.md` replaces it with **35 left** of 36 (#8 goes to Nov 28), which is about three months of Professional runway. Business `ideas-2026-08-30.md`: **4 left** (`#4`, `#14`, `#16`, `#23`), roughly a week and a half, and three of those four were screened out for collisions rather than quality — so Business, not Professional, is now the lane that runs dry first.
 
-**Next open slots:** Professional **Nov 28** (unassigned) then **Dec 1** (Tue). Business **Dec 2** (Wed). Marketing **Dec 7** (Mon), already written and scheduled.
+**Next open slots:** Professional **Dec 1** (Tue). Business **Dec 2** (Wed). Marketing **Dec 7** (Mon), already written and scheduled.
 
-**December needs ideation in both lanes.** Fourteen Professional slots and thirteen Business ones against pools of 0 and 4. Marketing is covered through Dec 14 and then stops entirely — `we-hand-it-back` is held for January and there is no batch 3, which has to be written upstream in `mzs-marketing`.
+**December needs ideation in the Business lane.** Fourteen Professional slots and thirteen Business ones; Professional is covered by `ideas-2026-10-18.md`, Business has four rows and needs a fresh batch. Marketing is covered through Dec 14 and then stops entirely — `we-hand-it-back` is held for January and there is no batch 3, which has to be written upstream in `mzs-marketing`.
