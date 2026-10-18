@@ -77,9 +77,14 @@ The **Developed?** column tracks a row through the pipeline: `—` not started �
 
 After emitting the matrix and Top 5, **ask whether to save them.** On yes:
 
-- Write to `ideas/ideas-<YYYY-MM-DD>.md` (create the `ideas/` directory if it doesn't exist). Date = today.
+- Write to `ideas/ideas-<YYYY-MM-DD>-<preset>.md` — `-professional`, `-business`, or for the Marketing lane `ideas/marketing-ideas-<YYYY-MM-DD>.md`. Date = today. Create `ideas/` if it doesn't exist.
 - Save the **full matrix including the Developed? column** plus the Top 5 block.
-- If a file for today already exists, ask before overwriting.
+- **Name the target preset in the header too**, in the first line and the first paragraph. The filename is a convenience; the header is what `/schedule` and `agents/SCHEDULER.md` actually read to decide which pool feeds which slot.
+- If that exact file already exists, ask before overwriting.
+
+**Why the preset is in the filename.** Two pools can be refilled on the same day — it happened 2026-10-18, when Professional drained to zero and Business was down to four rows. The older files (`ideas-2026-08-27.md` Professional, `ideas-2026-08-30.md` Business) carry the preset only in their headers, which works solely because no two of them share a date. Leave those names alone; they are referenced by the schedule files. New files take the suffix.
+
+A pool file serves exactly one preset. Never mix presets in one matrix — the voice differs materially (personal "I" · company "we"), and `SCHEDULER.md` forbids cross-assigning a row to the other lane's slot.
 
 ---
 

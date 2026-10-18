@@ -188,7 +188,7 @@ You get a new folder like `content/2026/2026-07-01-self-inflicted-outages/` with
 
 > **Give me 30 post ideas.**
 
-You get a table of specific angles (not vague topics) crossing your content pillars with proven post formats, plus a "Top 5 to write now." When it's done, Claude **offers to save the batch** — say yes and it writes `ideas/ideas-<YYYY-MM-DD>.md` with a **Developed?** column that tracks each idea's status (`—` untouched → `drafting` → `SHIP` → `PUBLISHED · <slug>`). That file is your running backlog; as you write posts, the column keeps up. Pick one and go back to Step 1:
+You get a table of specific angles (not vague topics) crossing your content pillars with proven post formats, plus a "Top 5 to write now." When it's done, Claude **offers to save the batch** — say yes and it writes `ideas/ideas-<YYYY-MM-DD>-<preset>.md` with a **Developed?** column that tracks each idea's status (`—` untouched → `drafting` → `SHIP` → `PUBLISHED · <slug>`). That file is your running backlog; as you write posts, the column keeps up. Pick one and go back to Step 1:
 
 > **Write idea #3 from that list through the full pipeline.**
 
@@ -520,7 +520,7 @@ agents/
   VOICE.md  FORMATTER.md  VISUAL.md  REELS.md  PUBLISH.md  SCHEDULER.md            # on-demand
   PIPELINE.md                                                                      # run mechanics
 ideas/
-  ideas-<YYYY-MM-DD>.md            # idea trackers (one per batch, preset-tagged, Developed? column)
+  ideas-<YYYY-MM-DD>-<preset>.md   # idea trackers (one per batch, one preset each, Developed? column)
   marketing-ideas-<YYYY-MM-DD>.md  # the Marketing lane's pool
   schedule-<YYYY-MM>.md            # forward publishing plans written by /schedule
 content/                           # thought leadership — INDEX.md at the tree root

@@ -14,6 +14,6 @@ Otherwise:
 1. Cross the author's content pillars with the 8 formats into a 30+ row table of *specific* angles (a real post, not a topic). Include a **Developed?** column (`—` / `drafting` / `SHIP` / `PUBLISHED`).
 2. Flag which ideas will need a cited stat.
 3. End with a "Top 5 to write now."
-4. **Ask if the user wants to save the ideas.** If yes, write them to `ideas/ideas-<YYYY-MM-DD>.md` (or `ideas/marketing-ideas-<YYYY-MM-DD>.md` for the Marketing lane) (create the `ideas/` directory if absent) — the full matrix (with the **Developed?** column) plus the Top 5.
+4. **Ask if the user wants to save the ideas.** If yes, write them to `ideas/ideas-<YYYY-MM-DD>-<preset>.md` — `-professional` or `-business`, or `ideas/marketing-ideas-<YYYY-MM-DD>.md` for the Marketing lane (create the `ideas/` directory if absent) — the full matrix (with the **Developed?** column) plus the Top 5. **Name the preset in the header as well**; `/schedule` reads the header, not the filename. One file serves one preset — never mix lanes in one matrix.
 
 If the user hands you a RESEARCH story list, use it as raw material. Do not draft full posts — when the user picks one, hand off to `/post`.

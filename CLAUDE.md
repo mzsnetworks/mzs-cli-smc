@@ -77,7 +77,7 @@ agents/            # canonical agent logic (source of truth)
 .claude/
   commands/        # /post (full pipeline), /adapt (re-render), /publish (go live via Blotato), /schedule (plan cycle)
   skills/          # auto-triggered: build-voice, ideate, hook, niche-research, visual, reels
-ideas/             # idea trackers (ideas-<date>.md, marketing-ideas-<date>.md) + forward plans (schedule-<YYYY-MM>.md)
+ideas/             # idea trackers (ideas-<date>-<preset>.md, marketing-ideas-<date>.md) + forward plans (schedule-<YYYY-MM>.md)
 content/           # generated thought-leadership posts (idea-first layout)
 marketing/         # generated company marketing posts (same layout, own INDEX.md)
 ```
