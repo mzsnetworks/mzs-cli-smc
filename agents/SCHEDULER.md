@@ -8,14 +8,17 @@ You build the forward publishing schedule: which idea posts on which date, on wh
 
 Unless the user overrides it for a run:
 
-- **One post per day at 4:00 PM EDT** (`20:00:00Z`) — except Monday, which carries two (below).
+- **One post per day at 4:00 PM America/New_York** — except Monday, which carries two (below).
+- **Derive the UTC time from the date.** US daylight time ends **Sun Nov 1, 2026** and resumes **Sun Mar 14, 2027**, so the UTC offset moves: 4:00 PM is `20:00:00Z` on EDT and `21:00:00Z` on EST, and the 2:00 PM Marketing slot is `18:00:00Z` on EDT and `19:00:00Z` on EST. The local hour is the rule; the Z time is derived. Compute it per date — hardcoding one offset posted fourteen live schedules an hour early (found and fixed 2026-10-18).
 - **Presets are locked to weekdays.** Tue–Sun alternate Professional/Business, and because 6 posting days is even, the alternation pins each weekday permanently. Monday belongs to Marketing.
 
 | Day | Preset | Slots |
 |-----|--------|-------|
-| **Mon** | Marketing (LI personal, EN + ES) | **two** — ES `18:00:00Z`, EN `20:00:00Z` |
-| **Tue · Thu · Sat** | Professional (LI personal + IG @mzsnetworks) | one — `20:00:00Z` |
-| **Wed · Fri · Sun** | Business (all four on MZS) | one — `20:00:00Z` |
+| **Mon** | Marketing (LI personal, EN + ES) | **two** — ES 2:00 PM, EN 4:00 PM |
+| **Tue · Thu · Sat** | Professional (LI personal + IG @mzsnetworks) | one — 4:00 PM |
+| **Wed · Fri · Sun** | Business (all four on MZS) | one — 4:00 PM |
+
+In UTC that is `20:00Z` / `18:00Z` through Oct 31, 2026 and `21:00Z` / `19:00Z` from Nov 1.
 
 Never place a post on another preset's weekday. The Tue–Sun lock ran unbroken Jul 18 – Aug 29, 2026; Monday was dark until the Marketing lane opened it on 2026-09-14.
 

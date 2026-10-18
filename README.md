@@ -290,7 +290,7 @@ You never have to name an agent or edit a rule file. Claude picks the right agen
 
 ### The standing cadence — one preset per weekday
 
-One post daily at **4:00 PM EDT**, presets alternating Tuesday through Sunday. Six posting days is an even number, so the alternation locks each weekday to one preset permanently. **Monday belongs to Marketing** and is the one day carrying two slots:
+One post daily at **4:00 PM America/New_York** (`20:00:00Z` on EDT, `21:00:00Z` on EST — daylight time ended Nov 1, 2026), presets alternating Tuesday through Sunday. Six posting days is an even number, so the alternation locks each weekday to one preset permanently. **Monday belongs to Marketing** and is the one day carrying two slots:
 
 | Day | Preset | Slots |
 |-----|--------|-------|
@@ -379,7 +379,7 @@ The **Professional** variant is identical except the audience: personal LinkedIn
 
 ### Worked example 5 — planning a cycle with `/schedule`
 
-The queue runs on the weekday-locked cadence above — **Marketing Mon, Professional Tue/Thu/Sat, Business Wed/Fri/Sun**, everything at 4pm EDT except Monday's Spanish slot at 2pm. When the queue tail approaches, plan the next cycle:
+The queue runs on the weekday-locked cadence above — **Marketing Mon, Professional Tue/Thu/Sat, Business Wed/Fri/Sun**, everything at 4pm local except Monday's Spanish slot at 2pm. When the queue tail approaches, plan the next cycle:
 
 **You type:**
 > /schedule
@@ -420,7 +420,7 @@ The `marketing/` lane is the same pipeline with a different ending and a second 
 **You type:**
 > /publish drift-is-a-visibility-problem — Marketing
 
-**Claude:** asks nothing — the Marketing preset fixes the platform (your personal LinkedIn), the target (no company page), and both times. It shows the Spanish and English text side by side and waits. On your "publish," two submissions go out for **Monday Sep 14**: Spanish at 2:00 PM EDT, English at 4:00 PM. Then `published.md` and the INDEX row flip to PUBLISHED.
+**Claude:** asks nothing — the Marketing preset fixes the platform (your personal LinkedIn), the target (no company page), and both times. It shows the Spanish and English text side by side and waits. On your "publish," two submissions go out for **Monday Sep 14**: Spanish at 2:00 PM, English at 4:00 PM. Then `published.md` and the INDEX row flip to PUBLISHED.
 
 > **Where the marketing voice comes from.** `rules/MARKETING.md` and `rules/SPANISH.md` are ported from the upstream `mzs-marketing` repo — its `mzs-brand` skill holds the voice and the glossary, `.agents/product-marketing.md` holds the products and CTA conventions. Edit the copy here; change the *voice* upstream and re-port, so the two repos don't drift.
 

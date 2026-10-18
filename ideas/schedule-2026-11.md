@@ -1,6 +1,8 @@
 # Publishing Schedule — Nov 2026
 
-Standing cadence: **one post daily at 4:00 PM EDT — Professional Tue/Thu/Sat, Business Wed/Fri/Sun. Mondays are the Marketing lane** and carry two slots for one idea: ES at 2:00 PM EDT (`18:00:00Z`), EN at 4:00 PM (`20:00:00Z`).
+Standing cadence: **one post daily at 4:00 PM local — Professional Tue/Thu/Sat, Business Wed/Fri/Sun. Mondays are the Marketing lane** and carry two slots for one idea: ES at 2:00 PM, EN at 4:00 PM.
+
+> **November runs on EST.** Daylight time ended Sun Nov 1, so every slot this month is `21:00:00Z` for 4:00 PM and `19:00:00Z` for the Marketing ES slot — not the `20:00Z`/`18:00Z` used through Oct 31, which now lands an hour early.
 
 Fire each with: `/publish <idea> - <preset>, <date> 4pm`. A Marketing row fires both languages in one run. Mark rows DONE (with slug) as they're scheduled; update the source ideas file + the lane's INDEX per the normal publish flow.
 

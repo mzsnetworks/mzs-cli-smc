@@ -8,7 +8,7 @@ Sourced from the `mzs-marketing` repo, which owns the brand voice, the ES glossa
 
 Those upstream rules are ported into `rules/MARKETING.md` and `rules/SPANISH.md`, which is what the agents in this repo actually read. Edit the copy here; if the voice or positioning itself needs to change, change it upstream and re-port.
 
-**Track:** Marketing preset — LinkedIn only, Luis's **personal profile**, twice per idea: Spanish at 2:00 PM EDT (`18:00:00Z`) and English at 4:00 PM EDT (`20:00:00Z`), on **Mondays**. No company page, no Facebook, no Instagram, no X.
+**Track:** Marketing preset — LinkedIn only, Luis's **personal profile**, twice per idea: Spanish at 2:00 PM local and English at 4:00 PM local, on **Mondays** — `18:00Z`/`20:00Z` on EDT, `19:00Z`/`21:00Z` on EST. No company page, no Facebook, no Instagram, no X.
 
 Ordered by **scheduled publish date**, newest first. The `Date` column is the *transfer* date (see "On dates" below), so it does not sort with the table.
 

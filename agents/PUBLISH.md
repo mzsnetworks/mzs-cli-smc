@@ -55,8 +55,8 @@ One idea produces **two** `blotato_create_post` calls, both to LinkedIn account 
 
 | Render | Text | Scheduled time |
 |--------|------|----------------|
-| `linkedin-es.md` | Spanish | **2:00 PM EDT** = `18:00:00Z` |
-| `linkedin.md` | English | **4:00 PM EDT** = `20:00:00Z` |
+| `linkedin-es.md` | Spanish | **2:00 PM** local — `18:00:00Z` on EDT, `19:00:00Z` on EST |
+| `linkedin.md` | English | **4:00 PM** local — `20:00:00Z` on EDT, `21:00:00Z` on EST |
 
 Same date — Spanish fires first. Marketing posts run **Mondays** (see `agents/SCHEDULER.md`), so the date is a Monday unless the user overrides it.
 

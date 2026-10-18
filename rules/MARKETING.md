@@ -13,7 +13,7 @@ The two lanes differ in one structural way: a `content/` post ends on a question
 - **Platform:** LinkedIn only — Luis Mazariegos' **personal profile**. No company page, no Facebook, no Instagram, no X.
 - **Languages:** every idea ships EN and ES. Two posts, same day, same profile.
 - **Renders per idea:** `master.md` · `linkedin.md` · `linkedin-es.md`. That is the complete set.
-- **Cadence:** Mondays. ES at 2:00 PM EDT (`18:00:00Z`), EN at 4:00 PM EDT (`20:00:00Z`).
+- **Cadence:** Mondays. ES at 2:00 PM local, EN at 4:00 PM local — `18:00Z`/`20:00Z` on EDT, `19:00Z`/`21:00Z` on EST.
 
 Because the posts run from a personal profile, they are written in the **first person** — "what 19 years of running production networks taught me," not "MZS Networks has 19 years of experience." The company is named as the thing the author builds, not as the speaker.
 

@@ -1,13 +1,13 @@
 # Published — tools-that-dont-talk
 
 **Preset:** Marketing — LinkedIn only, Luis Mazariegos' personal profile (Blotato account `26694`, no `pageId`).
-**Scheduled:** Mon Nov 16 (2026-11-16). Spanish at 2:00 PM EDT, English at 4:00 PM EDT.
+**Scheduled:** Mon Nov 16 (2026-11-16). Spanish at 2:00 PM EST, English at 4:00 PM EST.
 **Submitted:** 2026-09-20 via Blotato MCP, in the Nov 2 – Dec 14 batch. Both accepted, no failures.
 
 | Time (UTC) | Local | Platform | Language | Render | Submission ID | Status |
 |------------|-------|----------|----------|--------|---------------|--------|
-| 2026-11-16T18:00:00Z | 2:00 PM | LinkedIn (personal) | ES | `linkedin-es.md` | `5b4b9fe4-bddc-4ca9-9266-e26062ef50c4` | SCHEDULED |
-| 2026-11-16T20:00:00Z | 4:00 PM | LinkedIn (personal) | EN | `linkedin.md` | `c7793523-11fb-480f-9c8e-773fa467bddd` | SCHEDULED |
+| 2026-11-16T19:00:00Z | 2:00 PM | LinkedIn (personal) | ES | `linkedin-es.md` | `5b4b9fe4-bddc-4ca9-9266-e26062ef50c4` | SCHEDULED |
+| 2026-11-16T21:00:00Z | 4:00 PM | LinkedIn (personal) | EN | `linkedin.md` | `c7793523-11fb-480f-9c8e-773fa467bddd` | SCHEDULED |
 
 **Media:** both submissions carry the same text-free hero, `hero-01.jpg` → `https://zipline.mzstools.net/raw/smc-1789937841245-2.jpg`. URL read from `hero.json`, never typed, and verified to return JPEG bytes after submission. Zipline expires files after 90 days (≈2026-12-19) — **that falls before some of these publish dates**, but Blotato fetched and stored the media at submission time, so the scheduled posts are unaffected. The local file is the durable copy.
 
@@ -18,3 +18,5 @@
 The live schedule was corrected in place via `blotato_update_schedule` on schedule id `4644760` (the EN Nov 16 20:00:00Z entry; distinct from the submission id `c7793523-11fb-480f-9c8e-773fa467bddd` recorded above — the update API keys on schedule id, retrievable only through `blotato_list_schedules`). The existing Blotato-hosted media URL was passed through unchanged so the image was not re-fetched, and the amended text was read back with `blotato_get_schedule` to confirm.
 
 Also worth recording: Blotato copies submitted media into its own storage at submission time, so the Zipline 90-day expiry does not affect already-scheduled posts.
+
+**Rescheduled 2026-10-18 for the EST changeover.** This post was submitted at the EDT offset (`18:00Z`/`20:00Z`), but US daylight time ends Sun Nov 1, so those times land at 1:00 PM and 3:00 PM local — an hour early. Both slots were moved via `blotato_update_schedule` (ES id `4644748`, EN id `4644760`), passing only the new `scheduledTime` and omitting `post`, which leaves the draft and its media untouched. Verified afterwards: both land at the intended local hour and still carry their hero.

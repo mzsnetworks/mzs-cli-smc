@@ -15,7 +15,7 @@ Follow `agents/PUBLISH.md` exactly. In short:
 
 3. **Backfill.** If a render is missing (e.g. `facebook.md` on an older post), run Adapter → Editor → Hashtag → Scorer for that platform to SHIP first.
 
-3. **Ask the run questions** (one round): platforms to publish, LinkedIn personal vs company page, timing (now / next free slot / scheduled), and single-vs-thread for X. A named preset answers the first two; the **Marketing** preset answers all four — LinkedIn personal profile, twice, ES at `18:00:00Z` and EN at `20:00:00Z` on the same Monday — so ask nothing and go straight to the final gate.
+3. **Ask the run questions** (one round): platforms to publish, LinkedIn personal vs company page, timing (now / next free slot / scheduled), and single-vs-thread for X. A named preset answers the first two; the **Marketing** preset answers all four — LinkedIn personal profile, twice, ES at 2:00 PM and EN at 4:00 PM local on the same Monday (`18:00Z`/`20:00Z` on EDT, `19:00Z`/`21:00Z` on EST — check which applies to the date) — so ask nothing and go straight to the final gate.
 
 4. **Media.** Instagram requires media — use the folder's carousel or infographic; if none exists, run the Visual agent (with its approval gate) first. Upload local PNGs via `blotato_create_presigned_upload_url` + `curl PUT`, then use the public URLs. **Read every media URL out of `hero.json`; never type one from memory.** Marketing ES posts take a text-free hero or nothing — never carousel slides.
 
