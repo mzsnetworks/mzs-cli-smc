@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-11-21 | `without-asking-you` | AIOps adoption is measured by what you let a platform change unsupervised, and the blocker is reversibility and audit trail rather than model quality | LI · IG | hero (16:9 + 4:5) | **SHIP** |
-| 2026-11-19 | `three-weeks-over` | A brownfield estimate has to price the discovery, not the designed work — ask how the inventory was produced and who decides on what it missed | LI · IG | hero (16:9 + 4:5) | **SHIP** |
-| 2026-11-17 | `a-guess-with-timestamps` | A device whose clock is wrong silently invalidates every cross-device log correlation, and nothing alarms on it | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-11-21 | `without-asking-you` | AIOps adoption is measured by what you let a platform change unsupervised, and the blocker is reversibility and audit trail rather than model quality | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 21 4pm EST · LI personal + IG) |
+| 2026-11-19 | `three-weeks-over` | A brownfield estimate has to price the discovery, not the designed work — ask how the inventory was produced and who decides on what it missed | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 19 4pm EST · LI personal + IG) |
+| 2026-11-17 | `a-guess-with-timestamps` | A device whose clock is wrong silently invalidates every cross-device log correlation, and nothing alarms on it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 17 4pm EST · LI personal + IG) |
 | 2026-11-14 | `i-dont-know-yet` | Vague progress language during an incident costs more than admitting uncertainty, because listeners make decisions from it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 14 4pm EST · LI personal + IG) |
 | 2026-11-12 | `im-the-one-who-signs-it` | The accuracy argument about AI-written config is beside the point; the operative question is who answers for it in review | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 12 4pm EST · LI personal + IG) |
 | 2026-11-10 | `eol-is-a-design-input` | An EOL notice reaches contract managers rather than designers, so the architecture decision gets arrived at by waiting | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 10 4pm EST · LI personal + IG) |
