@@ -18,9 +18,9 @@ Planned 2026-10-18 against `ideas-2026-08-27.md` (Professional) and `ideas-2026-
 | Nov 10 | Tue | EOL notices are a design input, not a purchasing problem — by the time it's a budget line the architecture decision has been made for you | ideas-2026-08-27 #8 | DONE · `eol-is-a-design-input` |
 | Nov 12 | Thu | I use AI to write configs daily and still read every line — not because it's usually wrong, but because I'm the one who signs it | ideas-2026-08-27 #11 | DONE · `im-the-one-who-signs-it` |
 | Nov 14 | Sat | Have you ever been unable to say "I don't know yet" during an incident? The silence costs more than the admission | ideas-2026-08-27 #21 | DONE · `i-dont-know-yet` |
-| Nov 17 | Tue | Your NTP is wrong somewhere, and every log correlation you did last quarter was a guess with timestamps on it | ideas-2026-08-27 #5 | — |
-| Nov 19 | Thu | The migration estimate I missed by three weeks — and the two questions I now ask before quoting any brownfield project | ideas-2026-08-27 #17 | — |
-| Nov 21 | Sat | What would you actually let an AI change without asking you first? Most honest answers are "nothing" — and that's the real state of AIOps adoption | ideas-2026-08-27 #33 | — |
+| Nov 17 | Tue | Your NTP is wrong somewhere, and every log correlation you did last quarter was a guess with timestamps on it | ideas-2026-08-27 #5 | DONE · `a-guess-with-timestamps` |
+| Nov 19 | Thu | The migration estimate I missed by three weeks — and the two questions I now ask before quoting any brownfield project | ideas-2026-08-27 #17 | DONE · `three-weeks-over` |
+| Nov 21 | Sat | What would you actually let an AI change without asking you first? Most honest answers are "nothing" — and that's the real state of AIOps adoption | ideas-2026-08-27 #33 | DONE · `without-asking-you` |
 | Nov 24 | Tue | Spare parts are a strategy, not a storeroom — RMA time is a design constraint you've probably never written down | ideas-2026-08-27 #25 | — |
 | Nov 26 | Thu | Did your last outage change a document, or change a default? Only one of those survives you | ideas-2026-08-27 #28 | — |
 | Nov 28 | Sat | If you cannot run it twice, it is not automation — idempotence is the whole game, and most scripts fail it quietly | ideas-2026-10-18 #8 | — |
