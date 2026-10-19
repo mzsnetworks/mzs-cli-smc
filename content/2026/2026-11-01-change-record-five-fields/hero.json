@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792368096730-0.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: a desk at night seen from slightly above. A single open ring binder of printed records lies under a pool of desk-lamp light, its pages dense with filled-in form fields rendered purely as abstract texture and ruled boxes, completely illegible, with no readable letterforms anywhere. Beside it an unattended laptop glows soft cream. The chair is pushed back and empty. One red element only: the small indicator light on a desk phone. The room beyond falls away into deep dark navy. Deep dark navy dominates every surface and every background plane, never blue, never cyan, no teal anywhere. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the first roll. The form reads as texture with no letterforms, which was the risk in this brief — a records-and-forms scene is the most likely of the three to hallucinate copy. Empty chair plus a lit phone indicator carries 'complete and useless at the hour it is needed' without text."
+  }
+ ]
+}

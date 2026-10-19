@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-02.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792368168105-0.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: a corporate lobby after hours, wide and low-lit, seen from inside. An empty reception desk glowing soft cream, vacant seating, and a tall glass wall onto a dark parking lot. Through the glass, far away and small in frame, a single parked car with its interior lit faintly warm, the figure inside indistinct and unidentifiable, not the focal point. On the interior wall, a small wall-mounted wireless access point. EXACTLY ONE red element exists in this entire image: a single tiny indicator light on that access point. There is no second red light anywhere, no red dot on any column, wall, panel or ceiling, no red reflection, no red glow in the parking lot. Every background surface — walls, columns, floor, ceiling, window mullions, the lot beyond — is deep dark navy (#161a45), never a lighter or more saturated blue, never slate blue, never blue-grey, never steel blue, never cyan or teal. Soft cream (#F4EFE3) is the only highlight. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the second roll. hero-01 was rejected for TWO faults: a second red element (a small red dot on the column beside the access point — the standing 'exactly one red' guard was in the prompt and was still violated), and a palette drift to blue-grey rather than deep navy. The re-roll names the one permitted red explicitly, enumerates where red must NOT appear, and lists the specific wrong blues (slate, blue-grey, steel) rather than only 'never blue'. Lesson for the next brief: when a scene has several plausible indicator surfaces, name the single one that may carry the accent."
+  }
+ ]
+}

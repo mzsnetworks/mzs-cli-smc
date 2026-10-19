@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-11-06 | `done-meant-applied` | A window that finishes early usually skipped verification; "done" has to mean verified against a named condition, not applied without error | LI · FB · IG · X | — | **SHIP** |
-| 2026-11-04 | `guest-wifi-is-a-posture` | Guest Wi-Fi gets designed around the captive portal, which is the least consequential decision in it | LI · FB · IG · X | — | **SHIP** |
-| 2026-11-01 | `change-record-five-fields` | Change records are written to satisfy a process rather than to be read; five fields make one useful mid-incident | LI · FB · IG · X | — | **SHIP** |
+| 2026-11-06 | `done-meant-applied` | A window that finishes early usually skipped verification; "done" has to mean verified against a named condition, not applied without error | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
+| 2026-11-04 | `guest-wifi-is-a-posture` | Guest Wi-Fi gets designed around the captive portal, which is the least consequential decision in it | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
+| 2026-11-01 | `change-record-five-fields` | Change records are written to satisfy a process rather than to be read; five fields make one useful mid-incident | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
 | 2026-10-27 | `not-in-monitoring` | The device that is not in monitoring is the one that pages you — coverage measured against the inventory can never see what the inventory missed | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Oct 27 4pm · LI personal + IG) |
 | 2026-10-29 | `the-change-you-didnt-make` | Deciding not to act is a decision that leaves no artifact, so deferrals accumulate outside every review process | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Oct 29 4pm · LI personal + IG) |
 | 2026-10-31 | `binary-search-at-3am` | Tired pattern-matching is guessing with confidence; halving the path pays off precisely when you are wrong | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Oct 31 4pm · LI personal + IG) |

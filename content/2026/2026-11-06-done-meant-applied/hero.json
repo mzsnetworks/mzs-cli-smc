@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-02.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792368168110-1.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: a server room aisle seen down its full length. At the near end, rack doors stand open with the work plainly finished, tools gone, nobody present. A rolling stool sits abandoned mid-aisle. At the far end of the aisle, past the softly lit racks, one equipment bay sits completely dark and unresolved. Soft cream light from the open racks falls in bands across the floor. One red element only: a single small indicator burning on that far dark bay. The entire scene is deep dark navy (#161a45) — the racks, the walls, the ceiling, the floor and every shadow are unmistakably navy-toned, NOT neutral grey, NOT charcoal, NOT black, NOT silver. Navy is the dominant color of the image and must be obvious at a glance, while never becoming a lighter or more saturated blue, never slate blue, never cyan or teal. Soft cream (#F4EFE3) is the only highlight. Exactly one red element in the entire image, nothing else is red. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the second roll. hero-01 had the right composition but came back almost monochrome charcoal — navy was absent, so it would not have sat beside the other two heroes in the same week. 'Deep dark navy dominates' was already in the prompt and was not enough; the re-roll had to exclude the wrong neutrals by name (NOT grey, NOT charcoal, NOT black, NOT silver) and say navy must be obvious at a glance. Lesson: the navy guard protects against blue drift but not against desaturation."
+  }
+ ]
+}
