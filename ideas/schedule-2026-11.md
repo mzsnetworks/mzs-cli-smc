@@ -33,9 +33,9 @@ This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows agai
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Nov 1 | Sun | A change record worth reading has five fields: what changed, why, who approved, how to undo it, and the one-line business reason | ideas-2026-08-30 #26 | — |
-| Nov 4 | Wed | Guest Wi-Fi is a security posture, not an amenity — the captive portal is the least interesting decision in it | ideas-2026-08-30 #7 | — |
-| Nov 6 | Fri | The maintenance window that finished early, and the outage it caused on Monday — because "done" meant applied, not verified | ideas-2026-08-30 #30 | — |
+| Nov 1 | Sun | A change record worth reading has five fields: what changed, why, who approved, how to undo it, and the one-line business reason | ideas-2026-08-30 #26 | DONE · `change-record-five-fields` |
+| Nov 4 | Wed | Guest Wi-Fi is a security posture, not an amenity — the captive portal is the least interesting decision in it | ideas-2026-08-30 #7 | DONE · `guest-wifi-is-a-posture` |
+| Nov 6 | Fri | The maintenance window that finished early, and the outage it caused on Monday — because "done" meant applied, not verified | ideas-2026-08-30 #30 | DONE · `done-meant-applied` |
 | Nov 8 | Sun | SD-WAN didn't remove the WAN engineer — it moved the hard part to defining what "good" means per application, and nobody wants to own that | ideas-2026-08-30 #2 | — |
 | Nov 11 | Wed | Post-incident actions expire — if it isn't scheduled, staffed and dated, it's a feeling somebody had on a bad day | ideas-2026-08-30 #33 | — |
 | Nov 13 | Fri | Who owns the network in your organization? Not who runs it — who decides | ideas-2026-08-30 #27 | — |
