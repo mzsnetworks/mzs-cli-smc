@@ -438,6 +438,10 @@ def check_post(d):
         # an English too long to leave room -- but not this one, where the
         # Spanish simply tracks the English clause for clause. Both halves are
         # needed; a render can pass every length band and still be thin.
+        #
+        # Supersedes a weaker version of this check that fired only below 1.05
+        # AND under 1700 ES characters, which missed the whole 1.05-1.15 band
+        # where ten of the fifteen batch-1 and batch-2 renders actually sat.
         ratio = len(es) / len(en) if en else 0
         if ratio < ES_EN_RATIO_MIN:
             warns.append(
@@ -461,9 +465,6 @@ def check_post(d):
                 r = len(b_) / max(len(a_), 1)
                 if not 0.80 <= r <= 1.90:
                     warns.append(f"{name}: paragraph {i} ES/EN length ratio {r:.2f} (EN {len(a_)}, ES {len(b_)})")
-        r = len(es) / len(en)
-        if r < 1.05 and len(es) < 1700:
-            warns.append(f"{name}: overall ES/EN ratio {r:.2f}, ES {len(es)} chars — the Spanish may be tracking the English sentence for sentence")
     return fails, warns
 
 def main():

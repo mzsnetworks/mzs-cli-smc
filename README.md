@@ -463,7 +463,7 @@ Everything an agent does is governed by the files in `rules/`:
 | Instagram — over a carousel | **600–900 chars** | >900 | ~125 chars (first line) |
 | Instagram — under one image | **125–220 chars** | <100 or >400 | ~125 chars (first line) |
 | Instagram — Professional (hero-only) | **900–1400 chars** | <600 or >1600 | ~125 chars (first line) |
-| X — single | **240–270 chars** | >280 | whole post visible |
+| **X — single** | 240–270 chars — *stated, not enforced* | >280 | whole post visible |
 | X — thread | **≤280/tweet**, one idea per tweet | >280 on any tweet | tweet 1 is the hook |
 | **LinkedIn (Spanish)** | **1,700–2,000 chars** | <1,500 or >2,200 | **~210 chars — unchanged** |
 

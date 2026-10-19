@@ -44,7 +44,7 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 | Instagram — caption over a carousel | **600–900 chars** | >900 | ~125 chars (first line) |
 | Instagram — caption under one image | **125–220 chars** | <100 or >400 | ~125 chars (first line) |
 | Instagram — Professional (hero-only) | **900–1400 chars** | <600 or >1600 | ~125 chars (first line) |
-| X — single | **240–270 chars** | >280 | whole post visible |
+| X — single | 240–270 chars — *stated, not enforced* | >280 | whole post visible |
 | X — thread | **≤280 per tweet**, one idea each | >280 on any tweet | tweet 1 is the hook |
 
 **`tools/check-renders.py` is the source of truth for these numbers.** Its `SPEC` table holds them in executable form; this table restates them for readers. If the two ever disagree, the checker is right and this file is stale — fix it here, and change a threshold in the checker first, with a fixture in `tools/fixtures/` that proves the new behavior.
@@ -52,6 +52,8 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 **Draft to the target, not to the FAIL line.** Output reliably clusters 1–5% under whatever number is actually *enforced* and never approaches a number that is merely *stated*. Facebook sat at 774–798 for two months against a prose cap of 800; the first batch written against an enforced warning at 750 landed at 621–711. That is why the bands above are narrow and why the checker warns inside the cap: a stated ceiling becomes the target, so the ceiling has to be the number you actually want.
 
 **The warning is symmetric — the floor is enforced too.** Until 2026-10-19 only the ceiling was, on the reasoning that long is the dangerous direction. It is not the only one. A render under its floor has dropped a beat of the argument rather than padded one, and 31 renders were sitting below theirs with nothing saying so. In the bilingual lane that compounds: short English is where thin Spanish starts, because the Spanish is written against it.
+
+**X is the one exception, and the table says so.** `x.md` never reaches the draft-target check — it is parsed separately for its `## Single` and `## Thread` sections and gated on the hard 280 cap. So 240–270 is advice, not a rule, and by this file's own argument a number that is merely stated does not shape output. Enforcing it means giving `x.md` a SPEC entry and routing the single post through the same band check as everything else; worth doing, not done.
 
 The Editor tightens to the draft target; the Scorer's "platform fit" dimension checks it. **`python3 tools/check-renders.py <postdir>` verifies all of it mechanically** — run it before publish, always.
 
