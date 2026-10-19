@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792377575227-2.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "A dust-covered closed binder on an empty shelf, one red ribbon marking a page nobody has opened — the postmortem document that transmits nothing because nobody goes looking. Approved first roll, both aspects. The cover stayed blank, which is the check on anything book-shaped."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792377575231-3.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — composed separately; a 16:9 hero gets cropped in the IG feed.",
+   "generated": "2026-10-18",
+   "qa": "A dust-covered closed binder on an empty shelf, one red ribbon marking a page nobody has opened — the postmortem document that transmits nothing because nobody goes looking. Approved first roll, both aspects. The cover stayed blank, which is the check on anything book-shaped."
+  }
+ ]
+}

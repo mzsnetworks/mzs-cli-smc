@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-11-28 | `run-it-twice` | A script that only works on a clean device is a one-shot procedure; the operational value is the second run, and scripts fail idempotence silently | LI · IG | — | **SHIP** |
-| 2026-11-26 | `what-survives-you` | A postmortem that produces a document transmits the lesson only to people who go looking; a changed default enforces it on people who never heard the story | LI · IG | — | **SHIP** |
-| 2026-11-24 | `rma-is-a-design-input` | Replacement time is a design constraint decided years earlier by a support contract, and the resilience design was never reviewed against the real number | LI · IG | — | **SHIP** |
+| 2026-11-28 | `run-it-twice` | A script that only works on a clean device is a one-shot procedure; the operational value is the second run, and scripts fail idempotence silently | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-11-26 | `what-survives-you` | A postmortem that produces a document transmits the lesson only to people who go looking; a changed default enforces it on people who never heard the story | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-11-24 | `rma-is-a-design-input` | Replacement time is a design constraint decided years earlier by a support contract, and the resilience design was never reviewed against the real number | LI · IG | hero (16:9 + 4:5) | **SHIP** |
 | 2026-11-21 | `without-asking-you` | AIOps adoption is measured by what you let a platform change unsupervised, and the blocker is reversibility and audit trail rather than model quality | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 21 4pm EST · LI personal + IG) |
 | 2026-11-19 | `three-weeks-over` | A brownfield estimate has to price the discovery, not the designed work — ask how the inventory was produced and who decides on what it missed | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 19 4pm EST · LI personal + IG) |
 | 2026-11-17 | `a-guess-with-timestamps` | A device whose clock is wrong silently invalidates every cross-device log correlation, and nothing alarms on it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 17 4pm EST · LI personal + IG) |

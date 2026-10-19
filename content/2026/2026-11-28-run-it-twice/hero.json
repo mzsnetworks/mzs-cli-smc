@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792377575238-4.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "A hand press beside two identical plain circular impressions — the same operation applied twice, producing the same result. Approved first roll, both aspects. Plain circles rather than a stamped mark keeps it clear of letterforms, which is the risk on anything that prints."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792377575258-5.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — composed separately; a 16:9 hero gets cropped in the IG feed.",
+   "generated": "2026-10-18",
+   "qa": "A hand press beside two identical plain circular impressions — the same operation applied twice, producing the same result. Approved first roll, both aspects. Plain circles rather than a stamped mark keeps it clear of letterforms, which is the risk on anything that prints."
+  }
+ ]
+}
