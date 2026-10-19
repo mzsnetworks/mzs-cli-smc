@@ -10,8 +10,8 @@ Run the **VISUAL agent**. Read `agents/VISUAL.md`, `rules/SHARED.md`, `rules/VOI
 1. Route the post: **carousel** (multi-point), **infographic** (framework/stats), or **hero image** (illustrative scene, no text in image).
 2. Build the brief (slides/sections, or the hero prompt + aspect) and **show it for approval — wait for explicit "generate."**
 3. Produce the asset:
-   - **Carousel:** write `carousel-spec.md` + `carousel.json` → `node tools/render-carousel.mjs <tree>/<year>/<date>-<slug>` → `carousel-01.png … NN.png`.
-   - **Infographic:** write `infographic.json` → `node tools/render-infographic.mjs <tree>/<year>/<date>-<slug>` → `infographic.png`.
+   - **Carousel:** write `carousel-spec.md` + `carousel.json` → `node tools/render-carousel.mjs <tree>/<year>/<month>/<date>-<slug>` → `carousel-01.png … NN.png`.
+   - **Infographic:** write `infographic.json` → `node tools/render-infographic.mjs <tree>/<year>/<month>/<date>-<slug>` → `infographic.png`.
    - **Hero:** brand-template prompt → POST to the SMC Image Generator webhook (creds in `.env`; call pattern in `agents/VISUAL.md`) → QA the image with the user → save `hero-NN.<ext>` + `hero.json` (with the Zipline URL) into the folder.
 4. QA, iterate, re-run until on-brand. **Ask first whether the image argues what the post argues** — an image can be well executed and still invert the thesis, and that is the one failure no tool catches. Then check palette, text, and matting. Record in `hero.json` why any rejected roll was rejected.
 5. Update the post's row in its own tree's index — `content/INDEX.md` or `marketing/INDEX.md` (Visual column → `carousel` / `infographic` / `hero`).

@@ -120,8 +120,8 @@ def main():
     # Baseline filter. Fixtures cannot exercise this (it reads git history for
     # content/ and marketing/), so assert against two real posts: one written
     # before the bands changed and one after.
-    OLD = 'content/2026/2026-10-03-on-call-makes-careers/'
-    NEW = 'content/2026/2026-10-24-bought-and-never-enabled/'
+    OLD = 'content/2026/10/2026-10-03-on-call-makes-careers/'
+    NEW = 'content/2026/10/2026-10-24-bought-and-never-enabled/'
     if os.path.isdir(OLD) and os.path.isdir(NEW):
         skipped = cr.pre_baseline([OLD, NEW])
         if OLD in skipped and NEW not in skipped:

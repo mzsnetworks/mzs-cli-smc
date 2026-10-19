@@ -50,10 +50,10 @@ If Factcheck fails, send back to the Writer — fix or source the claim before a
 One idea is one dated folder. The Writer creates `master.md`; the Adapter writes the lane's renders beside it:
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/
+content/<year>/<month>/<YYYY-MM-DD>-<slug>/
   master.md  linkedin.md  facebook.md  instagram.md  x.md
 
-marketing/<year>/<YYYY-MM-DD>-<slug>/
+marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/
   master.md  linkedin.md  linkedin-es.md
 ```
 
@@ -84,7 +84,7 @@ marketing/<year>/<YYYY-MM-DD>-<slug>/
 
 ## Running the Full Pipeline
 
-Let `DIR = <tree>/<year>/<YYYY-MM-DD>-<slug>/` for the idea, where `<tree>` is `content` or `marketing`.
+Let `DIR = <tree>/<year>/<month>/<YYYY-MM-DD>-<slug>/` for the idea, where `<tree>` is `content` or `marketing`.
 
 For a `marketing/` idea, every step below also reads `rules/MARKETING.md`, and the ES steps read `rules/SPANISH.md`.
 

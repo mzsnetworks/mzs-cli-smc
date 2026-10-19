@@ -9,7 +9,7 @@ Target idea: **$ARGUMENTS**
 
 ## Steps
 
-1. **Locate the folder.** Resolve `$ARGUMENTS` to `<tree>/<year>/<YYYY-MM-DD>-<slug>/`. If only a slug was given, search **both** trees — `content/` and `marketing/` — via their INDEX files. The tree you find it in sets the lane for every step below. Confirm `master.md` exists — if not, stop and tell the user to run `/post` instead.
+1. **Locate the folder.** Resolve `$ARGUMENTS` to `<tree>/<year>/<month>/<YYYY-MM-DD>-<slug>/`. If only a slug was given, search **both** trees — `content/` and `marketing/` — via their INDEX files. The tree you find it in sets the lane for every step below. Confirm `master.md` exists — if not, stop and tell the user to run `/post` instead.
 
 2. **Confirm the master is clean.** Apply the FACTCHECK agent to `master.md`. If FAIL, stop and report — do not adapt an unverified master.
 

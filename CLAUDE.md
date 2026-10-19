@@ -87,7 +87,7 @@ marketing/         # generated company marketing posts (same layout, own INDEX.m
 Posts are **idea-first**. One idea = one dated folder holding all its platform versions. Both trees use the identical layout; only the render set differs:
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/        marketing/<year>/<YYYY-MM-DD>-<slug>/
+content/<year>/<month>/<YYYY-MM-DD>-<slug>/        marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/
   master.md      # fact-checked source       master.md       # fact-checked source
   linkedin.md    # LinkedIn render           linkedin.md     # English render
   facebook.md    # Facebook render           linkedin-es.md  # Spanish render
@@ -97,12 +97,13 @@ content/<year>/<YYYY-MM-DD>-<slug>/        marketing/<year>/<YYYY-MM-DD>-<slug>/
 ```
 
 - `<YYYY-MM-DD>` = intended publish/creation date (sorts chronologically)
+- `<month>` = the two-digit month **from the folder's own date prefix** (`06`–`12`), not the month you happen to be writing in. A post dated `2026-12-05` lives in `2026/12/` whenever it was drafted.
 - `<slug>` = short kebab-case handle from the idea's landing or thesis
 - Never scatter the renders across separate trees — they belong to one idea
 - The Adapter writes the lane's renders as siblings of `master.md`, in the same folder
 - **Each tree has its own catalog** — `content/INDEX.md` and `marketing/INDEX.md` (date, slug, title, renders, visual, status), newest-first. `/post`, `/adapt`, and `/publish` keep them current; the Visual skill updates the visual column. They're the lookup for "what's the slug for that post?" — when resolving a slug, search both.
 
-Reference set: `content/2026/2026-06-24-ai-makes-us-judges/` — the calibration examples for **hook, structure, voice, and landing**.
+Reference set: `content/2026/06/2026-06-24-ai-makes-us-judges/` — the calibration examples for **hook, structure, voice, and landing**.
 
 **Its lengths and hashtag counts are not the bar.** It predates the current bands and fails `tools/check-renders.py` on four counts (LinkedIn 2,831 chars against a 1,900 ceiling; Instagram 15 hashtags against a hard 5; `x.md` missing its `## Single` heading). When the reference set and `rules/SHARED.md` disagree, the rules win — and when the rules and the checker disagree, the checker wins.
 

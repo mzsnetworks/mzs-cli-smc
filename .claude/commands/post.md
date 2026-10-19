@@ -13,7 +13,7 @@ Follow `agents/PIPELINE.md` exactly. Apply each agent's rules from its file in `
 
 ## Steps
 
-1. **Set up the idea folder.** Pick today's date and a short kebab-case `<slug>` from the idea's thesis or landing. Create `<tree>/<year>/<YYYY-MM-DD>-<slug>/` — `<tree>` is `content` or `marketing` per the lane — and seed `master.md` with the topic/notes above. A marketing master also records its Preset, Source, Thesis, Pillar, and how any figures are justified (copy the header shape from an existing `marketing/` master).
+1. **Set up the idea folder.** Pick today's date and a short kebab-case `<slug>` from the idea's thesis or landing. Create `<tree>/<year>/<month>/<YYYY-MM-DD>-<slug>/` — `<tree>` is `content` or `marketing` per the lane — and seed `master.md` with the topic/notes above. A marketing master also records its Preset, Source, Thesis, Pillar, and how any figures are justified (copy the header shape from an existing `marketing/` master).
 
 2. **Writer** → draft `master.md` (LinkedIn-length, author's voice, hook above the fold, spine: hook → POV → cited data → judgment → landing).
 

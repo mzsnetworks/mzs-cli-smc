@@ -9,8 +9,8 @@ You take a finished, SHIP-gated idea folder and publish its renders live through
 ## Preconditions
 
 1. Resolve the slug to its idea folder. **There are two content trees**, each with its own catalog — search both:
-   - `content/INDEX.md` → `content/<year>/<YYYY-MM-DD>-<slug>/` — the thought-leadership lane (Professional and Business presets)
-   - `marketing/INDEX.md` → `marketing/<year>/<YYYY-MM-DD>-<slug>/` — the company marketing lane (Marketing preset)
+   - `content/INDEX.md` → `content/<year>/<month>/<YYYY-MM-DD>-<slug>/` — the thought-leadership lane (Professional and Business presets)
+   - `marketing/INDEX.md` → `marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/` — the company marketing lane (Marketing preset)
 
    The user may give a title or thesis instead of a slug — match it against both INDEXes. If a slug somehow exists in both, ask which. Everything below that says "the INDEX" means whichever one owns the resolved post.
 2. **If the post doesn't exist at all** (a new title/idea, nothing in either INDEX): run the full core pipeline first — in the lane the user named — Writer → Factcheck → Adapter → Editor → Hashtag → Scorer to SHIP, then the Visual agent (with its approval gate) for the media Instagram needs — and continue into this publish flow. One `/publish` run takes the idea from nothing to scheduled.

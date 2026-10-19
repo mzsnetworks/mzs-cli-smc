@@ -77,14 +77,14 @@ Never drop a cited statistic during adaptation. If a stat doesn't fit a shorter 
 The master already lives in its idea folder, in one of the two trees:
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/master.md      # thought leadership
-marketing/<year>/<YYYY-MM-DD>-<slug>/master.md    # marketing
+content/<year>/<month>/<YYYY-MM-DD>-<slug>/master.md      # thought leadership
+marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/master.md    # marketing
 ```
 
 Write the renders as siblings of the master, in the same folder:
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/       marketing/<year>/<YYYY-MM-DD>-<slug>/
+content/<year>/<month>/<YYYY-MM-DD>-<slug>/       marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/
   master.md       # input                   master.md        # input
   linkedin.md     # you write                linkedin.md     # you write
   facebook.md     # you write                linkedin-es.md  # you write
@@ -101,7 +101,7 @@ Each render is self-contained and ready to publish. Never scatter the renders ac
 ```
 Read rules/SHARED.md, the rules/ platform files the lane needs, and
 rules/VOICE.md (if it exists), plus the master at
-<tree>/<year>/<date>-<slug>/master.md.
+<tree>/<year>/<month>/<date>-<slug>/master.md.
 
 For a content/ master: render into linkedin.md, facebook.md, instagram.md,
 and x.md in that same folder.

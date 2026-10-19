@@ -37,7 +37,7 @@ You produce the **master version** of a post — usually LinkedIn-length. The Pl
 
 ## What "Strong" Looks Like
 
-The reference `content/2026/2026-06-24-ai-makes-us-judges/linkedin.md`:
+The reference `content/2026/06/2026-06-24-ai-makes-us-judges/linkedin.md`:
 - Hook: "I've watched the industry argue about NetOps vs. NetDevOps for a decade. We never settled it. The network stopped waiting."
 - Cited data: Gartner 25%-of-configs-by-2027, 70% Day-2, 44%→65% automation adoption.
 - Judgment: the rare skill isn't generation, it's knowing when the AI is confidently wrong.

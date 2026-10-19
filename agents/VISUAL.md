@@ -50,7 +50,7 @@ Pull every brand value from the **Brand section of `rules/VOICE.md`** — colors
    > **How to generate:** Generate these as individual images — one separate image per slide, each portrait 1080×1350 (4:5). Do NOT combine them into a grid, collage, or contact sheet. Generate one slide at a time; wait for "next" between slides. Keep identical style, palette, and fonts across all slides. Proof every slide's text against this spec — especially numbers — before using.
 4. **Render (local, deterministic).** Write `carousel.json` (machine-readable slide data, schema below) into the idea folder, then run:
    ```
-   node tools/render-carousel.mjs <tree>/<year>/<date>-<slug>
+   node tools/render-carousel.mjs <tree>/<year>/<month>/<date>-<slug>
    ```
    It outputs `carousel-01.png … NN.png` (1080×1350 at 2×) using the real brand fonts + hex. Requires Google Chrome (headless) and network for Google Fonts. QA the rendered slides; iterate on `carousel.json` and re-run.
 5. **Portable spec.** `carousel-spec.md` remains the paste-anywhere artifact (ChatGPT/Gemini/by-hand). The renderer is the reliable production path; the spec is the fallback/portable one.
@@ -76,7 +76,7 @@ Wrap text in `*asterisks*` to color it red (italic in titles). `\n` = line break
 
 Same engine, one page. Write `infographic.json` and run:
 ```
-node tools/render-infographic.mjs <tree>/<year>/<date>-<slug>
+node tools/render-infographic.mjs <tree>/<year>/<month>/<date>-<slug>
 ```
 → `infographic.png` (default 1080×1920 at 2×). Shape: `title`, optional `subtitle`, `sections[]`, optional `footer` + `source`. Section `type`s: `heading` (title/body), `list` (red-tick items), `stats` (big-number rows), `steps` (numbered), `compare` (two columns, right column red-accented). Same `*asterisk*` accent + `\n` rules.
 
@@ -129,7 +129,7 @@ For illustrative scenes only — **never for anything containing text, numbers, 
    **Downloading:** Zipline rejects Python's default urllib user-agent with `HTTP 403: Forbidden`. Use curl with a UA:
 
    ```bash
-   curl -sS -A "Mozilla/5.0" -o <tree>/<year>/<date>-<slug>/hero-01.jpg "<zipline url>"
+   curl -sS -A "Mozilla/5.0" -o <tree>/<year>/<month>/<date>-<slug>/hero-01.jpg "<zipline url>"
    ```
 
    **If an image comes back matted:** adding an explicit full-bleed clause to the prompt ("Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame") fixes it *sometimes* — it failed on a 4:5 retry in Aug 2026. When a re-roll won't drop the frame, keep the good composition and crop it instead (`sips -c <height> <width> file.jpg` centre-crops to an exact aspect; there is no PIL or ImageMagick here). A cropped file no longer matches its Zipline URL — see step 5.

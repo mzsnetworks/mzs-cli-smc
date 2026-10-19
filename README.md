@@ -120,7 +120,7 @@ Open the folder in Claude Code. It reads `CLAUDE.md` automatically and knows the
 This repo carries MZS Networks' identity. A new company replaces it in **one file plus two configs**:
 
 - **`rules/VOICE.md`** — the single source of truth for voice *and* brand. Edit the **Brand** section: company name, URL, `@handle`, the four hex colors, the palette rule, and the two fonts. The Visual agent reads only this. Then run the **Voice agent** (`build my voice`) to rewrite the author profile — pillars, defended opinions, war stories — for the new team.
-- **`content/`** — delete the example posts (or keep `content/2026/2026-06-24-ai-makes-us-judges/` as a calibration reference) and clear `content/INDEX.md` down to its header.
+- **`content/`** — delete the example posts (or keep `content/2026/06/2026-06-24-ai-makes-us-judges/` as a calibration reference) and clear `content/INDEX.md` down to its header.
 - **`LICENSE`** — update the copyright holder and the reserved-brand NOTICE.
 
 Graphics are **not** stored in git (see `.gitignore`); each team generates its own on-brand assets.
@@ -180,7 +180,7 @@ Claude then, on its own:
 5. **Adds** the right hashtags per platform
 6. **Scores** each one and tells you if it's good to ship
 
-You get a new folder like `content/2026/2026-07-01-self-inflicted-outages/` with five files: `master.md`, `linkedin.md`, `facebook.md`, `instagram.md`, `x.md`. Then either copy/paste them yourself — or type **`/publish self-inflicted-outages`** and Claude posts them live through your connected Blotato accounts (it shows you the final text and waits for your explicit "publish" first; nothing ever goes out on its own).
+You get a new folder like `content/2026/07/2026-07-01-self-inflicted-outages/` with five files: `master.md`, `linkedin.md`, `facebook.md`, `instagram.md`, `x.md`. Then either copy/paste them yourself — or type **`/publish self-inflicted-outages`** and Claude posts them live through your connected Blotato accounts (it shows you the final text and waits for your explicit "publish" first; nothing ever goes out on its own).
 
 > 💡 You can also paste a messy draft or rough notes instead of one sentence — "here are my bullet points, turn them into a post" works the same way.
 
@@ -320,14 +320,14 @@ Here's a real run, exactly as it happened, so you can see the shape of it.
 > Write a post about an ISSU upgrade that kept failing even though every health check was green. The real cause was leftover operational state from past install attempts. Run the full pipeline.
 
 **Claude does:**
-- Creates `content/2026/2026-06-24-operational-state/master.md` and drafts it in your voice — opening "The problem wasn't the procedure. It never is.", landing on a config/logs/state triad.
+- Creates `content/2026/06/2026-06-24-operational-state/master.md` and drafts it in your voice — opening "The problem wasn't the procedure. It never is.", landing on a config/logs/state triad.
 - Fact-checks it → **PASS** (no stats to source; it's an experience post).
 - Writes `linkedin.md` (1,662 chars), `instagram.md` (caption + 7 carousel slides + a 5-hashtag block), `x.md` (a 276-char single post **and** a 7-tweet thread).
 - Scores them: LinkedIn **97/100 SHIP**, Instagram **92 SHIP**, X **92 SHIP**.
 
 **You get:** ready-to-publish files in one folder. Total effort on your side: one sentence.
 
-> This exact post lives in `content/2026/2026-06-24-operational-state/` — open it to see what "done" looks like. (It predates the Facebook platform — a `/publish` or `/adapt` run adds `facebook.md` automatically.)
+> This exact post lives in `content/2026/06/2026-06-24-operational-state/` — open it to see what "done" looks like. (It predates the Facebook platform — a `/publish` or `/adapt` run adds `facebook.md` automatically.)
 
 ### Worked example 2 — publishing (the shape of a run)
 
@@ -411,7 +411,7 @@ The `marketing/` lane is the same pipeline with a different ending and a second 
 > Write a marketing post about config drift across multi-site networks. Marketing lane.
 
 **Claude does:**
-- Creates `marketing/2026/2026-09-14-drift-is-a-visibility-problem/master.md` and drafts it — reading `rules/MARKETING.md` on top of the usual files, so it lands on a CTA instead of a question and pulls **Driftguard** through by name.
+- Creates `marketing/2026/09/2026-09-14-drift-is-a-visibility-problem/master.md` and drafts it — reading `rules/MARKETING.md` on top of the usual files, so it lands on a CTA instead of a question and pulls **Driftguard** through by name.
 - Fact-checks it. The "38 of 40 sites" line passes as **ILLUSTRATIVE** — it describes the reader's network, not an MZS measurement. Had it said "we found drift at 38 of 40 client sites," that's a claim and it would need a source.
 - Writes `linkedin.md` (1,662 chars), then **composes** `linkedin-es.md` in Spanish from the master — usted register, glossary terms applied, "Driftguard" and "Ansible" left in English, hook written to the 210-character fold first.
 - Scores both. The Spanish render is scored against `rules/SPANISH.md`, not the English reference post — including a check that it reads as written-in-Spanish rather than translated.
@@ -489,7 +489,7 @@ Credentials and proof points are outside the exception — they are claims and n
 One idea = one dated folder holding all its platform versions. Never scatter the renders across separate trees — they belong to one idea. Both lanes use the identical layout; only the render set differs.
 
 ```
-content/<year>/<YYYY-MM-DD>-<slug>/         marketing/<year>/<YYYY-MM-DD>-<slug>/
+content/<year>/<month>/<YYYY-MM-DD>-<slug>/         marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/
   master.md      # fact-checked source        master.md       # fact-checked source
   linkedin.md    # LinkedIn render            linkedin.md     # English render
   facebook.md    # Facebook render            linkedin-es.md  # Spanish render
@@ -503,8 +503,8 @@ content/<year>/<YYYY-MM-DD>-<slug>/         marketing/<year>/<YYYY-MM-DD>-<slug>
 - **Each tree has its own catalog** — `content/INDEX.md` and `marketing/INDEX.md` (date, slug, title, renders, visual, status), newest-first. `/post` and `/adapt` keep them current — it's how you look up a post's slug ("make a carousel for `plug-and-play-wifi-myth`"). Give Claude a bare slug and it searches both.
 
 **Reference sets:**
-- `content/2026/2026-06-24-ai-makes-us-judges/` — the original calibration examples, for hook, structure, voice, and landing. Not for length or hashtag count: it predates the current bands and fails the checker.
-- `content/2026/2026-06-24-operational-state/` — first post written in the author's voice profile end-to-end (all three renders scored SHIP).
+- `content/2026/06/2026-06-24-ai-makes-us-judges/` — the original calibration examples, for hook, structure, voice, and landing. Not for length or hashtag count: it predates the current bands and fails the checker.
+- `content/2026/06/2026-06-24-operational-state/` — first post written in the author's voice profile end-to-end (all three renders scored SHIP).
 
 ---
 

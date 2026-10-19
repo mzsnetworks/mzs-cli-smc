@@ -1,6 +1,6 @@
 # Spanish (ES) Render Rules
 
-Applies to any `*-es.md` render. Today that is `marketing/<year>/<date>-<slug>/linkedin-es.md`; the rules generalize if a Spanish render is ever added elsewhere.
+Applies to any `*-es.md` render. Today that is `marketing/<year>/<month>/<date>-<slug>/linkedin-es.md`; the rules generalize if a Spanish render is ever added elsewhere.
 
 Layers on `SHARED.md`, `LINKEDIN.md`, and `MARKETING.md`. Where a length or phrasing rule in those files assumes English, this file overrides it.
 
@@ -86,7 +86,7 @@ Spanish tolerates longer sentences than English, so do not chop every sentence t
 
 ## Scoring
 
-Score an ES render against **this file plus `MARKETING.md`**, not against the English reference post. The calibration bar in `LINKEDIN.md` (`content/2026/2026-06-24-ai-makes-us-judges/linkedin.md`) is an English post and does not apply.
+Score an ES render against **this file plus `MARKETING.md`**, not against the English reference post. The calibration bar in `LINKEDIN.md` (`content/2026/06/2026-06-24-ai-makes-us-judges/linkedin.md`) is an English post and does not apply.
 
 The rubric is otherwise unchanged, with one added check inside Platform fit: **does the hook land inside 210 characters, and does the copy read as written-in-Spanish rather than translated?** A render that reads as a translation fails Platform fit regardless of its character count.
 

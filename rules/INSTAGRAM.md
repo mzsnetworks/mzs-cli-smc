@@ -35,6 +35,6 @@ Layers on top of `SHARED.md`.
 
 ## Calibration
 
-The reference `content/2026/2026-06-24-ai-makes-us-judges/instagram.md` is the target **for shape and voice**: emoji-accented caption, arrow-bullet data, the same triad landing, a closing question, and six carousel slide ideas.
+The reference `content/2026/06/2026-06-24-ai-makes-us-judges/instagram.md` is the target **for shape and voice**: emoji-accented caption, arrow-bullet data, the same triad landing, a closing question, and six carousel slide ideas.
 
 **Its hashtag block does not apply.** That post carries 15 tags, written before the cap; the rule is **exactly 5** and Blotato rejects a sixth. Copy the caption's texture, not its tag count or its length.

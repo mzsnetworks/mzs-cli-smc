@@ -29,6 +29,6 @@ Layers on top of `SHARED.md`.
 
 ## Calibration
 
-The reference `content/2026/2026-06-24-ai-makes-us-judges/linkedin.md` is the target **for shape and voice**: a decade-of-experience hook, a NetOps/NetDevOps reframe, three cited Gartner-class data points, a judgment section on AI-and-judgment, a triad landing, one closing question, two hashtags, a sources block.
+The reference `content/2026/06/2026-06-24-ai-makes-us-judges/linkedin.md` is the target **for shape and voice**: a decade-of-experience hook, a NetOps/NetDevOps reframe, three cited Gartner-class data points, a judgment section on AI-and-judgment, a triad landing, one closing question, two hashtags, a sources block.
 
 **It is not the target for length.** That post is 2,831 characters — written before the bands above existed, and it fails the current checker. Copy its structure, not its size. This is the contradiction that made the prose limits ineffective for months: the rule said one number and twenty-four in-context examples showed another, and the examples won.
