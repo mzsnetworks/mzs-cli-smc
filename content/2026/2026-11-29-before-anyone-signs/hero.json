@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792373404089-0.jpg",
+   "aspect": "16:9",
+   "prompt": "Empty boardroom table at night; a single document with completely blank pages, one red pen beside it, no chairs occupied.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved first roll. The blank pages were the risk — a document on a boardroom table is what an image model fills with fake signature lines — and nothing leaked. Red carried by a pen, not an indicator, per the standing lesson."
+  }
+ ]
+}

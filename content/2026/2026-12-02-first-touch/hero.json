@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792373404094-1.jpg",
+   "aspect": "16:9",
+   "prompt": "Desk at night, laptop seen from behind so the screen is hidden; an unlabelled network diagram, a folded paper and a stack of pages held by a red paper clip, laid out as if assembled before sending.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved first roll. The diagram came back as abstract boxes and lines with no text, which was the main risk. Laptop screen deliberately turned away so no interface could be rendered."
+  }
+ ]
+}
