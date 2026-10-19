@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-11-07 | `ttls-are-a-plan` | A TTL is an instruction issued in the past that governs the cutover, so lowering it is the first step of a migration rather than part of it | LI · IG | hero (16:9 + 4:5) | **SHIP** |
-| 2026-11-05 | `oob-is-decoration` | Out-of-band paths fail because each link was a reasonable decision in isolation; the dependency only appears under the condition where you need it | LI · IG | hero (16:9 + 4:5) | **SHIP** |
-| 2026-11-03 | `four-questions` | The questions that decide whether automation is safe are contextual, not technical — and the partial-failure one is the one that gets skipped | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-11-07 | `ttls-are-a-plan` | A TTL is an instruction issued in the past that governs the cutover, so lowering it is the first step of a migration rather than part of it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 7 4pm EST · LI personal + IG) |
+| 2026-11-05 | `oob-is-decoration` | Out-of-band paths fail because each link was a reasonable decision in isolation; the dependency only appears under the condition where you need it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 5 4pm EST · LI personal + IG) |
+| 2026-11-03 | `four-questions` | The questions that decide whether automation is safe are contextual, not technical — and the partial-failure one is the one that gets skipped | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 3 4pm EST · LI personal + IG) |
 | 2026-12-04 | `the-reason-behind-it` | Configuration is recoverable; the reasoning behind its irregularities is not, and the failure mode is tidying rather than departure | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Dec 4 4pm EST · Business — all four on MZS) |
 | 2026-12-02 | `first-touch` | Most of the delay in a support case belongs to the case, not the vendor — five things supplied on the first touch remove the costly exchanges | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Dec 2 4pm EST · Business — all four on MZS) |
 | 2026-11-29 | `before-anyone-signs` | An acceptance criterion that cannot fail is not a criterion; five that can | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 29 4pm EST · Business — all four on MZS) |

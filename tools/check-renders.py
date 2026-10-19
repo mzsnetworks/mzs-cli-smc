@@ -37,6 +37,9 @@ MARKDOWN = re.compile(r'\*\*?[^*\n]+\*\*?|`[^`\n]+`|(?<!\w)_[^_\n]+_(?!\w)')
 BRITISH = {
  'organisation','organisations','organisational','organise','organised','organising',
  'centre','centres','programme','programmes','practise','practised','practising',
+ 'honour','honours','honoured','honouring','favour','favours','favoured','favourite',
+ 'behaviour','behaviours','colour','colours','coloured','labour','neighbour','neighbours',
+ 'licence','defence','offence','analyse','analysed','analysing','catalogue','dialogue',
  'standardise','standardised','standardises','utilise','utilised','prioritise','prioritised',
  'behaviour','behaviours','favour','favourite','colour','colours','neighbour','neighbours',
  'cancelled','cancelling','artefact','artefacts','defence','licence','catalogue',

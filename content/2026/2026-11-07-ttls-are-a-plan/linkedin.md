@@ -11,7 +11,7 @@ So the TTL change is the first step of the migration, not part of it. Lower it w
 
 Two things I have learned to check alongside it.
 
-Some resolvers do not honour low TTLs the way you expect, particularly on consumer and mobile networks, so plan for a tail rather than a clean switch. And applications cache resolution themselves, often for the life of a process, which means a service that has been running for three weeks may not re-resolve at all until something restarts it.
+Some resolvers do not honor low TTLs the way you expect, particularly on consumer and mobile networks, so plan for a tail rather than a clean switch. And applications cache resolution themselves, often for the life of a process, which means a service that has been running for three weeks may not re-resolve at all until something restarts it.
 
 The practical version is unglamorous. Lower the TTL a week early, confirm it propagated, do the cutover, and keep the old destination answering until the traffic there actually stops rather than until the TTL says it should have.
 

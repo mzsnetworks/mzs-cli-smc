@@ -12,9 +12,9 @@ Planned 2026-10-18 against `ideas-2026-08-27.md` (Professional) and `ideas-2026-
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Nov 3 | Tue | 4 questions before I automate anything: how often, who else runs it, what happens if it half-finishes, and how will I know it did | ideas-2026-08-27 #24 | — |
-| Nov 5 | Thu | Out-of-band access you've never tested is decoration — the one time you need it, you find out it depends on the thing that's down | ideas-2026-08-27 #18 | — |
-| Nov 7 | Sat | DNS TTLs are a migration plan. Lower them a week early or the cutover isn't yours to control | ideas-2026-08-27 #22 | — |
+| Nov 3 | Tue | 4 questions before I automate anything: how often, who else runs it, what happens if it half-finishes, and how will I know it did | ideas-2026-08-27 #24 | DONE · `four-questions` |
+| Nov 5 | Thu | Out-of-band access you've never tested is decoration — the one time you need it, you find out it depends on the thing that's down | ideas-2026-08-27 #18 | DONE · `oob-is-decoration` |
+| Nov 7 | Sat | DNS TTLs are a migration plan. Lower them a week early or the cutover isn't yours to control | ideas-2026-08-27 #22 | DONE · `ttls-are-a-plan` |
 | Nov 10 | Tue | EOL notices are a design input, not a purchasing problem — by the time it's a budget line the architecture decision has been made for you | ideas-2026-08-27 #8 | — |
 | Nov 12 | Thu | I use AI to write configs daily and still read every line — not because it's usually wrong, but because I'm the one who signs it | ideas-2026-08-27 #11 | — |
 | Nov 14 | Sat | Have you ever been unable to say "I don't know yet" during an incident? The silence costs more than the admission | ideas-2026-08-27 #21 | — |
