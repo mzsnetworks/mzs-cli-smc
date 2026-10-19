@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "SD-WAN didn't remove\nthe WAN engineer.\nIt moved the *hard part*.",
+   "body": "Configuring links used to be the work.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What that work was",
+   "body": "Two circuits.\nA routing protocol.\nA failover design you could draw.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Now",
+   "body": "That part is largely *solved*.\nThe vendors aren't wrong\nwhen they say so.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What replaced it",
+   "body": "What does *\"good\"* mean\nfor this application?",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The ERP",
+   "body": "Tolerates 200 milliseconds.\n*Not* packet loss.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Voice",
+   "body": "The *reverse*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Replication",
+   "body": "Takes whatever is left.\nCompetes with *neither*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The catch",
+   "body": "Those aren't network facts.\nThey're *business decisions*\nabout which application loses.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Where it stalls",
+   "steps": [
+    "In a meeting, not a lab.",
+    "Every owner says \"mine is critical.\"",
+    "Which is the same as *nobody* answering."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "The *classification*\nis the deliverable.",
+   "body": "The overlay is just\nwhat enforces it.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Post-incident actions\n*expire*.",
+   "body": "Almost nobody notices.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The document is good",
+   "body": "Honest timeline.\nNamed contributing factors.\nA list at the bottom.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "The list",
+   "steps": [
+    "Add monitoring here.",
+    "Document that.",
+    "Review the other thing quarterly."
+   ]
+  },
+  {
+   "type": "body",
+   "title": "Six months later",
+   "body": "*One* got done.\nSomebody was annoyed\nenough that week.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The rest",
+   "body": "Aged out\n*quietly*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Not laziness",
+   "body": "The list was written at the one\nmoment nobody could\n*say no* to it.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Why agreement was free",
+   "body": "No date.\nNo owner.\nNo budget. *Yet*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Two weeks later",
+   "body": "The regret faded.\nThe work still has none of those.\nNow it *loses* to the roadmap.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The blunt test",
+   "body": "No name, no date,\nno place in a real workload\n= *not an action*.",
+   "motif": "none"
+  },
+  {
+   "type": "cta",
+   "title": "A *feeling* somebody had\non a bad day.",
+   "body": "Written down.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

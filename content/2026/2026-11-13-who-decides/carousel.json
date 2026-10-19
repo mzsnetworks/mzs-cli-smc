@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Who *owns* the network?",
+   "body": "Not who runs it.\nWho decides.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Running it is easy",
+   "body": "A team. A rota.\nAn escalation path.\nA name in *seconds*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Deciding is harder",
+   "body": "Who approves a standard\nthat constrains what a\nbusiness unit can *buy*?",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Or this",
+   "body": "Who says the refresh\nhappens *this* year,\nnot next?",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Or this",
+   "body": "Who settles it when security\nwants segmentation and ops\nwants a *shorter* window?",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The answer you get",
+   "body": "*\"It depends.\"*\nUsually true.\nNever useful.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What we find",
+   "body": "Owned operationally by a team\nwith *no budget authority*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "And",
+   "body": "Owned financially by somebody\nnever asked a *technical*\nquestion about it.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "So",
+   "steps": [
+    "The standard is drafted, never ratified.",
+    "The refresh slips a year at a time.",
+    "The project has three sponsors and *no owner*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "It doesn't stop working.\nIt stops *changing*.",
+   "body": "Which looks the same\nfor a while.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}
