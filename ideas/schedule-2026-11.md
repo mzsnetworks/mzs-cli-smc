@@ -36,9 +36,9 @@ This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows agai
 | Nov 1 | Sun | A change record worth reading has five fields: what changed, why, who approved, how to undo it, and the one-line business reason | ideas-2026-08-30 #26 | DONE · `change-record-five-fields` |
 | Nov 4 | Wed | Guest Wi-Fi is a security posture, not an amenity — the captive portal is the least interesting decision in it | ideas-2026-08-30 #7 | DONE · `guest-wifi-is-a-posture` |
 | Nov 6 | Fri | The maintenance window that finished early, and the outage it caused on Monday — because "done" meant applied, not verified | ideas-2026-08-30 #30 | DONE · `done-meant-applied` |
-| Nov 8 | Sun | SD-WAN didn't remove the WAN engineer — it moved the hard part to defining what "good" means per application, and nobody wants to own that | ideas-2026-08-30 #2 | — |
-| Nov 11 | Wed | Post-incident actions expire — if it isn't scheduled, staffed and dated, it's a feeling somebody had on a bad day | ideas-2026-08-30 #33 | — |
-| Nov 13 | Fri | Who owns the network in your organization? Not who runs it — who decides | ideas-2026-08-30 #27 | — |
+| Nov 8 | Sun | SD-WAN didn't remove the WAN engineer — it moved the hard part to defining what "good" means per application, and nobody wants to own that | ideas-2026-08-30 #2 | DONE · `defining-what-good-means` |
+| Nov 11 | Wed | Post-incident actions expire — if it isn't scheduled, staffed and dated, it's a feeling somebody had on a bad day | ideas-2026-08-30 #33 | DONE · `post-incident-actions-expire` |
+| Nov 13 | Fri | Who owns the network in your organization? Not who runs it — who decides | ideas-2026-08-30 #27 | DONE · `who-decides` |
 | Nov 15 | Sun | Oversubscription isn't a dirty word — designing for zero contention buys a network you'll never use; the skill is choosing the ratio on purpose | ideas-2026-08-30 #8 | — |
 | Nov 18 | Wed | AI is good at the part we're bad at — reading everything — and bad at the part we're good at: knowing what matters *here*. Staff accordingly | ideas-2026-08-30 #35 | — |
 | Nov 20 | Fri | IPAM isn't documentation, it's an allocation system — and a spreadsheet is an allocation system with no locking | ideas-2026-08-30 #25 | — |
