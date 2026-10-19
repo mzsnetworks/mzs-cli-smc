@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792378756694-0.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "A rack of identical clean modern chassis with one scuffed, outdated machine near the bottom, and the only red cable in the image running into that one — it is old and it is still carrying something. Approved first roll, both aspects. Every faceplate stayed blank; a rack is the scene most likely to grow vendor markings, so that is the first thing to check here."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792378756697-1.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — composed separately; a 16:9 hero gets cropped in the IG feed.",
+   "generated": "2026-10-18",
+   "qa": "A rack of identical clean modern chassis with one scuffed, outdated machine near the bottom, and the only red cable in the image running into that one — it is old and it is still carrying something. Approved first roll, both aspects. Every faceplate stayed blank; a rack is the scene most likely to grow vendor markings, so that is the first thing to check here."
+  }
+ ]
+}
