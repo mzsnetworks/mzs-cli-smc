@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792371136100-1.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: a single desk lamp lighting one open page of a very large plain physical ledger lying flat on a table. The visible page is covered in dense, uniform, completely illegible texture suggesting handwriting or print, with absolutely no readable letterforms, words, characters or numbers. Beyond the small pool of lamp light the same ledger continues away into darkness in both directions, far wider than the light reaches. EXACTLY ONE red element exists in this entire image: a thin red ribbon bookmark lying across the lit page. Nothing else is red anywhere. Deep dark navy (#161a45) dominates every surface and every background plane, never blue, never cyan, no teal, never slate blue or blue-grey, and never neutral grey, charcoal, black or silver. Navy must be obvious at a glance. Soft cream (#F4EFE3) light from the lamp is the only highlight. This is an ordinary physical book on an ordinary table: no glow effects, no light rays, no floating particles, no holograms, no digital or sci-fi elements, no glowing pages. Absolutely no text, no letterforms, no numerals, no signage, no logos. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the first roll. This was the most abstract brief in the set and VISUAL.md warns that abstract briefs return stock imagery — a 'book of knowledge' invites glowing particles and floating orbs. Pinning it to an ordinary physical ledger on an ordinary table, and forbidding glow, rays, particles and holograms by name, held. The red ribbon succeeded where indicator lamps failed this week, which is consistent with the standing lesson: red works as a distinct physical object.\n\nThe page texture carries no readable letterforms, and the unlit remainder of the book running out of the light is what the post argues — the model reads everything, the lamp is the part that knows which page matters."
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792371136105-2.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: two identical office chairs pulled up to one desk from opposite sides, both positions empty. On the desk sits a single monitor turned slightly so that it faces neither chair squarely. One coffee cup rests at each chair. The monitor displays a blank field of pale cream colour with no text, no interface, no icons, no windows and no readable elements of any kind. EXACTLY ONE red element exists in this entire image: a single small indicator light on a desk-phone base at the edge of the desk. Every other device has its indicator dark. No second indicator, no red reflection, no red on the monitor, chairs, cups or walls. Deep dark navy (#161a45) dominates every surface and every background plane, never blue, never cyan, no teal, never slate blue or blue-grey, and never neutral grey, charcoal, black or silver. Navy must be obvious at a glance. Soft cream (#F4EFE3) light from the monitor is the only highlight. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. No glow effects, no light rays, no floating particles, no holograms. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the first roll, and the single red indicator held here — one isolated device with one light, rather than a panel of repeated ports, which is the distinction that decides whether this guard survives.\n\nI flagged a weakness in the brief before generating and it is still present: the scene reads as an empty shared workspace rather than as a collision. It works alongside the caption — two seats, one resource, a screen facing neither of them — but it does not argue the post on its own the way the ledger or the converging cables do. The fallback if it underperforms is two hands reaching for the same object, which is more literal and more stock-photo."
+  }
+ ]
+}
