@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792372580804-1.jpg",
+   "aspect": "16:9",
+   "prompt": "Five objects laid out in a row on a desk for examination — folder, coiled cable, drive, closed laptop, notebook — nothing in use, nobody present; the notebook is the single red object.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved first roll. Five objects matches the five collected artifacts without any label or number in frame."
+  }
+ ]
+}

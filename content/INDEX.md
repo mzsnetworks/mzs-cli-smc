@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-11-27 | `sold-on-speed` | Wi-Fi 7's headline figures describe a ceiling few enterprises approach; uplinks, placement and client mix are the real constraints | LI · FB · IG · X | carousel (10 png) | **SHIP** |
-| 2026-11-25 | `before-touching-anything` | The first week of a takeover is the only window where naive questions are free, so it is spent collecting rather than changing | LI · FB · IG · X | carousel (10 png) | **SHIP** |
-| 2026-11-22 | `nobody-told-us` | The outages that look unexplained usually began as a correct change in another team that never reached the people who depended on the old state | LI · FB · IG · X | carousel (10 png) | **SHIP** |
+| 2026-11-27 | `sold-on-speed` | Wi-Fi 7's headline figures describe a ceiling few enterprises approach; uplinks, placement and client mix are the real constraints | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
+| 2026-11-25 | `before-touching-anything` | The first week of a takeover is the only window where naive questions are free, so it is spent collecting rather than changing | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
+| 2026-11-22 | `nobody-told-us` | The outages that look unexplained usually began as a correct change in another team that never reached the people who depended on the old state | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
 | 2026-11-20 | `an-allocation-system` | Documentation describes what exists; an allocation system decides what happens next, and a spreadsheet cannot arbitrate two simultaneous requests | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 20 4pm EST · Business — all four on MZS) |
 | 2026-11-18 | `knowing-what-matters-here` | A model can read an entire estate without tiring but cannot supply the local context that decides whether a finding matters | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 18 4pm EST · Business — all four on MZS) |
 | 2026-11-15 | `choosing-the-ratio` | Every network is oversubscribed somewhere; the defect is that most estates cannot say what their ratio is or what it assumed | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 15 4pm EST · Business — all four on MZS) |

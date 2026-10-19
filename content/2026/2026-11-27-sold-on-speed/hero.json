@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792372580809-2.jpg",
+   "aspect": "16:9",
+   "prompt": "Ceiling access point seen from below with one red cable running away across the ceiling into the distance; the AP itself completely unlit.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved first roll. The one red cable running off to a distant wall is the uplink argument — the constraint is the thing leaving the AP, not the AP."
+  }
+ ]
+}
