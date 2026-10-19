@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792375986184-2.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "A blank wall panel swung open on one hinge over a dense tangle of unlabelled old cabling — what is actually installed behind what the drawing shows. Approved first roll, both aspects. The panel face stayed blank, which is the thing to check on any equipment scene: a faceplate is where signage appears."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792375986188-3.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — composed separately; a 16:9 hero gets cropped in the IG feed.",
+   "generated": "2026-10-18",
+   "qa": "A blank wall panel swung open on one hinge over a dense tangle of unlabelled old cabling — what is actually installed behind what the drawing shows. Approved first roll, both aspects. The panel face stayed blank, which is the thing to check on any equipment scene: a faceplate is where signage appears."
+  }
+ ]
+}
