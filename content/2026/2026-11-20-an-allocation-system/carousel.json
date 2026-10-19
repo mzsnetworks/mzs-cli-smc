@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "IPAM isn't documentation.",
+   "body": "It's an *allocation system*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Documentation",
+   "body": "Describes what already exists.\nIf it's wrong,\nyou're *misinformed*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "An allocation system",
+   "body": "Decides what happens next.\nIf it's wrong, two people\nget the *same subnet*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What most estates run",
+   "body": "A spreadsheet.\nAn allocation system\nwith *no locking*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Tuesday",
+   "body": "Two engineers open the file.\nBoth need a /24\nfor a new site.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Both",
+   "body": "Scroll to the first block\nthat *looks* free.\nBoth take it.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The save",
+   "body": "One saves. Then the other.\nThe second save wins\n*silently*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Nobody was careless",
+   "body": "The tool has no concept\nof two people asking\n*at once*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Weeks later",
+   "steps": [
+    "Both sites are live.",
+    "Something between them stops working.",
+    "The first hour goes on proving the addressing is *fine*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "You don't need\nbetter discipline.",
+   "body": "You need the careless path\nto be *unavailable*.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

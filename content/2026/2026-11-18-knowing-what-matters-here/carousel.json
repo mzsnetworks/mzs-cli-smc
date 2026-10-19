@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "AI is good at the part\nwe're *bad* at.",
+   "body": "And bad at the part\nwe're good at.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Good at",
+   "body": "Reading *everything*.\nEvery log, every config,\nevery ticket from three years.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Why that matters",
+   "body": "No human does that\non page four hundred.\nNo human was ever going to.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Bad at",
+   "body": "Knowing what matters *here*.\nThis estate.\nThis night.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "It will tell you",
+   "body": "An interface reset\n*forty times*\nlast month.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "It won't tell you",
+   "body": "That interface feeds a warehouse\nrunning a day shift.\nThe resets land at *2am*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "It will flag",
+   "body": "Config drift on a device\nnobody has rebooted\nsince 2021.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "It won't know",
+   "body": "That's the thing\nyou should be *fixing*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Where that context lives",
+   "steps": [
+    "Not in any document.",
+    "In the heads of people who have been there a while.",
+    "It is the actual product of *experience in one place*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "AI reads your environment.",
+   "body": "It doesn't understand\nyour *business*.\nStaff for the difference.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

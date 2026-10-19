@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Oversubscription isn't\na dirty word.",
+   "body": "*Undeclared* oversubscription is.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Where it already lives",
+   "steps": [
+    "The access layer assumes not every port transmits at once.",
+    "The uplink assumes not every switch bursts together.",
+    "The circuit assumes a fraction of what the LAN could generate."
+   ]
+  },
+  {
+   "type": "body",
+   "title": "Not a trick",
+   "body": "Nobody snuck it past you.\nIt's what makes the network\n*affordable*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Zero contention",
+   "body": "Buying capacity the business\nwill *never use* —\nand defending it every budget cycle.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The real problem",
+   "body": "In most estates,\nnobody can tell you\n*what the ratio is*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "2019",
+   "body": "Somebody chose 20 to 1.\nFor reasons that made sense\nwith *2019's* traffic.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Then",
+   "body": "Video became constant.\nA backup moved into hours.\nThree sites started replicating.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The ratio didn't change",
+   "body": "The thing it was\na *bet about* did.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The question",
+   "body": "What ratio did you choose?\nWhat did it assume?\nWhen was that *last checked*?",
+   "motif": "none"
+  },
+  {
+   "type": "cta",
+   "title": "A ratio nobody remembers\nagreeing to is a *liability*.",
+   "body": "One that happens\nto be working.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}
