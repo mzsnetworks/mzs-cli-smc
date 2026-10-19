@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792369562386-2.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: an office corridor at night with two doors facing each other. The door on the left stands open onto a lit working room where a desk and monitors are visible, soft cream light spilling out across the corridor floor. The door on the right is closed, and beside it on the wall is a small empty nameplate holder: an entirely blank, vacant slot with no card, no paper, no text, no letterforms and no engraving of any kind. The corridor between the two doors is dark and empty. EXACTLY ONE red element exists in this entire image: a single small indicator light on a card reader mounted beside the closed door. No second indicator, no red reflection, no red anywhere else. Deep dark navy (#161a45) dominates every surface and every background plane, never blue, never cyan, no teal, never slate blue or blue-grey, and never neutral grey, charcoal, black or silver. Navy must be obvious at a glance. Soft cream (#F4EFE3) is the only highlight. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks anywhere. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the first roll. The empty nameplate holder was the risk — a blank slot is exactly what an image model wants to fill with letterforms — and it came back genuinely empty. Operational ownership is lit and visible through the open door; decision ownership is behind the closed one with nobody's name on it. Single red on the card reader as briefed."
+  }
+ ]
+}

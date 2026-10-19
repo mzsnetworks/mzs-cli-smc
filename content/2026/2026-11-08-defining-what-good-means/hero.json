@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-02.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792369615741-0.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: a long meeting-room table seen from one end, late in the day, the room recently emptied. Chairs pulled out at angles. Exactly three laptops left open at three different seats along the table, each screen glowing soft cream. At the far end of the room a large wall-mounted display is completely dark and has no lights, no indicators and no camera bar beneath it. EXACTLY ONE red element exists in this entire image: a single small indicator light on the conference speakerphone in the middle of the table. Nothing else in the frame is red. There is no red light on the display, no red light on any camera or video bar, no red light on any wall plate, laptop, chair, ceiling fitting or power socket, and no red reflection on the table surface. If any object other than the speakerphone would normally carry an indicator light, that light is dark. Deep dark navy (#161a45) dominates every surface and every background plane, never blue, never cyan, no teal, never slate blue or blue-grey, and never neutral grey, charcoal, black or silver. Navy must be obvious at a glance. Soft cream (#F4EFE3) is the only highlight. Absolutely no text, no letterforms, no numerals, no signage, no logos, no vendor marks on any faceplate or panel. No tick-mark numerals. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the second roll. hero-01 put a second red indicator on the video bar beneath the display — the same failure as the Nov 4 hero a week earlier, where the 'exactly one red' guard was present and still violated. Naming the one permitted object is not enough on its own; the re-roll had to enumerate the objects that must stay dark (display, camera bar, wall plates, laptops, sockets) and add a catch-all: if anything else would normally carry an indicator, that light is off. It also fixed the laptop count, which came back as four. The approved roll keeps a faint specular reflection of the permitted light on the table; that is the same element reflected, not a second one, and it was accepted on that basis."
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792369562381-1.jpg",
+   "aspect": "16:9",
+   "prompt": "Premium editorial illustration, high-end tech magazine style: a wall-mounted whiteboard in an empty room, photographed at a slight angle in low light. The board surface carries only the faint ghosting of writing that has been erased and partly re-erased: soft illegible smears, pressure marks and cloudy residue, with absolutely no readable letterforms, no words, no characters, no numbers, no diagrams. A single dry-erase marker lies in the tray below the board. On the wall beside the board hangs a plain round wall clock whose face is completely blank, bearing no numerals, no tick marks and no hands. EXACTLY ONE red element exists in this entire image: the cap of that single marker. No other red anywhere. Soft cream (#F4EFE3) light falls across the board from a window off-frame and is the only highlight. Deep dark navy (#161a45) dominates every surface and every background plane, never blue, never cyan, no teal, never slate blue or blue-grey, and never neutral grey, charcoal, black or silver. Navy must be obvious at a glance. Absolutely no text, no letterforms, no numerals, no signage, no logos anywhere in the frame. Full-bleed edge-to-edge artwork: no border, no cream margin, no white matting, no picture frame. Quiet, photographic, shallow depth of field. Cinematic moody lighting, minimalist composition.",
+   "generated": "2026-10-18",
+   "usage": "Facebook + X (16:9). LinkedIn and Instagram take the full 10-slide carousel.",
+   "qa": "Approved on the first roll, which was the one I expected to fail: a whiteboard is the most text-prone subject in the set and a clock invites numerals. Both held — the board carries smears and pressure marks with no letterforms, and the clock face is blank. Erased-but-not-gone is exactly what an expired action item is, so the image argues the post rather than illustrating it. The clock retains faint tick marks without numerals, which reads as a blank face and was accepted."
+  }
+ ]
+}
