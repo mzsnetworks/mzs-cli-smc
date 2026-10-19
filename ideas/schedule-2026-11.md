@@ -42,9 +42,9 @@ This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows agai
 | Nov 15 | Sun | Oversubscription isn't a dirty word — designing for zero contention buys a network you'll never use; the skill is choosing the ratio on purpose | ideas-2026-08-30 #8 | DONE · `choosing-the-ratio` |
 | Nov 18 | Wed | AI is good at the part we're bad at — reading everything — and bad at the part we're good at: knowing what matters *here*. Staff accordingly | ideas-2026-08-30 #35 | DONE · `knowing-what-matters-here` |
 | Nov 20 | Fri | IPAM isn't documentation, it's an allocation system — and a spreadsheet is an allocation system with no locking | ideas-2026-08-30 #25 | DONE · `an-allocation-system` |
-| Nov 22 | Sun | 4 outages that had nothing to do with the network and everything to do with a change nobody told us about | ideas-2026-08-30 #32 | — |
-| Nov 25 | Wed | Taking over an environment you didn't build: the first five things we collect before touching anything | ideas-2026-08-30 #20 | — |
-| Nov 27 | Fri | Wi-Fi 7 will be sold on speed and bought for capacity — and most enterprises will still be capped by uplinks and AP placement | ideas-2026-08-30 #11 | — |
+| Nov 22 | Sun | 4 outages that had nothing to do with the network and everything to do with a change nobody told us about | ideas-2026-08-30 #32 | DONE · `nobody-told-us` |
+| Nov 25 | Wed | Taking over an environment you didn't build: the first five things we collect before touching anything | ideas-2026-08-30 #20 | DONE · `before-touching-anything` |
+| Nov 27 | Fri | Wi-Fi 7 will be sold on speed and bought for capacity — and most enterprises will still be capped by uplinks and AP placement | ideas-2026-08-30 #11 | DONE · `sold-on-speed` |
 | Nov 29 | Sun | 5 things a network acceptance test must include before anyone signs — and why "it pings" isn't one of them | ideas-2026-08-30 #29 | — |
 
 **Nov 27 (#11) is the one stat-*optional* row in this plan.** Its pool entry reads "only if you quote adoption numbers." Write it as judgment and cite nothing; the moment it quotes a Wi-Fi 7 adoption figure it blocks on Factcheck until the figure has a named firm and year.
