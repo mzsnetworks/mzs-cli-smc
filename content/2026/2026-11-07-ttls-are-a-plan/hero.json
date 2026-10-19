@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-03.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374351989-0.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "Approved on the SECOND roll. hero-01 and hero-02-ig were rejected: the 16:9 rendered the clock face toward camera with legible numerals, which breaks the no-numerals guard outright, and the 4:5 left the red key floating unattached. The re-roll hangs the clock FACE AGAINST THE WALL so only the blank back of the casing is visible, and screws the key to a named hook. Lesson: a clock is a numeral-bearing object by default — asking for it 'turned away' is not enough, the prompt has to remove the face from the frame entirely."
+  },
+  {
+   "file": "hero-04-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374351993-1.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — a 16:9 hero gets cropped in the IG feed, so this is composed separately.",
+   "generated": "2026-10-18",
+   "qa": "Approved on the SECOND roll. hero-01 and hero-02-ig were rejected: the 16:9 rendered the clock face toward camera with legible numerals, which breaks the no-numerals guard outright, and the 4:5 left the red key floating unattached. The re-roll hangs the clock FACE AGAINST THE WALL so only the blank back of the casing is visible, and screws the key to a named hook. Lesson: a clock is a numeral-bearing object by default — asking for it 'turned away' is not enough, the prompt has to remove the face from the frame entirely."
+  }
+ ]
+}

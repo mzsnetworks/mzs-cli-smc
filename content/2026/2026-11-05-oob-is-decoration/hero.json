@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374283759-2.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "Approved first roll, both aspects. A cable leaving a rack, passing through a wall and ending unterminated on the far side: the path that looks complete from the room you are standing in. Red is a loose cable tie on the floor."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374283766-3.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — a 16:9 hero gets cropped in the IG feed, so this is composed separately.",
+   "generated": "2026-10-18",
+   "qa": "Approved first roll, both aspects. A cable leaving a rack, passing through a wall and ending unterminated on the far side: the path that looks complete from the room you are standing in. Red is a loose cable tie on the floor."
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374283748-0.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "Approved first roll, both aspects. Five identical devices with one turned aside and a red tool handle beside it — the one that needs a different answer. No indicator lights anywhere, red carried by a physical object."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374283751-1.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — a 16:9 hero gets cropped in the IG feed, so this is composed separately.",
+   "generated": "2026-10-18",
+   "qa": "Approved first roll, both aspects. Five identical devices with one turned aside and a red tool handle beside it — the one that needs a different answer. No indicator lights anywhere, red carried by a physical object."
+  }
+ ]
+}
