@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "file": "hero-01.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374983688-4.jpg",
+   "aspect": "16:9",
+   "usage": "LinkedIn (personal profile), 16:9.",
+   "generated": "2026-10-18",
+   "qa": "Approved first roll, both aspects. A dark speakerphone alone on a wide table with every chair pushed back — the bridge after everyone has stopped talking. The device is entirely unlit, which is what keeps the single-red rule intact; the red is a coffee mug left on the table."
+  },
+  {
+   "file": "hero-02-ig.jpg",
+   "url": "https://zipline.mzstools.net/raw/smc-1792374983719-5.jpg",
+   "aspect": "4:5",
+   "usage": "Instagram @mzsnetworks, 4:5 — composed separately; a 16:9 hero gets cropped in the IG feed.",
+   "generated": "2026-10-18",
+   "qa": "Approved first roll, both aspects. A dark speakerphone alone on a wide table with every chair pushed back — the bridge after everyone has stopped talking. The device is entirely unlit, which is what keeps the single-red rule intact; the red is a coffee mug left on the table."
+  }
+ ]
+}

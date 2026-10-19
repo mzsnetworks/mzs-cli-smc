@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-11-14 | `i-dont-know-yet` | Vague progress language during an incident costs more than admitting uncertainty, because listeners make decisions from it | LI · IG | — | **SHIP** |
-| 2026-11-12 | `im-the-one-who-signs-it` | The accuracy argument about AI-written config is beside the point; the operative question is who answers for it in review | LI · IG | — | **SHIP** |
-| 2026-11-10 | `eol-is-a-design-input` | An EOL notice reaches contract managers rather than designers, so the architecture decision gets arrived at by waiting | LI · IG | — | **SHIP** |
+| 2026-11-14 | `i-dont-know-yet` | Vague progress language during an incident costs more than admitting uncertainty, because listeners make decisions from it | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-11-12 | `im-the-one-who-signs-it` | The accuracy argument about AI-written config is beside the point; the operative question is who answers for it in review | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-11-10 | `eol-is-a-design-input` | An EOL notice reaches contract managers rather than designers, so the architecture decision gets arrived at by waiting | LI · IG | hero (16:9 + 4:5) | **SHIP** |
 | 2026-11-07 | `ttls-are-a-plan` | A TTL is an instruction issued in the past that governs the cutover, so lowering it is the first step of a migration rather than part of it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 7 4pm EST · LI personal + IG) |
 | 2026-11-05 | `oob-is-decoration` | Out-of-band paths fail because each link was a reasonable decision in isolation; the dependency only appears under the condition where you need it | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 5 4pm EST · LI personal + IG) |
 | 2026-11-03 | `four-questions` | The questions that decide whether automation is safe are contextual, not technical — and the partial-failure one is the one that gets skipped | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 3 4pm EST · LI personal + IG) |
