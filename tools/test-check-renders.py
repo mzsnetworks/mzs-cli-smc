@@ -56,6 +56,10 @@ WARN_CASES = {
     # The other half: Spanish inside every band but tracking the English
     # clause for clause. All twelve batch-2 renders shipped at 1.00-1.13.
     'warn-es-tracks-english':     'reads as tracked rather than composed',
+    # The draft target warns in both directions since 2026-10-19. Only the
+    # ceiling was enforced before, so 31 renders sat under their floor with
+    # nothing saying so -- a short render has dropped a beat, not padded one.
+    'warn-below-draft-target':    'below the 1600-1850 draft target',
 }
 
 def main():
@@ -67,10 +71,16 @@ def main():
             print(f"  MISSING FIXTURE  {name}"); bad += 1; continue
         fails, warns = cr.check_post(d)
         if expect is None:
-            if fails:
-                print(f"  FAIL  {name}: expected clean, got {fails}"); bad += 1
+            # Clean means no warnings either, not just no failures. Until
+            # 2026-10-19 this only checked failures, and every clean-* fixture
+            # had quietly drifted below its draft floor -- so the corpus that
+            # models a good post modelled a thin one, and the next fixture gets
+            # copied from these.
+            if fails or warns:
+                print(f"  FAIL  {name}: expected clean, got {fails or ''} {warns or ''}".rstrip())
+                bad += 1
             else:
-                print(f"  ok    {name}: clean")
+                print(f"  ok    {name}: clean, no warnings")
         else:
             if any(expect in f for f in fails):
                 print(f"  ok    {name}: caught {expect!r}")

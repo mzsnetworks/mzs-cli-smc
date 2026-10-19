@@ -51,6 +51,8 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 
 **Draft to the target, not to the FAIL line.** Output reliably clusters 1–5% under whatever number is actually *enforced* and never approaches a number that is merely *stated*. Facebook sat at 774–798 for two months against a prose cap of 800; the first batch written against an enforced warning at 750 landed at 621–711. That is why the bands above are narrow and why the checker warns inside the cap: a stated ceiling becomes the target, so the ceiling has to be the number you actually want.
 
+**The warning is symmetric — the floor is enforced too.** Until 2026-10-19 only the ceiling was, on the reasoning that long is the dangerous direction. It is not the only one. A render under its floor has dropped a beat of the argument rather than padded one, and 31 renders were sitting below theirs with nothing saying so. In the bilingual lane that compounds: short English is where thin Spanish starts, because the Spanish is written against it.
+
 The Editor tightens to the draft target; the Scorer's "platform fit" dimension checks it. **`python3 tools/check-renders.py <postdir>` verifies all of it mechanically** — run it before publish, always.
 
 These bands apply to posts written after 2026-09-20. Earlier posts were written against looser numbers and are not retro-fitted: rewriting finished work to a new threshold is churn no reader benefits from, and the bands exist to stop *new* drift. `--all` skips them by default and says how many it skipped.

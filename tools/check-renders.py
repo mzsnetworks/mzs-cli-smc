@@ -163,9 +163,20 @@ def check_file(path, lane, fails, warns, carousel=True, preset=None):
             # Facebook-only until 2026-09-20, which is why LinkedIn renders
             # clustered just under the 1900 FAIL line instead of inside the
             # 1600-1850 target: the only number being enforced was the cap.
-            draft_hi = int(draft.split('-')[1])
+            #
+            # Symmetric since 2026-10-18. Only the ceiling was enforced before,
+            # on the reasoning that long is the dangerous direction -- but a
+            # render under its floor is a different defect, not a safer one: it
+            # has dropped a beat of the argument rather than padded one. 31
+            # renders sat below their floor with nothing saying so, including
+            # we-hand-it-back at 1,499 against a 1,600 floor, which also turned
+            # out to have the flattest Spanish in the lane. Short English is
+            # where thin Spanish starts.
+            draft_lo, draft_hi = (int(x) for x in draft.split('-'))
             if n > draft_hi:
                 warns.append(f"{rel}: {n} chars — inside the cap but above the {draft} draft target")
+            elif n < draft_lo:
+                warns.append(f"{rel}: {n} chars — inside the cap but below the {draft} draft target")
         lines = [l for l in b.split('\n') if l.strip()]
         if lines and len(lines[0]) > fold:
             fails.append(f"{rel}: hook {len(lines[0])} chars, fold is {fold}")
