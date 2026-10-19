@@ -18,6 +18,6 @@
 **Notes:**
 - Hero metaphor: a crude lit workbench with a red fault light, an immaculate untouched data center row behind it in shadow. First generation came back cream-matted; a second pass with an explicit full-bleed clause fixed it.
 - Draws on the ISSU war story (hidden operational state) and the multicast-that-wasn't-multicast story from `rules/VOICE.md`, told as company field experience.
-- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/2026-08-30-lab-failure-modes`.
+- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/08/2026-08-30-lab-failure-modes`.
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status`.

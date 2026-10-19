@@ -19,6 +19,6 @@
 - CTA slide title carries no `*accent*` markup (red-on-red rule).
 - X hashtag varied to `#NetOps` to keep the single under the 280 cap (268).
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-08-21-earn-an-orchestrator`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/08/2026-08-21-earn-an-orchestrator`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

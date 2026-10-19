@@ -15,6 +15,6 @@ IG caption: exactly 5 hashtags, arrows not numbered `#N` prose.
 
 2026-08-09: original LI submission `819272fa…` (hero only) deleted (schedule 2931616) and re-created with the full carousel after the single-image LinkedIn flaw was caught.
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-08-12-change-window-checklist`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/08/2026-08-12-change-window-checklist`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

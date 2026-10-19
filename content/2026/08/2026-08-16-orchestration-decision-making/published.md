@@ -18,6 +18,6 @@
 - IG caption: exactly 5 hashtags, list rendered as arrows (no `#N` numbering, which Blotato counts as hashtags).
 - CTA slide title carries no `*accent*` markup (red-on-red lesson from `load-bearing-workaround`).
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-08-16-orchestration-decision-making`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/08/2026-08-16-orchestration-decision-making`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

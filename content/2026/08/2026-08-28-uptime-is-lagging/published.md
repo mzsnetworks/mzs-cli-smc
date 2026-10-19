@@ -18,6 +18,6 @@
 **Notes:**
 - The only cited claim in the set. LinkedIn carries it as a plain `Source:` line before the hashtags rather than a markdown Sources block; Facebook and Instagram cite DORA inline; the X single makes no statistical claim.
 - Hero metaphor: a corridor where the lit ribbon runs backward and the path ahead is dark, one red line marking the turn nobody can see.
-- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/2026-08-28-uptime-is-lagging`.
+- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/08/2026-08-28-uptime-is-lagging`.
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status`.

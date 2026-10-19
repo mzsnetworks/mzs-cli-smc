@@ -39,5 +39,5 @@
 
 ## Production
 
-Rendered deterministically: `node tools/render-carousel.mjs content/2026/2026-08-30-lab-failure-modes` → `carousel-01.png … 09.png`.
+Rendered deterministically: `node tools/render-carousel.mjs content/2026/08/2026-08-30-lab-failure-modes` → `carousel-01.png … 09.png`.
 This spec is the portable fallback (paste into any image tool); the renderer is the production path.

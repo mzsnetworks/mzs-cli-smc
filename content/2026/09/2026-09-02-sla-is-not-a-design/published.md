@@ -17,6 +17,6 @@
 - Hero: an underground cutaway beneath a stone bridge, two supposedly diverse fiber paths converging into one duct, red mark on the convergence point. First pass, no rework needed.
 - The distinction the post turns on: an SLA transfers risk, it doesn't reduce it. Deliberately avoids re-treading `resilience-isnt-redundancy` (Aug 14), which was about untested failover rather than contract-vs-physical-path.
 - X single trimmed to 263 after a first draft landed at exactly 280 — no margin at the hard cap.
-- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/2026-09-02-sla-is-not-a-design`.
+- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/09/2026-09-02-sla-is-not-a-design`.
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status`.

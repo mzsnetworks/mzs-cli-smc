@@ -17,6 +17,6 @@
 - Hero needed a second pass. The first render left the room dark, which killed the metaphor — the whole contrast is light reaching every corner while access is single-file through one door. The re-roll floods the floor cream corner to corner.
 - A carousel accent originally landed on the word "greener," which the renderer set in brand red. Moved to "degrades"; the rule is now noted in both carousel specs.
 - Mechanism, not recipe: the slowest client holds the medium longer for the same data, so it taxes everyone on the radio. That's why more transmit power makes it worse.
-- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/2026-09-04-coverage-isnt-capacity`.
+- Carousel PNGs regenerable: `node tools/render-carousel.mjs content/2026/09/2026-09-04-coverage-isnt-capacity`.
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status`.

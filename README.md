@@ -524,9 +524,9 @@ ideas/
   marketing-ideas-<YYYY-MM-DD>.md  # the Marketing lane's pool
   schedule-<YYYY-MM>.md            # forward publishing plans written by /schedule
 content/                           # thought leadership — INDEX.md at the tree root
-  <year>/<YYYY-MM-DD>-<slug>/master.md linkedin.md facebook.md instagram.md x.md
+  <year>/<month>/<YYYY-MM-DD>-<slug>/master.md linkedin.md facebook.md instagram.md x.md
 marketing/                         # company marketing — its own INDEX.md
-  <year>/<YYYY-MM-DD>-<slug>/master.md linkedin.md linkedin-es.md
+  <year>/<month>/<YYYY-MM-DD>-<slug>/master.md linkedin.md linkedin-es.md
 ```
 
 ---

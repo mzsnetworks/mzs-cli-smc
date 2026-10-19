@@ -13,6 +13,6 @@
 
 IG caption: exactly 5 hashtags, list uses arrows (no `#N`/numbered prose).
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-08-07-automate-toil-first`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/08/2026-08-07-automate-toil-first`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

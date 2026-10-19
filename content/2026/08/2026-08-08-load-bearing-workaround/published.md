@@ -15,6 +15,6 @@
 - CTA slide first render dropped the word "date" — `*date*` red-accent inside the red CTA block rendered red-on-red. Fixed by removing accent markup from the CTA title. Lesson: no `*accent*` in CTA/cover titles that sit on red blocks.
 - IG caption: exactly 5 hashtags; signs listed with arrows, no numbered `#N`/"1." prose.
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-08-08-load-bearing-workaround`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/08/2026-08-08-load-bearing-workaround`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

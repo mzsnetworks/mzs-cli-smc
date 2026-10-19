@@ -15,6 +15,6 @@
 - First IG submission rejected — Blotato's 5-hashtag counter treats inline "#3" in prose as a hashtag. Reworded to "sign 3", republished. Lesson: no `#N` references in IG captions.
 - LI/FB/X originally scheduled with the carousel cover slide (submissions `b1d94418…`, `2edacec5…`, `9f992308…`); deleted and re-scheduled with the 16:9 hero per the Business rule: **LI/FB/X always hero; carousel is IG-only** (now in `agents/PUBLISH.md`).
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-08-05-git-with-extra-steps`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/08/2026-08-05-git-with-extra-steps`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

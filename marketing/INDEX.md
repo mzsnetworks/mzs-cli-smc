@@ -45,7 +45,7 @@ Ordered by **scheduled publish date**, newest first. The `Date` column is the *t
 - **Visual:** `carousel` / `infographic` / `hero` produced in the folder, or `—` if none. The EN post may take a carousel or a hero; the **ES post takes a text-free hero only**, since carousels render typographically in English (`rules/SPANISH.md`). In practice both languages share one 16:9 hero, which carries no type. No 4:5 variant — this lane has no Instagram target.
 - **Status:** DRAFT (master only, or renders not yet scored) · ADAPTED (renders written) · SHIP (all renders scored ≥85) · PUBLISHED (scheduled or live via `/publish`; submission IDs and times in the folder's `published.md`)
 
-Path layout: `marketing/<year>/<YYYY-MM-DD>-<slug>/`
+Path layout: `marketing/<year>/<month>/<YYYY-MM-DD>-<slug>/`
 
 **On dates.** For posts originating in `mzs-marketing`, the folder date is the date the post was *transferred* here, not when it was drafted or when it will publish. The master's `Drafted:` line carries the original date; `/publish` records the real schedule in `published.md`.
 

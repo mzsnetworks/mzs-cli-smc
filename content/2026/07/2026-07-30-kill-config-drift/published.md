@@ -11,6 +11,6 @@
 
 2026-08-09: original LI post (`ddb9f721…`, cover slide only — the single-image flaw) deleted by user on LinkedIn; reposted with identical text + full 8-slide carousel per the revised LI carousel rule.
 
-Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/2026-07-30-kill-config-drift`).
+Carousel PNGs regenerable from `carousel.json` (`node tools/render-carousel.mjs content/2026/07/2026-07-30-kill-config-drift`).
 
 Live URLs resolve after the scheduled time — poll via `blotato_get_post_status` with the IDs above.

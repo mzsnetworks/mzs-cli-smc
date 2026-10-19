@@ -40,5 +40,5 @@
 
 ## Production
 
-Rendered deterministically: `node tools/render-carousel.mjs content/2026/2026-09-02-sla-is-not-a-design` → `carousel-01.png … 09.png`.
+Rendered deterministically: `node tools/render-carousel.mjs content/2026/09/2026-09-02-sla-is-not-a-design` → `carousel-01.png … 09.png`.
 This spec is the portable fallback (paste into any image tool); the renderer is the production path.

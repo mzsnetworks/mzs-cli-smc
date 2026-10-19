@@ -24,4 +24,4 @@ One slide at a time; wait for "next". Identical style across slides. Proof all t
 
 **Layout system:** navy full-bleed; title top-third in Cormorant; body centered-left in Lato; bold = red accent; cover and CTA carry heavier title sizes; @mzsnetworks bottom corner every slide.
 
-Render: `node tools/render-carousel.mjs content/2026/2026-08-07-automate-toil-first`
+Render: `node tools/render-carousel.mjs content/2026/08/2026-08-07-automate-toil-first`
