@@ -201,8 +201,20 @@ def check_file(path, lane, fails, warns, carousel=True, preset=None):
 # you ask about one post you get the truth about it, whatever its age.
 BASELINE = '2026-09-20T19:05:38-04:00'
 
+# A post folder is named <YYYY-MM-DD>-<slug>. Matching on that rather than on
+# depth is what lets the trees be reorganized without touching this file.
+DATED_DIR = re.compile(r'^\d{4}-\d{2}-\d{2}-')
+
 def _first_commit_dates():
-    """folder -> ISO timestamp of the commit that first added any file in it."""
+    """post folder NAME -> ISO timestamp of the commit that first added a file in it.
+
+    Keyed on the bare folder name (`<YYYY-MM-DD>-<slug>`), never on its path.
+    Git records a directory move as a rename, so after one the new path has no
+    'A' entry at all and a path-keyed lookup silently misses every post -- which
+    would un-skip all 99 pre-baseline posts and put `--all` back to reporting
+    185 failures, the exact thing this filter exists to prevent. The folder name
+    survives any reorganization, and all names are unique across both trees.
+    """
     try:
         out = subprocess.run(
             ['git', 'log', '--diff-filter=A', '--format=C%cI', '--name-only',
@@ -216,20 +228,34 @@ def _first_commit_dates():
         if line.startswith('C'):
             cur = line[1:]
         elif line.strip() and cur and '/' in line:
-            d = os.path.dirname(line)
-            if d.count('/') != 2:      # want <tree>/<year>/<slug>, not the file
+            d = os.path.basename(os.path.dirname(line))
+            if not DATED_DIR.match(d):     # want the post folder, not a tree or year
                 continue
             if d not in first or cur < first[d]:
                 first[d] = cur
     return first
+
+def post_dirs():
+    """Every post folder in both trees, whatever depth they sit at.
+
+    The layout moved from <tree>/<year>/<post> to <tree>/<year>/<month>/<post>
+    on 2026-10-18. Globbing one fixed depth is how a sweep silently finds zero
+    posts and still prints "OK", so match on the folder name instead and accept
+    either depth.
+    """
+    out = []
+    for tree in ('content', 'marketing'):
+        for pat in (f'{tree}/*/*/', f'{tree}/*/*/*/'):
+            out += [d for d in glob.glob(pat)
+                    if DATED_DIR.match(os.path.basename(os.path.normpath(d)))]
+    return out
 
 def pre_baseline(dirs):
     """Subset of dirs first committed before the bands changed."""
     first = _first_commit_dates()
     out = set()
     for d in dirs:
-        key = os.path.normpath(d).strip('./')
-        t = first.get(key)
+        t = first.get(os.path.basename(os.path.normpath(d)))
         if t and t < BASELINE:
             out.add(d)
     return out
@@ -394,7 +420,7 @@ def main():
     everything = '--everything' in args
     args = [a for a in args if a != '--everything']
     sweep = args and args[0] == '--all'
-    dirs = sorted(glob.glob('content/*/*/') + glob.glob('marketing/*/*/')) if sweep else args
+    dirs = sorted(post_dirs()) if sweep else args
     skipped = set()
     if sweep and not everything:
         # Judge a post against the rules in force when it was written. Never

@@ -40,9 +40,15 @@ def main():
     if len(first) < 25:                      # too generic to match safely
         allow()
     hits = set()
+    # Both depths: the layout moved from <tree>/<year>/<post> to
+    # <tree>/<year>/<month>/<post> on 2026-10-18. This gate fails open, so a
+    # glob that stops matching does not announce itself -- it just quietly
+    # stops gating every publish from then on.
     for f in RENDERS:
-        for p in glob.glob(os.path.join(ROOT, 'content', '*', '*', f)) + \
-                 glob.glob(os.path.join(ROOT, 'marketing', '*', '*', f)):
+        for p in glob.glob(os.path.join(ROOT, 'content',   '*', '*', f)) + \
+                 glob.glob(os.path.join(ROOT, 'content',   '*', '*', '*', f)) + \
+                 glob.glob(os.path.join(ROOT, 'marketing', '*', '*', f)) + \
+                 glob.glob(os.path.join(ROOT, 'marketing', '*', '*', '*', f)):
             try:
                 if first in open(p, encoding='utf-8').read():
                     hits.add(os.path.dirname(p))
