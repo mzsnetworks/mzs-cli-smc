@@ -467,6 +467,8 @@ Everything an agent does is governed by the files in `rules/`:
 | X — thread | **≤280/tweet**, one idea per tweet | >280 on any tweet | tweet 1 is the hook |
 | **LinkedIn (Spanish)** | **1,700–2,000 chars** | <1,500 or >2,200 | **~210 chars — unchanged** |
 
+A post that ships both languages caps its **English at 1,739**, not 1,850. Spanish runs 15–25% longer for the same content, so an English render written to its own maximum leaves the Spanish no room inside its 2,000 ceiling. That applies to the `marketing/` lane, which is bilingual throughout; `content/` is English-only and uses the full band.
+
 These bands are narrower than the platforms' own limits on purpose. Output clusters 1–5% under whatever number is actually *enforced* and ignores a number that is merely *stated*: Facebook sat at 774–798 for two months against a prose cap of 800, and LinkedIn produced seventeen published renders at 2,001–2,090 against a prose ceiling of 2,000. The fail line has to be the number you actually want.
 
 That last row is the trap worth knowing about. Spanish runs 15–25% longer than English for the same content, so the body target grows — but LinkedIn truncates on *characters*, so the Spanish hook still gets ~210 of them to say something that needs more words. The Spanish hook is the tightest constraint in the system; write it to the fold first, then build the body.

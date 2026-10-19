@@ -51,6 +51,7 @@ Never drop a cited statistic during adaptation. If a stat doesn't fit a shorter 
 - 🧵 on the hook tweet, bulleted data, triad close, 1–2 hashtags.
 
 ### LinkedIn ES — marketing lane only (`rules/SPANISH.md`)
+- **Cap the English at 1,739 before you start.** In this lane the EN render is the budget for the ES one: Spanish runs 15–25% longer and its target stops at 2,000, so an English render written to the full 1,850 leaves no room and forces a choice between flat Spanish and over-length Spanish. Write the EN to **1,600–1,739**. If the English is already longer, tighten it before composing the Spanish rather than after. Arithmetic in `rules/SPANISH.md`.
 - **Write it; do not translate it.** Read the master, understand the argument, and compose it in Spanish. Never run the English render through a translation, mentally or otherwise — a post that reads as translated fails scoring on Platform fit no matter how accurate it is.
 - usted register, neutral Latin-American Spanish, the upstream EN→ES glossary applied. Product names (Driftguard, Config Modeling, ITOC Dashboard, Workflow Engine) and tool names (Python, Ansible, Terraform) stay in English.
 - Target **1,700–2,000 chars** (the checker fails below 1,500 or above 2,200) — longer than the English target, because Spanish is. But the fold does **not** scale: the hook still has to land inside ~210 characters. Write the Spanish hook to the fold first, then the body.

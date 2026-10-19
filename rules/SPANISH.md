@@ -61,6 +61,24 @@ Tool names stay in English as well: Python, Ansible, Terraform, API.
 
 The fold does **not** scale. LinkedIn truncates on characters, not on meaning, so the Spanish hook has ~210 characters exactly like the English one — and Spanish needs more of them to say the same thing. **This is the hardest constraint in the ES render.** Write the Spanish hook first and to the fold; do not write a Spanish sentence and hope it fits.
 
+### Write the English to 1,600–1,739, not to 1,850
+
+The two rules above collide at the top of the English band, and this is where they reconcile.
+
+Spanish runs 15–25% longer, and the ES draft target stops at 2,000. An English render at the top of its own band — 1,850 — needs 2,128 characters of Spanish at the low end of that ratio, which is 128 over the ES target. The two targets are only jointly satisfiable when the **English sits at 1,600–1,739**:
+
+| EN | × 1.15 | × 1.25 |
+|---|---|---|
+| 1,600 | 1,840 ✓ | 2,000 ✓ |
+| **1,739** | **2,000 ✓** | 2,174 ✗ |
+| 1,850 | 2,128 ✗ | 2,312 ✗ |
+
+So for any post that will carry an ES render, **1,739 is the practical English ceiling**, not 1,850. Writing the English to its own maximum and then composing the Spanish forces a choice between flat Spanish and an over-length one, and the flat version is what tends to get shipped.
+
+This is not a separate rule to remember. It is why batch 3 came in at EN 1,679–1,738: written to that window from the start, every ES render landed inside both the band and the ratio with nothing to fix on transfer. Batch 2 was written to the English target alone, arrived under ratio on all twelve posts, and had to be expanded afterwards — which broke paragraph parity on four of them, once in a schedule that was already live.
+
+**FAILURE HISTORY (2026-10-18).** Batch 3's first transfer passed `tools/check-renders.py` with eight warnings, all ES renders over 2,000. The posts were not wrong; the English had been written to 1,850 and the Spanish had no room left. Measuring what the lane actually ships — batches 1 and 2 run EN 1,320–1,759 and ES 1,503–1,885 — confirmed the shorter English is the house register rather than a compromise, and all twelve were trimmed at the source.
+
 ## Hashtags
 
 2–3, same as the English render, at the very end.

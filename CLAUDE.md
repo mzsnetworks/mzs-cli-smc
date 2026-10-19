@@ -123,6 +123,8 @@ Every post needs a strong **hook** in line one. The default shape is **hook → 
 
 **Spanish is written, never translated.** `linkedin-es.md` is composed from the master against the upstream EN→ES glossary — usted register, neutral Latin-American Spanish, product and tool names left in English. The ES targets run longer than English (draft 1,700–2,000 chars), but the ~210-char fold does *not* scale, which makes the Spanish hook the tightest constraint in the system. See `rules/SPANISH.md`.
 
+**A post with an ES render caps its English at 1,739, not 1,850.** Spanish runs 15–25% longer and the ES target stops at 2,000, so an English render written to its own maximum leaves the Spanish no room and forces a choice between flat Spanish and over-length Spanish. The two targets only hold together when the English sits at **1,600–1,739**. This applies to the `marketing/` lane, where every post is bilingual; `content/` is English-only and uses the full 1,600–1,850.
+
 ## Origin
 
 Adapted from the LinkedIn-LPM editorial system (a strict, repel-mode personal blog). This project kept that system's fact discipline and senior-engineer credibility, but loosened the voice for multi-platform reach and added the Platform Adapter as the core agent.

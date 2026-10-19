@@ -38,7 +38,7 @@ Hooks always sit above the platform "fold." Stay near the sweet spot, not the ha
 
 | Platform | Draft target | Checker FAILs outside | Fold (hook must land before) |
 |----------|-------------|----------------------|------------------------------|
-| LinkedIn | **1,600–1,850 chars** | <1,300 or >1,900 | ~210 chars (~3 lines) |
+| LinkedIn | **1,600–1,850 chars** — but **1,600–1,739** on a post that also ships an ES render | <1,300 or >1,900 | ~210 chars (~3 lines) |
 | LinkedIn (Spanish) | **1,700–2,000 chars** | <1,500 or >2,200 | ~210 chars — does **not** scale |
 | Facebook | **550–700 chars** | <400 or >760 | ~477 chars desktop (~400 mobile) |
 | Instagram — caption over a carousel | **600–900 chars** | >900 | ~125 chars (first line) |
