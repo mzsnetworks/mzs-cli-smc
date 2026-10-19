@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-12-05 | `the-missing-runbook` | Alert noise is alerts nobody can act on, not alert volume; correlating them produces a tidier version of the same problem | LI · IG | hero (16:9 + 4:5) | **SHIP** |
-| 2026-12-03 | `toil-you-enshrined` | Five things automated that should have been deleted — automation drops the cost of a task to zero, and nothing that costs zero gets reviewed again | LI · IG | hero (16:9 + 4:5) | **SHIP** |
-| 2026-12-01 | `why-is-it-still-there` | The oldest device in the path survives for organizational reasons; the useful question is dependency and who would have to agree, not age | LI · IG | hero (16:9 + 4:5) | **SHIP** |
+| 2026-12-05 | `the-missing-runbook` | Alert noise is alerts nobody can act on, not alert volume; correlating them produces a tidier version of the same problem | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Dec 5 4pm EST · LI personal + IG) |
+| 2026-12-03 | `toil-you-enshrined` | Five things automated that should have been deleted — automation drops the cost of a task to zero, and nothing that costs zero gets reviewed again | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Dec 3 4pm EST · LI personal + IG) |
+| 2026-12-01 | `why-is-it-still-there` | The oldest device in the path survives for organizational reasons; the useful question is dependency and who would have to agree, not age | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Dec 1 4pm EST · LI personal + IG) |
 | 2026-11-28 | `run-it-twice` | A script that only works on a clean device is a one-shot procedure; the operational value is the second run, and scripts fail idempotence silently | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 28 4pm EST · LI personal + IG) |
 | 2026-11-26 | `what-survives-you` | A postmortem that produces a document transmits the lesson only to people who go looking; a changed default enforces it on people who never heard the story | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 26 4pm EST · LI personal + IG) |
 | 2026-11-24 | `rma-is-a-design-input` | Replacement time is a design constraint decided years earlier by a support contract, and the resilience design was never reviewed against the real number | LI · IG | hero (16:9 + 4:5) | PUBLISHED (sched Nov 24 4pm EST · LI personal + IG) |
