@@ -84,6 +84,12 @@ SPEC = {
  'linkedin-es.md': (1500, 2200, '1700-2000', 210, 2, 3),
 }
 
+# A post that ships both languages caps its English below the English band.
+# Spanish runs 15-25% longer and its target stops at 2000, so 2000 / 1.15 is
+# the most English the Spanish can afford to carry. Warn, not fail: the EN
+# render is still legal on its own, it just makes the ES render impossible.
+BILINGUAL_EN_MAX = 1739
+
 def sentences(par):
     """Count sentence terminators. Spanish inverted marks open but do not
     terminate, so only . ! ? at a boundary count. Bullet lines are counted as
@@ -388,6 +394,21 @@ def check_post(d):
         pe = [p for p in en.split('\n\n') if p.strip()]
         ps = [p for p in es.split('\n\n') if p.strip()]
         name = os.path.basename(d)
+
+        # FAILURE HISTORY (2026-10-18): batch 3 transferred with eight warnings,
+        # every one an ES render over its 2000 target. No single number was
+        # wrong. The EN draft target tops at 1850, the ES target at 2000, and
+        # Spanish runs 15-25% longer -- so an EN render written to its own
+        # maximum needs at least 2128 characters of Spanish and cannot fit.
+        # In this lane the English is the budget for the Spanish, and the
+        # English is the half somebody writes first. Warn there, where it is
+        # still cheap: tightening the EN after the ES exists is what broke
+        # paragraph parity on four batch-2 posts, one of them already live.
+        if len(en) > BILINGUAL_EN_MAX:
+            warns.append(
+                f"{name}/linkedin.md: {len(en)} chars — over the {BILINGUAL_EN_MAX} ceiling for a post "
+                f"that also ships ES. At 1.15x the Spanish needs {round(len(en) * 1.15)}, "
+                f"and its target stops at {SPEC['linkedin-es.md'][2].split('-')[1]}")
         if len(pe) != len(ps):
             fails.append(f"{name}: EN/ES paragraph parity {len(pe)} vs {len(ps)} — both renders must carry the same beats")
         else:

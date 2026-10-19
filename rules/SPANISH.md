@@ -77,6 +77,8 @@ So for any post that will carry an ES render, **1,739 is the practical English c
 
 This is not a separate rule to remember. It is why batch 3 came in at EN 1,679–1,738: written to that window from the start, every ES render landed inside both the band and the ratio with nothing to fix on transfer. Batch 2 was written to the English target alone, arrived under ratio on all twelve posts, and had to be expanded afterwards — which broke paragraph parity on four of them, once in a schedule that was already live.
 
+**The checker enforces this.** `tools/check-renders.py` warns when a `linkedin.md` over 1,739 characters sits beside a `linkedin-es.md`, naming how much Spanish the ratio would then require. It warns rather than fails, because the English is still legal on its own — it has only made the Spanish impossible. Warn at the English is also where the fix is cheap: tightening the EN after the ES exists is what broke paragraph parity on four batch-2 posts, one of them already scheduled.
+
 **FAILURE HISTORY (2026-10-18).** Batch 3's first transfer passed `tools/check-renders.py` with eight warnings, all ES renders over 2,000. The posts were not wrong; the English had been written to 1,850 and the Spanish had no room left. Measuring what the lane actually ships — batches 1 and 2 run EN 1,320–1,759 and ES 1,503–1,885 — confirmed the shorter English is the house register rather than a compromise, and all twelve were trimmed at the source.
 
 ## Hashtags

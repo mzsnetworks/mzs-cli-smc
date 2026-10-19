@@ -49,6 +49,10 @@ WARN_CASES = {
     # Inside the FAIL band but above the draft ceiling. Until 2026-09-20 this
     # warning was Facebook-only, which let LinkedIn drift to just under its cap.
     'warn-above-draft-target':   'above the 1600-1850 draft target',
+    # A bilingual post caps its EN below the EN band, because the Spanish has
+    # to fit inside 2000 at 1.15x. Added 2026-10-18 after batch 3 transferred
+    # with eight warnings that no single number in the spec accounted for.
+    'warn-bilingual-en-ceiling':  'ceiling for a post that also ships ES',
 }
 
 def main():
