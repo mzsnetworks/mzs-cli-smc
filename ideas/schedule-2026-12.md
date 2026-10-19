@@ -14,9 +14,9 @@ Planned 2026-10-18, oldest file first per `agents/SCHEDULER.md`. Eight of ten Pr
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Dec 1 | Tue | What's the oldest device still in your production path — and why is it still there? | ideas-2026-07-08 #15 | — |
-| Dec 3 | Thu | 5 things you automated that you should have deleted instead — toil you enshrined | ideas-2026-07-08 #8 | — |
-| Dec 5 | Sat | Every AIOps tool promises to cut alert noise. The noise was never the problem — the missing runbook was | ideas-2026-07-08 #18 | — |
+| Dec 1 | Tue | What's the oldest device still in your production path — and why is it still there? | ideas-2026-07-08 #15 | DONE · `why-is-it-still-there` |
+| Dec 3 | Thu | 5 things you automated that you should have deleted instead — toil you enshrined | ideas-2026-07-08 #8 | DONE · `toil-you-enshrined` |
+| Dec 5 | Sat | Every AIOps tool promises to cut alert noise. The noise was never the problem — the missing runbook was | ideas-2026-07-08 #18 | DONE · `the-missing-runbook` |
 | Dec 8 | Tue | The ISSU that refused to upgrade — hidden operational state, not the documented procedure, killed it | ideas-2026-07-08 #2 | — |
 | Dec 10 | Thu | CI for network configs: pre-merge lint + dry-run diff, so a bad change fails in the PR, not at 2am | ideas-2026-07-08 #13 | — |
 | Dec 12 | Sat | The migration went to plan. The config inconsistencies that surfaced after were the real project | ideas-2026-07-08 #11 | — |
