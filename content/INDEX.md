@@ -4,9 +4,9 @@ Every idea, newest first. The **slug** is how you reference a post ("make a caro
 
 | Date | Slug | Title / Thesis | Renders | Visual | Status |
 |------|------|----------------|---------|--------|--------|
-| 2026-12-04 | `the-reason-behind-it` | Configuration is recoverable; the reasoning behind its irregularities is not, and the failure mode is tidying rather than departure | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
-| 2026-12-02 | `first-touch` | Most of the delay in a support case belongs to the case, not the vendor — five things supplied on the first touch remove the costly exchanges | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
-| 2026-11-29 | `before-anyone-signs` | An acceptance criterion that cannot fail is not a criterion; five that can | LI · FB · IG · X | carousel (10 png) + hero (16:9) | **SHIP** |
+| 2026-12-04 | `the-reason-behind-it` | Configuration is recoverable; the reasoning behind its irregularities is not, and the failure mode is tidying rather than departure | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Dec 4 4pm EST · Business — all four on MZS) |
+| 2026-12-02 | `first-touch` | Most of the delay in a support case belongs to the case, not the vendor — five things supplied on the first touch remove the costly exchanges | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Dec 2 4pm EST · Business — all four on MZS) |
+| 2026-11-29 | `before-anyone-signs` | An acceptance criterion that cannot fail is not a criterion; five that can | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 29 4pm EST · Business — all four on MZS) |
 | 2026-11-27 | `sold-on-speed` | Wi-Fi 7's headline figures describe a ceiling few enterprises approach; uplinks, placement and client mix are the real constraints | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 27 4pm EST · Business — all four on MZS) |
 | 2026-11-25 | `before-touching-anything` | The first week of a takeover is the only window where naive questions are free, so it is spent collecting rather than changing | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 25 4pm EST · Business — all four on MZS) |
 | 2026-11-22 | `nobody-told-us` | The outages that look unexplained usually began as a correct change in another team that never reached the people who depended on the old state | LI · FB · IG · X | carousel (10 png) + hero (16:9) | PUBLISHED (sched Nov 22 4pm EST · Business — all four on MZS) |

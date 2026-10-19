@@ -31,8 +31,8 @@ Planned 2026-10-18, oldest file first per `agents/SCHEDULER.md`. Eight of ten Pr
 
 | Date | Day | Idea | Source | Status |
 |------|-----|------|--------|--------|
-| Dec 2 | Wed | The support case that gets solved on the first touch: topology, timestamps, captures from both sides, what changed, what you already ruled out | ideas-2026-08-09 #4 | — |
-| Dec 4 | Fri | Your most valuable asset isn't the config. It's the reason behind the config — and it lives in one person's head | ideas-2026-07-11 #8 | — |
+| Dec 2 | Wed | The support case that gets solved on the first touch: topology, timestamps, captures from both sides, what changed, what you already ruled out | ideas-2026-08-09 #4 | DONE · `first-touch` |
+| Dec 4 | Fri | Your most valuable asset isn't the config. It's the reason behind the config — and it lives in one person's head | ideas-2026-07-11 #8 | DONE · `the-reason-behind-it` |
 | Dec 6 | Sun | Technical debt has an interest rate, and it is paid in change windows | ideas-2026-10-18-business #16 | — |
 | Dec 9 | Wed | Your DR site is a staffing problem — who drives there, who holds the badge, who is on shift at 3am on a holiday | ideas-2026-10-18-business #2 | — |
 | Dec 11 | Fri | What would you automate first if you actually trusted your data? Every automation conversation is secretly a data-quality conversation | ideas-2026-07-16 #7 | — |

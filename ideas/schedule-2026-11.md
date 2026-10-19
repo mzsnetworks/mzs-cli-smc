@@ -45,7 +45,7 @@ This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows agai
 | Nov 22 | Sun | 4 outages that had nothing to do with the network and everything to do with a change nobody told us about | ideas-2026-08-30 #32 | DONE · `nobody-told-us` |
 | Nov 25 | Wed | Taking over an environment you didn't build: the first five things we collect before touching anything | ideas-2026-08-30 #20 | DONE · `before-touching-anything` |
 | Nov 27 | Fri | Wi-Fi 7 will be sold on speed and bought for capacity — and most enterprises will still be capped by uplinks and AP placement | ideas-2026-08-30 #11 | DONE · `sold-on-speed` |
-| Nov 29 | Sun | 5 things a network acceptance test must include before anyone signs — and why "it pings" isn't one of them | ideas-2026-08-30 #29 | — |
+| Nov 29 | Sun | 5 things a network acceptance test must include before anyone signs — and why "it pings" isn't one of them | ideas-2026-08-30 #29 | DONE · `before-anyone-signs` |
 
 **Nov 27 (#11) is the one stat-*optional* row in this plan.** Its pool entry reads "only if you quote adoption numbers." Write it as judgment and cite nothing; the moment it quotes a Wi-Fi 7 adoption figure it blocks on Factcheck until the figure has a named firm and year.
 
