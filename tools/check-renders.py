@@ -90,6 +90,16 @@ SPEC = {
 # render is still legal on its own, it just makes the ES render impossible.
 BILINGUAL_EN_MAX = 1739
 
+# The other half of the same rule. Spanish needs ~15-25% more characters to
+# carry the same argument, so an ES render close to its English is not a
+# shorter translation -- it is a thinner post, tracking the English clause for
+# clause instead of being composed. This is a FLOOR to clear, not a number to
+# aim at: output clusters just under whatever is enforced (see the SPEC note),
+# and six batch-3 renders landed at exactly 1.15 because they were tuned to it.
+# Write past it. No upper bound here on purpose -- Spanish that runs long
+# already trips the linkedin-es.md band.
+ES_EN_RATIO_MIN = 1.15
+
 def sentences(par):
     """Count sentence terminators. Spanish inverted marks open but do not
     terminate, so only . ! ? at a boundary count. Bullet lines are counted as
@@ -407,8 +417,22 @@ def check_post(d):
         if len(en) > BILINGUAL_EN_MAX:
             warns.append(
                 f"{name}/linkedin.md: {len(en)} chars — over the {BILINGUAL_EN_MAX} ceiling for a post "
-                f"that also ships ES. At 1.15x the Spanish needs {round(len(en) * 1.15)}, "
+                f"that also ships ES. At {ES_EN_RATIO_MIN}x the Spanish needs {round(len(en) * ES_EN_RATIO_MIN)}, "
                 f"and its target stops at {SPEC['linkedin-es.md'][2].split('-')[1]}")
+
+        # FAILURE HISTORY: all twelve batch-2 ES renders arrived at 1.00-1.13
+        # and were expanded on transfer; three-countries-one-standard shipped
+        # at 1.00, meaning the Spanish was the same length as the English for
+        # the same argument. The EN ceiling above stops one cause of that --
+        # an English too long to leave room -- but not this one, where the
+        # Spanish simply tracks the English clause for clause. Both halves are
+        # needed; a render can pass every length band and still be thin.
+        ratio = len(es) / len(en) if en else 0
+        if ratio < ES_EN_RATIO_MIN:
+            warns.append(
+                f"{name}/linkedin-es.md: {len(es)} chars is {ratio:.2f}x the English ({len(en)}) — "
+                f"Spanish needs ~{ES_EN_RATIO_MIN}x for the same argument, so this reads as tracked "
+                f"rather than composed. Around {round(len(en) * ES_EN_RATIO_MIN)} is the floor")
         if len(pe) != len(ps):
             fails.append(f"{name}: EN/ES paragraph parity {len(pe)} vs {len(ps)} — both renders must carry the same beats")
         else:

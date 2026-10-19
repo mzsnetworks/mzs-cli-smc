@@ -53,6 +53,9 @@ WARN_CASES = {
     # to fit inside 2000 at 1.15x. Added 2026-10-18 after batch 3 transferred
     # with eight warnings that no single number in the spec accounted for.
     'warn-bilingual-en-ceiling':  'ceiling for a post that also ships ES',
+    # The other half: Spanish inside every band but tracking the English
+    # clause for clause. All twelve batch-2 renders shipped at 1.00-1.13.
+    'warn-es-tracks-english':     'reads as tracked rather than composed',
 }
 
 def main():

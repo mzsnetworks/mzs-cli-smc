@@ -18,3 +18,7 @@
 *.jpeg
 *.gif
 *.webp
+
+# Python bytecode from the checker and its tests
+__pycache__/
+*.pyc
