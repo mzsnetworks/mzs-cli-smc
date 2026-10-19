@@ -21,9 +21,9 @@ Planned 2026-10-18 against `ideas-2026-08-27.md` (Professional) and `ideas-2026-
 | Nov 17 | Tue | Your NTP is wrong somewhere, and every log correlation you did last quarter was a guess with timestamps on it | ideas-2026-08-27 #5 | DONE · `a-guess-with-timestamps` |
 | Nov 19 | Thu | The migration estimate I missed by three weeks — and the two questions I now ask before quoting any brownfield project | ideas-2026-08-27 #17 | DONE · `three-weeks-over` |
 | Nov 21 | Sat | What would you actually let an AI change without asking you first? Most honest answers are "nothing" — and that's the real state of AIOps adoption | ideas-2026-08-27 #33 | DONE · `without-asking-you` |
-| Nov 24 | Tue | Spare parts are a strategy, not a storeroom — RMA time is a design constraint you've probably never written down | ideas-2026-08-27 #25 | — |
-| Nov 26 | Thu | Did your last outage change a document, or change a default? Only one of those survives you | ideas-2026-08-27 #28 | — |
-| Nov 28 | Sat | If you cannot run it twice, it is not automation — idempotence is the whole game, and most scripts fail it quietly | ideas-2026-10-18 #8 | — |
+| Nov 24 | Tue | Spare parts are a strategy, not a storeroom — RMA time is a design constraint you've probably never written down | ideas-2026-08-27 #25 | DONE · `rma-is-a-design-input` |
+| Nov 26 | Thu | Did your last outage change a document, or change a default? Only one of those survives you | ideas-2026-08-27 #28 | DONE · `what-survives-you` |
+| Nov 28 | Sat | If you cannot run it twice, it is not automation — idempotence is the whole game, and most scripts fail it quietly | ideas-2026-10-18 #8 | DONE · `run-it-twice` |
 
 This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows against twelve November slots. The twelfth, Nov 28, draws from **`ideas-2026-10-18.md`**, generated the same day to refill the lane: 36 fresh rows, 35 of them gate-free.
 
