@@ -39,9 +39,9 @@ This plan drained `ideas-2026-08-27.md` to zero — eleven undeveloped rows agai
 | Nov 8 | Sun | SD-WAN didn't remove the WAN engineer — it moved the hard part to defining what "good" means per application, and nobody wants to own that | ideas-2026-08-30 #2 | DONE · `defining-what-good-means` |
 | Nov 11 | Wed | Post-incident actions expire — if it isn't scheduled, staffed and dated, it's a feeling somebody had on a bad day | ideas-2026-08-30 #33 | DONE · `post-incident-actions-expire` |
 | Nov 13 | Fri | Who owns the network in your organization? Not who runs it — who decides | ideas-2026-08-30 #27 | DONE · `who-decides` |
-| Nov 15 | Sun | Oversubscription isn't a dirty word — designing for zero contention buys a network you'll never use; the skill is choosing the ratio on purpose | ideas-2026-08-30 #8 | — |
-| Nov 18 | Wed | AI is good at the part we're bad at — reading everything — and bad at the part we're good at: knowing what matters *here*. Staff accordingly | ideas-2026-08-30 #35 | — |
-| Nov 20 | Fri | IPAM isn't documentation, it's an allocation system — and a spreadsheet is an allocation system with no locking | ideas-2026-08-30 #25 | — |
+| Nov 15 | Sun | Oversubscription isn't a dirty word — designing for zero contention buys a network you'll never use; the skill is choosing the ratio on purpose | ideas-2026-08-30 #8 | DONE · `choosing-the-ratio` |
+| Nov 18 | Wed | AI is good at the part we're bad at — reading everything — and bad at the part we're good at: knowing what matters *here*. Staff accordingly | ideas-2026-08-30 #35 | DONE · `knowing-what-matters-here` |
+| Nov 20 | Fri | IPAM isn't documentation, it's an allocation system — and a spreadsheet is an allocation system with no locking | ideas-2026-08-30 #25 | DONE · `an-allocation-system` |
 | Nov 22 | Sun | 4 outages that had nothing to do with the network and everything to do with a change nobody told us about | ideas-2026-08-30 #32 | — |
 | Nov 25 | Wed | Taking over an environment you didn't build: the first five things we collect before touching anything | ideas-2026-08-30 #20 | — |
 | Nov 27 | Fri | Wi-Fi 7 will be sold on speed and bought for capacity — and most enterprises will still be capped by uplinks and AP placement | ideas-2026-08-30 #11 | — |
