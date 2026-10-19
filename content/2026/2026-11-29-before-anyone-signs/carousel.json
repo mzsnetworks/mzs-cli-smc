@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "'It pings' is not\nan acceptance test.",
+   "body": "It's a pulse check on a patient\nnobody has *examined*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "1 — The application",
+   "body": "Not that the circuit is up.\nThat the thing it *exists for*\ncompletes.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Why",
+   "body": "A link can be perfect\nwhile the service behind it\nis *unusable*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "2 — Both directions",
+   "body": "Separately.\nUpload and download\nfail *differently*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "3 — The failure case",
+   "body": "Deliberately *triggered*.\nTake the primary path away\nand measure what the user sees.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Not convergence",
+   "body": "Not whether the route converges.\nWhether the *transaction*\ncompletes.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "4 — Real load",
+   "body": "At the hour that matters.\nA test at 7am measures\nan *empty network*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "5 — A named signer",
+   "body": "Not a team.\nNot a mailbox.\nSomebody who could say *no*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "What they share",
+   "steps": [
+    "Each one can fail.",
+    "A criterion that cannot fail is not a criterion.",
+    "It is a *sentence in a document*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "The test isn't there to prove\nthe project *finished*.",
+   "body": "It's so that later,\nwhen something is wrong,\nyou can tell if it was ever right.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Case quality is the one\nvariable you *fully control*.",
+   "body": "Almost nobody treats it that way.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The bad open",
+   "body": "\"The VPN is slow\nfor some users.\"",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What it costs",
+   "body": "*Four days*.\nTwo exchanges asking what you\ncould have said at the start.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "1 — Topology",
+   "body": "Not the corporate diagram.\nThe *specific path* —\nfirewall, proxy, all of it.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "2 — Timestamps",
+   "body": "With a *timezone*.\nThe engineer reading this\nis somewhere else.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "3 — Captures",
+   "body": "From *both sides*.\nTaken at the\nsame moment.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "4 — What changed",
+   "body": "Including the honest version:\n*nothing we know of*,\nand here's the record anyway.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "5 — What you ruled out",
+   "body": "And *how*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Why that one matters",
+   "steps": [
+    "It moves the case out of tier one.",
+    "It says the reader doesn't start from the beginning.",
+    "It removes the delay that belongs to *you*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "A case is a document\nyou're asking a *stranger*\nto act on.",
+   "body": "Write it like one.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

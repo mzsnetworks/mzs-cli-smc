@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Your most valuable asset\nisn't the configuration.",
+   "body": "It's the *reason* behind it.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Where it lives",
+   "body": "Usually in\n*one person's* head.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The config is recoverable",
+   "body": "Backup. Device. Repository.\nRebuild it in a week\nof unpleasant work.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "What isn't",
+   "steps": [
+    "Why the timers on that one link are different.",
+    "Why a route-map excludes a prefix that looks like it belongs.",
+    "Why one site runs older firmware, and has for *three years*."
+   ]
+  },
+  {
+   "type": "body",
+   "title": "Each has a reason",
+   "body": "Usually a good one.\nArrived at during an outage\nnobody wants to *repeat*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The failure mode",
+   "body": "Is not that\nthe person *leaves*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "It's subtler",
+   "body": "Somebody *tidies up*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What happens",
+   "body": "A new engineer corrects an\ninconsistency — and reintroduces\na problem solved *years ago*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Not access control",
+   "body": "You can't prevent it that way.\nMake the reason *travel*\nwith the configuration.",
+   "motif": "none"
+  },
+  {
+   "type": "cta",
+   "title": "The strangest thing in\nyour running config —",
+   "body": "can anyone but its author\nexplain it?\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}
