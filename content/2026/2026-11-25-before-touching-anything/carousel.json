@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "The first week of a takeover\nis *collection*.",
+   "body": "Not change.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "1 — Configurations",
+   "body": "From every device.\nPulled the *same day*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Why not the backup",
+   "body": "Usually a month stale,\nand missing whatever\nwas done in a *hurry*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "2 — The change record",
+   "body": "Twelve months of it.\nRead for the *gaps*\nas much as the entries.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "A quiet quarter",
+   "body": "Rarely means a quiet quarter.\nIt means changes happened\nwhere the record *doesn't reach*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "3 — Monitoring config",
+   "body": "Not dashboards.\nWhat's watched, with what\nthresholds — and what *isn't*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "4 — The automation",
+   "body": "Including the parts\nnobody runs any more.\nIt says what somebody *tried*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "5 — The fear list",
+   "body": "Things people won't touch.\nNot a document.\nYou get it by *asking*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "Why it matters",
+   "steps": [
+    "The answers are specific: that switch, that rule, that site.",
+    "Fear is institutional memory in its least useful form.",
+    "Every item marks a *real event* somebody lived through."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Collect it while you're\nstill allowed to *not know*.",
+   "body": "The first week is the only\nweek naive questions\nare free.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Wi-Fi 7 will be sold\non *speed*.",
+   "body": "And bought for capacity.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The numbers are real",
+   "body": "In the sense that\na *lab* can produce them.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What they are",
+   "body": "The *ceiling*.\nAlmost nobody is\nnear their ceiling.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Constraint 1",
+   "body": "The uplink from the AP.\nOften a gigabit port into a switch\nfrom the *last refresh*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Which means",
+   "body": "A faster radio behind\na saturated uplink\nproduces a faster *queue*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Constraint 2",
+   "body": "Placement.\nCable routes and convenient\nceiling tiles — not *density*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "The twist",
+   "body": "Wider channels make placement\nmatter *more*, not less.\nChannel reuse gets harder.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Constraint 3",
+   "body": "The client mix.\nMost device populations\nspan about *eight years*.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "The order",
+   "steps": [
+    "Uplinks and switching first.",
+    "Then a survey that reflects how the space is used.",
+    "Then *radios*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Buy it when the thing\nlimiting you is the *radio*.",
+   "body": "Otherwise the money buys\na better ceiling\nabove the same floor.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}

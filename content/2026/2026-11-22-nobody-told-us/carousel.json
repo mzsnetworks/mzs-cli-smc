@@ -1,0 +1,80 @@
+{
+ "size": [
+  1080,
+  1350
+ ],
+ "brand": {
+  "navy": "#161a45",
+  "cream": "#F4EFE3",
+  "red": "#eb2027",
+  "titleFont": "Cormorant Garamond",
+  "bodyFont": "Lato",
+  "handle": "@mzsnetworks",
+  "url": "mzsnetworks.com"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Four of the worst outages\nwe've been called into",
+   "body": "had *nothing* to do\nwith the network.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What they shared",
+   "body": "A change somebody made\nwithout telling anyone\nwho'd have to *live with it*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "One",
+   "body": "A certificate update.\nCorrect. Tested.\nEntirely within their remit.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What broke",
+   "body": "A monitoring system had been\n*pinning* that certificate\nfor three years.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Two",
+   "body": "A patch field relabelled\nduring an office move.\nNothing electrical changed.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What broke",
+   "body": "The labels were the\n*only map* anyone had.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "Three",
+   "body": "Compression enabled on a\nreplication job.\nTo be *helpful*.",
+   "motif": "none"
+  },
+  {
+   "type": "body",
+   "title": "What broke",
+   "body": "The traffic shape changed.\nThe threshold was tuned\nto the *old* one.",
+   "motif": "none"
+  },
+  {
+   "type": "triad",
+   "title": "The pattern",
+   "steps": [
+    "Nobody was careless.",
+    "Each change was reasonable inside the team that made it.",
+    "The damage happened at the *boundary*."
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Processes prove a change\nwas *authorized*.",
+   "body": "Few make sure\nit was *announced*.\n\nFollow *@mzsnetworks*",
+   "motif": "none"
+  }
+ ]
+}
